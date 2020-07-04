@@ -203,6 +203,7 @@ var searchData=
   ['readln_5fint',['readln_int',['../lib__std_8cpp.html#aceb173c6bb65ad6efbefdfa950caf449',1,'readln_int():&#160;lib_std.cpp'],['../lib__std_8h.html#aceb173c6bb65ad6efbefdfa950caf449',1,'readln_int():&#160;lib_std.cpp']]],
   ['readmapped',['readMapped',['../classImageBase.html#a48ae414fb2c0fbba93b70b174675d231',1,'ImageBase::readMapped()'],['../classImageGeneric.html#ab65e3790d23025f8e76d96da0aafe13e',1,'ImageGeneric::readMapped()']]],
   ['readmat',['readMat',['../classProgOpticalAligment.html#ae84cffec6bcec276a47809a23f985247',1,'ProgOpticalAligment']]],
+  ['readme_2emd',['README.md',['../README_8md.html',1,'']]],
   ['readmembership',['readMembership',['../classFuzzyCodeBook.html#a8c0610ebdcf3624be4b00916eb3fa357',1,'FuzzyCodeBook']]],
   ['readmetadatawithtwopossibleimages',['readMetaDataWithTwoPossibleImages',['../group__MetaDataExtension.html#ga2e7136611b647e1c7ebcc5414c4fb00b',1,'readMetaDataWithTwoPossibleImages(const FileName &amp;fn, MetaData &amp;md):&#160;metadata_extension.cpp'],['../group__MetaDataExtension.html#ga2e7136611b647e1c7ebcc5414c4fb00b',1,'readMetaDataWithTwoPossibleImages(const FileName &amp;fn, MetaData &amp;md):&#160;metadata_extension.cpp']]],
   ['readmic',['readMic',['../classAutoParticlePicking2.html#a12b4b49ee11b14c153491f0453814951',1,'AutoParticlePicking2']]],
