@@ -105,7 +105,13 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a714da93952c590db954228bd9cc60abf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal2_1_1TypeWithoutFormatter_3_01T_00_01kProtobuf_01_4.html#a714da93952c590db954228bd9cc60abf">PrintValue</a> (const T &amp;value,::std::ostream *os)</td></tr>
 <tr class="separator:a714da93952c590db954228bd9cc60abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+class testing::internal2::TypeWithoutFormatter&lt; T, kProtobuf &gt;</h3>
+
+
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l09332">9332</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a714da93952c590db954228bd9cc60abf"></a>
 <div class="memitem">
 <div class="memproto">
@@ -140,6 +146,10 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l09334">9334</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l09334"></a><span class="lineno"> 9334</span>&#160;                                                         {</div><div class="line"><a name="l09335"></a><span class="lineno"> 9335</span>&#160;    <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">const ::testing::internal::string</a> short_str = value.ShortDebugString();</div><div class="line"><a name="l09336"></a><span class="lineno"> 9336</span>&#160;    <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">const ::testing::internal::string</a> pretty_str =</div><div class="line"><a name="l09337"></a><span class="lineno"> 9337</span>&#160;        short_str.length() &lt;= <a class="code" href="namespacetesting_1_1internal2.html#a140c8efd51e63a3def98445bff107518">kProtobufOneLinerMaxLength</a> ?</div><div class="line"><a name="l09338"></a><span class="lineno"> 9338</span>&#160;        short_str : (<span class="stringliteral">&quot;\n&quot;</span> + value.DebugString());</div><div class="line"><a name="l09339"></a><span class="lineno"> 9339</span>&#160;    *os &lt;&lt; (<span class="stringliteral">&quot;&lt;&quot;</span> + pretty_str + <span class="stringliteral">&quot;&gt;&quot;</span>);</div><div class="line"><a name="l09340"></a><span class="lineno"> 9340</span>&#160;  }</div><div class="ttc" id="namespacetesting_1_1internal_html_a8e8ff5b11e64078831112677156cb111"><div class="ttname"><a href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">testing::internal::string</a></div><div class="ttdeci">::std::string string</div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l01818">gtest.h:1818</a></div></div>
+<div class="ttc" id="namespacetesting_1_1internal2_html_a140c8efd51e63a3def98445bff107518"><div class="ttname"><a href="namespacetesting_1_1internal2.html#a140c8efd51e63a3def98445bff107518">testing::internal2::kProtobufOneLinerMaxLength</a></div><div class="ttdeci">const size_t kProtobufOneLinerMaxLength</div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l09329">gtest.h:9329</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

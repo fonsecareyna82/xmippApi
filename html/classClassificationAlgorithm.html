@@ -146,6 +146,8 @@ Protected Attributes</h2></td></tr>
 class ClassificationAlgorithm&lt; DSClass &gt;</h3>
 
 <p>This is the parent class for all algorithms that can be trained and applied in order to classify a set of data. A xmipp Algorithm object must have: 1) a train method that accepts a set of examples 2) an apply method that accepts an example and classifies it </p>
+
+<p>Definition at line <a class="el" href="base__algorithm_8h_source.html#l00054">54</a> of file <a class="el" href="base__algorithm_8h_source.html">base_algorithm.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a99f89ebe78de09a36935bd209d52b8b8"></a>
 <div class="memitem">
@@ -158,6 +160,8 @@ template&lt;class DSClass&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="base__algorithm_8h_source.html#l00058">58</a> of file <a class="el" href="base__algorithm_8h_source.html">base_algorithm.h</a>.</p>
 
 </div>
 </div>
@@ -172,6 +176,8 @@ template&lt;class DSClass&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="base__algorithm_8h_source.html#l00059">59</a> of file <a class="el" href="base__algorithm_8h_source.html">base_algorithm.h</a>.</p>
 
 </div>
 </div>
@@ -201,6 +207,9 @@ template&lt;class DSClass&gt; </div>
 </div><div class="memdoc">
 <p>Constructor. Parameter: _ID an ID string unique for each algorithm class </p>
 
+<p>Definition at line <a class="el" href="base__algorithm_8h_source.html#l00065">65</a> of file <a class="el" href="base__algorithm_8h_source.html">base_algorithm.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                      : <a class="code" href="classClassificationAlgorithm.html#a00786d519f617da6d6fc7f2329319b67">ID</a>(_ID)</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {};</div><div class="ttc" id="classClassificationAlgorithm_html_a00786d519f617da6d6fc7f2329319b67"><div class="ttname"><a href="classClassificationAlgorithm.html#a00786d519f617da6d6fc7f2329319b67">ClassificationAlgorithm::ID</a></div><div class="ttdeci">std::string ID</div><div class="ttdef"><b>Definition:</b> <a href="base__algorithm_8h_source.html#l00132">base_algorithm.h:132</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a94bc960989f7310d9a1e08b3a99c7ee6"></a>
@@ -227,6 +236,8 @@ template&lt;class DSClass&gt; </div>
 </div><div class="memdoc">
 <p>Destructor. The default destructor </p>
 
+<p>Definition at line <a class="el" href="base__algorithm_8h_source.html#l00072">72</a> of file <a class="el" href="base__algorithm_8h_source.html">base_algorithm.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {};</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -257,6 +268,9 @@ template&lt;class DSClass&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classSOM.html#afb39c869d960e2b7d691d9cf99672eca">SOM</a>, and <a class="el" href="classFuzzyCMeans.html#a41f17c6b4134beb8079a160a00ca650e">FuzzyCMeans</a>.</p>
 
+<p>Definition at line <a class="el" href="base__algorithm_8h_source.html#l00106">106</a> of file <a class="el" href="base__algorithm_8h_source.html">base_algorithm.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    {</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        _os &lt;&lt; <span class="stringliteral">&quot;xmippBaseAlgo&quot;</span> &lt;&lt; std::endl; <span class="comment">// to identify it as an algorith</span></div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        _os &lt;&lt; <a class="code" href="classClassificationAlgorithm.html#a00786d519f617da6d6fc7f2329319b67">ID</a> &lt;&lt; std::endl;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    };</div><div class="ttc" id="classClassificationAlgorithm_html_a00786d519f617da6d6fc7f2329319b67"><div class="ttname"><a href="classClassificationAlgorithm.html#a00786d519f617da6d6fc7f2329319b67">ClassificationAlgorithm::ID</a></div><div class="ttdeci">std::string ID</div><div class="ttdef"><b>Definition:</b> <a href="base__algorithm_8h_source.html#l00132">base_algorithm.h:132</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="af5219ae33f219f8450cb15eb443e61a1"></a>
@@ -283,6 +297,9 @@ template&lt;class DSClass&gt; </div>
 </div><div class="memdoc">
 <p>Set ID (returns a const reference to the ID) </p>
 
+<p>Definition at line <a class="el" href="base__algorithm_8h_source.html#l00114">114</a> of file <a class="el" href="base__algorithm_8h_source.html">base_algorithm.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    {</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classClassificationAlgorithm.html#a00786d519f617da6d6fc7f2329319b67">ID</a>;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    };</div><div class="ttc" id="classClassificationAlgorithm_html_a00786d519f617da6d6fc7f2329319b67"><div class="ttname"><a href="classClassificationAlgorithm.html#a00786d519f617da6d6fc7f2329319b67">ClassificationAlgorithm::ID</a></div><div class="ttdeci">std::string ID</div><div class="ttdef"><b>Definition:</b> <a href="base__algorithm_8h_source.html#l00132">base_algorithm.h:132</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a9d9818d60cc746d5b6af25fdc6efff01"></a>
@@ -309,6 +326,9 @@ template&lt;class DSClass&gt; </div>
 </div><div class="memdoc">
 <p>Set ID (returns a non-const reference to the ID) </p>
 
+<p>Definition at line <a class="el" href="base__algorithm_8h_source.html#l00121">121</a> of file <a class="el" href="base__algorithm_8h_source.html">base_algorithm.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    {</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classClassificationAlgorithm.html#a00786d519f617da6d6fc7f2329319b67">ID</a>;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    };</div><div class="ttc" id="classClassificationAlgorithm_html_a00786d519f617da6d6fc7f2329319b67"><div class="ttname"><a href="classClassificationAlgorithm.html#a00786d519f617da6d6fc7f2329319b67">ClassificationAlgorithm::ID</a></div><div class="ttdeci">std::string ID</div><div class="ttdef"><b>Definition:</b> <a href="base__algorithm_8h_source.html#l00132">base_algorithm.h:132</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a95352f4706128424473dbe8f5e958bfd"></a>
@@ -336,6 +356,9 @@ template&lt;class DSClass&gt; </div>
 </div><div class="memdoc">
 <p>Defines Listener class </p>
 
+<p>Definition at line <a class="el" href="base__algorithm_8h_source.html#l00129">129</a> of file <a class="el" href="base__algorithm_8h_source.html">base_algorithm.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    {</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <a class="code" href="classClassificationAlgorithm.html#afb5e1dca55d78af9a0315f803ef11871">listener</a> = _listener;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    };</div><div class="ttc" id="classClassificationAlgorithm_html_afb5e1dca55d78af9a0315f803ef11871"><div class="ttname"><a href="classClassificationAlgorithm.html#afb5e1dca55d78af9a0315f803ef11871">ClassificationAlgorithm::listener</a></div><div class="ttdeci">BaseListener * listener</div><div class="ttdef"><b>Definition:</b> <a href="base__algorithm_8h_source.html#l00136">base_algorithm.h:136</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a4e9aee97ca717bd6faa2562edaeda89b"></a>
@@ -410,6 +433,8 @@ template&lt;class DSClass&gt; </div>
 </div><div class="memdoc">
 <p>Method to train the algorithm. Note that this method is pure virtual, so it ust be defined in every xmipp descendant class. Parameter: _ds Data structure to train Parameter: _examples A training set with the training examples. </p>
 
+<p>Definition at line <a class="el" href="base__algorithm_8h_source.html#l00081">81</a> of file <a class="el" href="base__algorithm_8h_source.html">base_algorithm.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        {};</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a66e59abf35e695ab925f2f874f845e59"></a>
@@ -447,6 +472,8 @@ template&lt;class DSClass&gt; </div>
 </div><div class="memdoc">
 <p>Method to train the algorithm. Note that this method is pure virtual, so it ust be defined in every xmipp descendant class. Parameter: _ds Data structure to train Parameter: _examples A training set with the training examples. </p>
 
+<p>Definition at line <a class="el" href="base__algorithm_8h_source.html#l00090">90</a> of file <a class="el" href="base__algorithm_8h_source.html">base_algorithm.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        {};</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -470,6 +497,8 @@ template&lt;class DSClass&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="base__algorithm_8h_source.html#l00132">132</a> of file <a class="el" href="base__algorithm_8h_source.html">base_algorithm.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="afb5e1dca55d78af9a0315f803ef11871"></a>
@@ -491,6 +520,8 @@ template&lt;class DSClass&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="base__algorithm_8h_source.html#l00136">136</a> of file <a class="el" href="base__algorithm_8h_source.html">base_algorithm.h</a>.</p>
 
 </div>
 </div>

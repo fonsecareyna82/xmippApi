@@ -137,7 +137,13 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ab33d2ea424c50beaf503cb125b3cd003 inherit pub_types_classtesting_1_1internal_1_1ParamGeneratorInterface"><td class="memItemLeft" align="right" valign="top">typedef T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1ParamGeneratorInterface.html#ab33d2ea424c50beaf503cb125b3cd003">ParamType</a></td></tr>
 <tr class="separator:ab33d2ea424c50beaf503cb125b3cd003 inherit pub_types_classtesting_1_1internal_1_1ParamGeneratorInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename T, typename IncrementT&gt;<br />
+class testing::internal::RangeGenerator&lt; T, IncrementT &gt;</h3>
+
+
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10117">10117</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a5b3b83223b9cada3569bcee729e0fdf3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -178,6 +184,8 @@ template&lt;typename T , typename IncrementT &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10119">10119</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l10120"></a><span class="lineno">10120</span>&#160;      : begin_(begin), end_(end),</div><div class="line"><a name="l10121"></a><span class="lineno">10121</span>&#160;        step_(step), end_index_(CalculateEndIndex(begin, end, step)) {}</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a680b80b06f471b5f93d8433609017021"></a>
@@ -203,6 +211,8 @@ template&lt;typename T , typename IncrementT &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10122">10122</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l10122"></a><span class="lineno">10122</span>&#160;{}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -231,6 +241,8 @@ template&lt;typename T , typename IncrementT &gt; </div>
 
 <p>Implements <a class="el" href="classtesting_1_1internal_1_1ParamGeneratorInterface.html#ae1de83b16fe9a53c67778a026c6a9569">testing::internal::ParamGeneratorInterface&lt; T &gt;</a>.</p>
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10124">10124</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l10124"></a><span class="lineno">10124</span>&#160;                                                   {</div><div class="line"><a name="l10125"></a><span class="lineno">10125</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Iterator(<span class="keyword">this</span>, begin_, 0, step_);</div><div class="line"><a name="l10126"></a><span class="lineno">10126</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a9af92f542fa637b38b82ab240d2d426e"></a>
@@ -258,6 +270,8 @@ template&lt;typename T , typename IncrementT &gt; </div>
 
 <p>Implements <a class="el" href="classtesting_1_1internal_1_1ParamGeneratorInterface.html#afa7211b74990e11d3fc7ad4e7113da4f">testing::internal::ParamGeneratorInterface&lt; T &gt;</a>.</p>
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10127">10127</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l10127"></a><span class="lineno">10127</span>&#160;                                                 {</div><div class="line"><a name="l10128"></a><span class="lineno">10128</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Iterator(<span class="keyword">this</span>, end_, end_index_, step_);</div><div class="line"><a name="l10129"></a><span class="lineno">10129</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

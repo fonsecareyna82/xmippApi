@@ -150,11 +150,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">catch</span> (<a class="code" href="classXmippError.html">XmippError</a> &amp;xe){\</div><div class="line">    __msg = xe.<a class="code" href="classXmippError.html#a200e506d6a2baf548d885479db9bf091">getMessage</a>();}\</div><div class="line">catch (std::exception&amp; e){\</div><div class="line">  __msg = e.what();}\</div><div class="line">catch (...){\</div><div class="line">  __msg = <span class="stringliteral">&quot;Unhandled exception&quot;</span>;}<a class="code" href="numerical__recipes_8cpp.html#aba441ebef6931295ba1cb63e2cca89a8">\</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#aba441ebef6931295ba1cb63e2cca89a8">if</a>(!__msg.empty()){<a class="code" href="xmipp__ExceptionsHandler_8h.html#a05b16244325c6ba6e4e9ca57661ef6e6">\</a></div><div class="line"><a class="code" href="xmipp__ExceptionsHandler_8h.html#a05b16244325c6ba6e4e9ca57661ef6e6">    handleXmippException</a>(env, __msg);}\</div><div class="ttc" id="classXmippError_html"><div class="ttname"><a href="classXmippError.html">XmippError</a></div><div class="ttdef"><b>Definition:</b> xmipp_error.h:248</div></div>
-<div class="ttc" id="classXmippError_html_a200e506d6a2baf548d885479db9bf091"><div class="ttname"><a href="classXmippError.html#a200e506d6a2baf548d885479db9bf091">XmippError::getMessage</a></div><div class="ttdeci">String getMessage() const </div><div class="ttdef"><b>Definition:</b> xmipp_error.cpp:78</div></div>
-<div class="ttc" id="xmipp__ExceptionsHandler_8h_html_a05b16244325c6ba6e4e9ca57661ef6e6"><div class="ttname"><a href="xmipp__ExceptionsHandler_8h.html#a05b16244325c6ba6e4e9ca57661ef6e6">handleXmippException</a></div><div class="ttdeci">void handleXmippException(JNIEnv *env, std::string message)</div><div class="ttdef"><b>Definition:</b> xmipp_ExceptionsHandler.cpp:4</div></div>
-<div class="ttc" id="numerical__recipes_8cpp_html_aba441ebef6931295ba1cb63e2cca89a8"><div class="ttname"><a href="numerical__recipes_8cpp.html#aba441ebef6931295ba1cb63e2cca89a8">if</a></div><div class="ttdeci">if(fabs(c[*nmax+*nmax *c_dim1])==0.e0)</div><div class="ttdef"><b>Definition:</b> numerical_recipes.cpp:2296</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">catch</span> (<a class="code" href="classXmippError.html">XmippError</a> &amp;xe){\</div><div class="line">    __msg = xe.<a class="code" href="classXmippError.html#a200e506d6a2baf548d885479db9bf091">getMessage</a>();}\</div><div class="line">catch (std::exception&amp; e){\</div><div class="line">  __msg = e.what();}\</div><div class="line">catch (...){\</div><div class="line">  __msg = <span class="stringliteral">&quot;Unhandled exception&quot;</span>;}<a class="code" href="numerical__recipes_8cpp.html#aba441ebef6931295ba1cb63e2cca89a8">\</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#aba441ebef6931295ba1cb63e2cca89a8">if</a>(!__msg.empty()){<a class="code" href="xmipp__ExceptionsHandler_8h.html#a05b16244325c6ba6e4e9ca57661ef6e6">\</a></div><div class="line"><a class="code" href="xmipp__ExceptionsHandler_8h.html#a05b16244325c6ba6e4e9ca57661ef6e6">    handleXmippException</a>(env, __msg);}\</div><div class="ttc" id="classXmippError_html"><div class="ttname"><a href="classXmippError.html">XmippError</a></div><div class="ttdef"><b>Definition:</b> <a href="xmipp__error_8h_source.html#l00248">xmipp_error.h:248</a></div></div>
+<div class="ttc" id="classXmippError_html_a200e506d6a2baf548d885479db9bf091"><div class="ttname"><a href="classXmippError.html#a200e506d6a2baf548d885479db9bf091">XmippError::getMessage</a></div><div class="ttdeci">String getMessage() const </div><div class="ttdef"><b>Definition:</b> <a href="xmipp__error_8cpp_source.html#l00078">xmipp_error.cpp:78</a></div></div>
+<div class="ttc" id="xmipp__ExceptionsHandler_8h_html_a05b16244325c6ba6e4e9ca57661ef6e6"><div class="ttname"><a href="xmipp__ExceptionsHandler_8h.html#a05b16244325c6ba6e4e9ca57661ef6e6">handleXmippException</a></div><div class="ttdeci">void handleXmippException(JNIEnv *env, std::string message)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__ExceptionsHandler_8cpp_source.html#l00004">xmipp_ExceptionsHandler.cpp:4</a></div></div>
+<div class="ttc" id="numerical__recipes_8cpp_html_aba441ebef6931295ba1cb63e2cca89a8"><div class="ttname"><a href="numerical__recipes_8cpp.html#aba441ebef6931295ba1cb63e2cca89a8">if</a></div><div class="ttdeci">if(fabs(c[*nmax+*nmax *c_dim1])==0.e0)</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02296">numerical_recipes.cpp:2296</a></div></div>
 </div><!-- fragment -->
+<p>Definition at line <a class="el" href="xmipp__ExceptionsHandler_8h_source.html#l00011">11</a> of file <a class="el" href="xmipp__ExceptionsHandler_8h_source.html">xmipp_ExceptionsHandler.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a62ad0201a6ff3445d678cf795c41f643"></a>
@@ -166,6 +168,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xmipp__ExceptionsHandler_8h_source.html#l00010">10</a> of file <a class="el" href="xmipp__ExceptionsHandler_8h_source.html">xmipp_ExceptionsHandler.h</a>.</p>
 
 </div>
 </div>
@@ -194,6 +198,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="xmipp__ExceptionsHandler_8cpp_source.html#l00004">4</a> of file <a class="el" href="xmipp__ExceptionsHandler_8cpp_source.html">xmipp_ExceptionsHandler.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;                                                          {</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    jclass newExcCls = env-&gt;FindClass(<span class="stringliteral">&quot;java/lang/Exception&quot;</span>);</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="keywordflow">if</span> (newExcCls != 0) {</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        env-&gt;ThrowNew(newExcCls, message.c_str());</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    }</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

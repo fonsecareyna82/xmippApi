@@ -140,7 +140,10 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a002c53a4d14cc3cae5d5cf9a98093d37"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogFilter.html#a002c53a4d14cc3cae5d5cf9a98093d37">c</a></td></tr>
 <tr class="separator:a002c53a4d14cc3cae5d5cf9a98093d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="filters_8h_source.html#l01524">1524</a> of file <a class="el" href="filters_8h_source.html">filters.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a278701cef85a50d0bf718cf89974ad29"></a>
 <div class="memitem">
 <div class="memproto">
@@ -166,6 +169,12 @@ Public Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classXmippFilter.html#aa1326516af8d944b94bcea584bc0137f">XmippFilter</a>.</p>
 
+<p>Definition at line <a class="el" href="filters_8cpp_source.html#l03503">3503</a> of file <a class="el" href="filters_8cpp_source.html">filters.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l03504"></a><span class="lineno"> 3504</span>&#160;{</div><div class="line"><a name="l03505"></a><span class="lineno"> 3505</span>&#160;        <a class="code" href="group__Filters.html#ga3fa8d451a013398c53c7b655b4220c83">logFilter</a>(img, <a class="code" href="classLogFilter.html#af5de697215276c5d51fd0254d38e7861">a</a>,<a class="code" href="classLogFilter.html#a22095af63c23edc5a6a183ea1d365c7c">b</a>,<a class="code" href="classLogFilter.html#a002c53a4d14cc3cae5d5cf9a98093d37">c</a>);</div><div class="line"><a name="l03506"></a><span class="lineno"> 3506</span>&#160;}</div><div class="ttc" id="classLogFilter_html_a002c53a4d14cc3cae5d5cf9a98093d37"><div class="ttname"><a href="classLogFilter.html#a002c53a4d14cc3cae5d5cf9a98093d37">LogFilter::c</a></div><div class="ttdeci">double c</div><div class="ttdef"><b>Definition:</b> <a href="filters_8h_source.html#l01530">filters.h:1530</a></div></div>
+<div class="ttc" id="classLogFilter_html_a22095af63c23edc5a6a183ea1d365c7c"><div class="ttname"><a href="classLogFilter.html#a22095af63c23edc5a6a183ea1d365c7c">LogFilter::b</a></div><div class="ttdeci">double b</div><div class="ttdef"><b>Definition:</b> <a href="filters_8h_source.html#l01530">filters.h:1530</a></div></div>
+<div class="ttc" id="group__Filters_html_ga3fa8d451a013398c53c7b655b4220c83"><div class="ttname"><a href="group__Filters.html#ga3fa8d451a013398c53c7b655b4220c83">logFilter</a></div><div class="ttdeci">void logFilter(MultidimArray&lt; T &gt; &amp;V, double a, double b, double c)</div><div class="ttdef"><b>Definition:</b> <a href="filters_8h_source.html#l01453">filters.h:1453</a></div></div>
+<div class="ttc" id="classLogFilter_html_af5de697215276c5d51fd0254d38e7861"><div class="ttname"><a href="classLogFilter.html#af5de697215276c5d51fd0254d38e7861">LogFilter::a</a></div><div class="ttdeci">double a</div><div class="ttdef"><b>Definition:</b> <a href="filters_8h_source.html#l01530">filters.h:1530</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ab1fcc940f8e7b134ff99c7494e4a35ca"></a>
@@ -191,6 +200,9 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the parameters for use inside an Xmipp program </p>
 
+<p>Definition at line <a class="el" href="filters_8cpp_source.html#l03485">3485</a> of file <a class="el" href="filters_8cpp_source.html">filters.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l03486"></a><span class="lineno"> 3486</span>&#160;{</div><div class="line"><a name="l03487"></a><span class="lineno"> 3487</span>&#160;    program-&gt;<a class="code" href="classXmippProgram.html#aaeb37f0bac83f5d2a605aaa0e5c4b6ef">addParamsLine</a>(<span class="stringliteral">&quot;== Log filter (for scanners) uses equation fa-fb*log(x+fc) ==&quot;</span>);</div><div class="line"><a name="l03488"></a><span class="lineno"> 3488</span>&#160;    program-&gt;<a class="code" href="classXmippProgram.html#aaeb37f0bac83f5d2a605aaa0e5c4b6ef">addParamsLine</a>(<span class="stringliteral">&quot;  [--log]&quot;</span>);</div><div class="line"><a name="l03489"></a><span class="lineno"> 3489</span>&#160;    program-&gt;<a class="code" href="classXmippProgram.html#aaeb37f0bac83f5d2a605aaa0e5c4b6ef">addParamsLine</a>(<span class="stringliteral">&quot;  [--fa &lt;a&gt;]&quot;</span>);</div><div class="line"><a name="l03490"></a><span class="lineno"> 3490</span>&#160;    program-&gt;<a class="code" href="classXmippProgram.html#aaeb37f0bac83f5d2a605aaa0e5c4b6ef">addParamsLine</a>(<span class="stringliteral">&quot;  [--fb &lt;b&gt;]&quot;</span>);</div><div class="line"><a name="l03491"></a><span class="lineno"> 3491</span>&#160;    program-&gt;<a class="code" href="classXmippProgram.html#aaeb37f0bac83f5d2a605aaa0e5c4b6ef">addParamsLine</a>(<span class="stringliteral">&quot;  [--fc &lt;c&gt;]&quot;</span>);</div><div class="line"><a name="l03492"></a><span class="lineno"> 3492</span>&#160;}</div><div class="ttc" id="classXmippProgram_html_aaeb37f0bac83f5d2a605aaa0e5c4b6ef"><div class="ttname"><a href="classXmippProgram.html#aaeb37f0bac83f5d2a605aaa0e5c4b6ef">XmippProgram::addParamsLine</a></div><div class="ttdeci">void addParamsLine(const String &amp;line)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8cpp_source.html#l00361">xmipp_program.cpp:361</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="afeb50528ff376dc5b304f54b3a99fcd2"></a>
@@ -218,6 +230,12 @@ Public Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classXmippFilter.html#a69f1a84112f275da861b60d7c2e9340e">XmippFilter</a>.</p>
 
+<p>Definition at line <a class="el" href="filters_8cpp_source.html#l03495">3495</a> of file <a class="el" href="filters_8cpp_source.html">filters.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l03496"></a><span class="lineno"> 3496</span>&#160;{</div><div class="line"><a name="l03497"></a><span class="lineno"> 3497</span>&#160;    <a class="code" href="classLogFilter.html#af5de697215276c5d51fd0254d38e7861">a</a> = program-&gt;<a class="code" href="classXmippProgram.html#a552e1ea4a84576d9149b965d9edb6277">getDoubleParam</a>(<span class="stringliteral">&quot;--fa&quot;</span>);</div><div class="line"><a name="l03498"></a><span class="lineno"> 3498</span>&#160;    <a class="code" href="classLogFilter.html#a22095af63c23edc5a6a183ea1d365c7c">b</a> = program-&gt;<a class="code" href="classXmippProgram.html#a552e1ea4a84576d9149b965d9edb6277">getDoubleParam</a>(<span class="stringliteral">&quot;--fb&quot;</span>);</div><div class="line"><a name="l03499"></a><span class="lineno"> 3499</span>&#160;    <a class="code" href="classLogFilter.html#a002c53a4d14cc3cae5d5cf9a98093d37">c</a> = program-&gt;<a class="code" href="classXmippProgram.html#a552e1ea4a84576d9149b965d9edb6277">getDoubleParam</a>(<span class="stringliteral">&quot;--fc&quot;</span>);</div><div class="line"><a name="l03500"></a><span class="lineno"> 3500</span>&#160;}</div><div class="ttc" id="classXmippProgram_html_a552e1ea4a84576d9149b965d9edb6277"><div class="ttname"><a href="classXmippProgram.html#a552e1ea4a84576d9149b965d9edb6277">XmippProgram::getDoubleParam</a></div><div class="ttdeci">double getDoubleParam(const char *param, int arg=0)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8cpp_source.html#l00397">xmipp_program.cpp:397</a></div></div>
+<div class="ttc" id="classLogFilter_html_a002c53a4d14cc3cae5d5cf9a98093d37"><div class="ttname"><a href="classLogFilter.html#a002c53a4d14cc3cae5d5cf9a98093d37">LogFilter::c</a></div><div class="ttdeci">double c</div><div class="ttdef"><b>Definition:</b> <a href="filters_8h_source.html#l01530">filters.h:1530</a></div></div>
+<div class="ttc" id="classLogFilter_html_a22095af63c23edc5a6a183ea1d365c7c"><div class="ttname"><a href="classLogFilter.html#a22095af63c23edc5a6a183ea1d365c7c">LogFilter::b</a></div><div class="ttdeci">double b</div><div class="ttdef"><b>Definition:</b> <a href="filters_8h_source.html#l01530">filters.h:1530</a></div></div>
+<div class="ttc" id="classLogFilter_html_af5de697215276c5d51fd0254d38e7861"><div class="ttname"><a href="classLogFilter.html#af5de697215276c5d51fd0254d38e7861">LogFilter::a</a></div><div class="ttdeci">double a</div><div class="ttdef"><b>Definition:</b> <a href="filters_8h_source.html#l01530">filters.h:1530</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -232,6 +250,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Apply filter on bad pixels </p>
 
+<p>Definition at line <a class="el" href="filters_8h_source.html#l01530">1530</a> of file <a class="el" href="filters_8h_source.html">filters.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a22095af63c23edc5a6a183ea1d365c7c"></a>
@@ -243,6 +263,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="filters_8h_source.html#l01530">1530</a> of file <a class="el" href="filters_8h_source.html">filters.h</a>.</p>
 
 </div>
 </div>
@@ -256,11 +278,13 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="filters_8h_source.html#l01530">1530</a> of file <a class="el" href="filters_8h_source.html">filters.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/data/<a class="el" href="filters_8h_source.html">filters.h</a></li>
-<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/data/<a class="el" href="filters_8cpp.html">filters.cpp</a></li>
+<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/data/<a class="el" href="filters_8cpp_source.html">filters.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

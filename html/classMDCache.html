@@ -119,6 +119,8 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class to store some cached sql statements. </p>
+
+<p>Definition at line <a class="el" href="metadata__sql_8h_source.html#l00681">681</a> of file <a class="el" href="metadata__sql_8h_source.html">metadata_sql.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9d04e5e7be56ab1f7ec51e08c5fcd391"></a>
 <div class="memitem">
@@ -133,6 +135,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="metadata__sql_8cpp_source.html#l01610">1610</a> of file <a class="el" href="metadata__sql_8cpp_source.html">metadata_sql.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;{</div><div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160;    this-&gt;<a class="code" href="classMDCache.html#a014d586878bafd86b9e26f6969ea0f55">addRowStmt</a> = NULL;</div><div class="line"><a name="l01613"></a><span class="lineno"> 1613</span>&#160;    this-&gt;<a class="code" href="classMDCache.html#a2e7e82753942381490eb60038c4b95b7">iterStmt</a> = NULL;</div><div class="line"><a name="l01614"></a><span class="lineno"> 1614</span>&#160;}</div><div class="ttc" id="classMDCache_html_a2e7e82753942381490eb60038c4b95b7"><div class="ttname"><a href="classMDCache.html#a2e7e82753942381490eb60038c4b95b7">MDCache::iterStmt</a></div><div class="ttdeci">sqlite3_stmt * iterStmt</div><div class="ttdef"><b>Definition:</b> <a href="metadata__sql_8h_source.html#l00684">metadata_sql.h:684</a></div></div>
+<div class="ttc" id="classMDCache_html_a014d586878bafd86b9e26f6969ea0f55"><div class="ttname"><a href="classMDCache.html#a014d586878bafd86b9e26f6969ea0f55">MDCache::addRowStmt</a></div><div class="ttdeci">sqlite3_stmt * addRowStmt</div><div class="ttdef"><b>Definition:</b> <a href="metadata__sql_8h_source.html#l00687">metadata_sql.h:687</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a084a3a60275a575e8b63bf8977cca02a"></a>
@@ -148,6 +154,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="metadata__sql_8cpp_source.html#l01616">1616</a> of file <a class="el" href="metadata__sql_8cpp_source.html">metadata_sql.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01617"></a><span class="lineno"> 1617</span>&#160;{</div><div class="line"><a name="l01618"></a><span class="lineno"> 1618</span>&#160;    <a class="code" href="classMDCache.html#afe4d81489a63c5e067a12cf2f4e827cc">clear</a>();</div><div class="line"><a name="l01619"></a><span class="lineno"> 1619</span>&#160;}</div><div class="ttc" id="classMDCache_html_afe4d81489a63c5e067a12cf2f4e827cc"><div class="ttname"><a href="classMDCache.html#afe4d81489a63c5e067a12cf2f4e827cc">MDCache::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> <a href="metadata__sql_8cpp_source.html#l01621">metadata_sql.cpp:1621</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -164,6 +173,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="metadata__sql_8cpp_source.html#l01621">1621</a> of file <a class="el" href="metadata__sql_8cpp_source.html">metadata_sql.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01622"></a><span class="lineno"> 1622</span>&#160;{</div><div class="line"><a name="l01623"></a><span class="lineno"> 1623</span>&#160;    <span class="comment">//Clear cached statements</span></div><div class="line"><a name="l01624"></a><span class="lineno"> 1624</span>&#160;    std::map&lt;MDLabel, sqlite3_stmt*&gt;::iterator it;</div><div class="line"><a name="l01625"></a><span class="lineno"> 1625</span>&#160;    <span class="comment">//FIXME: This is a bit dirty here...should be moved to MDSQl</span></div><div class="line"><a name="l01626"></a><span class="lineno"> 1626</span>&#160;    <span class="keywordflow">for</span> (it = <a class="code" href="classMDCache.html#a6c91d4fc5b6ca10bc058d3d493bb189a">setValueCache</a>.begin(); it != <a class="code" href="classMDCache.html#a6c91d4fc5b6ca10bc058d3d493bb189a">setValueCache</a>.end(); it++)</div><div class="line"><a name="l01627"></a><span class="lineno"> 1627</span>&#160;        sqlite3_finalize(it-&gt;second);</div><div class="line"><a name="l01628"></a><span class="lineno"> 1628</span>&#160;    <a class="code" href="classMDCache.html#a6c91d4fc5b6ca10bc058d3d493bb189a">setValueCache</a>.clear();</div><div class="line"><a name="l01629"></a><span class="lineno"> 1629</span>&#160;</div><div class="line"><a name="l01630"></a><span class="lineno"> 1630</span>&#160;    <span class="keywordflow">for</span> (it = <a class="code" href="classMDCache.html#a0ca87b0f6c925104a0f119ee5e4dbb34">getValueCache</a>.begin(); it != <a class="code" href="classMDCache.html#a0ca87b0f6c925104a0f119ee5e4dbb34">getValueCache</a>.end(); it++)</div><div class="line"><a name="l01631"></a><span class="lineno"> 1631</span>&#160;        sqlite3_finalize(it-&gt;second);</div><div class="line"><a name="l01632"></a><span class="lineno"> 1632</span>&#160;    <a class="code" href="classMDCache.html#a0ca87b0f6c925104a0f119ee5e4dbb34">getValueCache</a>.clear();</div><div class="line"><a name="l01633"></a><span class="lineno"> 1633</span>&#160;</div><div class="line"><a name="l01634"></a><span class="lineno"> 1634</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classMDCache.html#a2e7e82753942381490eb60038c4b95b7">iterStmt</a> != NULL)</div><div class="line"><a name="l01635"></a><span class="lineno"> 1635</span>&#160;    {</div><div class="line"><a name="l01636"></a><span class="lineno"> 1636</span>&#160;        sqlite3_finalize(<a class="code" href="classMDCache.html#a2e7e82753942381490eb60038c4b95b7">iterStmt</a>);</div><div class="line"><a name="l01637"></a><span class="lineno"> 1637</span>&#160;        <a class="code" href="classMDCache.html#a2e7e82753942381490eb60038c4b95b7">iterStmt</a> = NULL;</div><div class="line"><a name="l01638"></a><span class="lineno"> 1638</span>&#160;    }</div><div class="line"><a name="l01639"></a><span class="lineno"> 1639</span>&#160;</div><div class="line"><a name="l01640"></a><span class="lineno"> 1640</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classMDCache.html#a014d586878bafd86b9e26f6969ea0f55">addRowStmt</a> != NULL)</div><div class="line"><a name="l01641"></a><span class="lineno"> 1641</span>&#160;    {</div><div class="line"><a name="l01642"></a><span class="lineno"> 1642</span>&#160;        sqlite3_finalize(<a class="code" href="classMDCache.html#a014d586878bafd86b9e26f6969ea0f55">addRowStmt</a>);</div><div class="line"><a name="l01643"></a><span class="lineno"> 1643</span>&#160;        <a class="code" href="classMDCache.html#a014d586878bafd86b9e26f6969ea0f55">addRowStmt</a> = NULL;</div><div class="line"><a name="l01644"></a><span class="lineno"> 1644</span>&#160;    }</div><div class="line"><a name="l01645"></a><span class="lineno"> 1645</span>&#160;}</div><div class="ttc" id="classMDCache_html_a6c91d4fc5b6ca10bc058d3d493bb189a"><div class="ttname"><a href="classMDCache.html#a6c91d4fc5b6ca10bc058d3d493bb189a">MDCache::setValueCache</a></div><div class="ttdeci">std::map&lt; MDLabel, sqlite3_stmt * &gt; setValueCache</div><div class="ttdef"><b>Definition:</b> <a href="metadata__sql_8h_source.html#l00686">metadata_sql.h:686</a></div></div>
+<div class="ttc" id="classMDCache_html_a0ca87b0f6c925104a0f119ee5e4dbb34"><div class="ttname"><a href="classMDCache.html#a0ca87b0f6c925104a0f119ee5e4dbb34">MDCache::getValueCache</a></div><div class="ttdeci">std::map&lt; MDLabel, sqlite3_stmt * &gt; getValueCache</div><div class="ttdef"><b>Definition:</b> <a href="metadata__sql_8h_source.html#l00685">metadata_sql.h:685</a></div></div>
+<div class="ttc" id="classMDCache_html_a2e7e82753942381490eb60038c4b95b7"><div class="ttname"><a href="classMDCache.html#a2e7e82753942381490eb60038c4b95b7">MDCache::iterStmt</a></div><div class="ttdeci">sqlite3_stmt * iterStmt</div><div class="ttdef"><b>Definition:</b> <a href="metadata__sql_8h_source.html#l00684">metadata_sql.h:684</a></div></div>
+<div class="ttc" id="classMDCache_html_a014d586878bafd86b9e26f6969ea0f55"><div class="ttname"><a href="classMDCache.html#a014d586878bafd86b9e26f6969ea0f55">MDCache::addRowStmt</a></div><div class="ttdeci">sqlite3_stmt * addRowStmt</div><div class="ttdef"><b>Definition:</b> <a href="metadata__sql_8h_source.html#l00687">metadata_sql.h:687</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -177,6 +192,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="metadata__sql_8h_source.html#l00687">687</a> of file <a class="el" href="metadata__sql_8h_source.html">metadata_sql.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a0ca87b0f6c925104a0f119ee5e4dbb34"></a>
@@ -188,6 +205,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="metadata__sql_8h_source.html#l00685">685</a> of file <a class="el" href="metadata__sql_8h_source.html">metadata_sql.h</a>.</p>
 
 </div>
 </div>
@@ -201,6 +220,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="metadata__sql_8h_source.html#l00684">684</a> of file <a class="el" href="metadata__sql_8h_source.html">metadata_sql.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a6c91d4fc5b6ca10bc058d3d493bb189a"></a>
@@ -213,11 +234,13 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="metadata__sql_8h_source.html#l00686">686</a> of file <a class="el" href="metadata__sql_8h_source.html">metadata_sql.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/<a class="el" href="metadata__sql_8h_source.html">metadata_sql.h</a></li>
-<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/<a class="el" href="metadata__sql_8cpp.html">metadata_sql.cpp</a></li>
+<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/<a class="el" href="metadata__sql_8cpp_source.html">metadata_sql.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

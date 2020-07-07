@@ -131,6 +131,8 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Project program Side information. This class contains side necessary information for the Project program. This information can be obtained from the parameters and is basically the Xmipp volume or phantom description plus a flag saying which of the two is valid. </p>
+
+<p>Definition at line <a class="el" href="project__xray_8h_source.html#l00058">58</a> of file <a class="el" href="project__xray_8h_source.html">project_xray.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a56931b735e03304c0e17bbd59b53aff7"></a>
 <div class="memitem">
@@ -147,6 +149,10 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Produce Project Side information. This function produce the side information from the project program parameters. Basically it loads the phantom. </p>
 
+<p>Definition at line <a class="el" href="project__xray_8cpp_source.html#l00429">429</a> of file <a class="el" href="project__xray_8cpp_source.html">project_xray.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;{</div><div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <a class="code" href="classXrayProjPhantom.html#a56931b735e03304c0e17bbd59b53aff7">read</a>(prm.<a class="code" href="classParametersProjectionTomography.html#a36b7ac00e5721d9d38b1902845cb1304">fnPhantom</a>);</div><div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;}</div><div class="ttc" id="classXrayProjPhantom_html_a56931b735e03304c0e17bbd59b53aff7"><div class="ttname"><a href="classXrayProjPhantom.html#a56931b735e03304c0e17bbd59b53aff7">XrayProjPhantom::read</a></div><div class="ttdeci">void read(const ParametersProjectionTomography &amp;prm)</div><div class="ttdef"><b>Definition:</b> <a href="project__xray_8cpp_source.html#l00429">project_xray.cpp:429</a></div></div>
+<div class="ttc" id="classParametersProjectionTomography_html_a36b7ac00e5721d9d38b1902845cb1304"><div class="ttname"><a href="classParametersProjectionTomography.html#a36b7ac00e5721d9d38b1902845cb1304">ParametersProjectionTomography::fnPhantom</a></div><div class="ttdeci">FileName fnPhantom</div><div class="ttdef"><b>Definition:</b> <a href="projection_8h_source.html#l00050">projection.h:50</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a43397495661d5fd2ec2c41f1332a6d4c"></a>
@@ -170,6 +176,10 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="project__xray_8cpp_source.html#l00435">435</a> of file <a class="el" href="project__xray_8cpp_source.html">project_xray.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;{</div><div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <span class="comment">//    iniVol.readMapped(prm.fnPhantom);</span></div><div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <a class="code" href="classXrayProjPhantom.html#a19e68df0a96027d58c0ae534f75796c2">iniVol</a>.<a class="code" href="classImageBase.html#a88636b7a7bd4e0e454877e691ee2da84">read</a>(fnVol);</div><div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <span class="comment">//    MULTIDIM_ARRAY(iniVol).setXmippOrigin();</span></div><div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <span class="comment">//    rotVol.resizeNoCopy(MULTIDIM_ARRAY(iniVol));</span></div><div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;</div><div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;}</div><div class="ttc" id="classXrayProjPhantom_html_a19e68df0a96027d58c0ae534f75796c2"><div class="ttname"><a href="classXrayProjPhantom.html#a19e68df0a96027d58c0ae534f75796c2">XrayProjPhantom::iniVol</a></div><div class="ttdeci">Image&lt; double &gt; iniVol</div><div class="ttdoc">Phantom Xmipp volume. </div><div class="ttdef"><b>Definition:</b> <a href="project__xray_8h_source.html#l00062">project_xray.h:62</a></div></div>
+<div class="ttc" id="classImageBase_html_a88636b7a7bd4e0e454877e691ee2da84"><div class="ttname"><a href="classImageBase.html#a88636b7a7bd4e0e454877e691ee2da84">ImageBase::read</a></div><div class="ttdeci">int read(const FileName &amp;name, DataMode datamode=DATA, size_t select_img=ALL_IMAGES, bool mapData=false, int mode=WRITE_READONLY)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__image__base_8cpp_source.html#l00061">xmipp_image_base.cpp:61</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -185,6 +195,8 @@ Public Attributes</h2></td></tr>
 
 <p><a class="el" href="classPhantom.html">Phantom</a> Xmipp volume. </p>
 
+<p>Definition at line <a class="el" href="project__xray_8h_source.html#l00062">62</a> of file <a class="el" href="project__xray_8h_source.html">project_xray.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ac4ab50bceddc5c917fd30872aa6be488"></a>
@@ -197,11 +209,13 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="project__xray_8h_source.html#l00063">63</a> of file <a class="el" href="project__xray_8h_source.html">project_xray.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/reconstruction/<a class="el" href="project__xray_8h_source.html">project_xray.h</a></li>
-<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/reconstruction/<a class="el" href="project__xray_8cpp.html">project_xray.cpp</a></li>
+<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/reconstruction/<a class="el" href="project__xray_8cpp_source.html">project_xray.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

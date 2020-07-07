@@ -138,7 +138,13 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ab33d2ea424c50beaf503cb125b3cd003 inherit pub_types_classtesting_1_1internal_1_1ParamGeneratorInterface"><td class="memItemLeft" align="right" valign="top">typedef T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1ParamGeneratorInterface.html#ab33d2ea424c50beaf503cb125b3cd003">ParamType</a></td></tr>
 <tr class="separator:ab33d2ea424c50beaf503cb125b3cd003 inherit pub_types_classtesting_1_1internal_1_1ParamGeneratorInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+class testing::internal::ValuesInIteratorRangeGenerator&lt; T &gt;</h3>
+
+
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10202">10202</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a8b30f6028bc5739bbd7c24b0f0e409f7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -175,6 +181,8 @@ template&lt;typename ForwardIterator &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10205">10205</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l10206"></a><span class="lineno">10206</span>&#160;      : container_(begin, end) {}</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ab921d9574baa83a8d081f05aa2ebeaa4"></a>
@@ -200,6 +208,8 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10207">10207</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l10207"></a><span class="lineno">10207</span>&#160;{}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -228,6 +238,8 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="classtesting_1_1internal_1_1ParamGeneratorInterface.html#ae1de83b16fe9a53c67778a026c6a9569">testing::internal::ParamGeneratorInterface&lt; T &gt;</a>.</p>
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10209">10209</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l10209"></a><span class="lineno">10209</span>&#160;                                                   {</div><div class="line"><a name="l10210"></a><span class="lineno">10210</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Iterator(<span class="keyword">this</span>, container_.begin());</div><div class="line"><a name="l10211"></a><span class="lineno">10211</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aa838affa584afa9f91c44f9d1c0509c4"></a>
@@ -255,6 +267,8 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="classtesting_1_1internal_1_1ParamGeneratorInterface.html#afa7211b74990e11d3fc7ad4e7113da4f">testing::internal::ParamGeneratorInterface&lt; T &gt;</a>.</p>
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10212">10212</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l10212"></a><span class="lineno">10212</span>&#160;                                                 {</div><div class="line"><a name="l10213"></a><span class="lineno">10213</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Iterator(<span class="keyword">this</span>, container_.end());</div><div class="line"><a name="l10214"></a><span class="lineno">10214</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

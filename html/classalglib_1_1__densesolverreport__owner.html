@@ -137,7 +137,10 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a94ef991286381ac00ad9b3e1e1e3f80d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structalglib__impl_1_1densesolverreport.html">alglib_impl::densesolverreport</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalglib_1_1__densesolverreport__owner.html#a94ef991286381ac00ad9b3e1e1e3f80d">p_struct</a></td></tr>
 <tr class="separator:a94ef991286381ac00ad9b3e1e1e3f80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="solvers_8h_source.html#l00200">200</a> of file <a class="el" href="solvers_8h_source.html">solvers.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="acf9ea9756a7b8821aadb1e289f22cec0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -151,6 +154,13 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="solvers_8cpp_source.html#l00043">43</a> of file <a class="el" href="solvers_8cpp_source.html">solvers.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classalglib_1_1__densesolverreport__owner.html#a94ef991286381ac00ad9b3e1e1e3f80d">p_struct</a> = (<a class="code" href="structalglib__impl_1_1densesolverreport.html">alglib_impl::densesolverreport</a>*)<a class="code" href="namespacealglib__impl.html#ae9734678725f1961bd032954a6bba1d8">alglib_impl::ae_malloc</a>(<span class="keyword">sizeof</span>(<a class="code" href="structalglib__impl_1_1densesolverreport.html">alglib_impl::densesolverreport</a>), NULL);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">if</span>( <a class="code" href="classalglib_1_1__densesolverreport__owner.html#a94ef991286381ac00ad9b3e1e1e3f80d">p_struct</a>==NULL )</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">if</span>( !<a class="code" href="namespacealglib__impl.html#a73736ba9362005d5136fee3d6a4cb4f0">alglib_impl::_densesolverreport_init</a>(<a class="code" href="classalglib_1_1__densesolverreport__owner.html#a94ef991286381ac00ad9b3e1e1e3f80d">p_struct</a>, NULL, <a class="code" href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a>) )</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div><div class="ttc" id="structalglib__impl_1_1densesolverreport_html"><div class="ttname"><a href="structalglib__impl_1_1densesolverreport.html">alglib_impl::densesolverreport</a></div><div class="ttdef"><b>Definition:</b> <a href="solvers_8h_source.html#l00033">solvers.h:33</a></div></div>
+<div class="ttc" id="classalglib_1_1__densesolverreport__owner_html_a94ef991286381ac00ad9b3e1e1e3f80d"><div class="ttname"><a href="classalglib_1_1__densesolverreport__owner.html#a94ef991286381ac00ad9b3e1e1e3f80d">alglib::_densesolverreport_owner::p_struct</a></div><div class="ttdeci">alglib_impl::densesolverreport * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="solvers_8h_source.html#l00210">solvers.h:210</a></div></div>
+<div class="ttc" id="ap_8h_html_a0656913c5b7bc535cf5347662e769bef"><div class="ttname"><a href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a></div><div class="ttdeci">#define ae_false</div><div class="ttdef"><b>Definition:</b> <a href="ap_8h_source.html#l00196">ap.h:196</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_ae9734678725f1961bd032954a6bba1d8"><div class="ttname"><a href="namespacealglib__impl.html#ae9734678725f1961bd032954a6bba1d8">alglib_impl::ae_malloc</a></div><div class="ttdeci">void * ae_malloc(size_t size, ae_state *state)</div><div class="ttdef"><b>Definition:</b> <a href="ap_8cpp_source.html#l00222">ap.cpp:222</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_a73736ba9362005d5136fee3d6a4cb4f0"><div class="ttname"><a href="namespacealglib__impl.html#a73736ba9362005d5136fee3d6a4cb4f0">alglib_impl::_densesolverreport_init</a></div><div class="ttdeci">ae_bool _densesolverreport_init(void *_p, ae_state *_state, ae_bool make_automatic)</div><div class="ttdef"><b>Definition:</b> <a href="solvers_8cpp_source.html#l05581">solvers.cpp:5581</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="abe49b01cdb6cc378f7d6c2d1569c9675"></a>
@@ -167,6 +177,13 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="solvers_8cpp_source.html#l00052">52</a> of file <a class="el" href="solvers_8cpp_source.html">solvers.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classalglib_1_1__densesolverreport__owner.html#a94ef991286381ac00ad9b3e1e1e3f80d">p_struct</a> = (<a class="code" href="structalglib__impl_1_1densesolverreport.html">alglib_impl::densesolverreport</a>*)<a class="code" href="namespacealglib__impl.html#ae9734678725f1961bd032954a6bba1d8">alglib_impl::ae_malloc</a>(<span class="keyword">sizeof</span>(<a class="code" href="structalglib__impl_1_1densesolverreport.html">alglib_impl::densesolverreport</a>), NULL);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">if</span>( <a class="code" href="classalglib_1_1__densesolverreport__owner.html#a94ef991286381ac00ad9b3e1e1e3f80d">p_struct</a>==NULL )</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span>( !<a class="code" href="namespacealglib__impl.html#a11ed175c73fb6d27607598e3b8ab1c55">alglib_impl::_densesolverreport_init_copy</a>(<a class="code" href="classalglib_1_1__densesolverreport__owner.html#a94ef991286381ac00ad9b3e1e1e3f80d">p_struct</a>, const_cast&lt;alglib_impl::densesolverreport*&gt;(rhs.p_struct), NULL, <a class="code" href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a>) )</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div><div class="ttc" id="structalglib__impl_1_1densesolverreport_html"><div class="ttname"><a href="structalglib__impl_1_1densesolverreport.html">alglib_impl::densesolverreport</a></div><div class="ttdef"><b>Definition:</b> <a href="solvers_8h_source.html#l00033">solvers.h:33</a></div></div>
+<div class="ttc" id="classalglib_1_1__densesolverreport__owner_html_a94ef991286381ac00ad9b3e1e1e3f80d"><div class="ttname"><a href="classalglib_1_1__densesolverreport__owner.html#a94ef991286381ac00ad9b3e1e1e3f80d">alglib::_densesolverreport_owner::p_struct</a></div><div class="ttdeci">alglib_impl::densesolverreport * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="solvers_8h_source.html#l00210">solvers.h:210</a></div></div>
+<div class="ttc" id="ap_8h_html_a0656913c5b7bc535cf5347662e769bef"><div class="ttname"><a href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a></div><div class="ttdeci">#define ae_false</div><div class="ttdef"><b>Definition:</b> <a href="ap_8h_source.html#l00196">ap.h:196</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_ae9734678725f1961bd032954a6bba1d8"><div class="ttname"><a href="namespacealglib__impl.html#ae9734678725f1961bd032954a6bba1d8">alglib_impl::ae_malloc</a></div><div class="ttdeci">void * ae_malloc(size_t size, ae_state *state)</div><div class="ttdef"><b>Definition:</b> <a href="ap_8cpp_source.html#l00222">ap.cpp:222</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_a11ed175c73fb6d27607598e3b8ab1c55"><div class="ttname"><a href="namespacealglib__impl.html#a11ed175c73fb6d27607598e3b8ab1c55">alglib_impl::_densesolverreport_init_copy</a></div><div class="ttdeci">ae_bool _densesolverreport_init_copy(void *_dst, void *_src, ae_state *_state, ae_bool make_automatic)</div><div class="ttdef"><b>Definition:</b> <a href="solvers_8cpp_source.html#l05589">solvers.cpp:5589</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a20b931fe082d83e78645fcb4668e3251"></a>
@@ -190,6 +207,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="solvers_8cpp_source.html#l00071">71</a> of file <a class="el" href="solvers_8cpp_source.html">solvers.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="namespacealglib__impl.html#aee4255506ef0ed0a8f5810b6a0f0709e">alglib_impl::_densesolverreport_clear</a>(<a class="code" href="classalglib_1_1__densesolverreport__owner.html#a94ef991286381ac00ad9b3e1e1e3f80d">p_struct</a>);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="namespacealglib__impl.html#a204f9cd46dfc1cc765720c2b5d473128">ae_free</a>(<a class="code" href="classalglib_1_1__densesolverreport__owner.html#a94ef991286381ac00ad9b3e1e1e3f80d">p_struct</a>);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div><div class="ttc" id="classalglib_1_1__densesolverreport__owner_html_a94ef991286381ac00ad9b3e1e1e3f80d"><div class="ttname"><a href="classalglib_1_1__densesolverreport__owner.html#a94ef991286381ac00ad9b3e1e1e3f80d">alglib::_densesolverreport_owner::p_struct</a></div><div class="ttdeci">alglib_impl::densesolverreport * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="solvers_8h_source.html#l00210">solvers.h:210</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_aee4255506ef0ed0a8f5810b6a0f0709e"><div class="ttname"><a href="namespacealglib__impl.html#aee4255506ef0ed0a8f5810b6a0f0709e">alglib_impl::_densesolverreport_clear</a></div><div class="ttdeci">void _densesolverreport_clear(void *_p)</div><div class="ttdef"><b>Definition:</b> <a href="solvers_8cpp_source.html#l05599">solvers.cpp:5599</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_a204f9cd46dfc1cc765720c2b5d473128"><div class="ttname"><a href="namespacealglib__impl.html#a204f9cd46dfc1cc765720c2b5d473128">alglib_impl::ae_free</a></div><div class="ttdeci">void ae_free(void *p)</div><div class="ttdef"><b>Definition:</b> <a href="ap_8cpp_source.html#l00237">ap.cpp:237</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -206,6 +228,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="solvers_8cpp_source.html#l00077">77</a> of file <a class="el" href="solvers_8cpp_source.html">solvers.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classalglib_1_1__densesolverreport__owner.html#a94ef991286381ac00ad9b3e1e1e3f80d">p_struct</a>;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div><div class="ttc" id="classalglib_1_1__densesolverreport__owner_html_a94ef991286381ac00ad9b3e1e1e3f80d"><div class="ttname"><a href="classalglib_1_1__densesolverreport__owner.html#a94ef991286381ac00ad9b3e1e1e3f80d">alglib::_densesolverreport_owner::p_struct</a></div><div class="ttdeci">alglib_impl::densesolverreport * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="solvers_8h_source.html#l00210">solvers.h:210</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a51255a44306e8d567b944fe4b7e7d595"></a>
@@ -221,6 +246,10 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="solvers_8cpp_source.html#l00082">82</a> of file <a class="el" href="solvers_8cpp_source.html">solvers.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">const_cast&lt;</span><a class="code" href="structalglib__impl_1_1densesolverreport.html">alglib_impl::densesolverreport</a>*<span class="keyword">&gt;</span>(<a class="code" href="classalglib_1_1__densesolverreport__owner.html#a94ef991286381ac00ad9b3e1e1e3f80d">p_struct</a>);</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div><div class="ttc" id="structalglib__impl_1_1densesolverreport_html"><div class="ttname"><a href="structalglib__impl_1_1densesolverreport.html">alglib_impl::densesolverreport</a></div><div class="ttdef"><b>Definition:</b> <a href="solvers_8h_source.html#l00033">solvers.h:33</a></div></div>
+<div class="ttc" id="classalglib_1_1__densesolverreport__owner_html_a94ef991286381ac00ad9b3e1e1e3f80d"><div class="ttname"><a href="classalglib_1_1__densesolverreport__owner.html#a94ef991286381ac00ad9b3e1e1e3f80d">alglib::_densesolverreport_owner::p_struct</a></div><div class="ttdeci">alglib_impl::densesolverreport * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="solvers_8h_source.html#l00210">solvers.h:210</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a35ece286f2d1353a21071b76169814bb"></a>
@@ -237,6 +266,12 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="solvers_8cpp_source.html#l00061">61</a> of file <a class="el" href="solvers_8cpp_source.html">solvers.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">if</span>( <span class="keyword">this</span>==&amp;rhs )</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="namespacealglib__impl.html#aee4255506ef0ed0a8f5810b6a0f0709e">alglib_impl::_densesolverreport_clear</a>(<a class="code" href="classalglib_1_1__densesolverreport__owner.html#a94ef991286381ac00ad9b3e1e1e3f80d">p_struct</a>);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">if</span>( !<a class="code" href="namespacealglib__impl.html#a11ed175c73fb6d27607598e3b8ab1c55">alglib_impl::_densesolverreport_init_copy</a>(<a class="code" href="classalglib_1_1__densesolverreport__owner.html#a94ef991286381ac00ad9b3e1e1e3f80d">p_struct</a>, const_cast&lt;alglib_impl::densesolverreport*&gt;(rhs.p_struct), NULL, <a class="code" href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a>) )</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div><div class="ttc" id="classalglib_1_1__densesolverreport__owner_html_a94ef991286381ac00ad9b3e1e1e3f80d"><div class="ttname"><a href="classalglib_1_1__densesolverreport__owner.html#a94ef991286381ac00ad9b3e1e1e3f80d">alglib::_densesolverreport_owner::p_struct</a></div><div class="ttdeci">alglib_impl::densesolverreport * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="solvers_8h_source.html#l00210">solvers.h:210</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_aee4255506ef0ed0a8f5810b6a0f0709e"><div class="ttname"><a href="namespacealglib__impl.html#aee4255506ef0ed0a8f5810b6a0f0709e">alglib_impl::_densesolverreport_clear</a></div><div class="ttdeci">void _densesolverreport_clear(void *_p)</div><div class="ttdef"><b>Definition:</b> <a href="solvers_8cpp_source.html#l05599">solvers.cpp:5599</a></div></div>
+<div class="ttc" id="ap_8h_html_a0656913c5b7bc535cf5347662e769bef"><div class="ttname"><a href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a></div><div class="ttdeci">#define ae_false</div><div class="ttdef"><b>Definition:</b> <a href="ap_8h_source.html#l00196">ap.h:196</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_a11ed175c73fb6d27607598e3b8ab1c55"><div class="ttname"><a href="namespacealglib__impl.html#a11ed175c73fb6d27607598e3b8ab1c55">alglib_impl::_densesolverreport_init_copy</a></div><div class="ttdeci">ae_bool _densesolverreport_init_copy(void *_dst, void *_src, ae_state *_state, ae_bool make_automatic)</div><div class="ttdef"><b>Definition:</b> <a href="solvers_8cpp_source.html#l05589">solvers.cpp:5589</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -258,11 +293,13 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="solvers_8h_source.html#l00210">210</a> of file <a class="el" href="solvers_8h_source.html">solvers.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/alglib/<a class="el" href="solvers_8h_source.html">solvers.h</a></li>
-<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/alglib/<a class="el" href="solvers_8cpp.html">solvers.cpp</a></li>
+<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/alglib/<a class="el" href="solvers_8cpp_source.html">solvers.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

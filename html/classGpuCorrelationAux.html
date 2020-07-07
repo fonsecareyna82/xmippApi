@@ -156,7 +156,10 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a305f5c16a6ad83d69584d47e3d1fe330"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGpuMultidimArrayAtGpu.html">GpuMultidimArrayAtGpu</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGpuCorrelationAux.html#a305f5c16a6ad83d69584d47e3d1fe330">d_mask</a></td></tr>
 <tr class="separator:a305f5c16a6ad83d69584d47e3d1fe330"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="cuda__gpu__correlation_8h_source.html#l00030">30</a> of file <a class="el" href="cuda__gpu__correlation_8h_source.html">cuda_gpu_correlation.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="acb4375b59dad5193e7a571219d9ab7e4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -193,6 +196,26 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="cuda__gpu__correlation_8cpp_source.html#l01042">1042</a> of file <a class="el" href="cuda__gpu__correlation_8cpp_source.html">cuda_gpu_correlation.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;{</div><div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;    myStructureAux.<a class="code" href="classStructuresAux.html#a8984e287eb24e94ef9220a7833858fd1">MF</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a3d5ab7e6e4cae2dbec4fd85ed8d82072">resize</a>(<a class="code" href="classGpuCorrelationAux.html#aaa6559b3454843428055fe274c725917">d_projFFT</a>);</div><div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;    myStructureAux.<a class="code" href="classStructuresAux.html#aa6f050e44e2a1f8d8ca54d70c63b7a25">MF2</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a3d5ab7e6e4cae2dbec4fd85ed8d82072">resize</a>(<a class="code" href="classGpuCorrelationAux.html#a122cc6eea265cd3d85680d62944da32e">d_projSquaredFFT</a>);</div><div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;    <a class="code" href="classGpuMultidimArrayAtGpu.html">GpuMultidimArrayAtGpu&lt; std::complex&lt;float&gt;</a> &gt; maskAux(<a class="code" href="classGpuCorrelationAux.html#aaa6559b3454843428055fe274c725917">d_projFFT</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a1a2e89fd95d37db2967c79efe3914a29">Xdim</a>, <a class="code" href="classGpuCorrelationAux.html#aaa6559b3454843428055fe274c725917">d_projFFT</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a701e8e6ce40bd1a913f5923964f72323">Ydim</a>);</div><div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;</div><div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;    <a class="code" href="cuda__gpu__correlation_8cpp.html#aa999dc2f8b8df5a5e3a1a162814b60f8">pointwiseMultiplicationFourier_three</a>(<a class="code" href="classGpuCorrelationAux.html#a20e1665f0eb696cd40b65e11a63b3cba">d_maskFFT</a>, <a class="code" href="classGpuCorrelationAux.html#aaa6559b3454843428055fe274c725917">d_projFFT</a>, myStructureAux.<a class="code" href="classStructuresAux.html#a8984e287eb24e94ef9220a7833858fd1">MF</a>, <a class="code" href="classGpuCorrelationAux.html#a122cc6eea265cd3d85680d62944da32e">d_projSquaredFFT</a>,</div><div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;            myStructureAux.<a class="code" href="classStructuresAux.html#aa6f050e44e2a1f8d8ca54d70c63b7a25">MF2</a>, myStream, maskAux);</div><div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;</div><div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;    <a class="code" href="classGpuCorrelationAux.html#a9447d19239963aa61eb85ae9ad9ad8b5">MF2realSpace</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a3d5ab7e6e4cae2dbec4fd85ed8d82072">resize</a>(<a class="code" href="classGpuCorrelationAux.html#a72617a2e114c84c394068795a1a6d047">Xdim</a>, <a class="code" href="classGpuCorrelationAux.html#a5df37737359ec165b847b0c14162d963">Ydim</a>, <a class="code" href="classGpuCorrelationAux.html#aaa6559b3454843428055fe274c725917">d_projFFT</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a3f2a5c0acf61678468162e4f100e0726">Zdim</a>, <a class="code" href="classGpuCorrelationAux.html#aaa6559b3454843428055fe274c725917">d_projFFT</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a15c9cd7a0035fd34644221e3ac34ce1f">Ndim</a>);</div><div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;    <a class="code" href="classGpuCorrelationAux.html#a45edd59e480e24de4cced5c5c73d9753">MFrealSpace</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a3d5ab7e6e4cae2dbec4fd85ed8d82072">resize</a>(<a class="code" href="classGpuCorrelationAux.html#a72617a2e114c84c394068795a1a6d047">Xdim</a>, <a class="code" href="classGpuCorrelationAux.html#a5df37737359ec165b847b0c14162d963">Ydim</a>, <a class="code" href="classGpuCorrelationAux.html#aaa6559b3454843428055fe274c725917">d_projFFT</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a3f2a5c0acf61678468162e4f100e0726">Zdim</a>, <a class="code" href="classGpuCorrelationAux.html#aaa6559b3454843428055fe274c725917">d_projFFT</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a15c9cd7a0035fd34644221e3ac34ce1f">Ndim</a>);</div><div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;</div><div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;    <a class="code" href="classGpuMultidimArrayAtGpu.html">GpuMultidimArrayAtGpu&lt; std::complex&lt;float&gt;</a> &gt; dull;</div><div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;</div><div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;    myStructureAux.<a class="code" href="classStructuresAux.html#a8984e287eb24e94ef9220a7833858fd1">MF</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#ae45782f905486269064e9088d0b44e3e">ifftStream</a>(<a class="code" href="classGpuCorrelationAux.html#a45edd59e480e24de4cced5c5c73d9753">MFrealSpace</a>, myhandlePaddedB, myStream, <span class="keyword">false</span>, dull);</div><div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;    myStructureAux.<a class="code" href="classStructuresAux.html#aa6f050e44e2a1f8d8ca54d70c63b7a25">MF2</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#ae45782f905486269064e9088d0b44e3e">ifftStream</a>(<a class="code" href="classGpuCorrelationAux.html#a9447d19239963aa61eb85ae9ad9ad8b5">MF2realSpace</a>, myhandlePaddedB, myStream, <span class="keyword">false</span>, dull);</div><div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;</div><div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;    <a class="code" href="classGpuCorrelationAux.html#abd502f8ee452f82634d6f8ee7cd2a7fc">maskAutocorrelation</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a3d5ab7e6e4cae2dbec4fd85ed8d82072">resize</a>(<a class="code" href="classGpuCorrelationAux.html#a72617a2e114c84c394068795a1a6d047">Xdim</a>, <a class="code" href="classGpuCorrelationAux.html#a5df37737359ec165b847b0c14162d963">Ydim</a>);</div><div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;    maskAux.ifftStream(<a class="code" href="classGpuCorrelationAux.html#abd502f8ee452f82634d6f8ee7cd2a7fc">maskAutocorrelation</a>, myhandleMaskB, myStream, <span class="keyword">false</span>, dull);</div><div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;    maskAux.clear();</div><div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;</div><div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;}</div><div class="ttc" id="classGpuMultidimArrayAtGpu_html_a701e8e6ce40bd1a913f5923964f72323"><div class="ttname"><a href="classGpuMultidimArrayAtGpu.html#a701e8e6ce40bd1a913f5923964f72323">GpuMultidimArrayAtGpu::Ydim</a></div><div class="ttdeci">size_t Ydim</div><div class="ttdef"><b>Definition:</b> <a href="cuda__xmipp__utils_8h_source.html#l00180">cuda_xmipp_utils.h:180</a></div></div>
+<div class="ttc" id="classGpuMultidimArrayAtGpu_html_a3d5ab7e6e4cae2dbec4fd85ed8d82072"><div class="ttname"><a href="classGpuMultidimArrayAtGpu.html#a3d5ab7e6e4cae2dbec4fd85ed8d82072">GpuMultidimArrayAtGpu::resize</a></div><div class="ttdeci">void resize(const GpuMultidimArrayAtGpu&lt; T1 &gt; &amp;array)</div><div class="ttdef"><b>Definition:</b> <a href="cuda__xmipp__utils_8h_source.html#l00203">cuda_xmipp_utils.h:203</a></div></div>
+<div class="ttc" id="classGpuCorrelationAux_html_a5df37737359ec165b847b0c14162d963"><div class="ttname"><a href="classGpuCorrelationAux.html#a5df37737359ec165b847b0c14162d963">GpuCorrelationAux::Ydim</a></div><div class="ttdeci">size_t Ydim</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00041">cuda_gpu_correlation.h:41</a></div></div>
+<div class="ttc" id="classGpuCorrelationAux_html_abd502f8ee452f82634d6f8ee7cd2a7fc"><div class="ttname"><a href="classGpuCorrelationAux.html#abd502f8ee452f82634d6f8ee7cd2a7fc">GpuCorrelationAux::maskAutocorrelation</a></div><div class="ttdeci">GpuMultidimArrayAtGpu&lt; float &gt; maskAutocorrelation</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00039">cuda_gpu_correlation.h:39</a></div></div>
+<div class="ttc" id="classGpuCorrelationAux_html_aaa6559b3454843428055fe274c725917"><div class="ttname"><a href="classGpuCorrelationAux.html#aaa6559b3454843428055fe274c725917">GpuCorrelationAux::d_projFFT</a></div><div class="ttdeci">GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; d_projFFT</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00034">cuda_gpu_correlation.h:34</a></div></div>
+<div class="ttc" id="classGpuMultidimArrayAtGpu_html_ae45782f905486269064e9088d0b44e3e"><div class="ttname"><a href="classGpuMultidimArrayAtGpu.html#ae45782f905486269064e9088d0b44e3e">GpuMultidimArrayAtGpu::ifftStream</a></div><div class="ttdeci">void ifftStream(GpuMultidimArrayAtGpu&lt; T1 &gt; &amp;realSpace, mycufftHandle &amp;myhandle, myStreamHandle &amp;myStream, bool useCallback, GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; &amp;dataExp)</div></div>
+<div class="ttc" id="classStructuresAux_html_aa6f050e44e2a1f8d8ca54d70c63b7a25"><div class="ttname"><a href="classStructuresAux.html#aa6f050e44e2a1f8d8ca54d70c63b7a25">StructuresAux::MF2</a></div><div class="ttdeci">GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; MF2</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00019">cuda_gpu_correlation.h:19</a></div></div>
+<div class="ttc" id="classGpuMultidimArrayAtGpu_html_a3f2a5c0acf61678468162e4f100e0726"><div class="ttname"><a href="classGpuMultidimArrayAtGpu.html#a3f2a5c0acf61678468162e4f100e0726">GpuMultidimArrayAtGpu::Zdim</a></div><div class="ttdeci">size_t Zdim</div><div class="ttdef"><b>Definition:</b> <a href="cuda__xmipp__utils_8h_source.html#l00180">cuda_xmipp_utils.h:180</a></div></div>
+<div class="ttc" id="classGpuMultidimArrayAtGpu_html_a15c9cd7a0035fd34644221e3ac34ce1f"><div class="ttname"><a href="classGpuMultidimArrayAtGpu.html#a15c9cd7a0035fd34644221e3ac34ce1f">GpuMultidimArrayAtGpu::Ndim</a></div><div class="ttdeci">size_t Ndim</div><div class="ttdef"><b>Definition:</b> <a href="cuda__xmipp__utils_8h_source.html#l00180">cuda_xmipp_utils.h:180</a></div></div>
+<div class="ttc" id="classGpuCorrelationAux_html_a122cc6eea265cd3d85680d62944da32e"><div class="ttname"><a href="classGpuCorrelationAux.html#a122cc6eea265cd3d85680d62944da32e">GpuCorrelationAux::d_projSquaredFFT</a></div><div class="ttdeci">GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; d_projSquaredFFT</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00035">cuda_gpu_correlation.h:35</a></div></div>
+<div class="ttc" id="classGpuMultidimArrayAtGpu_html"><div class="ttname"><a href="classGpuMultidimArrayAtGpu.html">GpuMultidimArrayAtGpu</a></div><div class="ttdef"><b>Definition:</b> <a href="cuda__xmipp__utils_8h_source.html#l00177">cuda_xmipp_utils.h:177</a></div></div>
+<div class="ttc" id="classGpuMultidimArrayAtGpu_html_a1a2e89fd95d37db2967c79efe3914a29"><div class="ttname"><a href="classGpuMultidimArrayAtGpu.html#a1a2e89fd95d37db2967c79efe3914a29">GpuMultidimArrayAtGpu::Xdim</a></div><div class="ttdeci">size_t Xdim</div><div class="ttdef"><b>Definition:</b> <a href="cuda__xmipp__utils_8h_source.html#l00180">cuda_xmipp_utils.h:180</a></div></div>
+<div class="ttc" id="classGpuCorrelationAux_html_a9447d19239963aa61eb85ae9ad9ad8b5"><div class="ttname"><a href="classGpuCorrelationAux.html#a9447d19239963aa61eb85ae9ad9ad8b5">GpuCorrelationAux::MF2realSpace</a></div><div class="ttdeci">GpuMultidimArrayAtGpu&lt; float &gt; MF2realSpace</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00045">cuda_gpu_correlation.h:45</a></div></div>
+<div class="ttc" id="classGpuCorrelationAux_html_a45edd59e480e24de4cced5c5c73d9753"><div class="ttname"><a href="classGpuCorrelationAux.html#a45edd59e480e24de4cced5c5c73d9753">GpuCorrelationAux::MFrealSpace</a></div><div class="ttdeci">GpuMultidimArrayAtGpu&lt; float &gt; MFrealSpace</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00045">cuda_gpu_correlation.h:45</a></div></div>
+<div class="ttc" id="cuda__gpu__correlation_8cpp_html_aa999dc2f8b8df5a5e3a1a162814b60f8"><div class="ttname"><a href="cuda__gpu__correlation_8cpp.html#aa999dc2f8b8df5a5e3a1a162814b60f8">pointwiseMultiplicationFourier_three</a></div><div class="ttdeci">void pointwiseMultiplicationFourier_three(const GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; &amp;M, const GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; &amp;manyF, GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; &amp;MmanyF, const GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; &amp;manyF_sq, GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; &amp;MmanyF_sq, myStreamHandle &amp;myStream, GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; &amp;maskAux)</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8cpp_source.html#l01015">cuda_gpu_correlation.cpp:1015</a></div></div>
+<div class="ttc" id="classStructuresAux_html_a8984e287eb24e94ef9220a7833858fd1"><div class="ttname"><a href="classStructuresAux.html#a8984e287eb24e94ef9220a7833858fd1">StructuresAux::MF</a></div><div class="ttdeci">GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; MF</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00019">cuda_gpu_correlation.h:19</a></div></div>
+<div class="ttc" id="classGpuCorrelationAux_html_a72617a2e114c84c394068795a1a6d047"><div class="ttname"><a href="classGpuCorrelationAux.html#a72617a2e114c84c394068795a1a6d047">GpuCorrelationAux::Xdim</a></div><div class="ttdeci">size_t Xdim</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00041">cuda_gpu_correlation.h:41</a></div></div>
+<div class="ttc" id="classGpuCorrelationAux_html_a20e1665f0eb696cd40b65e11a63b3cba"><div class="ttname"><a href="classGpuCorrelationAux.html#a20e1665f0eb696cd40b65e11a63b3cba">GpuCorrelationAux::d_maskFFT</a></div><div class="ttdeci">GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; d_maskFFT</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00038">cuda_gpu_correlation.h:38</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a4aab003ffdc3bcfa590783b0fcba0795"></a>
@@ -237,6 +260,25 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="cuda__gpu__correlation_8cpp_source.html#l01068">1068</a> of file <a class="el" href="cuda__gpu__correlation_8cpp_source.html">cuda_gpu_correlation.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;{</div><div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;</div><div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;    myStructureAux.<a class="code" href="classStructuresAux.html#a8984e287eb24e94ef9220a7833858fd1">MF</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a3d5ab7e6e4cae2dbec4fd85ed8d82072">resize</a>(<a class="code" href="classGpuCorrelationAux.html#aaa6559b3454843428055fe274c725917">d_projFFT</a>);</div><div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;    myStructureAux.<a class="code" href="classStructuresAux.html#aa6f050e44e2a1f8d8ca54d70c63b7a25">MF2</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a3d5ab7e6e4cae2dbec4fd85ed8d82072">resize</a>(<a class="code" href="classGpuCorrelationAux.html#a122cc6eea265cd3d85680d62944da32e">d_projSquaredFFT</a>);</div><div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;</div><div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;</div><div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;    <a class="code" href="cuda__gpu__correlation_8cpp.html#a71793b7c89a092b0d719d7a8700c0b5d">pointwiseMultiplicationFourier_two</a>(<a class="code" href="classGpuCorrelationAux.html#a20e1665f0eb696cd40b65e11a63b3cba">d_maskFFT</a>, <a class="code" href="classGpuCorrelationAux.html#aaa6559b3454843428055fe274c725917">d_projFFT</a>, myStructureAux.<a class="code" href="classStructuresAux.html#a8984e287eb24e94ef9220a7833858fd1">MF</a>, <a class="code" href="classGpuCorrelationAux.html#a122cc6eea265cd3d85680d62944da32e">d_projSquaredFFT</a>,</div><div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;            myStructureAux.<a class="code" href="classStructuresAux.html#aa6f050e44e2a1f8d8ca54d70c63b7a25">MF2</a>, myStream);</div><div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;</div><div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;    <a class="code" href="classGpuMultidimArrayAtGpu.html">GpuMultidimArrayAtGpu&lt; std::complex&lt;float&gt;</a> &gt; dull;</div><div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;</div><div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;    <a class="code" href="classGpuCorrelationAux.html#a9447d19239963aa61eb85ae9ad9ad8b5">MF2realSpace</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a3d5ab7e6e4cae2dbec4fd85ed8d82072">resize</a>(<a class="code" href="classGpuCorrelationAux.html#a72617a2e114c84c394068795a1a6d047">Xdim</a>, <a class="code" href="classGpuCorrelationAux.html#a5df37737359ec165b847b0c14162d963">Ydim</a>, <a class="code" href="classGpuCorrelationAux.html#aaa6559b3454843428055fe274c725917">d_projFFT</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a3f2a5c0acf61678468162e4f100e0726">Zdim</a>, <a class="code" href="classGpuCorrelationAux.html#aaa6559b3454843428055fe274c725917">d_projFFT</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a15c9cd7a0035fd34644221e3ac34ce1f">Ndim</a>);</div><div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;    <a class="code" href="classGpuCorrelationAux.html#a45edd59e480e24de4cced5c5c73d9753">MFrealSpace</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a3d5ab7e6e4cae2dbec4fd85ed8d82072">resize</a>(<a class="code" href="classGpuCorrelationAux.html#a72617a2e114c84c394068795a1a6d047">Xdim</a>, <a class="code" href="classGpuCorrelationAux.html#a5df37737359ec165b847b0c14162d963">Ydim</a>, <a class="code" href="classGpuCorrelationAux.html#aaa6559b3454843428055fe274c725917">d_projFFT</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a3f2a5c0acf61678468162e4f100e0726">Zdim</a>, <a class="code" href="classGpuCorrelationAux.html#aaa6559b3454843428055fe274c725917">d_projFFT</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a15c9cd7a0035fd34644221e3ac34ce1f">Ndim</a>);</div><div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;</div><div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;    myStructureAux.<a class="code" href="classStructuresAux.html#a8984e287eb24e94ef9220a7833858fd1">MF</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#ae45782f905486269064e9088d0b44e3e">ifftStream</a>(<a class="code" href="classGpuCorrelationAux.html#a45edd59e480e24de4cced5c5c73d9753">MFrealSpace</a>, myhandlePaddedB, myStream, <span class="keyword">false</span>, dull);</div><div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;    myStructureAux.<a class="code" href="classStructuresAux.html#aa6f050e44e2a1f8d8ca54d70c63b7a25">MF2</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#ae45782f905486269064e9088d0b44e3e">ifftStream</a>(<a class="code" href="classGpuCorrelationAux.html#a9447d19239963aa61eb85ae9ad9ad8b5">MF2realSpace</a>, myhandlePaddedB, myStream, <span class="keyword">false</span>, dull);</div><div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;</div><div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;    maskAutocorr.<a class="code" href="classGpuMultidimArrayAtGpu.html#a272eef2dfc2297293847b3f554599f5f">copyGpuToGpuStream</a>(<a class="code" href="classGpuCorrelationAux.html#abd502f8ee452f82634d6f8ee7cd2a7fc">maskAutocorrelation</a>, myStream);</div><div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;</div><div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;}</div><div class="ttc" id="classGpuMultidimArrayAtGpu_html_a3d5ab7e6e4cae2dbec4fd85ed8d82072"><div class="ttname"><a href="classGpuMultidimArrayAtGpu.html#a3d5ab7e6e4cae2dbec4fd85ed8d82072">GpuMultidimArrayAtGpu::resize</a></div><div class="ttdeci">void resize(const GpuMultidimArrayAtGpu&lt; T1 &gt; &amp;array)</div><div class="ttdef"><b>Definition:</b> <a href="cuda__xmipp__utils_8h_source.html#l00203">cuda_xmipp_utils.h:203</a></div></div>
+<div class="ttc" id="classGpuCorrelationAux_html_a5df37737359ec165b847b0c14162d963"><div class="ttname"><a href="classGpuCorrelationAux.html#a5df37737359ec165b847b0c14162d963">GpuCorrelationAux::Ydim</a></div><div class="ttdeci">size_t Ydim</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00041">cuda_gpu_correlation.h:41</a></div></div>
+<div class="ttc" id="classGpuCorrelationAux_html_abd502f8ee452f82634d6f8ee7cd2a7fc"><div class="ttname"><a href="classGpuCorrelationAux.html#abd502f8ee452f82634d6f8ee7cd2a7fc">GpuCorrelationAux::maskAutocorrelation</a></div><div class="ttdeci">GpuMultidimArrayAtGpu&lt; float &gt; maskAutocorrelation</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00039">cuda_gpu_correlation.h:39</a></div></div>
+<div class="ttc" id="classGpuCorrelationAux_html_aaa6559b3454843428055fe274c725917"><div class="ttname"><a href="classGpuCorrelationAux.html#aaa6559b3454843428055fe274c725917">GpuCorrelationAux::d_projFFT</a></div><div class="ttdeci">GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; d_projFFT</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00034">cuda_gpu_correlation.h:34</a></div></div>
+<div class="ttc" id="classGpuMultidimArrayAtGpu_html_ae45782f905486269064e9088d0b44e3e"><div class="ttname"><a href="classGpuMultidimArrayAtGpu.html#ae45782f905486269064e9088d0b44e3e">GpuMultidimArrayAtGpu::ifftStream</a></div><div class="ttdeci">void ifftStream(GpuMultidimArrayAtGpu&lt; T1 &gt; &amp;realSpace, mycufftHandle &amp;myhandle, myStreamHandle &amp;myStream, bool useCallback, GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; &amp;dataExp)</div></div>
+<div class="ttc" id="classStructuresAux_html_aa6f050e44e2a1f8d8ca54d70c63b7a25"><div class="ttname"><a href="classStructuresAux.html#aa6f050e44e2a1f8d8ca54d70c63b7a25">StructuresAux::MF2</a></div><div class="ttdeci">GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; MF2</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00019">cuda_gpu_correlation.h:19</a></div></div>
+<div class="ttc" id="cuda__gpu__correlation_8cpp_html_a71793b7c89a092b0d719d7a8700c0b5d"><div class="ttname"><a href="cuda__gpu__correlation_8cpp.html#a71793b7c89a092b0d719d7a8700c0b5d">pointwiseMultiplicationFourier_two</a></div><div class="ttdeci">void pointwiseMultiplicationFourier_two(const GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; &amp;M, const GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; &amp;manyF, GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; &amp;MmanyF, const GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; &amp;manyF_sq, GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; &amp;MmanyF_sq, myStreamHandle &amp;myStream)</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8cpp_source.html#l00991">cuda_gpu_correlation.cpp:991</a></div></div>
+<div class="ttc" id="classGpuMultidimArrayAtGpu_html_a3f2a5c0acf61678468162e4f100e0726"><div class="ttname"><a href="classGpuMultidimArrayAtGpu.html#a3f2a5c0acf61678468162e4f100e0726">GpuMultidimArrayAtGpu::Zdim</a></div><div class="ttdeci">size_t Zdim</div><div class="ttdef"><b>Definition:</b> <a href="cuda__xmipp__utils_8h_source.html#l00180">cuda_xmipp_utils.h:180</a></div></div>
+<div class="ttc" id="classGpuMultidimArrayAtGpu_html_a15c9cd7a0035fd34644221e3ac34ce1f"><div class="ttname"><a href="classGpuMultidimArrayAtGpu.html#a15c9cd7a0035fd34644221e3ac34ce1f">GpuMultidimArrayAtGpu::Ndim</a></div><div class="ttdeci">size_t Ndim</div><div class="ttdef"><b>Definition:</b> <a href="cuda__xmipp__utils_8h_source.html#l00180">cuda_xmipp_utils.h:180</a></div></div>
+<div class="ttc" id="classGpuCorrelationAux_html_a122cc6eea265cd3d85680d62944da32e"><div class="ttname"><a href="classGpuCorrelationAux.html#a122cc6eea265cd3d85680d62944da32e">GpuCorrelationAux::d_projSquaredFFT</a></div><div class="ttdeci">GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; d_projSquaredFFT</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00035">cuda_gpu_correlation.h:35</a></div></div>
+<div class="ttc" id="classGpuMultidimArrayAtGpu_html"><div class="ttname"><a href="classGpuMultidimArrayAtGpu.html">GpuMultidimArrayAtGpu</a></div><div class="ttdef"><b>Definition:</b> <a href="cuda__xmipp__utils_8h_source.html#l00177">cuda_xmipp_utils.h:177</a></div></div>
+<div class="ttc" id="classGpuCorrelationAux_html_a9447d19239963aa61eb85ae9ad9ad8b5"><div class="ttname"><a href="classGpuCorrelationAux.html#a9447d19239963aa61eb85ae9ad9ad8b5">GpuCorrelationAux::MF2realSpace</a></div><div class="ttdeci">GpuMultidimArrayAtGpu&lt; float &gt; MF2realSpace</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00045">cuda_gpu_correlation.h:45</a></div></div>
+<div class="ttc" id="classGpuCorrelationAux_html_a45edd59e480e24de4cced5c5c73d9753"><div class="ttname"><a href="classGpuCorrelationAux.html#a45edd59e480e24de4cced5c5c73d9753">GpuCorrelationAux::MFrealSpace</a></div><div class="ttdeci">GpuMultidimArrayAtGpu&lt; float &gt; MFrealSpace</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00045">cuda_gpu_correlation.h:45</a></div></div>
+<div class="ttc" id="classStructuresAux_html_a8984e287eb24e94ef9220a7833858fd1"><div class="ttname"><a href="classStructuresAux.html#a8984e287eb24e94ef9220a7833858fd1">StructuresAux::MF</a></div><div class="ttdeci">GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; MF</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00019">cuda_gpu_correlation.h:19</a></div></div>
+<div class="ttc" id="classGpuCorrelationAux_html_a72617a2e114c84c394068795a1a6d047"><div class="ttname"><a href="classGpuCorrelationAux.html#a72617a2e114c84c394068795a1a6d047">GpuCorrelationAux::Xdim</a></div><div class="ttdeci">size_t Xdim</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00041">cuda_gpu_correlation.h:41</a></div></div>
+<div class="ttc" id="classGpuMultidimArrayAtGpu_html_a272eef2dfc2297293847b3f554599f5f"><div class="ttname"><a href="classGpuMultidimArrayAtGpu.html#a272eef2dfc2297293847b3f554599f5f">GpuMultidimArrayAtGpu::copyGpuToGpuStream</a></div><div class="ttdeci">void copyGpuToGpuStream(GpuMultidimArrayAtGpu&lt; T &gt; &amp;gpuArray, myStreamHandle &amp;myStream)</div><div class="ttdef"><b>Definition:</b> <a href="cuda__xmipp__utils_8h_source.html#l00264">cuda_xmipp_utils.h:264</a></div></div>
+<div class="ttc" id="classGpuCorrelationAux_html_a20e1665f0eb696cd40b65e11a63b3cba"><div class="ttname"><a href="classGpuCorrelationAux.html#a20e1665f0eb696cd40b65e11a63b3cba">GpuCorrelationAux::d_maskFFT</a></div><div class="ttdeci">GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; d_maskFFT</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00038">cuda_gpu_correlation.h:38</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="adee9bc8f09c67e400e5cdecf111b4f9b"></a>
@@ -293,6 +335,22 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="cuda__gpu__correlation_8cpp_source.html#l01092">1092</a> of file <a class="el" href="cuda__gpu__correlation_8cpp_source.html">cuda_gpu_correlation.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;{</div><div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;</div><div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;    <a class="code" href="classGpuMultidimArrayAtGpu.html">GpuMultidimArrayAtGpu&lt; std::complex&lt;float&gt;</a> &gt; dull;</div><div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;</div><div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;    <a class="code" href="classGpuCorrelationAux.html#a9447d19239963aa61eb85ae9ad9ad8b5">MF2realSpace</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a3d5ab7e6e4cae2dbec4fd85ed8d82072">resize</a>(<a class="code" href="classGpuCorrelationAux.html#a72617a2e114c84c394068795a1a6d047">Xdim</a>, <a class="code" href="classGpuCorrelationAux.html#a5df37737359ec165b847b0c14162d963">Ydim</a>, <a class="code" href="classGpuCorrelationAux.html#aaa6559b3454843428055fe274c725917">d_projFFT</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a3f2a5c0acf61678468162e4f100e0726">Zdim</a>, <a class="code" href="classGpuCorrelationAux.html#aaa6559b3454843428055fe274c725917">d_projFFT</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a15c9cd7a0035fd34644221e3ac34ce1f">Ndim</a>);</div><div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;    <a class="code" href="classGpuCorrelationAux.html#a45edd59e480e24de4cced5c5c73d9753">MFrealSpace</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a3d5ab7e6e4cae2dbec4fd85ed8d82072">resize</a>(<a class="code" href="classGpuCorrelationAux.html#a72617a2e114c84c394068795a1a6d047">Xdim</a>, <a class="code" href="classGpuCorrelationAux.html#a5df37737359ec165b847b0c14162d963">Ydim</a>, <a class="code" href="classGpuCorrelationAux.html#aaa6559b3454843428055fe274c725917">d_projFFT</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a3f2a5c0acf61678468162e4f100e0726">Zdim</a>, <a class="code" href="classGpuCorrelationAux.html#aaa6559b3454843428055fe274c725917">d_projFFT</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#a15c9cd7a0035fd34644221e3ac34ce1f">Ndim</a>);</div><div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;</div><div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;    <a class="code" href="classGpuCorrelationAux.html#aaa6559b3454843428055fe274c725917">d_projFFT</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#ae45782f905486269064e9088d0b44e3e">ifftStream</a>(<a class="code" href="classGpuCorrelationAux.html#a45edd59e480e24de4cced5c5c73d9753">MFrealSpace</a>, ifftcb, myStream, <span class="keyword">true</span>, <a class="code" href="classGpuCorrelationAux.html#a20e1665f0eb696cd40b65e11a63b3cba">d_maskFFT</a>);</div><div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;    <a class="code" href="classGpuCorrelationAux.html#a122cc6eea265cd3d85680d62944da32e">d_projSquaredFFT</a>.<a class="code" href="classGpuMultidimArrayAtGpu.html#ae45782f905486269064e9088d0b44e3e">ifftStream</a>(<a class="code" href="classGpuCorrelationAux.html#a9447d19239963aa61eb85ae9ad9ad8b5">MF2realSpace</a>, ifftcb, myStream, <span class="keyword">true</span>, <a class="code" href="classGpuCorrelationAux.html#a20e1665f0eb696cd40b65e11a63b3cba">d_maskFFT</a>);</div><div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;</div><div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;    maskAutocorr.<a class="code" href="classGpuMultidimArrayAtGpu.html#a272eef2dfc2297293847b3f554599f5f">copyGpuToGpuStream</a>(<a class="code" href="classGpuCorrelationAux.html#abd502f8ee452f82634d6f8ee7cd2a7fc">maskAutocorrelation</a>, myStream);</div><div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;</div><div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;</div><div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;}</div><div class="ttc" id="classGpuMultidimArrayAtGpu_html_a3d5ab7e6e4cae2dbec4fd85ed8d82072"><div class="ttname"><a href="classGpuMultidimArrayAtGpu.html#a3d5ab7e6e4cae2dbec4fd85ed8d82072">GpuMultidimArrayAtGpu::resize</a></div><div class="ttdeci">void resize(const GpuMultidimArrayAtGpu&lt; T1 &gt; &amp;array)</div><div class="ttdef"><b>Definition:</b> <a href="cuda__xmipp__utils_8h_source.html#l00203">cuda_xmipp_utils.h:203</a></div></div>
+<div class="ttc" id="classGpuCorrelationAux_html_a5df37737359ec165b847b0c14162d963"><div class="ttname"><a href="classGpuCorrelationAux.html#a5df37737359ec165b847b0c14162d963">GpuCorrelationAux::Ydim</a></div><div class="ttdeci">size_t Ydim</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00041">cuda_gpu_correlation.h:41</a></div></div>
+<div class="ttc" id="classGpuCorrelationAux_html_abd502f8ee452f82634d6f8ee7cd2a7fc"><div class="ttname"><a href="classGpuCorrelationAux.html#abd502f8ee452f82634d6f8ee7cd2a7fc">GpuCorrelationAux::maskAutocorrelation</a></div><div class="ttdeci">GpuMultidimArrayAtGpu&lt; float &gt; maskAutocorrelation</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00039">cuda_gpu_correlation.h:39</a></div></div>
+<div class="ttc" id="classGpuCorrelationAux_html_aaa6559b3454843428055fe274c725917"><div class="ttname"><a href="classGpuCorrelationAux.html#aaa6559b3454843428055fe274c725917">GpuCorrelationAux::d_projFFT</a></div><div class="ttdeci">GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; d_projFFT</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00034">cuda_gpu_correlation.h:34</a></div></div>
+<div class="ttc" id="classGpuMultidimArrayAtGpu_html_ae45782f905486269064e9088d0b44e3e"><div class="ttname"><a href="classGpuMultidimArrayAtGpu.html#ae45782f905486269064e9088d0b44e3e">GpuMultidimArrayAtGpu::ifftStream</a></div><div class="ttdeci">void ifftStream(GpuMultidimArrayAtGpu&lt; T1 &gt; &amp;realSpace, mycufftHandle &amp;myhandle, myStreamHandle &amp;myStream, bool useCallback, GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; &amp;dataExp)</div></div>
+<div class="ttc" id="classGpuMultidimArrayAtGpu_html_a3f2a5c0acf61678468162e4f100e0726"><div class="ttname"><a href="classGpuMultidimArrayAtGpu.html#a3f2a5c0acf61678468162e4f100e0726">GpuMultidimArrayAtGpu::Zdim</a></div><div class="ttdeci">size_t Zdim</div><div class="ttdef"><b>Definition:</b> <a href="cuda__xmipp__utils_8h_source.html#l00180">cuda_xmipp_utils.h:180</a></div></div>
+<div class="ttc" id="classGpuMultidimArrayAtGpu_html_a15c9cd7a0035fd34644221e3ac34ce1f"><div class="ttname"><a href="classGpuMultidimArrayAtGpu.html#a15c9cd7a0035fd34644221e3ac34ce1f">GpuMultidimArrayAtGpu::Ndim</a></div><div class="ttdeci">size_t Ndim</div><div class="ttdef"><b>Definition:</b> <a href="cuda__xmipp__utils_8h_source.html#l00180">cuda_xmipp_utils.h:180</a></div></div>
+<div class="ttc" id="classGpuCorrelationAux_html_a122cc6eea265cd3d85680d62944da32e"><div class="ttname"><a href="classGpuCorrelationAux.html#a122cc6eea265cd3d85680d62944da32e">GpuCorrelationAux::d_projSquaredFFT</a></div><div class="ttdeci">GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; d_projSquaredFFT</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00035">cuda_gpu_correlation.h:35</a></div></div>
+<div class="ttc" id="classGpuMultidimArrayAtGpu_html"><div class="ttname"><a href="classGpuMultidimArrayAtGpu.html">GpuMultidimArrayAtGpu</a></div><div class="ttdef"><b>Definition:</b> <a href="cuda__xmipp__utils_8h_source.html#l00177">cuda_xmipp_utils.h:177</a></div></div>
+<div class="ttc" id="classGpuCorrelationAux_html_a9447d19239963aa61eb85ae9ad9ad8b5"><div class="ttname"><a href="classGpuCorrelationAux.html#a9447d19239963aa61eb85ae9ad9ad8b5">GpuCorrelationAux::MF2realSpace</a></div><div class="ttdeci">GpuMultidimArrayAtGpu&lt; float &gt; MF2realSpace</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00045">cuda_gpu_correlation.h:45</a></div></div>
+<div class="ttc" id="classGpuCorrelationAux_html_a45edd59e480e24de4cced5c5c73d9753"><div class="ttname"><a href="classGpuCorrelationAux.html#a45edd59e480e24de4cced5c5c73d9753">GpuCorrelationAux::MFrealSpace</a></div><div class="ttdeci">GpuMultidimArrayAtGpu&lt; float &gt; MFrealSpace</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00045">cuda_gpu_correlation.h:45</a></div></div>
+<div class="ttc" id="classGpuCorrelationAux_html_a72617a2e114c84c394068795a1a6d047"><div class="ttname"><a href="classGpuCorrelationAux.html#a72617a2e114c84c394068795a1a6d047">GpuCorrelationAux::Xdim</a></div><div class="ttdeci">size_t Xdim</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00041">cuda_gpu_correlation.h:41</a></div></div>
+<div class="ttc" id="classGpuMultidimArrayAtGpu_html_a272eef2dfc2297293847b3f554599f5f"><div class="ttname"><a href="classGpuMultidimArrayAtGpu.html#a272eef2dfc2297293847b3f554599f5f">GpuMultidimArrayAtGpu::copyGpuToGpuStream</a></div><div class="ttdeci">void copyGpuToGpuStream(GpuMultidimArrayAtGpu&lt; T &gt; &amp;gpuArray, myStreamHandle &amp;myStream)</div><div class="ttdef"><b>Definition:</b> <a href="cuda__xmipp__utils_8h_source.html#l00264">cuda_xmipp_utils.h:264</a></div></div>
+<div class="ttc" id="classGpuCorrelationAux_html_a20e1665f0eb696cd40b65e11a63b3cba"><div class="ttname"><a href="classGpuCorrelationAux.html#a20e1665f0eb696cd40b65e11a63b3cba">GpuCorrelationAux::d_maskFFT</a></div><div class="ttdeci">GpuMultidimArrayAtGpu&lt; std::complex&lt; float &gt; &gt; d_maskFFT</div><div class="ttdef"><b>Definition:</b> <a href="cuda__gpu__correlation_8h_source.html#l00038">cuda_gpu_correlation.h:38</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -306,6 +364,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="cuda__gpu__correlation_8h_source.html#l00044">44</a> of file <a class="el" href="cuda__gpu__correlation_8h_source.html">cuda_gpu_correlation.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a305f5c16a6ad83d69584d47e3d1fe330"></a>
@@ -317,6 +377,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cuda__gpu__correlation_8h_source.html#l00047">47</a> of file <a class="el" href="cuda__gpu__correlation_8h_source.html">cuda_gpu_correlation.h</a>.</p>
 
 </div>
 </div>
@@ -330,6 +392,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="cuda__gpu__correlation_8h_source.html#l00038">38</a> of file <a class="el" href="cuda__gpu__correlation_8h_source.html">cuda_gpu_correlation.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a05112a0800e2d115cf508b22f9626689"></a>
@@ -341,6 +405,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cuda__gpu__correlation_8h_source.html#l00032">32</a> of file <a class="el" href="cuda__gpu__correlation_8h_source.html">cuda_gpu_correlation.h</a>.</p>
 
 </div>
 </div>
@@ -354,6 +420,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="cuda__gpu__correlation_8h_source.html#l00034">34</a> of file <a class="el" href="cuda__gpu__correlation_8h_source.html">cuda_gpu_correlation.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a6d768f8500e0a6cd5881dc81eddde2a6"></a>
@@ -365,6 +433,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cuda__gpu__correlation_8h_source.html#l00036">36</a> of file <a class="el" href="cuda__gpu__correlation_8h_source.html">cuda_gpu_correlation.h</a>.</p>
 
 </div>
 </div>
@@ -378,6 +448,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="cuda__gpu__correlation_8h_source.html#l00037">37</a> of file <a class="el" href="cuda__gpu__correlation_8h_source.html">cuda_gpu_correlation.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a122cc6eea265cd3d85680d62944da32e"></a>
@@ -389,6 +461,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cuda__gpu__correlation_8h_source.html#l00035">35</a> of file <a class="el" href="cuda__gpu__correlation_8h_source.html">cuda_gpu_correlation.h</a>.</p>
 
 </div>
 </div>
@@ -402,6 +476,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="cuda__gpu__correlation_8h_source.html#l00033">33</a> of file <a class="el" href="cuda__gpu__correlation_8h_source.html">cuda_gpu_correlation.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="abd502f8ee452f82634d6f8ee7cd2a7fc"></a>
@@ -413,6 +489,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cuda__gpu__correlation_8h_source.html#l00039">39</a> of file <a class="el" href="cuda__gpu__correlation_8h_source.html">cuda_gpu_correlation.h</a>.</p>
 
 </div>
 </div>
@@ -426,6 +504,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="cuda__gpu__correlation_8h_source.html#l00040">40</a> of file <a class="el" href="cuda__gpu__correlation_8h_source.html">cuda_gpu_correlation.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a9447d19239963aa61eb85ae9ad9ad8b5"></a>
@@ -437,6 +517,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cuda__gpu__correlation_8h_source.html#l00045">45</a> of file <a class="el" href="cuda__gpu__correlation_8h_source.html">cuda_gpu_correlation.h</a>.</p>
 
 </div>
 </div>
@@ -450,6 +532,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="cuda__gpu__correlation_8h_source.html#l00045">45</a> of file <a class="el" href="cuda__gpu__correlation_8h_source.html">cuda_gpu_correlation.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a72617a2e114c84c394068795a1a6d047"></a>
@@ -461,6 +545,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cuda__gpu__correlation_8h_source.html#l00041">41</a> of file <a class="el" href="cuda__gpu__correlation_8h_source.html">cuda_gpu_correlation.h</a>.</p>
 
 </div>
 </div>
@@ -474,6 +560,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="cuda__gpu__correlation_8h_source.html#l00041">41</a> of file <a class="el" href="cuda__gpu__correlation_8h_source.html">cuda_gpu_correlation.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="afedaa46675a43eb046b3845b8aa94769"></a>
@@ -485,6 +573,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cuda__gpu__correlation_8h_source.html#l00041">41</a> of file <a class="el" href="cuda__gpu__correlation_8h_source.html">cuda_gpu_correlation.h</a>.</p>
 
 </div>
 </div>
@@ -498,6 +588,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="cuda__gpu__correlation_8h_source.html#l00041">41</a> of file <a class="el" href="cuda__gpu__correlation_8h_source.html">cuda_gpu_correlation.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aef479348ae3ffd30f1b18a9bb7253ad6"></a>
@@ -509,6 +601,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cuda__gpu__correlation_8h_source.html#l00041">41</a> of file <a class="el" href="cuda__gpu__correlation_8h_source.html">cuda_gpu_correlation.h</a>.</p>
 
 </div>
 </div>
@@ -522,11 +616,13 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="cuda__gpu__correlation_8h_source.html#l00041">41</a> of file <a class="el" href="cuda__gpu__correlation_8h_source.html">cuda_gpu_correlation.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/reconstruction_cuda/<a class="el" href="cuda__gpu__correlation_8h_source.html">cuda_gpu_correlation.h</a></li>
-<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/reconstruction_cuda/<a class="el" href="cuda__gpu__correlation_8cpp.html">cuda_gpu_correlation.cpp</a></li>
+<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/reconstruction_cuda/<a class="el" href="cuda__gpu__correlation_8cpp_source.html">cuda_gpu_correlation.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -119,6 +119,8 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Just a class for holding comments </p>
+
+<p>Definition at line <a class="el" href="argsparser_8h_source.html#l00141">141</a> of file <a class="el" href="argsparser_8h_source.html">argsparser.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a099bc89438c75dbf8c1daf71c1c5ffdd"></a>
 <div class="memitem">
@@ -150,6 +152,11 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="argsparser_8cpp_source.html#l00355">355</a> of file <a class="el" href="argsparser_8cpp_source.html">argsparser.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;{</div><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <a class="code" href="classCommentList.html#a60a056310cc5f3c1537ef7c6ff10da56">comments</a>.push_back(comment);</div><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <a class="code" href="classCommentList.html#a819f871740dd9769033173ccd79e8550">visibility</a>.push_back(visible);</div><div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <a class="code" href="classCommentList.html#a0ee2cb7e39b9615b232cc68adee8df5a">wikiVerbatim</a>.push_back(verbatim);</div><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;}</div><div class="ttc" id="classCommentList_html_a819f871740dd9769033173ccd79e8550"><div class="ttname"><a href="classCommentList.html#a819f871740dd9769033173ccd79e8550">CommentList::visibility</a></div><div class="ttdeci">std::vector&lt; int &gt; visibility</div><div class="ttdef"><b>Definition:</b> <a href="argsparser_8h_source.html#l00145">argsparser.h:145</a></div></div>
+<div class="ttc" id="classCommentList_html_a0ee2cb7e39b9615b232cc68adee8df5a"><div class="ttname"><a href="classCommentList.html#a0ee2cb7e39b9615b232cc68adee8df5a">CommentList::wikiVerbatim</a></div><div class="ttdeci">std::vector&lt; bool &gt; wikiVerbatim</div><div class="ttdef"><b>Definition:</b> <a href="argsparser_8h_source.html#l00146">argsparser.h:146</a></div></div>
+<div class="ttc" id="classCommentList_html_a60a056310cc5f3c1537ef7c6ff10da56"><div class="ttname"><a href="classCommentList.html#a60a056310cc5f3c1537ef7c6ff10da56">CommentList::comments</a></div><div class="ttdeci">StringVector comments</div><div class="ttdef"><b>Definition:</b> <a href="argsparser_8h_source.html#l00144">argsparser.h:144</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a9f10781f6083884ca95ca44e06d79692"></a>
@@ -176,6 +183,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="argsparser_8cpp_source.html#l00361">361</a> of file <a class="el" href="argsparser_8cpp_source.html">argsparser.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;{</div><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keywordtype">size_t</span> t=0;</div><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <span class="keywordflow">while</span>(comment[t]==<span class="charliteral">&#39;+&#39;</span> &amp;&amp; comment[t]!=<span class="charliteral">&#39;\0&#39;</span>)</div><div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        t++;</div><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <a class="code" href="classCommentList.html#a099bc89438c75dbf8c1daf71c1c5ffdd">addComment</a>(comment+t,t,verbatim);</div><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;}</div><div class="ttc" id="classCommentList_html_a099bc89438c75dbf8c1daf71c1c5ffdd"><div class="ttname"><a href="classCommentList.html#a099bc89438c75dbf8c1daf71c1c5ffdd">CommentList::addComment</a></div><div class="ttdeci">void addComment(const String &amp;comment, int visible=0, bool wikiVerbatim=false)</div><div class="ttdef"><b>Definition:</b> <a href="argsparser_8cpp_source.html#l00355">argsparser.cpp:355</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a6aecf190420e10e33a5459da20d3a2c2"></a>
@@ -191,6 +201,11 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="argsparser_8cpp_source.html#l00369">369</a> of file <a class="el" href="argsparser_8cpp_source.html">argsparser.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;{</div><div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <a class="code" href="classCommentList.html#a60a056310cc5f3c1537ef7c6ff10da56">comments</a>.clear();</div><div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <a class="code" href="classCommentList.html#a819f871740dd9769033173ccd79e8550">visibility</a>.clear();</div><div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <a class="code" href="classCommentList.html#a0ee2cb7e39b9615b232cc68adee8df5a">wikiVerbatim</a>.clear();</div><div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;}</div><div class="ttc" id="classCommentList_html_a819f871740dd9769033173ccd79e8550"><div class="ttname"><a href="classCommentList.html#a819f871740dd9769033173ccd79e8550">CommentList::visibility</a></div><div class="ttdeci">std::vector&lt; int &gt; visibility</div><div class="ttdef"><b>Definition:</b> <a href="argsparser_8h_source.html#l00145">argsparser.h:145</a></div></div>
+<div class="ttc" id="classCommentList_html_a0ee2cb7e39b9615b232cc68adee8df5a"><div class="ttname"><a href="classCommentList.html#a0ee2cb7e39b9615b232cc68adee8df5a">CommentList::wikiVerbatim</a></div><div class="ttdeci">std::vector&lt; bool &gt; wikiVerbatim</div><div class="ttdef"><b>Definition:</b> <a href="argsparser_8h_source.html#l00146">argsparser.h:146</a></div></div>
+<div class="ttc" id="classCommentList_html_a60a056310cc5f3c1537ef7c6ff10da56"><div class="ttname"><a href="classCommentList.html#a60a056310cc5f3c1537ef7c6ff10da56">CommentList::comments</a></div><div class="ttdeci">StringVector comments</div><div class="ttdef"><b>Definition:</b> <a href="argsparser_8h_source.html#l00144">argsparser.h:144</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="acf4d9ca7d050101ca09f8df3de33df0f"></a>
@@ -206,6 +221,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="argsparser_8cpp_source.html#l00375">375</a> of file <a class="el" href="argsparser_8cpp_source.html">argsparser.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;{</div><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classCommentList.html#a60a056310cc5f3c1537ef7c6ff10da56">comments</a>.size();</div><div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;}</div><div class="ttc" id="classCommentList_html_a60a056310cc5f3c1537ef7c6ff10da56"><div class="ttname"><a href="classCommentList.html#a60a056310cc5f3c1537ef7c6ff10da56">CommentList::comments</a></div><div class="ttdeci">StringVector comments</div><div class="ttdef"><b>Definition:</b> <a href="argsparser_8h_source.html#l00144">argsparser.h:144</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -219,6 +237,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="argsparser_8h_source.html#l00144">144</a> of file <a class="el" href="argsparser_8h_source.html">argsparser.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a819f871740dd9769033173ccd79e8550"></a>
@@ -230,6 +250,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="argsparser_8h_source.html#l00145">145</a> of file <a class="el" href="argsparser_8h_source.html">argsparser.h</a>.</p>
 
 </div>
 </div>
@@ -243,11 +265,13 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="argsparser_8h_source.html#l00146">146</a> of file <a class="el" href="argsparser_8h_source.html">argsparser.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/<a class="el" href="argsparser_8h_source.html">argsparser.h</a></li>
-<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/<a class="el" href="argsparser_8cpp.html">argsparser.cpp</a></li>
+<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/<a class="el" href="argsparser_8cpp_source.html">argsparser.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

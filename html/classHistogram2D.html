@@ -631,6 +631,8 @@ Friends</h2></td></tr>
 <div class="textblock"><p>Histograms with 2 parameters</p>
 <p>The histogram with 2 parameters can be regarded as an approximation to the joint probability density function of two variables (just dividing the histogram by its total mass). Ie, the 2D histogram is the count of times that a certain combination of values in two variables has occurred. For example, this 2D histograms can be used to plot the projection distribution over the topological sphere, in such situation only the first two <a class="el" href="classEuler.html">Euler</a> angles are interesting and we could plot how many projections are there with first angle equal to 45 degrees and second equal to 0 degrees, and so on covering the whole range for each angle.</p>
 <p>The 2D histogram is defined, as in the 1D case, by the respective ranges for the two variables and the number of intervals on each range. The distribution and limits of intervals are just the 2D extension of the graph shown in histograms 1D. </p>
+
+<p>Definition at line <a class="el" href="histogram_8h_source.html#l00699">699</a> of file <a class="el" href="histogram_8h_source.html">histogram.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a3f4c2072003d60f6cd2f1dd1c47c0130"></a>
 <div class="memitem">
@@ -655,6 +657,9 @@ Friends</h2></td></tr>
 <p>Empty constructor</p>
 <p>Creates an empty histogram. Before using it you must initialise it with init</p>
 <div class="fragment"><div class="line"><a class="code" href="classHistogram2D.html">Histogram2D</a> hist;</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="histogram_8h_source.html#l00720">720</a> of file <a class="el" href="histogram_8h_source.html">histogram.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    {</div><div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;        <a class="code" href="classHistogram2D.html#abbca4cf6145d3238c852570a83b5bdc5">clear</a>();</div><div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    }</div><div class="ttc" id="classHistogram2D_html_abbca4cf6145d3238c852570a83b5bdc5"><div class="ttname"><a href="classHistogram2D.html#abbca4cf6145d3238c852570a83b5bdc5">Histogram2D::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8cpp_source.html#l00474">histogram.cpp:474</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a0d2ef3aabc806aa9b025d8dcd5f95c49"></a>
@@ -681,6 +686,8 @@ Friends</h2></td></tr>
 <p>Copy constructor</p>
 <p>Makes an exact copy of the given histogram into another histogram.</p>
 <div class="fragment"><div class="line"><a class="code" href="classHistogram2D.html">Histogram2D</a> hist2(hist1);</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="histogram_8h_source.html#l00733">733</a> of file <a class="el" href="histogram_8h_source.html">histogram.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    {</div><div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;        *<span class="keyword">this</span> = H;</div><div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -699,6 +706,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Another function for assigment. </p>
 
+<p>Definition at line <a class="el" href="histogram_8cpp_source.html#l00504">504</a> of file <a class="el" href="histogram_8cpp_source.html">histogram.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;{</div><div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    *<span class="keyword">this</span> = H;</div><div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="abbca4cf6145d3238c852570a83b5bdc5"></a>
@@ -723,9 +732,19 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Empties an histogram</p>
 <p>Remember to initialise it before using it again.</p>
-<div class="fragment"><div class="line">hist.<a class="code" href="classHistogram2D.html#abbca4cf6145d3238c852570a83b5bdc5">clear</a>();</div></div><!-- fragment --> 
+<div class="fragment"><div class="line">hist.clear();</div></div><!-- fragment --> 
 <p>Implements <a class="el" href="classMultidimArrayBase.html#a18cbe624c2289997a8a145736f83f261">MultidimArrayBase</a>.</p>
 
+<p>Definition at line <a class="el" href="histogram_8cpp_source.html#l00474">474</a> of file <a class="el" href="histogram_8cpp_source.html">histogram.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;{</div><div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    <a class="code" href="classHistogram2D.html#a787ecafa3782a8e847aedcec8dc417b4">imin</a> = 0;</div><div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;    <a class="code" href="classHistogram2D.html#a1c888d521576d8ea1c7f8a70f53fd7a4">imax</a> = 0;</div><div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;    <a class="code" href="classHistogram2D.html#a46f8a4565f1c9f538ded441f0d1f14c4">istep_size</a> = 0;</div><div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;    <a class="code" href="classHistogram2D.html#a466b16262ad4d6376289ca8a13415047">jmin</a> = 0;</div><div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;    <a class="code" href="classHistogram2D.html#acad03c8882ed1ea9c1c96ed002498855">jmax</a> = 0;</div><div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;    <a class="code" href="classHistogram2D.html#a31aeeea1e394ff6cdd8f87f0bcca4a00">jstep_size</a> = 0;</div><div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;    <a class="code" href="classHistogram2D.html#a4fe4427d8d901d7873b134d668da9bf5">no_samples</a> = 0;</div><div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;    <a class="code" href="classMultidimArray.html#ad198844075bf06ecf3bb66fd5c6b5695">MultidimArray&lt;double&gt;::clear</a>();</div><div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;}</div><div class="ttc" id="classHistogram2D_html_a46f8a4565f1c9f538ded441f0d1f14c4"><div class="ttname"><a href="classHistogram2D.html#a46f8a4565f1c9f538ded441f0d1f14c4">Histogram2D::istep_size</a></div><div class="ttdeci">double istep_size</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00705">histogram.h:705</a></div></div>
+<div class="ttc" id="classHistogram2D_html_acad03c8882ed1ea9c1c96ed002498855"><div class="ttname"><a href="classHistogram2D.html#acad03c8882ed1ea9c1c96ed002498855">Histogram2D::jmax</a></div><div class="ttdeci">double jmax</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00707">histogram.h:707</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a31aeeea1e394ff6cdd8f87f0bcca4a00"><div class="ttname"><a href="classHistogram2D.html#a31aeeea1e394ff6cdd8f87f0bcca4a00">Histogram2D::jstep_size</a></div><div class="ttdeci">double jstep_size</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00708">histogram.h:708</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a1c888d521576d8ea1c7f8a70f53fd7a4"><div class="ttname"><a href="classHistogram2D.html#a1c888d521576d8ea1c7f8a70f53fd7a4">Histogram2D::imax</a></div><div class="ttdeci">double imax</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00704">histogram.h:704</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a4fe4427d8d901d7873b134d668da9bf5"><div class="ttname"><a href="classHistogram2D.html#a4fe4427d8d901d7873b134d668da9bf5">Histogram2D::no_samples</a></div><div class="ttdeci">int no_samples</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00709">histogram.h:709</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a466b16262ad4d6376289ca8a13415047"><div class="ttname"><a href="classHistogram2D.html#a466b16262ad4d6376289ca8a13415047">Histogram2D::jmin</a></div><div class="ttdeci">double jmin</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00706">histogram.h:706</a></div></div>
+<div class="ttc" id="classMultidimArray_html_ad198844075bf06ecf3bb66fd5c6b5695"><div class="ttname"><a href="classMultidimArray.html#ad198844075bf06ecf3bb66fd5c6b5695">MultidimArray::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> <a href="multidim__array_8h_source.html#l01302">multidim_array.h:1302</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a787ecafa3782a8e847aedcec8dc417b4"><div class="ttname"><a href="classHistogram2D.html#a787ecafa3782a8e847aedcec8dc417b4">Histogram2D::imin</a></div><div class="ttdeci">double imin</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00703">histogram.h:703</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a75fd72ecb1512e9b1d06bb78c7cde594"></a>
@@ -750,6 +769,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Maximum i value where the histogram is defined</p>
 <div class="fragment"><div class="line">std::cout &lt;&lt; <span class="stringliteral">&quot;Maximum value for histogram &quot;</span> &lt;&lt; hist.Imax() &lt;&lt; std::endl;</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="histogram_8h_source.html#l00866">866</a> of file <a class="el" href="histogram_8h_source.html">histogram.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;    {</div><div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classHistogram2D.html#a1c888d521576d8ea1c7f8a70f53fd7a4">imax</a>;</div><div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;    }</div><div class="ttc" id="classHistogram2D_html_a1c888d521576d8ea1c7f8a70f53fd7a4"><div class="ttname"><a href="classHistogram2D.html#a1c888d521576d8ea1c7f8a70f53fd7a4">Histogram2D::imax</a></div><div class="ttdeci">double imax</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00704">histogram.h:704</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ac5989a8c9c9f316bb0124351c493b421"></a>
@@ -774,6 +796,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Minimum i value where the histogram is defined</p>
 <div class="fragment"><div class="line">std::cout &lt;&lt; <span class="stringliteral">&quot;Minimum value for histogram &quot;</span> &lt;&lt; hist.Imin() &lt;&lt; std::endl;</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="histogram_8h_source.html#l00855">855</a> of file <a class="el" href="histogram_8h_source.html">histogram.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;    {</div><div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classHistogram2D.html#a787ecafa3782a8e847aedcec8dc417b4">imin</a>;</div><div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;    }</div><div class="ttc" id="classHistogram2D_html_a787ecafa3782a8e847aedcec8dc417b4"><div class="ttname"><a href="classHistogram2D.html#a787ecafa3782a8e847aedcec8dc417b4">Histogram2D::imin</a></div><div class="ttdeci">double imin</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00703">histogram.h:703</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a9a0a5f0e2fddf87e0ea26d8be9fe1c8a"></a>
@@ -821,7 +846,16 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Index &ndash;&gt; Value</p>
 <p>Given the code of one interval, this function returns the value of its starting point (its left-top border point, ie, its lowest corner). If the intervals are defined as [v0,vF) and [u0,uF), this function returns the point (v0,u0)</p>
-<div class="fragment"><div class="line">hist.<a class="code" href="classHistogram2D.html#a9a0a5f0e2fddf87e0ea26d8be9fe1c8a">index2val</a>(5, 1, v, <a class="code" href="numerical__recipes_8cpp.html#a6277e2a7446059985dc9bcf0a4ac1a8f">u</a>);</div></div><!-- fragment --> 
+<div class="fragment"><div class="line">hist.index2val(5, 1, v, <a class="code" href="numerical__recipes_8cpp.html#a6277e2a7446059985dc9bcf0a4ac1a8f">u</a>);</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="histogram_8h_source.html#l00843">843</a> of file <a class="el" href="histogram_8h_source.html">histogram.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;    {</div><div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;        v = <a class="code" href="classHistogram2D.html#a787ecafa3782a8e847aedcec8dc417b4">imin</a> + <a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a> * <a class="code" href="classHistogram2D.html#a46f8a4565f1c9f538ded441f0d1f14c4">istep_size</a>;</div><div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;        <a class="code" href="numerical__recipes_8cpp.html#a6277e2a7446059985dc9bcf0a4ac1a8f">u</a> = <a class="code" href="classHistogram2D.html#a466b16262ad4d6376289ca8a13415047">jmin</a> + <a class="code" href="project__crystal_8cpp.html#aae82a1338cf72eb9a1cc7043f569537e">j</a> * <a class="code" href="classHistogram2D.html#a31aeeea1e394ff6cdd8f87f0bcca4a00">jstep_size</a>;</div><div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;    }</div><div class="ttc" id="classHistogram2D_html_a46f8a4565f1c9f538ded441f0d1f14c4"><div class="ttname"><a href="classHistogram2D.html#a46f8a4565f1c9f538ded441f0d1f14c4">Histogram2D::istep_size</a></div><div class="ttdeci">double istep_size</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00705">histogram.h:705</a></div></div>
+<div class="ttc" id="project__crystal_8cpp_html_acb559820d9ca11295b4500f179ef6392"><div class="ttname"><a href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a></div><div class="ttdeci">#define i</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02510">numerical_recipes.cpp:2510</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a31aeeea1e394ff6cdd8f87f0bcca4a00"><div class="ttname"><a href="classHistogram2D.html#a31aeeea1e394ff6cdd8f87f0bcca4a00">Histogram2D::jstep_size</a></div><div class="ttdeci">double jstep_size</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00708">histogram.h:708</a></div></div>
+<div class="ttc" id="project__crystal_8cpp_html_aae82a1338cf72eb9a1cc7043f569537e"><div class="ttname"><a href="project__crystal_8cpp.html#aae82a1338cf72eb9a1cc7043f569537e">j</a></div><div class="ttdeci">#define j</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02510">numerical_recipes.cpp:2510</a></div></div>
+<div class="ttc" id="numerical__recipes_8cpp_html_a6277e2a7446059985dc9bcf0a4ac1a8f"><div class="ttname"><a href="numerical__recipes_8cpp.html#a6277e2a7446059985dc9bcf0a4ac1a8f">u</a></div><div class="ttdeci">doublereal * u</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02247">numerical_recipes.cpp:2247</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a466b16262ad4d6376289ca8a13415047"><div class="ttname"><a href="classHistogram2D.html#a466b16262ad4d6376289ca8a13415047">Histogram2D::jmin</a></div><div class="ttdeci">double jmin</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00706">histogram.h:706</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a787ecafa3782a8e847aedcec8dc417b4"><div class="ttname"><a href="classHistogram2D.html#a787ecafa3782a8e847aedcec8dc417b4">Histogram2D::imin</a></div><div class="ttdeci">double imin</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00703">histogram.h:703</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a81f3e62c4062d8617fa90748d1c30561"></a>
@@ -873,7 +907,17 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Initialisation of the histogram</p>
 <p>This is the operation which allows the histogram to be used. This should be performed before inserting any value in it. The information given to this initialisation is the range for each variable within which the values will be counted, and the number of steps (discrete bars) in these ranges.If the value is outside the defined ranges it will not be taken into account although we have asked for its insertion in the histogram.</p>
-<div class="fragment"><div class="line">hist.<a class="code" href="classHistogram2D.html#a81f3e62c4062d8617fa90748d1c30561">init</a>(0, 90, 100, 0, 360, 200);</div><div class="line"><span class="comment">// 100 steps in the range V=0...90 and 200 steps for U=0...360</span></div></div><!-- fragment --> 
+<div class="fragment"><div class="line">hist.init(0, 90, 100, 0, 360, 200);</div><div class="line"><span class="comment">// 100 steps in the range V=0...90 and 200 steps for U=0...360</span></div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="histogram_8cpp_source.html#l00510">510</a> of file <a class="el" href="histogram_8cpp_source.html">histogram.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;{</div><div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    <span class="comment">// V axis</span></div><div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    <a class="code" href="classHistogram2D.html#a787ecafa3782a8e847aedcec8dc417b4">imin</a> = imin_val;</div><div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    <a class="code" href="classHistogram2D.html#a1c888d521576d8ea1c7f8a70f53fd7a4">imax</a> = imax_val;</div><div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    <a class="code" href="classHistogram2D.html#a46f8a4565f1c9f538ded441f0d1f14c4">istep_size</a> = (double) (imax_val - imin_val) / (double) in_steps;</div><div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;</div><div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    <span class="comment">// U axis</span></div><div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    <a class="code" href="classHistogram2D.html#a466b16262ad4d6376289ca8a13415047">jmin</a> = jmin_val;</div><div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    <a class="code" href="classHistogram2D.html#acad03c8882ed1ea9c1c96ed002498855">jmax</a> = jmax_val;</div><div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    <a class="code" href="classHistogram2D.html#a31aeeea1e394ff6cdd8f87f0bcca4a00">jstep_size</a> = (double) (jmax_val - jmin_val) / (double) jn_steps;</div><div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;</div><div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    <a class="code" href="classMultidimArray.html#afdf53a612957c84ecb9bf5cae6534c14">initZeros</a>(in_steps, jn_steps);</div><div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    <a class="code" href="classHistogram2D.html#a4fe4427d8d901d7873b134d668da9bf5">no_samples</a> = 0;</div><div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;}</div><div class="ttc" id="classHistogram2D_html_a46f8a4565f1c9f538ded441f0d1f14c4"><div class="ttname"><a href="classHistogram2D.html#a46f8a4565f1c9f538ded441f0d1f14c4">Histogram2D::istep_size</a></div><div class="ttdeci">double istep_size</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00705">histogram.h:705</a></div></div>
+<div class="ttc" id="classHistogram2D_html_acad03c8882ed1ea9c1c96ed002498855"><div class="ttname"><a href="classHistogram2D.html#acad03c8882ed1ea9c1c96ed002498855">Histogram2D::jmax</a></div><div class="ttdeci">double jmax</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00707">histogram.h:707</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a31aeeea1e394ff6cdd8f87f0bcca4a00"><div class="ttname"><a href="classHistogram2D.html#a31aeeea1e394ff6cdd8f87f0bcca4a00">Histogram2D::jstep_size</a></div><div class="ttdeci">double jstep_size</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00708">histogram.h:708</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a1c888d521576d8ea1c7f8a70f53fd7a4"><div class="ttname"><a href="classHistogram2D.html#a1c888d521576d8ea1c7f8a70f53fd7a4">Histogram2D::imax</a></div><div class="ttdeci">double imax</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00704">histogram.h:704</a></div></div>
+<div class="ttc" id="classMultidimArray_html_afdf53a612957c84ecb9bf5cae6534c14"><div class="ttname"><a href="classMultidimArray.html#afdf53a612957c84ecb9bf5cae6534c14">MultidimArray&lt; double &gt;::initZeros</a></div><div class="ttdeci">void initZeros()</div><div class="ttdef"><b>Definition:</b> <a href="multidim__array_8h_source.html#l04343">multidim_array.h:4343</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a4fe4427d8d901d7873b134d668da9bf5"><div class="ttname"><a href="classHistogram2D.html#a4fe4427d8d901d7873b134d668da9bf5">Histogram2D::no_samples</a></div><div class="ttdeci">int no_samples</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00709">histogram.h:709</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a466b16262ad4d6376289ca8a13415047"><div class="ttname"><a href="classHistogram2D.html#a466b16262ad4d6376289ca8a13415047">Histogram2D::jmin</a></div><div class="ttdeci">double jmin</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00706">histogram.h:706</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a787ecafa3782a8e847aedcec8dc417b4"><div class="ttname"><a href="classHistogram2D.html#a787ecafa3782a8e847aedcec8dc417b4">Histogram2D::imin</a></div><div class="ttdeci">double imin</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00703">histogram.h:703</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="af3ff481425a28f8c43125cda2b8dde34"></a>
@@ -901,7 +945,18 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Insert a value within histogram</p>
 <p>The right interval is chosen according to the initialisation of the histogram and the count of elements in that interval is incremented by 1. If the value lies outside the global range of the histogram nothing is done. Notice that two values are needed, these are the two values of the two variables in our example of the projection at with first <a class="el" href="classEuler.html">Euler</a> angle=45 and second=0, the insertion of this projection in the 2D histogram would be like in the following example.</p>
-<div class="fragment"><div class="line">hist.<a class="code" href="classHistogram2D.html#af3ff481425a28f8c43125cda2b8dde34">insert_value</a>(45, 0);</div></div><!-- fragment --> 
+<div class="fragment"><div class="line">hist.insert_value(45, 0);</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="histogram_8cpp_source.html#l00528">528</a> of file <a class="el" href="histogram_8cpp_source.html">histogram.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;{</div><div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>, <a class="code" href="project__crystal_8cpp.html#aae82a1338cf72eb9a1cc7043f569537e">j</a>;</div><div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    <a class="code" href="classHistogram2D.html#aa7caa9058d5c206dee4d5c0c6ff4f4cd">val2index</a>(v, <a class="code" href="numerical__recipes_8cpp.html#a6277e2a7446059985dc9bcf0a4ac1a8f">u</a>, i, j);</div><div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    <span class="keywordflow">if</span> (i == -1 || j == -1)</div><div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;        <span class="keywordflow">return</span>; <span class="comment">// it is outside our scope</span></div><div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    <span class="keywordtype">int</span> Xdim=(int)<a class="code" href="group__MultidimensionalArrays.html#ga4b3f38e76847a3fbe3e579610b23ad29">XSIZE</a>(*<span class="keyword">this</span>);</div><div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    <span class="keywordtype">int</span> Ydim=(int)<a class="code" href="group__MultidimensionalArrays.html#ga93a0591d7e0c8b4ab932b3a45b359650">YSIZE</a>(*<span class="keyword">this</span>);</div><div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    i = <a class="code" href="group__Macros.html#gad4d08cca0a39849cc247072eaebe7726">CLIP</a>(i, 0, Ydim);</div><div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    j = <a class="code" href="group__Macros.html#gad4d08cca0a39849cc247072eaebe7726">CLIP</a>(j, 0, Xdim);</div><div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    <a class="code" href="group__MultidimensionalArrays.html#ga9cf9c3a95f2270982504fd5e40133864">A2D_ELEM</a>(*<span class="keyword">this</span>, i, j)++;</div><div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    <a class="code" href="classHistogram2D.html#a4fe4427d8d901d7873b134d668da9bf5">no_samples</a>++;</div><div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;}</div><div class="ttc" id="group__MultidimensionalArrays_html_ga9cf9c3a95f2270982504fd5e40133864"><div class="ttname"><a href="group__MultidimensionalArrays.html#ga9cf9c3a95f2270982504fd5e40133864">A2D_ELEM</a></div><div class="ttdeci">#define A2D_ELEM(v, i, j)</div><div class="ttdef"><b>Definition:</b> <a href="multidim__array_8h_source.html#l00364">multidim_array.h:364</a></div></div>
+<div class="ttc" id="group__MultidimensionalArrays_html_ga4b3f38e76847a3fbe3e579610b23ad29"><div class="ttname"><a href="group__MultidimensionalArrays.html#ga4b3f38e76847a3fbe3e579610b23ad29">XSIZE</a></div><div class="ttdeci">#define XSIZE(v)</div><div class="ttdef"><b>Definition:</b> <a href="multidim__array_8h_source.html#l00101">multidim_array.h:101</a></div></div>
+<div class="ttc" id="project__crystal_8cpp_html_acb559820d9ca11295b4500f179ef6392"><div class="ttname"><a href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a></div><div class="ttdeci">#define i</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02510">numerical_recipes.cpp:2510</a></div></div>
+<div class="ttc" id="group__Macros_html_gad4d08cca0a39849cc247072eaebe7726"><div class="ttname"><a href="group__Macros.html#gad4d08cca0a39849cc247072eaebe7726">CLIP</a></div><div class="ttdeci">#define CLIP(x, x0, xF)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__macros_8h_source.html#l00260">xmipp_macros.h:260</a></div></div>
+<div class="ttc" id="group__MultidimensionalArrays_html_ga93a0591d7e0c8b4ab932b3a45b359650"><div class="ttname"><a href="group__MultidimensionalArrays.html#ga93a0591d7e0c8b4ab932b3a45b359650">YSIZE</a></div><div class="ttdeci">#define YSIZE(v)</div><div class="ttdef"><b>Definition:</b> <a href="multidim__array_8h_source.html#l00105">multidim_array.h:105</a></div></div>
+<div class="ttc" id="project__crystal_8cpp_html_aae82a1338cf72eb9a1cc7043f569537e"><div class="ttname"><a href="project__crystal_8cpp.html#aae82a1338cf72eb9a1cc7043f569537e">j</a></div><div class="ttdeci">#define j</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02510">numerical_recipes.cpp:2510</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a4fe4427d8d901d7873b134d668da9bf5"><div class="ttname"><a href="classHistogram2D.html#a4fe4427d8d901d7873b134d668da9bf5">Histogram2D::no_samples</a></div><div class="ttdeci">int no_samples</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00709">histogram.h:709</a></div></div>
+<div class="ttc" id="classHistogram2D_html_aa7caa9058d5c206dee4d5c0c6ff4f4cd"><div class="ttname"><a href="classHistogram2D.html#aa7caa9058d5c206dee4d5c0c6ff4f4cd">Histogram2D::val2index</a></div><div class="ttdeci">void val2index(double v, double u, int &amp;i, int &amp;j) const </div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00813">histogram.h:813</a></div></div>
+<div class="ttc" id="numerical__recipes_8cpp_html_a6277e2a7446059985dc9bcf0a4ac1a8f"><div class="ttname"><a href="numerical__recipes_8cpp.html#a6277e2a7446059985dc9bcf0a4ac1a8f">u</a></div><div class="ttdeci">doublereal * u</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02247">numerical_recipes.cpp:2247</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a34cb45a4221662d74bbc2a47af95d5e8"></a>
@@ -925,7 +980,10 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Step size in i for the histogram</p>
-<div class="fragment"><div class="line">std::cout &lt;&lt; <span class="stringliteral">&quot;Step size of the histogram &quot;</span> &lt;&lt; hist.<a class="code" href="classHistogram2D.html#a34cb45a4221662d74bbc2a47af95d5e8">Istep</a>() &lt;&lt; std::endl;</div></div><!-- fragment --> 
+<div class="fragment"><div class="line">std::cout &lt;&lt; <span class="stringliteral">&quot;Step size of the histogram &quot;</span> &lt;&lt; hist.Istep() &lt;&lt; std::endl;</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="histogram_8h_source.html#l00877">877</a> of file <a class="el" href="histogram_8h_source.html">histogram.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;    {</div><div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classHistogram2D.html#a46f8a4565f1c9f538ded441f0d1f14c4">istep_size</a>;</div><div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;    }</div><div class="ttc" id="classHistogram2D_html_a46f8a4565f1c9f538ded441f0d1f14c4"><div class="ttname"><a href="classHistogram2D.html#a46f8a4565f1c9f538ded441f0d1f14c4">Histogram2D::istep_size</a></div><div class="ttdeci">double istep_size</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00705">histogram.h:705</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a88a6e0069f0f944c64c28ddc3fd931b0"></a>
@@ -949,7 +1007,10 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Number of steps in i in the histogram</p>
-<div class="fragment"><div class="line">std::cout &lt;&lt; <span class="stringliteral">&quot;No. Steps in the histogram &quot;</span> &lt;&lt; hist.<a class="code" href="classHistogram2D.html#a88a6e0069f0f944c64c28ddc3fd931b0">IstepNo</a>() &lt;&lt; std::endl;</div></div><!-- fragment --> 
+<div class="fragment"><div class="line">std::cout &lt;&lt; <span class="stringliteral">&quot;No. Steps in the histogram &quot;</span> &lt;&lt; hist.IstepNo() &lt;&lt; std::endl;</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="histogram_8h_source.html#l00888">888</a> of file <a class="el" href="histogram_8h_source.html">histogram.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;    {</div><div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group__MultidimensionalArrays.html#ga93a0591d7e0c8b4ab932b3a45b359650">YSIZE</a>(*<span class="keyword">this</span>);</div><div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;    }</div><div class="ttc" id="group__MultidimensionalArrays_html_ga93a0591d7e0c8b4ab932b3a45b359650"><div class="ttname"><a href="group__MultidimensionalArrays.html#ga93a0591d7e0c8b4ab932b3a45b359650">YSIZE</a></div><div class="ttdeci">#define YSIZE(v)</div><div class="ttdef"><b>Definition:</b> <a href="multidim__array_8h_source.html#l00105">multidim_array.h:105</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a3aec1890e2233153a9b49ce21e5b9456"></a>
@@ -974,6 +1035,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Maximum j value where the histogram is defined</p>
 <div class="fragment"><div class="line">std::cout &lt;&lt; <span class="stringliteral">&quot;Maximum value for histogram &quot;</span> &lt;&lt; hist.Jmax() &lt;&lt; std::endl;</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="histogram_8h_source.html#l00910">910</a> of file <a class="el" href="histogram_8h_source.html">histogram.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;    {</div><div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classHistogram2D.html#acad03c8882ed1ea9c1c96ed002498855">jmax</a>;</div><div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;    }</div><div class="ttc" id="classHistogram2D_html_acad03c8882ed1ea9c1c96ed002498855"><div class="ttname"><a href="classHistogram2D.html#acad03c8882ed1ea9c1c96ed002498855">Histogram2D::jmax</a></div><div class="ttdeci">double jmax</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00707">histogram.h:707</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a323d4107017b33c6835b27c59d9f4420"></a>
@@ -998,6 +1062,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Minimum j value where the histogram is defined</p>
 <div class="fragment"><div class="line">std::cout &lt;&lt; <span class="stringliteral">&quot;Minimum value for histogram &quot;</span> &lt;&lt; hist.Jmin() &lt;&lt; std::endl;</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="histogram_8h_source.html#l00899">899</a> of file <a class="el" href="histogram_8h_source.html">histogram.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;    {</div><div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classHistogram2D.html#a466b16262ad4d6376289ca8a13415047">jmin</a>;</div><div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;    }</div><div class="ttc" id="classHistogram2D_html_a466b16262ad4d6376289ca8a13415047"><div class="ttname"><a href="classHistogram2D.html#a466b16262ad4d6376289ca8a13415047">Histogram2D::jmin</a></div><div class="ttdeci">double jmin</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00706">histogram.h:706</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a87eb4e2a1b1ad7fc42530629fee8f9c2"></a>
@@ -1021,7 +1088,10 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Step size in j for the histogram</p>
-<div class="fragment"><div class="line">std::cout &lt;&lt; <span class="stringliteral">&quot;Step size of the histogram &quot;</span> &lt;&lt; hist.<a class="code" href="classHistogram2D.html#a87eb4e2a1b1ad7fc42530629fee8f9c2">Jstep</a>() &lt;&lt; std::endl;</div></div><!-- fragment --> 
+<div class="fragment"><div class="line">std::cout &lt;&lt; <span class="stringliteral">&quot;Step size of the histogram &quot;</span> &lt;&lt; hist.Jstep() &lt;&lt; std::endl;</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="histogram_8h_source.html#l00921">921</a> of file <a class="el" href="histogram_8h_source.html">histogram.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;    {</div><div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classHistogram2D.html#a31aeeea1e394ff6cdd8f87f0bcca4a00">jstep_size</a>;</div><div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;    }</div><div class="ttc" id="classHistogram2D_html_a31aeeea1e394ff6cdd8f87f0bcca4a00"><div class="ttname"><a href="classHistogram2D.html#a31aeeea1e394ff6cdd8f87f0bcca4a00">Histogram2D::jstep_size</a></div><div class="ttdeci">double jstep_size</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00708">histogram.h:708</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a01ebf35870ce0bb2ef131b0c2aa8d4fc"></a>
@@ -1045,7 +1115,10 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Number of steps in j in the histogram</p>
-<div class="fragment"><div class="line">std::cout &lt;&lt; <span class="stringliteral">&quot;No. Steps in the histogram &quot;</span> &lt;&lt; hist.<a class="code" href="classHistogram2D.html#a01ebf35870ce0bb2ef131b0c2aa8d4fc">JstepNo</a>() &lt;&lt; std::endl;</div></div><!-- fragment --> 
+<div class="fragment"><div class="line">std::cout &lt;&lt; <span class="stringliteral">&quot;No. Steps in the histogram &quot;</span> &lt;&lt; hist.JstepNo() &lt;&lt; std::endl;</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="histogram_8h_source.html#l00932">932</a> of file <a class="el" href="histogram_8h_source.html">histogram.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;    {</div><div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group__MultidimensionalArrays.html#ga4b3f38e76847a3fbe3e579610b23ad29">XSIZE</a>(*<span class="keyword">this</span>);</div><div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;    }</div><div class="ttc" id="group__MultidimensionalArrays_html_ga4b3f38e76847a3fbe3e579610b23ad29"><div class="ttname"><a href="group__MultidimensionalArrays.html#ga4b3f38e76847a3fbe3e579610b23ad29">XSIZE</a></div><div class="ttdeci">#define XSIZE(v)</div><div class="ttdef"><b>Definition:</b> <a href="multidim__array_8h_source.html#l00101">multidim_array.h:101</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a870589cb6729f99e847bef4f5d4d9e66"></a>
@@ -1063,6 +1136,16 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Assignment. </p>
 
+<p>Definition at line <a class="el" href="histogram_8cpp_source.html#l00487">487</a> of file <a class="el" href="histogram_8cpp_source.html">histogram.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;{</div><div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;H)</div><div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    {</div><div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;        this-&gt;<a class="code" href="classMultidimArray.html#a08af0d48219fab51a5ebb1d0c2bab5cf">MultidimArray&lt;double&gt;::operator =</a>(H);</div><div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;        <a class="code" href="classHistogram2D.html#a787ecafa3782a8e847aedcec8dc417b4">imin</a> = H.<a class="code" href="classHistogram2D.html#a787ecafa3782a8e847aedcec8dc417b4">imin</a>;</div><div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;        <a class="code" href="classHistogram2D.html#a1c888d521576d8ea1c7f8a70f53fd7a4">imax</a> = H.<a class="code" href="classHistogram2D.html#a1c888d521576d8ea1c7f8a70f53fd7a4">imax</a>;</div><div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;        <a class="code" href="classHistogram2D.html#a46f8a4565f1c9f538ded441f0d1f14c4">istep_size</a> = H.<a class="code" href="classHistogram2D.html#a46f8a4565f1c9f538ded441f0d1f14c4">istep_size</a>;</div><div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;        <a class="code" href="classHistogram2D.html#a466b16262ad4d6376289ca8a13415047">jmin</a> = H.<a class="code" href="classHistogram2D.html#a466b16262ad4d6376289ca8a13415047">jmin</a>;</div><div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        <a class="code" href="classHistogram2D.html#acad03c8882ed1ea9c1c96ed002498855">jmax</a> = H.<a class="code" href="classHistogram2D.html#acad03c8882ed1ea9c1c96ed002498855">jmax</a>;</div><div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        <a class="code" href="classHistogram2D.html#a31aeeea1e394ff6cdd8f87f0bcca4a00">jstep_size</a> = H.<a class="code" href="classHistogram2D.html#a31aeeea1e394ff6cdd8f87f0bcca4a00">jstep_size</a>;</div><div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;        <a class="code" href="classHistogram2D.html#a4fe4427d8d901d7873b134d668da9bf5">no_samples</a> = H.<a class="code" href="classHistogram2D.html#a4fe4427d8d901d7873b134d668da9bf5">no_samples</a>;</div><div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    }</div><div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;}</div><div class="ttc" id="classHistogram2D_html_a46f8a4565f1c9f538ded441f0d1f14c4"><div class="ttname"><a href="classHistogram2D.html#a46f8a4565f1c9f538ded441f0d1f14c4">Histogram2D::istep_size</a></div><div class="ttdeci">double istep_size</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00705">histogram.h:705</a></div></div>
+<div class="ttc" id="classHistogram2D_html_acad03c8882ed1ea9c1c96ed002498855"><div class="ttname"><a href="classHistogram2D.html#acad03c8882ed1ea9c1c96ed002498855">Histogram2D::jmax</a></div><div class="ttdeci">double jmax</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00707">histogram.h:707</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a31aeeea1e394ff6cdd8f87f0bcca4a00"><div class="ttname"><a href="classHistogram2D.html#a31aeeea1e394ff6cdd8f87f0bcca4a00">Histogram2D::jstep_size</a></div><div class="ttdeci">double jstep_size</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00708">histogram.h:708</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a1c888d521576d8ea1c7f8a70f53fd7a4"><div class="ttname"><a href="classHistogram2D.html#a1c888d521576d8ea1c7f8a70f53fd7a4">Histogram2D::imax</a></div><div class="ttdeci">double imax</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00704">histogram.h:704</a></div></div>
+<div class="ttc" id="classMultidimArray_html_a08af0d48219fab51a5ebb1d0c2bab5cf"><div class="ttname"><a href="classMultidimArray.html#a08af0d48219fab51a5ebb1d0c2bab5cf">MultidimArray::operator=</a></div><div class="ttdeci">MultidimArray&lt; T &gt; &amp; operator=(const MultidimArray&lt; T &gt; &amp;op1)</div><div class="ttdef"><b>Definition:</b> <a href="multidim__array_8h_source.html#l05357">multidim_array.h:5357</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a4fe4427d8d901d7873b134d668da9bf5"><div class="ttname"><a href="classHistogram2D.html#a4fe4427d8d901d7873b134d668da9bf5">Histogram2D::no_samples</a></div><div class="ttdeci">int no_samples</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00709">histogram.h:709</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a466b16262ad4d6376289ca8a13415047"><div class="ttname"><a href="classHistogram2D.html#a466b16262ad4d6376289ca8a13415047">Histogram2D::jmin</a></div><div class="ttdeci">double jmin</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00706">histogram.h:706</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a787ecafa3782a8e847aedcec8dc417b4"><div class="ttname"><a href="classHistogram2D.html#a787ecafa3782a8e847aedcec8dc417b4">Histogram2D::imin</a></div><div class="ttdeci">double imin</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00703">histogram.h:703</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ab1ffe8331549cbf3317f95e3c9fdeeba"></a>
@@ -1086,7 +1169,10 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Number of samples introduced in the histogram</p>
-<div class="fragment"><div class="line">std::cout &lt;&lt; <span class="stringliteral">&quot;No. Samples in the histogram &quot;</span> &lt;&lt; hist.<a class="code" href="classHistogram2D.html#ab1ffe8331549cbf3317f95e3c9fdeeba">sampleNo</a>() &lt;&lt; std::endl;</div></div><!-- fragment --> 
+<div class="fragment"><div class="line">std::cout &lt;&lt; <span class="stringliteral">&quot;No. Samples in the histogram &quot;</span> &lt;&lt; hist.sampleNo() &lt;&lt; std::endl;</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="histogram_8h_source.html#l00943">943</a> of file <a class="el" href="histogram_8h_source.html">histogram.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;    {</div><div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classHistogram2D.html#a4fe4427d8d901d7873b134d668da9bf5">no_samples</a>;</div><div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;    }</div><div class="ttc" id="classHistogram2D_html_a4fe4427d8d901d7873b134d668da9bf5"><div class="ttname"><a href="classHistogram2D.html#a4fe4427d8d901d7873b134d668da9bf5">Histogram2D::no_samples</a></div><div class="ttdeci">int no_samples</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00709">histogram.h:709</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aa7caa9058d5c206dee4d5c0c6ff4f4cd"></a>
@@ -1134,7 +1220,21 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Value &ndash;&gt; Index</p>
 <p>Given two values for the two variables it returns the code of the interval where it should be counted. If it is outside the global range of the histogram it returns -1 for that variable (i or j). The following example tells you that the interval corresponding to (45,0) is that with code (i,j), i.e, you could access to hist()(i,j) to know how many projections are there in the same interval as this projection.</p>
-<div class="fragment"><div class="line">hist.<a class="code" href="classHistogram2D.html#aa7caa9058d5c206dee4d5c0c6ff4f4cd">val2index</a>(45, 0, i, j);</div></div><!-- fragment --> 
+<div class="fragment"><div class="line">hist.val2index(45, 0, <a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>, <a class="code" href="project__crystal_8cpp.html#aae82a1338cf72eb9a1cc7043f569537e">j</a>);</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="histogram_8h_source.html#l00813">813</a> of file <a class="el" href="histogram_8h_source.html">histogram.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;    {</div><div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;        <span class="keywordflow">if</span> (v == <a class="code" href="classHistogram2D.html#a1c888d521576d8ea1c7f8a70f53fd7a4">imax</a>)</div><div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;            <a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a> = <a class="code" href="classHistogram2D.html#a88a6e0069f0f944c64c28ddc3fd931b0">IstepNo</a>() - 1;</div><div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;        <span class="keywordflow">else</span></div><div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;            <a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a> = (int) <a class="code" href="group__Macros.html#ga2f0eecb0f7856721f56faff8f27b0dc1">FLOOR</a>((v - <a class="code" href="classHistogram2D.html#a787ecafa3782a8e847aedcec8dc417b4">imin</a>) / <a class="code" href="classHistogram2D.html#a46f8a4565f1c9f538ded441f0d1f14c4">istep_size</a>);</div><div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;</div><div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="numerical__recipes_8cpp.html#a6277e2a7446059985dc9bcf0a4ac1a8f">u</a> == <a class="code" href="classHistogram2D.html#acad03c8882ed1ea9c1c96ed002498855">jmax</a>)</div><div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;            <a class="code" href="project__crystal_8cpp.html#aae82a1338cf72eb9a1cc7043f569537e">j</a> = <a class="code" href="classHistogram2D.html#a01ebf35870ce0bb2ef131b0c2aa8d4fc">JstepNo</a>() - 1;</div><div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;</div><div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;        <a class="code" href="project__crystal_8cpp.html#aae82a1338cf72eb9a1cc7043f569537e">j</a> = (int) <a class="code" href="group__Macros.html#ga2f0eecb0f7856721f56faff8f27b0dc1">FLOOR</a>((<a class="code" href="numerical__recipes_8cpp.html#a6277e2a7446059985dc9bcf0a4ac1a8f">u</a> - <a class="code" href="classHistogram2D.html#a466b16262ad4d6376289ca8a13415047">jmin</a>) / <a class="code" href="classHistogram2D.html#a31aeeea1e394ff6cdd8f87f0bcca4a00">jstep_size</a>);</div><div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;</div><div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;        <span class="keywordflow">if</span> (i &lt; 0 || i &gt;= <a class="code" href="classHistogram2D.html#a88a6e0069f0f944c64c28ddc3fd931b0">IstepNo</a>())</div><div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;            <a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a> = -1;</div><div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;</div><div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        <span class="keywordflow">if</span> (j &lt; 0 || j &gt;= <a class="code" href="classHistogram2D.html#a01ebf35870ce0bb2ef131b0c2aa8d4fc">JstepNo</a>())</div><div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;            <a class="code" href="project__crystal_8cpp.html#aae82a1338cf72eb9a1cc7043f569537e">j</a> = -1;</div><div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;    }</div><div class="ttc" id="classHistogram2D_html_a46f8a4565f1c9f538ded441f0d1f14c4"><div class="ttname"><a href="classHistogram2D.html#a46f8a4565f1c9f538ded441f0d1f14c4">Histogram2D::istep_size</a></div><div class="ttdeci">double istep_size</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00705">histogram.h:705</a></div></div>
+<div class="ttc" id="classHistogram2D_html_acad03c8882ed1ea9c1c96ed002498855"><div class="ttname"><a href="classHistogram2D.html#acad03c8882ed1ea9c1c96ed002498855">Histogram2D::jmax</a></div><div class="ttdeci">double jmax</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00707">histogram.h:707</a></div></div>
+<div class="ttc" id="project__crystal_8cpp_html_acb559820d9ca11295b4500f179ef6392"><div class="ttname"><a href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a></div><div class="ttdeci">#define i</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02510">numerical_recipes.cpp:2510</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a01ebf35870ce0bb2ef131b0c2aa8d4fc"><div class="ttname"><a href="classHistogram2D.html#a01ebf35870ce0bb2ef131b0c2aa8d4fc">Histogram2D::JstepNo</a></div><div class="ttdeci">int JstepNo() const </div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00932">histogram.h:932</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a31aeeea1e394ff6cdd8f87f0bcca4a00"><div class="ttname"><a href="classHistogram2D.html#a31aeeea1e394ff6cdd8f87f0bcca4a00">Histogram2D::jstep_size</a></div><div class="ttdeci">double jstep_size</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00708">histogram.h:708</a></div></div>
+<div class="ttc" id="group__Macros_html_ga2f0eecb0f7856721f56faff8f27b0dc1"><div class="ttname"><a href="group__Macros.html#ga2f0eecb0f7856721f56faff8f27b0dc1">FLOOR</a></div><div class="ttdeci">#define FLOOR(x)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__macros_8h_source.html#l00240">xmipp_macros.h:240</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a1c888d521576d8ea1c7f8a70f53fd7a4"><div class="ttname"><a href="classHistogram2D.html#a1c888d521576d8ea1c7f8a70f53fd7a4">Histogram2D::imax</a></div><div class="ttdeci">double imax</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00704">histogram.h:704</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a88a6e0069f0f944c64c28ddc3fd931b0"><div class="ttname"><a href="classHistogram2D.html#a88a6e0069f0f944c64c28ddc3fd931b0">Histogram2D::IstepNo</a></div><div class="ttdeci">int IstepNo() const </div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00888">histogram.h:888</a></div></div>
+<div class="ttc" id="project__crystal_8cpp_html_aae82a1338cf72eb9a1cc7043f569537e"><div class="ttname"><a href="project__crystal_8cpp.html#aae82a1338cf72eb9a1cc7043f569537e">j</a></div><div class="ttdeci">#define j</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02510">numerical_recipes.cpp:2510</a></div></div>
+<div class="ttc" id="numerical__recipes_8cpp_html_a6277e2a7446059985dc9bcf0a4ac1a8f"><div class="ttname"><a href="numerical__recipes_8cpp.html#a6277e2a7446059985dc9bcf0a4ac1a8f">u</a></div><div class="ttdeci">doublereal * u</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02247">numerical_recipes.cpp:2247</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a466b16262ad4d6376289ca8a13415047"><div class="ttname"><a href="classHistogram2D.html#a466b16262ad4d6376289ca8a13415047">Histogram2D::jmin</a></div><div class="ttdeci">double jmin</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00706">histogram.h:706</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a787ecafa3782a8e847aedcec8dc417b4"><div class="ttname"><a href="classHistogram2D.html#a787ecafa3782a8e847aedcec8dc417b4">Histogram2D::imin</a></div><div class="ttdeci">double imin</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00703">histogram.h:703</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ac8a771927ca76bdb19614c86e608bf79"></a>
@@ -1152,6 +1252,11 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Write an histogram to disk </p>
 
+<p>Definition at line <a class="el" href="histogram_8cpp_source.html#l00559">559</a> of file <a class="el" href="histogram_8cpp_source.html">histogram.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;{</div><div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;    std::ofstream fh;</div><div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;    fh.open(fn.c_str(), std::ios::out);</div><div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;    <span class="keywordflow">if</span> (!fh)</div><div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;        <a class="code" href="group__ErrorHandling.html#ga4ab7f9b2fd1ec4b9efcfba0c9b33052c">REPORT_ERROR</a>(<a class="code" href="group__ErrorHandling.html#ggab0df38968e4f03a3f1f6d6df0f31f45aabda7431146b956debfa7f89164af1790">ERR_IO_NOTOPEN</a>, (<a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>)<span class="stringliteral">&quot;histogram2D::write: File &quot;</span> + fn + <span class="stringliteral">&quot; cannot be openned for output&quot;</span>);</div><div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    fh &lt;&lt; *<span class="keyword">this</span>;</div><div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    fh.close();</div><div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;}</div><div class="ttc" id="group__ErrorHandling_html_ga4ab7f9b2fd1ec4b9efcfba0c9b33052c"><div class="ttname"><a href="group__ErrorHandling.html#ga4ab7f9b2fd1ec4b9efcfba0c9b33052c">REPORT_ERROR</a></div><div class="ttdeci">#define REPORT_ERROR(nerr, ErrormMsg)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__error_8h_source.html#l00238">xmipp_error.h:238</a></div></div>
+<div class="ttc" id="namespacetesting_1_1internal_html_a8e8ff5b11e64078831112677156cb111"><div class="ttname"><a href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">testing::internal::string</a></div><div class="ttdeci">::std::string string</div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l01818">gtest.h:1818</a></div></div>
+<div class="ttc" id="group__ErrorHandling_html_ggab0df38968e4f03a3f1f6d6df0f31f45aabda7431146b956debfa7f89164af1790"><div class="ttname"><a href="group__ErrorHandling.html#ggab0df38968e4f03a3f1f6d6df0f31f45aabda7431146b956debfa7f89164af1790">ERR_IO_NOTOPEN</a></div><div class="ttdoc">File cannot be open. </div><div class="ttdef"><b>Definition:</b> <a href="xmipp__error_8h_source.html#l00142">xmipp_error.h:142</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
@@ -1189,6 +1294,18 @@ Friends</h2></td></tr>
 <p>Show an histogram</p>
 <p>The first column and second column are the (X,Y) coordinates of each histogram measure. The third one is the histogram measure. </p>
 
+<p>Definition at line <a class="el" href="histogram_8cpp_source.html#l00543">543</a> of file <a class="el" href="histogram_8cpp_source.html">histogram.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;{</div><div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    <a class="code" href="classMultidimArray.html">MultidimArray&lt;double&gt;</a> aux;</div><div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    aux.<a class="code" href="classMultidimArray.html#a048fe82e79de7fba796cd4e87869ef36">resize</a>(hist.<a class="code" href="classHistogram2D.html#a88a6e0069f0f944c64c28ddc3fd931b0">IstepNo</a>() * hist.<a class="code" href="classHistogram2D.html#a01ebf35870ce0bb2ef131b0c2aa8d4fc">JstepNo</a>(), 3);</div><div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="numerical__recipes_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a> = 0;</div><div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    <a class="code" href="group__MultidimensionalArrays.html#ga7fa7d580ab43d192c7933abd008bc756">FOR_ALL_ELEMENTS_IN_ARRAY2D</a>(hist)</div><div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;    {</div><div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;        hist.<a class="code" href="classHistogram2D.html#a9a0a5f0e2fddf87e0ea26d8be9fe1c8a">index2val</a>(<a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>, <a class="code" href="project__crystal_8cpp.html#aae82a1338cf72eb9a1cc7043f569537e">j</a>, <a class="code" href="group__MultidimensionalArrays.html#ga9cf9c3a95f2270982504fd5e40133864">A2D_ELEM</a>(aux, n, 0), <a class="code" href="group__MultidimensionalArrays.html#ga9cf9c3a95f2270982504fd5e40133864">A2D_ELEM</a>(aux, n, 1));</div><div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;        <a class="code" href="group__MultidimensionalArrays.html#ga9cf9c3a95f2270982504fd5e40133864">A2D_ELEM</a>(aux, n, 2) = <a class="code" href="group__MultidimensionalArrays.html#ga9cf9c3a95f2270982504fd5e40133864">A2D_ELEM</a>(hist, <a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>, <a class="code" href="project__crystal_8cpp.html#aae82a1338cf72eb9a1cc7043f569537e">j</a>);</div><div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;        n++;</div><div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    }</div><div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    o &lt;&lt; aux;</div><div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    <span class="keywordflow">return</span> o;</div><div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;}</div><div class="ttc" id="classMultidimArray_html_a048fe82e79de7fba796cd4e87869ef36"><div class="ttname"><a href="classMultidimArray.html#a048fe82e79de7fba796cd4e87869ef36">MultidimArray::resize</a></div><div class="ttdeci">void resize(size_t Ndim, size_t Zdim, size_t Ydim, size_t Xdim, bool copy=true)</div><div class="ttdef"><b>Definition:</b> <a href="multidim__array_8h_source.html#l01562">multidim_array.h:1562</a></div></div>
+<div class="ttc" id="group__MultidimensionalArrays_html_ga9cf9c3a95f2270982504fd5e40133864"><div class="ttname"><a href="group__MultidimensionalArrays.html#ga9cf9c3a95f2270982504fd5e40133864">A2D_ELEM</a></div><div class="ttdeci">#define A2D_ELEM(v, i, j)</div><div class="ttdef"><b>Definition:</b> <a href="multidim__array_8h_source.html#l00364">multidim_array.h:364</a></div></div>
+<div class="ttc" id="classMultidimArray_html"><div class="ttname"><a href="classMultidimArray.html">MultidimArray&lt; double &gt;</a></div></div>
+<div class="ttc" id="project__crystal_8cpp_html_acb559820d9ca11295b4500f179ef6392"><div class="ttname"><a href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a></div><div class="ttdeci">#define i</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02510">numerical_recipes.cpp:2510</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a01ebf35870ce0bb2ef131b0c2aa8d4fc"><div class="ttname"><a href="classHistogram2D.html#a01ebf35870ce0bb2ef131b0c2aa8d4fc">Histogram2D::JstepNo</a></div><div class="ttdeci">int JstepNo() const </div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00932">histogram.h:932</a></div></div>
+<div class="ttc" id="group__MultidimensionalArrays_html_ga7fa7d580ab43d192c7933abd008bc756"><div class="ttname"><a href="group__MultidimensionalArrays.html#ga7fa7d580ab43d192c7933abd008bc756">FOR_ALL_ELEMENTS_IN_ARRAY2D</a></div><div class="ttdeci">#define FOR_ALL_ELEMENTS_IN_ARRAY2D(m)</div><div class="ttdef"><b>Definition:</b> <a href="multidim__array_8h_source.html#l00400">multidim_array.h:400</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a88a6e0069f0f944c64c28ddc3fd931b0"><div class="ttname"><a href="classHistogram2D.html#a88a6e0069f0f944c64c28ddc3fd931b0">Histogram2D::IstepNo</a></div><div class="ttdeci">int IstepNo() const </div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00888">histogram.h:888</a></div></div>
+<div class="ttc" id="project__crystal_8cpp_html_aae82a1338cf72eb9a1cc7043f569537e"><div class="ttname"><a href="project__crystal_8cpp.html#aae82a1338cf72eb9a1cc7043f569537e">j</a></div><div class="ttdeci">#define j</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02510">numerical_recipes.cpp:2510</a></div></div>
+<div class="ttc" id="classHistogram2D_html_a9a0a5f0e2fddf87e0ea26d8be9fe1c8a"><div class="ttname"><a href="classHistogram2D.html#a9a0a5f0e2fddf87e0ea26d8be9fe1c8a">Histogram2D::index2val</a></div><div class="ttdeci">void index2val(double i, double j, double &amp;v, double &amp;u) const </div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00843">histogram.h:843</a></div></div>
+<div class="ttc" id="numerical__recipes_8cpp_html_a76f11d9a0a47b94f72c2d0e77fb32240"><div class="ttname"><a href="numerical__recipes_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></div><div class="ttdeci">int * n</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02246">numerical_recipes.cpp:2246</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -1202,6 +1319,8 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="histogram_8h_source.html#l00704">704</a> of file <a class="el" href="histogram_8h_source.html">histogram.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a787ecafa3782a8e847aedcec8dc417b4"></a>
@@ -1213,6 +1332,8 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="histogram_8h_source.html#l00703">703</a> of file <a class="el" href="histogram_8h_source.html">histogram.h</a>.</p>
 
 </div>
 </div>
@@ -1226,6 +1347,8 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="histogram_8h_source.html#l00705">705</a> of file <a class="el" href="histogram_8h_source.html">histogram.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="acad03c8882ed1ea9c1c96ed002498855"></a>
@@ -1237,6 +1360,8 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="histogram_8h_source.html#l00707">707</a> of file <a class="el" href="histogram_8h_source.html">histogram.h</a>.</p>
 
 </div>
 </div>
@@ -1250,6 +1375,8 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="histogram_8h_source.html#l00706">706</a> of file <a class="el" href="histogram_8h_source.html">histogram.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a31aeeea1e394ff6cdd8f87f0bcca4a00"></a>
@@ -1261,6 +1388,8 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="histogram_8h_source.html#l00708">708</a> of file <a class="el" href="histogram_8h_source.html">histogram.h</a>.</p>
 
 </div>
 </div>
@@ -1274,11 +1403,13 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="histogram_8h_source.html#l00709">709</a> of file <a class="el" href="histogram_8h_source.html">histogram.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/<a class="el" href="histogram_8h_source.html">histogram.h</a></li>
-<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/<a class="el" href="histogram_8cpp.html">histogram.cpp</a></li>
+<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/<a class="el" href="histogram_8cpp_source.html">histogram.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

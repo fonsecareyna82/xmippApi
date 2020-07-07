@@ -113,7 +113,10 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:acc385ef6b8b4b8e212db79f12caaf867"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAlignment_1_1AlignmentEstimation.html#acc385ef6b8b4b8e212db79f12caaf867">figuresOfMerit</a></td></tr>
 <tr class="separator:acc385ef6b8b4b8e212db79f12caaf867"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="alignment__estimation_8h_source.html#l00033">33</a> of file <a class="el" href="alignment__estimation_8h_source.html">alignment_estimation.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a612d741bfec4670e6d50185246f6199e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -136,6 +139,12 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="alignment__estimation_8h_source.html#l00034">34</a> of file <a class="el" href="alignment__estimation_8h_source.html">alignment_estimation.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                           {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="structAlignment_1_1AlignmentEstimation.html#a74879d332b56e436aa25ac68742945fe">poses</a>.resize(<a class="code" href="numerical__recipes_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;<a class="code" href="image__find__center_8cpp.html#a438c75002165fed58970c95d67a268c1">m</a> : <a class="code" href="structAlignment_1_1AlignmentEstimation.html#a74879d332b56e436aa25ac68742945fe">poses</a>) {</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="code" href="image__find__center_8cpp.html#a438c75002165fed58970c95d67a268c1">m</a>.initIdentity(3);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="structAlignment_1_1AlignmentEstimation.html#acc385ef6b8b4b8e212db79f12caaf867">figuresOfMerit</a>.resize(<a class="code" href="numerical__recipes_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div><div class="ttc" id="structAlignment_1_1AlignmentEstimation_html_acc385ef6b8b4b8e212db79f12caaf867"><div class="ttname"><a href="structAlignment_1_1AlignmentEstimation.html#acc385ef6b8b4b8e212db79f12caaf867">Alignment::AlignmentEstimation::figuresOfMerit</a></div><div class="ttdeci">std::vector&lt; float &gt; figuresOfMerit</div><div class="ttdef"><b>Definition:</b> <a href="alignment__estimation_8h_source.html#l00045">alignment_estimation.h:45</a></div></div>
+<div class="ttc" id="image__find__center_8cpp_html_a438c75002165fed58970c95d67a268c1"><div class="ttname"><a href="image__find__center_8cpp.html#a438c75002165fed58970c95d67a268c1">m</a></div><div class="ttdeci">int m</div><div class="ttdef"><b>Definition:</b> <a href="image__find__center_8cpp_source.html#l00054">image_find_center.cpp:54</a></div></div>
+<div class="ttc" id="structAlignment_1_1AlignmentEstimation_html_a74879d332b56e436aa25ac68742945fe"><div class="ttname"><a href="structAlignment_1_1AlignmentEstimation.html#a74879d332b56e436aa25ac68742945fe">Alignment::AlignmentEstimation::poses</a></div><div class="ttdeci">std::vector&lt; Matrix2D&lt; float &gt; &gt; poses</div><div class="ttdef"><b>Definition:</b> <a href="alignment__estimation_8h_source.html#l00044">alignment_estimation.h:44</a></div></div>
+<div class="ttc" id="numerical__recipes_8cpp_html_a76f11d9a0a47b94f72c2d0e77fb32240"><div class="ttname"><a href="numerical__recipes_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></div><div class="ttdeci">int * n</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02246">numerical_recipes.cpp:2246</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -149,6 +158,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="alignment__estimation_8h_source.html#l00045">45</a> of file <a class="el" href="alignment__estimation_8h_source.html">alignment_estimation.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a74879d332b56e436aa25ac68742945fe"></a>
@@ -160,6 +171,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="alignment__estimation_8h_source.html#l00044">44</a> of file <a class="el" href="alignment__estimation_8h_source.html">alignment_estimation.h</a>.</p>
 
 </div>
 </div>

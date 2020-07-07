@@ -259,7 +259,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a51ae38ef10274f8f7c6c02ab2a67a28c inherit pub_attribs_classXmippProgram"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmippProgram.html#a51ae38ef10274f8f7c6c02ab2a67a28c">seed</a></td></tr>
 <tr class="separator:a51ae38ef10274f8f7c6c02ab2a67a28c inherit pub_attribs_classXmippProgram"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="phantom__create__main_8cpp_source.html#l00029">29</a> of file <a class="el" href="phantom__create__main_8cpp_source.html">phantom_create_main.cpp</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a5bf1f433c48dcb96f94f7da604dc07bd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -284,6 +287,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classXmippProgram.html#a75ba820f6afd62c89524b497ae9b560d">XmippProgram</a>.</p>
 
+<p>Definition at line <a class="el" href="phantom__create__main_8cpp_source.html#l00037">37</a> of file <a class="el" href="phantom__create__main_8cpp_source.html">phantom_create_main.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="classXmippProgram.html#aaeb37f0bac83f5d2a605aaa0e5c4b6ef">addParamsLine</a>(<span class="stringliteral">&quot;-i &lt;description_file&gt; : Input file with the mathematical features&quot;</span>);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classXmippProgram.html#aaeb37f0bac83f5d2a605aaa0e5c4b6ef">addParamsLine</a>(<span class="stringliteral">&quot;-o &lt;output_file&gt;      : Output volume in voxels&quot;</span>);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classXmippProgram.html#a4f396af57519ec443b4656176eb962bf">addUsageLine</a>(<span class="stringliteral">&quot;Create phantom volume from a feature description file with two Metadatas.&quot;</span>);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="classXmippProgram.html#a4f396af57519ec443b4656176eb962bf">addUsageLine</a>(<span class="stringliteral">&quot;+You may define a mathematical phantom from its geometrical features&quot;</span>);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classXmippProgram.html#a4f396af57519ec443b4656176eb962bf">addUsageLine</a>(<span class="stringliteral">&quot;+(cubes, cylinders, ...) and translate it into a voxel volume with this program.&quot;</span>);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="classXmippProgram.html#a4f396af57519ec443b4656176eb962bf">addUsageLine</a>(<span class="stringliteral">&quot;+ File format can be found in this [[http://xmipp.cnb.csic.es/twiki/bin/view/Xmipp/FileFormats][link]].&quot;</span>);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classXmippProgram.html#a4b8f0a6e1bd09e4dbf56a412101e905e">addExampleLine</a>(<span class="stringliteral">&quot;xmipp_phantom_create -i phantom.descr -o phantom.vol&quot;</span>);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="classXmippProgram.html#a4b8f0a6e1bd09e4dbf56a412101e905e">addExampleLine</a>(<span class="stringliteral">&quot;++In the following link you can find an example of phantom description file:&quot;</span>,<span class="keyword">false</span>);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="classXmippProgram.html#a4b8f0a6e1bd09e4dbf56a412101e905e">addExampleLine</a>(<span class="stringliteral">&quot;++&quot;</span>,<span class="keyword">false</span>);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="classXmippProgram.html#a4b8f0a6e1bd09e4dbf56a412101e905e">addExampleLine</a>(<span class="stringliteral">&quot;++http://newxmipp.svn.sourceforge.net/viewvc/newxmipp/trunk/testXmipp/input/phantom_descr.descr&quot;</span>,<span class="keyword">false</span>);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div><div class="ttc" id="classXmippProgram_html_a4b8f0a6e1bd09e4dbf56a412101e905e"><div class="ttname"><a href="classXmippProgram.html#a4b8f0a6e1bd09e4dbf56a412101e905e">XmippProgram::addExampleLine</a></div><div class="ttdeci">void addExampleLine(const char *example, bool verbatim=true)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8cpp_source.html#l00342">xmipp_program.cpp:342</a></div></div>
+<div class="ttc" id="classXmippProgram_html_a4f396af57519ec443b4656176eb962bf"><div class="ttname"><a href="classXmippProgram.html#a4f396af57519ec443b4656176eb962bf">XmippProgram::addUsageLine</a></div><div class="ttdeci">void addUsageLine(const char *line, bool verbatim=false)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8cpp_source.html#l00338">xmipp_program.cpp:338</a></div></div>
+<div class="ttc" id="classXmippProgram_html_aaeb37f0bac83f5d2a605aaa0e5c4b6ef"><div class="ttname"><a href="classXmippProgram.html#aaeb37f0bac83f5d2a605aaa0e5c4b6ef">XmippProgram::addParamsLine</a></div><div class="ttdeci">void addParamsLine(const String &amp;line)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8cpp_source.html#l00361">xmipp_program.cpp:361</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a3c768f5fbeb5979c69c3f24bf915f799"></a>
@@ -310,6 +318,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classXmippProgram.html#a4f3c0b1ec483442cf6a2cba6666baa18">XmippProgram</a>.</p>
 
+<p>Definition at line <a class="el" href="phantom__create__main_8cpp_source.html#l00051">51</a> of file <a class="el" href="phantom__create__main_8cpp_source.html">phantom_create_main.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="classProgPhantomCreate.html#a5356ab4d3d9cba77558d54696f012c22">fn_phantom</a> = <a class="code" href="classXmippProgram.html#a5d9e1f008822effa47814c59e9a3c797">getParam</a>(<span class="stringliteral">&quot;-i&quot;</span>);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="classProgPhantomCreate.html#aa125c64cfefc9775692e13cc494470ee">fn_vol</a> = <a class="code" href="classXmippProgram.html#a5d9e1f008822effa47814c59e9a3c797">getParam</a>(<span class="stringliteral">&quot;-o&quot;</span>);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div><div class="ttc" id="classXmippProgram_html_a5d9e1f008822effa47814c59e9a3c797"><div class="ttname"><a href="classXmippProgram.html#a5d9e1f008822effa47814c59e9a3c797">XmippProgram::getParam</a></div><div class="ttdeci">const char * getParam(const char *param, int arg=0)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8cpp_source.html#l00377">xmipp_program.cpp:377</a></div></div>
+<div class="ttc" id="classProgPhantomCreate_html_a5356ab4d3d9cba77558d54696f012c22"><div class="ttname"><a href="classProgPhantomCreate.html#a5356ab4d3d9cba77558d54696f012c22">ProgPhantomCreate::fn_phantom</a></div><div class="ttdeci">FileName fn_phantom</div><div class="ttdef"><b>Definition:</b> <a href="phantom__create__main_8cpp_source.html#l00032">phantom_create_main.cpp:32</a></div></div>
+<div class="ttc" id="classProgPhantomCreate_html_aa125c64cfefc9775692e13cc494470ee"><div class="ttname"><a href="classProgPhantomCreate.html#aa125c64cfefc9775692e13cc494470ee">ProgPhantomCreate::fn_vol</a></div><div class="ttdeci">FileName fn_vol</div><div class="ttdef"><b>Definition:</b> <a href="phantom__create__main_8cpp_source.html#l00033">phantom_create_main.cpp:33</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="af6967de89b94e68da52b5b8adfa4c0c9"></a>
@@ -336,6 +349,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classXmippProgram.html#a1d64156309778b3416ba0a153db21447">XmippProgram</a>.</p>
 
+<p>Definition at line <a class="el" href="phantom__create__main_8cpp_source.html#l00058">58</a> of file <a class="el" href="phantom__create__main_8cpp_source.html">phantom_create_main.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="classProgPhantomCreate.html#ae1bd153bc924f862c8be35210d4509b4">phantom</a>.<a class="code" href="classPhantom.html#ab6e22a11d2edae0aabebad15e982112a">read</a>(<a class="code" href="classProgPhantomCreate.html#a5356ab4d3d9cba77558d54696f012c22">fn_phantom</a>);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="classProgPhantomCreate.html#ae1bd153bc924f862c8be35210d4509b4">phantom</a>.<a class="code" href="classPhantom.html#a4e4f9762ff9c771ac287c0c7237848bf">draw_in</a>(<a class="code" href="classProgPhantomCreate.html#a1f229275b5bdd66cea73a9c37cc86134">vol</a>());</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="classProgPhantomCreate.html#a1f229275b5bdd66cea73a9c37cc86134">vol</a>.<a class="code" href="classImageBase.html#ae81a8c11a832924c2bda0909882c3168">write</a>(<a class="code" href="classProgPhantomCreate.html#aa125c64cfefc9775692e13cc494470ee">fn_vol</a>);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div><div class="ttc" id="classImageBase_html_ae81a8c11a832924c2bda0909882c3168"><div class="ttname"><a href="classImageBase.html#ae81a8c11a832924c2bda0909882c3168">ImageBase::write</a></div><div class="ttdeci">void write(const FileName &amp;name=&quot;&quot;, size_t select_img=ALL_IMAGES, bool isStack=false, int mode=WRITE_OVERWRITE, CastWriteMode castMode=CW_CAST, int _swapWrite=0)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__image__base_8cpp_source.html#l00210">xmipp_image_base.cpp:210</a></div></div>
+<div class="ttc" id="classProgPhantomCreate_html_a1f229275b5bdd66cea73a9c37cc86134"><div class="ttname"><a href="classProgPhantomCreate.html#a1f229275b5bdd66cea73a9c37cc86134">ProgPhantomCreate::vol</a></div><div class="ttdeci">Image&lt; double &gt; vol</div><div class="ttdef"><b>Definition:</b> <a href="phantom__create__main_8cpp_source.html#l00035">phantom_create_main.cpp:35</a></div></div>
+<div class="ttc" id="classPhantom_html_a4e4f9762ff9c771ac287c0c7237848bf"><div class="ttname"><a href="classPhantom.html#a4e4f9762ff9c771ac287c0c7237848bf">Phantom::draw_in</a></div><div class="ttdeci">void draw_in(MultidimArray&lt; double &gt; &amp;V)</div><div class="ttdef"><b>Definition:</b> <a href="phantom_8cpp_source.html#l02499">phantom.cpp:2499</a></div></div>
+<div class="ttc" id="classPhantom_html_ab6e22a11d2edae0aabebad15e982112a"><div class="ttname"><a href="classPhantom.html#ab6e22a11d2edae0aabebad15e982112a">Phantom::read</a></div><div class="ttdeci">void read(const FileName &amp;fn_phantom, bool apply_scale=true)</div><div class="ttdef"><b>Definition:</b> <a href="phantom_8cpp_source.html#l02155">phantom.cpp:2155</a></div></div>
+<div class="ttc" id="classProgPhantomCreate_html_ae1bd153bc924f862c8be35210d4509b4"><div class="ttname"><a href="classProgPhantomCreate.html#ae1bd153bc924f862c8be35210d4509b4">ProgPhantomCreate::phantom</a></div><div class="ttdeci">Phantom phantom</div><div class="ttdef"><b>Definition:</b> <a href="phantom__create__main_8cpp_source.html#l00034">phantom_create_main.cpp:34</a></div></div>
+<div class="ttc" id="classProgPhantomCreate_html_a5356ab4d3d9cba77558d54696f012c22"><div class="ttname"><a href="classProgPhantomCreate.html#a5356ab4d3d9cba77558d54696f012c22">ProgPhantomCreate::fn_phantom</a></div><div class="ttdeci">FileName fn_phantom</div><div class="ttdef"><b>Definition:</b> <a href="phantom__create__main_8cpp_source.html#l00032">phantom_create_main.cpp:32</a></div></div>
+<div class="ttc" id="classProgPhantomCreate_html_aa125c64cfefc9775692e13cc494470ee"><div class="ttname"><a href="classProgPhantomCreate.html#aa125c64cfefc9775692e13cc494470ee">ProgPhantomCreate::fn_vol</a></div><div class="ttdeci">FileName fn_vol</div><div class="ttdef"><b>Definition:</b> <a href="phantom__create__main_8cpp_source.html#l00033">phantom_create_main.cpp:33</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -357,6 +379,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="phantom__create__main_8cpp_source.html#l00032">32</a> of file <a class="el" href="phantom__create__main_8cpp_source.html">phantom_create_main.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aa125c64cfefc9775692e13cc494470ee"></a>
@@ -376,6 +400,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="phantom__create__main_8cpp_source.html#l00033">33</a> of file <a class="el" href="phantom__create__main_8cpp_source.html">phantom_create_main.cpp</a>.</p>
 
 </div>
 </div>
@@ -397,6 +423,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="phantom__create__main_8cpp_source.html#l00034">34</a> of file <a class="el" href="phantom__create__main_8cpp_source.html">phantom_create_main.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a1f229275b5bdd66cea73a9c37cc86134"></a>
@@ -417,10 +445,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="phantom__create__main_8cpp_source.html#l00035">35</a> of file <a class="el" href="phantom__create__main_8cpp_source.html">phantom_create_main.cpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/applications/programs/phantom_create/<a class="el" href="phantom__create__main_8cpp.html">phantom_create_main.cpp</a></li>
+<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/applications/programs/phantom_create/<a class="el" href="phantom__create__main_8cpp_source.html">phantom_create_main.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

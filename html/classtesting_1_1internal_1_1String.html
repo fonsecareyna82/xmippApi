@@ -161,7 +161,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a8d2144e930510c3220eb8ea1ede8ad62"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classtesting_1_1internal_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1String.html#a8d2144e930510c3220eb8ea1ede8ad62">Format</a> (const char *format,...)</td></tr>
 <tr class="separator:a8d2144e930510c3220eb8ea1ede8ad62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l02931">2931</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a7c370de44fce74608d0b7e3dd29de035"></a>
 <div class="memitem">
 <div class="memproto">
@@ -183,6 +186,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l03042">3042</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l03042"></a><span class="lineno"> 3042</span>&#160;: c_str_(NULL), length_(0) {}</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a5fc98b7f804652f41833b9a6ad3d4aa4"></a>
@@ -207,6 +212,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l03045">3045</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l03045"></a><span class="lineno"> 3045</span>&#160;                              {  <span class="comment">// NOLINT</span></div><div class="line"><a name="l03046"></a><span class="lineno"> 3046</span>&#160;    <span class="keywordflow">if</span> (a_c_str == NULL) {</div><div class="line"><a name="l03047"></a><span class="lineno"> 3047</span>&#160;      c_str_ = NULL;</div><div class="line"><a name="l03048"></a><span class="lineno"> 3048</span>&#160;      length_ = 0;</div><div class="line"><a name="l03049"></a><span class="lineno"> 3049</span>&#160;    } <span class="keywordflow">else</span> {</div><div class="line"><a name="l03050"></a><span class="lineno"> 3050</span>&#160;      ConstructNonNull(a_c_str, strlen(a_c_str));</div><div class="line"><a name="l03051"></a><span class="lineno"> 3051</span>&#160;    }</div><div class="line"><a name="l03052"></a><span class="lineno"> 3052</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="af0d4c587ba289f492fb082384519ba28"></a>
@@ -241,6 +248,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l03058">3058</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l03058"></a><span class="lineno"> 3058</span>&#160;                                              {</div><div class="line"><a name="l03059"></a><span class="lineno"> 3059</span>&#160;    ConstructNonNull(buffer, a_length);</div><div class="line"><a name="l03060"></a><span class="lineno"> 3060</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a33f47d549f34028bb5bbd23d5af774f5"></a>
@@ -265,6 +274,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l03064">3064</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l03064"></a><span class="lineno"> 3064</span>&#160;: c_str_(NULL), length_(0) { *<span class="keyword">this</span> = str; }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a693c1ab80553033be78e3cc913812218"></a>
@@ -288,6 +299,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l03068">3068</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l03068"></a><span class="lineno"> 3068</span>&#160;{ <span class="keyword">delete</span>[] c_str_; }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="adee057e43bcc56a2e5ba04812d01e95a"></a>
@@ -312,6 +325,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l03076">3076</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l03076"></a><span class="lineno"> 3076</span>&#160;                               {</div><div class="line"><a name="l03077"></a><span class="lineno"> 3077</span>&#160;    ConstructNonNull(str.c_str(), str.length());</div><div class="line"><a name="l03078"></a><span class="lineno"> 3078</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -336,6 +351,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l03125">3125</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l03125"></a><span class="lineno"> 3125</span>&#160;{ <span class="keywordflow">return</span> c_str_; }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a7ce24c41c67b928fe89434d3571c988c"></a>
@@ -501,6 +518,10 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l03091">3091</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l03091"></a><span class="lineno"> 3091</span>&#160;{ <span class="keywordflow">return</span> (<a class="code" href="classtesting_1_1internal_1_1String.html#a7ef0fa81f923c98aa8e6337b6a907f93">c_str</a>() != NULL) &amp;&amp; (<a class="code" href="classtesting_1_1internal_1_1String.html#aa6d8352d3cd89de218ec89f3e8579fbe">length</a>() == 0); }</div><div class="ttc" id="classtesting_1_1internal_1_1String_html_a7ef0fa81f923c98aa8e6337b6a907f93"><div class="ttname"><a href="classtesting_1_1internal_1_1String.html#a7ef0fa81f923c98aa8e6337b6a907f93">testing::internal::String::c_str</a></div><div class="ttdeci">const char * c_str() const </div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l03125">gtest.h:3125</a></div></div>
+<div class="ttc" id="classtesting_1_1internal_1_1String_html_aa6d8352d3cd89de218ec89f3e8579fbe"><div class="ttname"><a href="classtesting_1_1internal_1_1String.html#aa6d8352d3cd89de218ec89f3e8579fbe">testing::internal::String::length</a></div><div class="ttdeci">size_t length() const </div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l03120">gtest.h:3120</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a675cd9d9fc5bbfe6a2f1711d2c20bb09"></a>
@@ -590,6 +611,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l03120">3120</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l03120"></a><span class="lineno"> 3120</span>&#160;{ <span class="keywordflow">return</span> length_; }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ab01cede137521dc4d33b33e1cc39a91a"></a>
@@ -614,6 +637,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l03108">3108</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l03108"></a><span class="lineno"> 3108</span>&#160;{ <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == a_c_str); }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a8f85f555183eaaa7a1da421ef901ea5a"></a>
@@ -637,6 +662,11 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l03080">3080</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l03080"></a><span class="lineno"> 3080</span>&#160;{ <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">return ::std::string</a>(<a class="code" href="classtesting_1_1internal_1_1String.html#a7ef0fa81f923c98aa8e6337b6a907f93">c_str</a>(), <a class="code" href="classtesting_1_1internal_1_1String.html#aa6d8352d3cd89de218ec89f3e8579fbe">length</a>()); }</div><div class="ttc" id="classtesting_1_1internal_1_1String_html_a7ef0fa81f923c98aa8e6337b6a907f93"><div class="ttname"><a href="classtesting_1_1internal_1_1String.html#a7ef0fa81f923c98aa8e6337b6a907f93">testing::internal::String::c_str</a></div><div class="ttdeci">const char * c_str() const </div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l03125">gtest.h:3125</a></div></div>
+<div class="ttc" id="namespacetesting_1_1internal_html_a8e8ff5b11e64078831112677156cb111"><div class="ttname"><a href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">testing::internal::string</a></div><div class="ttdeci">::std::string string</div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l01818">gtest.h:1818</a></div></div>
+<div class="ttc" id="classtesting_1_1internal_1_1String_html_aa6d8352d3cd89de218ec89f3e8579fbe"><div class="ttname"><a href="classtesting_1_1internal_1_1String.html#aa6d8352d3cd89de218ec89f3e8579fbe">testing::internal::String::length</a></div><div class="ttdeci">size_t length() const </div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l03120">gtest.h:3120</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a6e30ecad6b5a16c7be74cb6c58bcf278"></a>
@@ -661,6 +691,9 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l03104">3104</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l03104"></a><span class="lineno"> 3104</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classtesting_1_1internal_1_1String.html#adacb998b058a9117f0398b462c812d37">Compare</a>(rhs) &lt; 0; }</div><div class="ttc" id="classtesting_1_1internal_1_1String_html_adacb998b058a9117f0398b462c812d37"><div class="ttname"><a href="classtesting_1_1internal_1_1String.html#adacb998b058a9117f0398b462c812d37">testing::internal::String::Compare</a></div><div class="ttdeci">int Compare(const String &amp;rhs) const </div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ae87fe1b30ac9b540adeb1b58d1aa7fc0"></a>
@@ -685,6 +718,9 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l03128">3128</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l03128"></a><span class="lineno"> 3128</span>&#160;                                               {</div><div class="line"><a name="l03129"></a><span class="lineno"> 3129</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span> = <a class="code" href="classtesting_1_1internal_1_1String.html#a7c370de44fce74608d0b7e3dd29de035">String</a>(a_c_str);</div><div class="line"><a name="l03130"></a><span class="lineno"> 3130</span>&#160;  }</div><div class="ttc" id="classtesting_1_1internal_1_1String_html_a7c370de44fce74608d0b7e3dd29de035"><div class="ttname"><a href="classtesting_1_1internal_1_1String.html#a7c370de44fce74608d0b7e3dd29de035">testing::internal::String::String</a></div><div class="ttdeci">String()</div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l03042">gtest.h:3042</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a6cb2c268109614bd322803bb59984f23"></a>
@@ -709,6 +745,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l03133">3133</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l03133"></a><span class="lineno"> 3133</span>&#160;                                             {</div><div class="line"><a name="l03134"></a><span class="lineno"> 3134</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;rhs) {</div><div class="line"><a name="l03135"></a><span class="lineno"> 3135</span>&#160;      <span class="keyword">delete</span>[] c_str_;</div><div class="line"><a name="l03136"></a><span class="lineno"> 3136</span>&#160;      <span class="keywordflow">if</span> (rhs.c_str() == NULL) {</div><div class="line"><a name="l03137"></a><span class="lineno"> 3137</span>&#160;        c_str_ = NULL;</div><div class="line"><a name="l03138"></a><span class="lineno"> 3138</span>&#160;        length_ = 0;</div><div class="line"><a name="l03139"></a><span class="lineno"> 3139</span>&#160;      } <span class="keywordflow">else</span> {</div><div class="line"><a name="l03140"></a><span class="lineno"> 3140</span>&#160;        ConstructNonNull(rhs.c_str(), rhs.length());</div><div class="line"><a name="l03141"></a><span class="lineno"> 3141</span>&#160;      }</div><div class="line"><a name="l03142"></a><span class="lineno"> 3142</span>&#160;    }</div><div class="line"><a name="l03143"></a><span class="lineno"> 3143</span>&#160;</div><div class="line"><a name="l03144"></a><span class="lineno"> 3144</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l03145"></a><span class="lineno"> 3145</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a0f8f3fb386bd21ea6bd8fd53e1a07cf5"></a>
@@ -733,6 +771,9 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l03100">3100</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l03100"></a><span class="lineno"> 3100</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classtesting_1_1internal_1_1String.html#adacb998b058a9117f0398b462c812d37">Compare</a>(a_c_str) == 0; }</div><div class="ttc" id="classtesting_1_1internal_1_1String_html_adacb998b058a9117f0398b462c812d37"><div class="ttname"><a href="classtesting_1_1internal_1_1String.html#adacb998b058a9117f0398b462c812d37">testing::internal::String::Compare</a></div><div class="ttdeci">int Compare(const String &amp;rhs) const </div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aac5c9de2339d6d8d228faf61f01a911e"></a>

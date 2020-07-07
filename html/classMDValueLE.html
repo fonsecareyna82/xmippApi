@@ -163,6 +163,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Query if <a class="el" href="classMetaData.html">MetaData</a> column values are less or equal than some specific value. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classMDValueEQ.html">MDValueEQ</a> <a class="el" href="numerical__recipes_8cpp.html#a8b9eb702eb3f9bcba3923532d1e801db">for</a> examples of use. </dd></dl>
+
+<p>Definition at line <a class="el" href="metadata__sql_8h_source.html#l00516">516</a> of file <a class="el" href="metadata__sql_8h_source.html">metadata_sql.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a6dd92cfeb1d55c46e0da2fe3dce04a0f"></a>
 <div class="memitem">
@@ -216,6 +218,13 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="metadata__sql_8h_source.html#l00520">520</a> of file <a class="el" href="metadata__sql_8h_source.html">metadata_sql.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;            :<a class="code" href="classMDValueRelational.html#afeeead19bccc2a8ac98137800a49497f">MDValueRelational</a>(label, valueMax, <a class="code" href="metadata__sql_8h.html#af9a1b34d50cc496bf2d2a99d4bf28de6a662ed4b51721a45f07d645d4ca099a61">LE</a>, <a class="code" href="classMDQuery.html#a31eda74477a72f5498f97063aaa46271">limit</a>, <a class="code" href="classMDQuery.html#ab0790d9dea7a88a63cae5e44643b2859">offset</a>, <a class="code" href="classMDQuery.html#a9bd33fb79892c2ee2646862b198413db">orderLabel</a>)</div><div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    {}</div><div class="ttc" id="classMDQuery_html_a31eda74477a72f5498f97063aaa46271"><div class="ttname"><a href="classMDQuery.html#a31eda74477a72f5498f97063aaa46271">MDQuery::limit</a></div><div class="ttdeci">int limit</div><div class="ttdoc">If distint of -1 the results will be limited to this value. </div><div class="ttdef"><b>Definition:</b> <a href="metadata__sql_8h_source.html#l00328">metadata_sql.h:328</a></div></div>
+<div class="ttc" id="classMDQuery_html_a9bd33fb79892c2ee2646862b198413db"><div class="ttname"><a href="classMDQuery.html#a9bd33fb79892c2ee2646862b198413db">MDQuery::orderLabel</a></div><div class="ttdeci">MDLabel orderLabel</div><div class="ttdoc">Label to which apply sort of the results. </div><div class="ttdef"><b>Definition:</b> <a href="metadata__sql_8h_source.html#l00330">metadata_sql.h:330</a></div></div>
+<div class="ttc" id="classMDQuery_html_ab0790d9dea7a88a63cae5e44643b2859"><div class="ttname"><a href="classMDQuery.html#ab0790d9dea7a88a63cae5e44643b2859">MDQuery::offset</a></div><div class="ttdeci">int offset</div><div class="ttdoc">If distint of 0, offset elements will be discarded. </div><div class="ttdef"><b>Definition:</b> <a href="metadata__sql_8h_source.html#l00329">metadata_sql.h:329</a></div></div>
+<div class="ttc" id="classMDValueRelational_html_afeeead19bccc2a8ac98137800a49497f"><div class="ttname"><a href="classMDValueRelational.html#afeeead19bccc2a8ac98137800a49497f">MDValueRelational::MDValueRelational</a></div><div class="ttdeci">MDValueRelational(MDLabel label, const T &amp;value, RelationalOp op, int limit=-1, int offset=0, MDLabel orderLabel=MDL_OBJID)</div><div class="ttdef"><b>Definition:</b> <a href="metadata__sql_8h_source.html#l00404">metadata_sql.h:404</a></div></div>
+<div class="ttc" id="metadata__sql_8h_html_af9a1b34d50cc496bf2d2a99d4bf28de6a662ed4b51721a45f07d645d4ca099a61"><div class="ttname"><a href="metadata__sql_8h.html#af9a1b34d50cc496bf2d2a99d4bf28de6a662ed4b51721a45f07d645d4ca099a61">LE</a></div><div class="ttdoc">Less equal. </div><div class="ttdef"><b>Definition:</b> <a href="metadata__sql_8h_source.html#l00389">metadata_sql.h:389</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

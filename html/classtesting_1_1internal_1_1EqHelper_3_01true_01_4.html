@@ -109,7 +109,13 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab38e840297adb48f18767a1a99187fb3"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classtesting_1_1AssertionResult.html">AssertionResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1EqHelper_3_01true_01_4.html#ab38e840297adb48f18767a1a99187fb3">Compare</a> (const char *expected_expression, const char *actual_expression, Secret *, T *actual)</td></tr>
 <tr class="separator:ab38e840297adb48f18767a1a99187fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;&gt;<br />
+class testing::internal::EqHelper&lt; true &gt;</h3>
+
+
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l18399">18399</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a70d6d7e3cb1df06ad6114f25e843fd6d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -162,6 +168,9 @@ template&lt;typename T1 , typename T2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l18406">18406</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l18416"></a><span class="lineno">18416</span>&#160;                                                        {</div><div class="line"><a name="l18417"></a><span class="lineno">18417</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacetesting_1_1internal.html#a36f7c44fad92225cbb45fde1642cf30e">CmpHelperEQ</a>(expected_expression, actual_expression, expected,</div><div class="line"><a name="l18418"></a><span class="lineno">18418</span>&#160;                       actual);</div><div class="line"><a name="l18419"></a><span class="lineno">18419</span>&#160;  }</div><div class="ttc" id="namespacetesting_1_1internal_html_a36f7c44fad92225cbb45fde1642cf30e"><div class="ttname"><a href="namespacetesting_1_1internal.html#a36f7c44fad92225cbb45fde1642cf30e">testing::internal::CmpHelperEQ</a></div><div class="ttdeci">AssertionResult CmpHelperEQ(const char *expected_expression, const char *actual_expression, const T1 &amp;expected, const T2 &amp;actual)</div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l18331">gtest.h:18331</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ab38e840297adb48f18767a1a99187fb3"></a>
@@ -210,6 +219,9 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l18424">18424</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l18434"></a><span class="lineno">18434</span>&#160;                 {</div><div class="line"><a name="l18435"></a><span class="lineno">18435</span>&#160;    <span class="comment">// We already know that &#39;expected&#39; is a null pointer.</span></div><div class="line"><a name="l18436"></a><span class="lineno">18436</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacetesting_1_1internal.html#a36f7c44fad92225cbb45fde1642cf30e">CmpHelperEQ</a>(expected_expression, actual_expression,</div><div class="line"><a name="l18437"></a><span class="lineno">18437</span>&#160;                       static_cast&lt;T*&gt;(NULL), actual);</div><div class="line"><a name="l18438"></a><span class="lineno">18438</span>&#160;  }</div><div class="ttc" id="namespacetesting_1_1internal_html_a36f7c44fad92225cbb45fde1642cf30e"><div class="ttname"><a href="namespacetesting_1_1internal.html#a36f7c44fad92225cbb45fde1642cf30e">testing::internal::CmpHelperEQ</a></div><div class="ttdeci">AssertionResult CmpHelperEQ(const char *expected_expression, const char *actual_expression, const T1 &amp;expected, const T2 &amp;actual)</div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l18331">gtest.h:18331</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

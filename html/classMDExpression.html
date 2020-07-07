@@ -148,7 +148,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a2e2c256e093af4f7343f9b3e45f3d937 inherit pub_attribs_classMDQuery"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This subclass of Query will select those entries that satisfy an expression. </p><div class="fragment"><div class="line"><span class="comment">//Remove all images with rotational angle between 100 and 200</span></div><div class="line"><a class="code" href="classMetaData.html">MetaData</a> md;</div><div class="line">md.<a class="code" href="classMetaData.html#aa6bf5be8c5664fe19410aada95639144">removeObjects</a>(<a class="code" href="classMDExpression.html#ac068feb5871c6d49f5870e5cbf246975">MDExpression</a>(<span class="stringliteral">&quot;angleRot &gt; 100 AND angleRot &lt; 200&quot;</span>));</div></div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<div class="textblock"><p>This subclass of Query will select those entries that satisfy an expression. </p><div class="fragment"><div class="line"><span class="comment">//Remove all images with rotational angle between 100 and 200</span></div><div class="line"><a class="code" href="classMetaData.html">MetaData</a> md;</div><div class="line">md.<a class="code" href="classMetaData.html#aa6bf5be8c5664fe19410aada95639144">removeObjects</a>(<a class="code" href="classMDExpression.html#ac068feb5871c6d49f5870e5cbf246975">MDExpression</a>(<span class="stringliteral">&quot;angleRot &gt; 100 AND angleRot &lt; 200&quot;</span>));</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="metadata__sql_8h_source.html#l00593">593</a> of file <a class="el" href="metadata__sql_8h_source.html">metadata_sql.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac068feb5871c6d49f5870e5cbf246975"></a>
 <div class="memitem">
 <div class="memproto">
@@ -170,6 +172,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="metadata__sql_8h_source.html#l00597">597</a> of file <a class="el" href="metadata__sql_8h_source.html">metadata_sql.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    {</div><div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;        sExpression = <span class="stringliteral">&quot; 1=1 &quot;</span>;</div><div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a0d9209130e4adb27b453f32ac1ed2459"></a>
@@ -216,6 +220,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="metadata__sql_8h_source.html#l00601">601</a> of file <a class="el" href="metadata__sql_8h_source.html">metadata_sql.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;                                                :<a class="code" href="classMDQuery.html#a695a59763140bb2b5de87777135c237f">MDQuery</a>(<a class="code" href="classMDQuery.html#a31eda74477a72f5498f97063aaa46271">limit</a>, <a class="code" href="classMDQuery.html#ab0790d9dea7a88a63cae5e44643b2859">offset</a>, <a class="code" href="classMDQuery.html#a9bd33fb79892c2ee2646862b198413db">orderLabel</a>)</div><div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;    {</div><div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;        sExpression=_sExpression;</div><div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;    }</div><div class="ttc" id="classMDQuery_html_a31eda74477a72f5498f97063aaa46271"><div class="ttname"><a href="classMDQuery.html#a31eda74477a72f5498f97063aaa46271">MDQuery::limit</a></div><div class="ttdeci">int limit</div><div class="ttdoc">If distint of -1 the results will be limited to this value. </div><div class="ttdef"><b>Definition:</b> <a href="metadata__sql_8h_source.html#l00328">metadata_sql.h:328</a></div></div>
+<div class="ttc" id="classMDQuery_html_a9bd33fb79892c2ee2646862b198413db"><div class="ttname"><a href="classMDQuery.html#a9bd33fb79892c2ee2646862b198413db">MDQuery::orderLabel</a></div><div class="ttdeci">MDLabel orderLabel</div><div class="ttdoc">Label to which apply sort of the results. </div><div class="ttdef"><b>Definition:</b> <a href="metadata__sql_8h_source.html#l00330">metadata_sql.h:330</a></div></div>
+<div class="ttc" id="classMDQuery_html_ab0790d9dea7a88a63cae5e44643b2859"><div class="ttname"><a href="classMDQuery.html#ab0790d9dea7a88a63cae5e44643b2859">MDQuery::offset</a></div><div class="ttdeci">int offset</div><div class="ttdoc">If distint of 0, offset elements will be discarded. </div><div class="ttdef"><b>Definition:</b> <a href="metadata__sql_8h_source.html#l00329">metadata_sql.h:329</a></div></div>
+<div class="ttc" id="classMDQuery_html_a695a59763140bb2b5de87777135c237f"><div class="ttname"><a href="classMDQuery.html#a695a59763140bb2b5de87777135c237f">MDQuery::MDQuery</a></div><div class="ttdeci">MDQuery(int limit=-1, int offset=0, MDLabel orderLabel=MDL_OBJID, bool asc=true)</div><div class="ttdef"><b>Definition:</b> <a href="metadata__sql_8h_source.html#l00334">metadata_sql.h:334</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -243,6 +253,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classMDQuery.html#abd71ce820383fd92eec0ed83a667d553">MDQuery</a>.</p>
 
+<p>Definition at line <a class="el" href="metadata__sql_8h_source.html#l00609">609</a> of file <a class="el" href="metadata__sql_8h_source.html">metadata_sql.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;    {</div><div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;        <span class="keywordflow">return</span> sExpression;</div><div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

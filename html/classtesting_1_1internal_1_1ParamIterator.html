@@ -135,7 +135,13 @@ Friends</h2></td></tr>
 <tr class="memitem:ab73a355ae191f2f7eab54b65ca557714"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1ParamIterator.html#ab73a355ae191f2f7eab54b65ca557714">ParamGenerator&lt; T &gt;</a></td></tr>
 <tr class="separator:ab73a355ae191f2f7eab54b65ca557714"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+class testing::internal::ParamIterator&lt; T &gt;</h3>
+
+
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10033">10033</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a6c37240a04ba3fc4c56f6c413cf4771d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -147,6 +153,8 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10037">10037</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
 
 </div>
 </div>
@@ -162,6 +170,8 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10036">10036</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a4afe3a68db0d0744753c8afe262e35df"></a>
@@ -175,6 +185,8 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10035">10035</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
 
 </div>
 </div>
@@ -203,6 +215,8 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10040">10040</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l10040"></a><span class="lineno">10040</span>&#160;: impl_(other.impl_-&gt;Clone()) {}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -230,6 +244,8 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10063">10063</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l10063"></a><span class="lineno">10063</span>&#160;                                                    {</div><div class="line"><a name="l10064"></a><span class="lineno">10064</span>&#160;    <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == other);</div><div class="line"><a name="l10065"></a><span class="lineno">10065</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ac06372831efcdaeadccd2fb2786f5a95"></a>
@@ -255,6 +271,8 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10047">10047</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l10047"></a><span class="lineno">10047</span>&#160;{ <span class="keywordflow">return</span> *impl_-&gt;Current(); }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ab0922f2f554fb3beaf13c442da605e8d"></a>
@@ -280,6 +298,8 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10050">10050</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l10050"></a><span class="lineno">10050</span>&#160;                              {</div><div class="line"><a name="l10051"></a><span class="lineno">10051</span>&#160;    impl_-&gt;Advance();</div><div class="line"><a name="l10052"></a><span class="lineno">10052</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l10053"></a><span class="lineno">10053</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="af51e17827dd54977165937550c0fb030"></a>
@@ -306,6 +326,9 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10055">10055</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l10055"></a><span class="lineno">10055</span>&#160;                                  {</div><div class="line"><a name="l10056"></a><span class="lineno">10056</span>&#160;    ParamIteratorInterface&lt;T&gt;* clone = impl_-&gt;Clone();</div><div class="line"><a name="l10057"></a><span class="lineno">10057</span>&#160;    impl_-&gt;Advance();</div><div class="line"><a name="l10058"></a><span class="lineno">10058</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classtesting_1_1internal_1_1ParamIterator.html#aa10585055ee055e304703a3004f24f33">ParamIterator</a>(clone);</div><div class="line"><a name="l10059"></a><span class="lineno">10059</span>&#160;  }</div><div class="ttc" id="classtesting_1_1internal_1_1ParamIterator_html_aa10585055ee055e304703a3004f24f33"><div class="ttname"><a href="classtesting_1_1internal_1_1ParamIterator.html#aa10585055ee055e304703a3004f24f33">testing::internal::ParamIterator::ParamIterator</a></div><div class="ttdeci">ParamIterator(const ParamIterator &amp;other)</div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l10040">gtest.h:10040</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aaf248ff7a1b5bb82d6ebb96c669aa75c"></a>
@@ -331,6 +354,8 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10048">10048</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l10048"></a><span class="lineno">10048</span>&#160;{ <span class="keywordflow">return</span> impl_-&gt;Current(); }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a8019f54ea1c66ca39ffdec47acfabfe6"></a>
@@ -357,6 +382,8 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10041">10041</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l10041"></a><span class="lineno">10041</span>&#160;                                                       {</div><div class="line"><a name="l10042"></a><span class="lineno">10042</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other)</div><div class="line"><a name="l10043"></a><span class="lineno">10043</span>&#160;      impl_.reset(other.impl_-&gt;Clone());</div><div class="line"><a name="l10044"></a><span class="lineno">10044</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l10045"></a><span class="lineno">10045</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a1a3a858e3d2d101fe561a88affcad0d5"></a>
@@ -383,6 +410,8 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10060">10060</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l10060"></a><span class="lineno">10060</span>&#160;                                                    {</div><div class="line"><a name="l10061"></a><span class="lineno">10061</span>&#160;    <span class="keywordflow">return</span> impl_.get() == other.impl_.get() || impl_-&gt;Equals(*other.impl_);</div><div class="line"><a name="l10062"></a><span class="lineno">10062</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
@@ -405,6 +434,8 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10068">10068</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
 
 </div>
 </div>

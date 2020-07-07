@@ -169,6 +169,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="lib__vec_8cpp_source.html#l00061">61</a> of file <a class="el" href="lib__vec_8cpp_source.html">lib_vec.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="test__fftw__main_8cpp.html#ac965d90e3dbc32c27e426a48ddc38186">len</a>; ++<a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>)</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    to_vect[i] += scalar * from_vect[i];</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div><div class="ttc" id="project__crystal_8cpp_html_acb559820d9ca11295b4500f179ef6392"><div class="ttname"><a href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a></div><div class="ttdeci">#define i</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02510">numerical_recipes.cpp:2510</a></div></div>
+<div class="ttc" id="test__fftw__main_8cpp_html_ac965d90e3dbc32c27e426a48ddc38186"><div class="ttname"><a href="test__fftw__main_8cpp.html#ac965d90e3dbc32c27e426a48ddc38186">len</a></div><div class="ttdeci">#define len</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a3dba0f046e5df31593bc2200d38cfd61"></a>
@@ -195,6 +199,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="lib__vec_8cpp_source.html#l00071">71</a> of file <a class="el" href="lib__vec_8cpp_source.html">lib_vec.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> *pvect;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  pvect = calloc(<a class="code" href="numerical__recipes_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, elem_size);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">if</span> (!pvect) {</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="lib__err_8cpp.html#a651af4dd697afe2e65af68f754079741">error_memory_allocation</a>(99901, <span class="stringliteral">&quot;lib_cvq&quot;</span>);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  }</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">return</span> pvect;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div><div class="ttc" id="numerical__recipes_8cpp_html_a76f11d9a0a47b94f72c2d0e77fb32240"><div class="ttname"><a href="numerical__recipes_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></div><div class="ttdeci">int * n</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02246">numerical_recipes.cpp:2246</a></div></div>
+<div class="ttc" id="lib__err_8cpp_html_a651af4dd697afe2e65af68f754079741"><div class="ttname"><a href="lib__err_8cpp.html#a651af4dd697afe2e65af68f754079741">error_memory_allocation</a></div><div class="ttdeci">void error_memory_allocation(int error_number, const char *program)</div><div class="ttdef"><b>Definition:</b> <a href="lib__err_8cpp_source.html#l00050">lib_err.cpp:50</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="acacd4f6378138d04828fd1405945b3b6"></a>
@@ -227,6 +235,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="lib__vec_8cpp_source.html#l00044">44</a> of file <a class="el" href="lib__vec_8cpp_source.html">lib_vec.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  memcpy(*vect1, *vect2, <a class="code" href="test__fftw__main_8cpp.html#ac965d90e3dbc32c27e426a48ddc38186">len</a> * <span class="keyword">sizeof</span>(<span class="keywordtype">double</span>));</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div><div class="ttc" id="test__fftw__main_8cpp_html_ac965d90e3dbc32c27e426a48ddc38186"><div class="ttname"><a href="test__fftw__main_8cpp.html#ac965d90e3dbc32c27e426a48ddc38186">len</a></div><div class="ttdeci">#define len</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a8b1eaf4e8902530131978ccc6e6fbac6"></a>
@@ -259,6 +270,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="lib__vec_8cpp_source.html#l00051">51</a> of file <a class="el" href="lib__vec_8cpp_source.html">lib_vec.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordflow">if</span> (*pvect1)</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="numerical__recipes_8cpp.html#a32927ba57ddc0c409fd40fe79cad9982">free</a>(*pvect1);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="lib__vec_8cpp.html#a44e7aedec778e3afa2bfb2579f2f5c76">do_vect</a>(pvect1, <a class="code" href="test__fftw__main_8cpp.html#ac965d90e3dbc32c27e426a48ddc38186">len</a>);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="lib__vec_8cpp.html#a70954035ffb15ee75def4eac4b75dc87">cp_vect</a>(pvect1, pvect2, <a class="code" href="test__fftw__main_8cpp.html#ac965d90e3dbc32c27e426a48ddc38186">len</a>);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="lib__vec_8cpp.html#aae41642ab5fb260fdb9eac7b173a552e">free_vect_and_zero_ptr</a>((<span class="keywordtype">void</span>**)pvect2);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div><div class="ttc" id="lib__vec_8cpp_html_aae41642ab5fb260fdb9eac7b173a552e"><div class="ttname"><a href="lib__vec_8cpp.html#aae41642ab5fb260fdb9eac7b173a552e">free_vect_and_zero_ptr</a></div><div class="ttdeci">void free_vect_and_zero_ptr(void **pvect)</div><div class="ttdef"><b>Definition:</b> <a href="lib__vec_8cpp_source.html#l00083">lib_vec.cpp:83</a></div></div>
+<div class="ttc" id="numerical__recipes_8cpp_html_a32927ba57ddc0c409fd40fe79cad9982"><div class="ttname"><a href="numerical__recipes_8cpp.html#a32927ba57ddc0c409fd40fe79cad9982">free</a></div><div class="ttdeci">free((char *) ob)</div></div>
+<div class="ttc" id="test__fftw__main_8cpp_html_ac965d90e3dbc32c27e426a48ddc38186"><div class="ttname"><a href="test__fftw__main_8cpp.html#ac965d90e3dbc32c27e426a48ddc38186">len</a></div><div class="ttdeci">#define len</div></div>
+<div class="ttc" id="lib__vec_8cpp_html_a44e7aedec778e3afa2bfb2579f2f5c76"><div class="ttname"><a href="lib__vec_8cpp.html#a44e7aedec778e3afa2bfb2579f2f5c76">do_vect</a></div><div class="ttdeci">void do_vect(double **pvect, unsigned long len)</div><div class="ttdef"><b>Definition:</b> <a href="lib__vec_8cpp_source.html#l00032">lib_vec.cpp:32</a></div></div>
+<div class="ttc" id="lib__vec_8cpp_html_a70954035ffb15ee75def4eac4b75dc87"><div class="ttname"><a href="lib__vec_8cpp.html#a70954035ffb15ee75def4eac4b75dc87">cp_vect</a></div><div class="ttdeci">void cp_vect(double **vect1, double **vect2, unsigned long len)</div><div class="ttdef"><b>Definition:</b> <a href="lib__vec_8cpp_source.html#l00044">lib_vec.cpp:44</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a5fb58ebf6338353b73d849af7e53510b"></a>
@@ -285,6 +303,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="lib__vec_8cpp_source.html#l00032">32</a> of file <a class="el" href="lib__vec_8cpp_source.html">lib_vec.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  *pvect = (<span class="keywordtype">double</span> *) <a class="code" href="lib__vec_8cpp.html#a3dba0f046e5df31593bc2200d38cfd61">alloc_vect</a>(<a class="code" href="test__fftw__main_8cpp.html#ac965d90e3dbc32c27e426a48ddc38186">len</a>,  <span class="keyword">sizeof</span>(<span class="keywordtype">double</span>));</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div><div class="ttc" id="test__fftw__main_8cpp_html_ac965d90e3dbc32c27e426a48ddc38186"><div class="ttname"><a href="test__fftw__main_8cpp.html#ac965d90e3dbc32c27e426a48ddc38186">len</a></div><div class="ttdeci">#define len</div></div>
+<div class="ttc" id="lib__vec_8cpp_html_a3dba0f046e5df31593bc2200d38cfd61"><div class="ttname"><a href="lib__vec_8cpp.html#a3dba0f046e5df31593bc2200d38cfd61">alloc_vect</a></div><div class="ttdeci">void * alloc_vect(unsigned int n, size_t elem_size)</div><div class="ttdef"><b>Definition:</b> <a href="lib__vec_8cpp_source.html#l00071">lib_vec.cpp:71</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a80b8c6e23645cf42d3a3d2e83908d21c"></a>
@@ -301,6 +323,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="lib__vec_8cpp_source.html#l00092">92</a> of file <a class="el" href="lib__vec_8cpp_source.html">lib_vec.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordflow">if</span> (*pmat) {</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">if</span> (**pmat)</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <a class="code" href="numerical__recipes_8cpp.html#a32927ba57ddc0c409fd40fe79cad9982">free</a>(**pmat);</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="numerical__recipes_8cpp.html#a32927ba57ddc0c409fd40fe79cad9982">free</a>(*pmat);</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    *pmat = 0;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div><div class="ttc" id="numerical__recipes_8cpp_html_a32927ba57ddc0c409fd40fe79cad9982"><div class="ttname"><a href="numerical__recipes_8cpp.html#a32927ba57ddc0c409fd40fe79cad9982">free</a></div><div class="ttdeci">free((char *) ob)</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a5b554e48152d2e6ead470e4a59bc63da"></a>
@@ -317,6 +342,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="lib__vec_8cpp_source.html#l00083">83</a> of file <a class="el" href="lib__vec_8cpp_source.html">lib_vec.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">if</span> (*pvect) {</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="numerical__recipes_8cpp.html#a32927ba57ddc0c409fd40fe79cad9982">free</a>(*pvect);</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    *pvect = 0;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  }</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div><div class="ttc" id="numerical__recipes_8cpp_html_a32927ba57ddc0c409fd40fe79cad9982"><div class="ttname"><a href="numerical__recipes_8cpp.html#a32927ba57ddc0c409fd40fe79cad9982">free</a></div><div class="ttdeci">free((char *) ob)</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="afc861bf99505b3896861f2cd7a3155d4"></a>
@@ -349,6 +377,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="lib__vec_8cpp_source.html#l00038">38</a> of file <a class="el" href="lib__vec_8cpp_source.html">lib_vec.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="numerical__recipes_8cpp.html#ae6148da7d0bfbf264b8bcd89163b3b0f">memset</a>(mat[0], 0, len_i * len_j * <span class="keyword">sizeof</span>(<span class="keywordtype">double</span>));</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div><div class="ttc" id="numerical__recipes_8cpp_html_ae6148da7d0bfbf264b8bcd89163b3b0f"><div class="ttname"><a href="numerical__recipes_8cpp.html#ae6148da7d0bfbf264b8bcd89163b3b0f">memset</a></div><div class="ttdeci">memset(wksp+1, 0, n *sizeof(double))</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a7f706ff9f4a36695ff212bf6d2bbded9"></a>
@@ -375,6 +406,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="lib__vec_8cpp_source.html#l00026">26</a> of file <a class="el" href="lib__vec_8cpp_source.html">lib_vec.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="numerical__recipes_8cpp.html#ae6148da7d0bfbf264b8bcd89163b3b0f">memset</a>(vect, 0, <a class="code" href="test__fftw__main_8cpp.html#ac965d90e3dbc32c27e426a48ddc38186">len</a> * <span class="keyword">sizeof</span>(<span class="keywordtype">double</span>));</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div><div class="ttc" id="numerical__recipes_8cpp_html_ae6148da7d0bfbf264b8bcd89163b3b0f"><div class="ttname"><a href="numerical__recipes_8cpp.html#ae6148da7d0bfbf264b8bcd89163b3b0f">memset</a></div><div class="ttdeci">memset(wksp+1, 0, n *sizeof(double))</div></div>
+<div class="ttc" id="test__fftw__main_8cpp_html_ac965d90e3dbc32c27e426a48ddc38186"><div class="ttname"><a href="test__fftw__main_8cpp.html#ac965d90e3dbc32c27e426a48ddc38186">len</a></div><div class="ttdeci">#define len</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

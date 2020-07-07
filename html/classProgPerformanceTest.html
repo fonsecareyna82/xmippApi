@@ -258,7 +258,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:af2f60708934c302e1289c5405109dd45 inherit pro_attribs_classXmippProgram"><td class="memItemLeft" align="right" valign="top">const char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmippProgram.html#af2f60708934c302e1289c5405109dd45">argv</a></td></tr>
 <tr class="separator:af2f60708934c302e1289c5405109dd45 inherit pro_attribs_classXmippProgram"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="mpi__performance__test_8h_source.html#l00033">33</a> of file <a class="el" href="mpi__performance__test_8h_source.html">mpi_performance_test.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ab631478eee76b25dc389b71ea479e63e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -285,6 +288,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Empty constructor. </p>
 
+<p>Definition at line <a class="el" href="mpi__performance__test_8cpp_source.html#l00035">35</a> of file <a class="el" href="mpi__performance__test_8cpp_source.html">mpi_performance_test.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classProgPerformanceTest.html#a5da75bc24042faa9f497ba33b9caffdb">node</a>=<span class="keyword">new</span> <a class="code" href="classMpiNode.html">MpiNode</a>(<a class="code" href="classXmippProgram.html#a8659f9e603143c1788360f0eeb01e589">argc</a>,<a class="code" href="classXmippProgram.html#af2f60708934c302e1289c5405109dd45">argv</a>);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="classProgPerformanceTest.html#a5da75bc24042faa9f497ba33b9caffdb">node</a>-&gt;<a class="code" href="classMpiNode.html#ae1fb9dff0cf844224962278252661dc3">isMaster</a>())</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="classXmippProgram.html#aed62cfe3c074e69076bf348fc101a717">verbose</a>=0;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div><div class="ttc" id="classProgPerformanceTest_html_a5da75bc24042faa9f497ba33b9caffdb"><div class="ttname"><a href="classProgPerformanceTest.html#a5da75bc24042faa9f497ba33b9caffdb">ProgPerformanceTest::node</a></div><div class="ttdeci">MpiNode * node</div><div class="ttdef"><b>Definition:</b> <a href="mpi__performance__test_8h_source.html#l00040">mpi_performance_test.h:40</a></div></div>
+<div class="ttc" id="classXmippProgram_html_a8659f9e603143c1788360f0eeb01e589"><div class="ttname"><a href="classXmippProgram.html#a8659f9e603143c1788360f0eeb01e589">XmippProgram::argc</a></div><div class="ttdeci">int argc</div><div class="ttdoc">Original command line arguments. </div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8h_source.html#l00095">xmipp_program.h:95</a></div></div>
+<div class="ttc" id="classXmippProgram_html_af2f60708934c302e1289c5405109dd45"><div class="ttname"><a href="classXmippProgram.html#af2f60708934c302e1289c5405109dd45">XmippProgram::argv</a></div><div class="ttdeci">const char ** argv</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8h_source.html#l00096">xmipp_program.h:96</a></div></div>
+<div class="ttc" id="classXmippProgram_html_aed62cfe3c074e69076bf348fc101a717"><div class="ttname"><a href="classXmippProgram.html#aed62cfe3c074e69076bf348fc101a717">XmippProgram::verbose</a></div><div class="ttdeci">int verbose</div><div class="ttdoc">Verbosity level. </div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8h_source.html#l00168">xmipp_program.h:168</a></div></div>
+<div class="ttc" id="classMpiNode_html"><div class="ttname"><a href="classMpiNode.html">MpiNode</a></div><div class="ttdef"><b>Definition:</b> <a href="xmipp__mpi_8h_source.html#l00049">xmipp_mpi.h:49</a></div></div>
+<div class="ttc" id="classMpiNode_html_ae1fb9dff0cf844224962278252661dc3"><div class="ttname"><a href="classMpiNode.html#ae1fb9dff0cf844224962278252661dc3">MpiNode::isMaster</a></div><div class="ttdeci">bool isMaster() const </div><div class="ttdef"><b>Definition:</b> <a href="xmipp__mpi_8cpp_source.html#l00164">xmipp_mpi.cpp:164</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a68431ade493a3a8b988dc53bcf7c83ea"></a>
@@ -302,6 +313,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Destructor. </p>
 
+<p>Definition at line <a class="el" href="mpi__performance__test_8cpp_source.html#l00043">43</a> of file <a class="el" href="mpi__performance__test_8cpp_source.html">mpi_performance_test.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">delete</span> <a class="code" href="classProgPerformanceTest.html#a5da75bc24042faa9f497ba33b9caffdb">node</a>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div><div class="ttc" id="classProgPerformanceTest_html_a5da75bc24042faa9f497ba33b9caffdb"><div class="ttname"><a href="classProgPerformanceTest.html#a5da75bc24042faa9f497ba33b9caffdb">ProgPerformanceTest::node</a></div><div class="ttdeci">MpiNode * node</div><div class="ttdef"><b>Definition:</b> <a href="mpi__performance__test_8h_source.html#l00040">mpi_performance_test.h:40</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -330,6 +344,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classXmippProgram.html#a75ba820f6afd62c89524b497ae9b560d">XmippProgram</a>.</p>
 
+<p>Definition at line <a class="el" href="mpi__performance__test_8cpp_source.html#l00065">65</a> of file <a class="el" href="mpi__performance__test_8cpp_source.html">mpi_performance_test.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="classXmippProgram.html#a4f396af57519ec443b4656176eb962bf">addUsageLine</a>(<span class="stringliteral">&quot;Makes a rotational invariant representation of the image collection&quot;</span>);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="classXmippProgram.html#aaeb37f0bac83f5d2a605aaa0e5c4b6ef">addParamsLine</a>(<span class="stringliteral">&quot;    -i &lt;selfile&gt;               : Selfile with experimental images&quot;</span>);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="classXmippProgram.html#a4b8f0a6e1bd09e4dbf56a412101e905e">addExampleLine</a>(<span class="stringliteral">&quot;mpirun -np 4 `which xmipp_mpi_image_rotational_pca` -i images.stk --oroot images_eigen --thr 4&quot;</span>);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div><div class="ttc" id="classXmippProgram_html_a4b8f0a6e1bd09e4dbf56a412101e905e"><div class="ttname"><a href="classXmippProgram.html#a4b8f0a6e1bd09e4dbf56a412101e905e">XmippProgram::addExampleLine</a></div><div class="ttdeci">void addExampleLine(const char *example, bool verbatim=true)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8cpp_source.html#l00342">xmipp_program.cpp:342</a></div></div>
+<div class="ttc" id="classXmippProgram_html_a4f396af57519ec443b4656176eb962bf"><div class="ttname"><a href="classXmippProgram.html#a4f396af57519ec443b4656176eb962bf">XmippProgram::addUsageLine</a></div><div class="ttdeci">void addUsageLine(const char *line, bool verbatim=false)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8cpp_source.html#l00338">xmipp_program.cpp:338</a></div></div>
+<div class="ttc" id="classXmippProgram_html_aaeb37f0bac83f5d2a605aaa0e5c4b6ef"><div class="ttname"><a href="classXmippProgram.html#aaeb37f0bac83f5d2a605aaa0e5c4b6ef">XmippProgram::addParamsLine</a></div><div class="ttdeci">void addParamsLine(const String &amp;line)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8cpp_source.html#l00361">xmipp_program.cpp:361</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ae226f832678abb7a276aa4963dc82713"></a>
@@ -347,6 +366,13 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Produce side info. </p>
 
+<p>Definition at line <a class="el" href="mpi__performance__test_8cpp_source.html#l00073">73</a> of file <a class="el" href="mpi__performance__test_8cpp_source.html">mpi_performance_test.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="group__GeneralFunctions.html#ga5de338a0f59b7f4fe678fadfeb1c0049">TimeStamp</a> t0;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="group__GeneralFunctions.html#ga4c1f5b466a107f359a15279ca1781392">annotate_time</a>(&amp;t0);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="classMetaData.html">MetaData</a> MDin(<a class="code" href="classProgPerformanceTest.html#ab00d8577211e96059124a4c5fd930b38">fnIn</a>);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="group__GeneralFunctions.html#ga3537b51d73eb4a69feef7beeb23bc164">print_elapsed_time</a>(t0,<span class="keyword">false</span>);</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div><div class="ttc" id="classMetaData_html"><div class="ttname"><a href="classMetaData.html">MetaData</a></div><div class="ttdef"><b>Definition:</b> <a href="metadata_8h_source.html#l00234">metadata.h:234</a></div></div>
+<div class="ttc" id="group__GeneralFunctions_html_ga3537b51d73eb4a69feef7beeb23bc164"><div class="ttname"><a href="group__GeneralFunctions.html#ga3537b51d73eb4a69feef7beeb23bc164">print_elapsed_time</a></div><div class="ttdeci">void print_elapsed_time(ProcessorTimeStamp &amp;time, bool _IN_SECS)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__funcs_8cpp_source.html#l00660">xmipp_funcs.cpp:660</a></div></div>
+<div class="ttc" id="classProgPerformanceTest_html_ab00d8577211e96059124a4c5fd930b38"><div class="ttname"><a href="classProgPerformanceTest.html#ab00d8577211e96059124a4c5fd930b38">ProgPerformanceTest::fnIn</a></div><div class="ttdeci">FileName fnIn</div><div class="ttdef"><b>Definition:</b> <a href="mpi__performance__test_8h_source.html#l00037">mpi_performance_test.h:37</a></div></div>
+<div class="ttc" id="group__GeneralFunctions_html_ga4c1f5b466a107f359a15279ca1781392"><div class="ttname"><a href="group__GeneralFunctions.html#ga4c1f5b466a107f359a15279ca1781392">annotate_time</a></div><div class="ttdeci">void annotate_time(TimeStamp *time)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__funcs_8cpp_source.html#l00637">xmipp_funcs.cpp:637</a></div></div>
+<div class="ttc" id="group__GeneralFunctions_html_ga5de338a0f59b7f4fe678fadfeb1c0049"><div class="ttname"><a href="group__GeneralFunctions.html#ga5de338a0f59b7f4fe678fadfeb1c0049">TimeStamp</a></div><div class="ttdeci">size_t TimeStamp</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__funcs_8h_source.html#l00837">xmipp_funcs.h:837</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a41243a160bfa59fd1eb75ecd2bc9a3a3"></a>
@@ -374,6 +400,10 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classXmippProgram.html#a4f3c0b1ec483442cf6a2cba6666baa18">XmippProgram</a>.</p>
 
+<p>Definition at line <a class="el" href="mpi__performance__test_8cpp_source.html#l00049">49</a> of file <a class="el" href="mpi__performance__test_8cpp_source.html">mpi_performance_test.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classProgPerformanceTest.html#ab00d8577211e96059124a4c5fd930b38">fnIn</a> = <a class="code" href="classXmippProgram.html#a5d9e1f008822effa47814c59e9a3c797">getParam</a>(<span class="stringliteral">&quot;-i&quot;</span>);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div><div class="ttc" id="classXmippProgram_html_a5d9e1f008822effa47814c59e9a3c797"><div class="ttname"><a href="classXmippProgram.html#a5d9e1f008822effa47814c59e9a3c797">XmippProgram::getParam</a></div><div class="ttdeci">const char * getParam(const char *param, int arg=0)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8cpp_source.html#l00377">xmipp_program.cpp:377</a></div></div>
+<div class="ttc" id="classProgPerformanceTest_html_ab00d8577211e96059124a4c5fd930b38"><div class="ttname"><a href="classProgPerformanceTest.html#ab00d8577211e96059124a4c5fd930b38">ProgPerformanceTest::fnIn</a></div><div class="ttdeci">FileName fnIn</div><div class="ttdef"><b>Definition:</b> <a href="mpi__performance__test_8h_source.html#l00037">mpi_performance_test.h:37</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ae1b85c1bb9f352424d8b8179b755f6db"></a>
@@ -400,6 +430,12 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classXmippProgram.html#a1d64156309778b3416ba0a153db21447">XmippProgram</a>.</p>
 
+<p>Definition at line <a class="el" href="mpi__performance__test_8cpp_source.html#l00082">82</a> of file <a class="el" href="mpi__performance__test_8cpp_source.html">mpi_performance_test.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="classProgPerformanceTest.html#abd57dd905d53a1f4ea7a9f886ca2edbd">show</a>();</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">if</span> (system(<span class="stringliteral">&quot;hostname&quot;</span>)==-1)</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="group__ErrorHandling.html#ga4ab7f9b2fd1ec4b9efcfba0c9b33052c">REPORT_ERROR</a>(<a class="code" href="group__ErrorHandling.html#ggab0df38968e4f03a3f1f6d6df0f31f45aa60458766acaafb3722c0234011bbdbf8">ERR_UNCLASSIFIED</a>,<span class="stringliteral">&quot;Cannot open shell&quot;</span>);</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="classProgPerformanceTest.html#ae226f832678abb7a276aa4963dc82713">produceSideInfo</a>();</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div><div class="ttc" id="group__ErrorHandling_html_ggab0df38968e4f03a3f1f6d6df0f31f45aa60458766acaafb3722c0234011bbdbf8"><div class="ttname"><a href="group__ErrorHandling.html#ggab0df38968e4f03a3f1f6d6df0f31f45aa60458766acaafb3722c0234011bbdbf8">ERR_UNCLASSIFIED</a></div><div class="ttdoc">Just to locate unclassified errors. </div><div class="ttdef"><b>Definition:</b> <a href="xmipp__error_8h_source.html#l00197">xmipp_error.h:197</a></div></div>
+<div class="ttc" id="group__ErrorHandling_html_ga4ab7f9b2fd1ec4b9efcfba0c9b33052c"><div class="ttname"><a href="group__ErrorHandling.html#ga4ab7f9b2fd1ec4b9efcfba0c9b33052c">REPORT_ERROR</a></div><div class="ttdeci">#define REPORT_ERROR(nerr, ErrormMsg)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__error_8h_source.html#l00238">xmipp_error.h:238</a></div></div>
+<div class="ttc" id="classProgPerformanceTest_html_abd57dd905d53a1f4ea7a9f886ca2edbd"><div class="ttname"><a href="classProgPerformanceTest.html#abd57dd905d53a1f4ea7a9f886ca2edbd">ProgPerformanceTest::show</a></div><div class="ttdeci">void show()</div><div class="ttdoc">Show. </div><div class="ttdef"><b>Definition:</b> <a href="mpi__performance__test_8cpp_source.html#l00055">mpi_performance_test.cpp:55</a></div></div>
+<div class="ttc" id="classProgPerformanceTest_html_ae226f832678abb7a276aa4963dc82713"><div class="ttname"><a href="classProgPerformanceTest.html#ae226f832678abb7a276aa4963dc82713">ProgPerformanceTest::produceSideInfo</a></div><div class="ttdeci">void produceSideInfo()</div><div class="ttdoc">Produce side info. </div><div class="ttdef"><b>Definition:</b> <a href="mpi__performance__test_8cpp_source.html#l00073">mpi_performance_test.cpp:73</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="abd57dd905d53a1f4ea7a9f886ca2edbd"></a>
@@ -417,6 +453,10 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Show. </p>
 
+<p>Definition at line <a class="el" href="mpi__performance__test_8cpp_source.html#l00055">55</a> of file <a class="el" href="mpi__performance__test_8cpp_source.html">mpi_performance_test.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="classXmippProgram.html#aed62cfe3c074e69076bf348fc101a717">verbose</a>)</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span>;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    std::cout</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    &lt;&lt; <span class="stringliteral">&quot;Input:               &quot;</span> &lt;&lt; <a class="code" href="classProgPerformanceTest.html#ab00d8577211e96059124a4c5fd930b38">fnIn</a> &lt;&lt; std::endl</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    ;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div><div class="ttc" id="classXmippProgram_html_aed62cfe3c074e69076bf348fc101a717"><div class="ttname"><a href="classXmippProgram.html#aed62cfe3c074e69076bf348fc101a717">XmippProgram::verbose</a></div><div class="ttdeci">int verbose</div><div class="ttdoc">Verbosity level. </div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8h_source.html#l00168">xmipp_program.h:168</a></div></div>
+<div class="ttc" id="classProgPerformanceTest_html_ab00d8577211e96059124a4c5fd930b38"><div class="ttname"><a href="classProgPerformanceTest.html#ab00d8577211e96059124a4c5fd930b38">ProgPerformanceTest::fnIn</a></div><div class="ttdeci">FileName fnIn</div><div class="ttdef"><b>Definition:</b> <a href="mpi__performance__test_8h_source.html#l00037">mpi_performance_test.h:37</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -431,6 +471,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Input selfile </p>
 
+<p>Definition at line <a class="el" href="mpi__performance__test_8h_source.html#l00037">37</a> of file <a class="el" href="mpi__performance__test_8h_source.html">mpi_performance_test.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a5da75bc24042faa9f497ba33b9caffdb"></a>
@@ -443,11 +485,13 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="mpi__performance__test_8h_source.html#l00040">40</a> of file <a class="el" href="mpi__performance__test_8h_source.html">mpi_performance_test.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/parallel/<a class="el" href="mpi__performance__test_8h_source.html">mpi_performance_test.h</a></li>
-<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/parallel/<a class="el" href="mpi__performance__test_8cpp.html">mpi_performance_test.cpp</a></li>
+<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/parallel/<a class="el" href="mpi__performance__test_8cpp_source.html">mpi_performance_test.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

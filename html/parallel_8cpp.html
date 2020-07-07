@@ -116,7 +116,9 @@ Include dependency graph for parallel.cpp:</div>
 <area shape="rect" id="node13" href="MatrixTriangle_8h.html" title="MatrixTriangle.h" alt="" coords="419,348,533,375"/>
 </map>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="parallel_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a0c90c07d58aa2abc1c6e599122e32e9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parallel_8cpp.html#a0c90c07d58aa2abc1c6e599122e32e9a">parallelImprove</a> (<a class="el" href="classInterPolynomial.html">InterPolynomial</a> *p, int *_k, double _rho, double *_valueFk, <a class="el" href="classVector.html">Vector</a> _Base)</td></tr>
@@ -173,6 +175,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="parallel_8cpp_source.html#l00043">43</a> of file <a class="el" href="parallel_8cpp_source.html">parallel.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>,r,nsuccess=0;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">for</span> (i=0; i&lt;<a class="code" href="numerical__recipes_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>; i++)</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        r=0;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        vf[<a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>]=of-&gt;<a class="code" href="classObjectiveFunction.html#ad9c7e219c53e3171709b66aecb2959b2">eval</a>(cp[i],&amp;r);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        notsuccess[<a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>]=r;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">if</span> (!r) nsuccess++;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> nsuccess;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    </div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div><div class="ttc" id="project__crystal_8cpp_html_acb559820d9ca11295b4500f179ef6392"><div class="ttname"><a href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a></div><div class="ttdeci">#define i</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02510">numerical_recipes.cpp:2510</a></div></div>
+<div class="ttc" id="classObjectiveFunction_html_ad9c7e219c53e3171709b66aecb2959b2"><div class="ttname"><a href="classObjectiveFunction.html#ad9c7e219c53e3171709b66aecb2959b2">ObjectiveFunction::eval</a></div><div class="ttdeci">virtual double eval(Vector v, int *nerror)=0</div></div>
+<div class="ttc" id="numerical__recipes_8cpp_html_a76f11d9a0a47b94f72c2d0e77fb32240"><div class="ttname"><a href="numerical__recipes_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></div><div class="ttdeci">int * n</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02246">numerical_recipes.cpp:2246</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a4dd0a7c5d9bb8373643f05b6d7b3f53c"></a>
@@ -188,6 +195,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="parallel_8cpp_source.html#l00041">41</a> of file <a class="el" href="parallel_8cpp_source.html">parallel.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{}</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a0c90c07d58aa2abc1c6e599122e32e9a"></a>
@@ -232,6 +241,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="parallel_8cpp_source.html#l00036">36</a> of file <a class="el" href="parallel_8cpp_source.html">parallel.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{}</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a85ba11e6c360653c112df4d5e0d8e071"></a>
@@ -264,6 +275,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="parallel_8cpp_source.html#l00040">40</a> of file <a class="el" href="parallel_8cpp_source.html">parallel.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{}</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a7b058ab614972598d542d90f9288e5e9"></a>
@@ -279,6 +292,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="parallel_8cpp_source.html#l00039">39</a> of file <a class="el" href="parallel_8cpp_source.html">parallel.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{}</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

@@ -137,7 +137,10 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ae6c904b239e04042f5aabc42717bc349"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structalglib__impl_1_1rbfreport.html">alglib_impl::rbfreport</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalglib_1_1__rbfreport__owner.html#ae6c904b239e04042f5aabc42717bc349">p_struct</a></td></tr>
 <tr class="separator:ae6c904b239e04042f5aabc42717bc349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="interpolation_8h_source.html#l00643">643</a> of file <a class="el" href="interpolation_8h_source.html">interpolation.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4b11d4c4b9b736b80085dc29e49ca4ae"></a>
 <div class="memitem">
 <div class="memproto">
@@ -151,6 +154,13 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="interpolation_8cpp_source.html#l07895">7895</a> of file <a class="el" href="interpolation_8cpp_source.html">interpolation.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l07896"></a><span class="lineno"> 7896</span>&#160;{</div><div class="line"><a name="l07897"></a><span class="lineno"> 7897</span>&#160;    <a class="code" href="classalglib_1_1__rbfreport__owner.html#ae6c904b239e04042f5aabc42717bc349">p_struct</a> = (<a class="code" href="structalglib__impl_1_1rbfreport.html">alglib_impl::rbfreport</a>*)<a class="code" href="namespacealglib__impl.html#ae9734678725f1961bd032954a6bba1d8">alglib_impl::ae_malloc</a>(<span class="keyword">sizeof</span>(<a class="code" href="structalglib__impl_1_1rbfreport.html">alglib_impl::rbfreport</a>), NULL);</div><div class="line"><a name="l07898"></a><span class="lineno"> 7898</span>&#160;    <span class="keywordflow">if</span>( <a class="code" href="classalglib_1_1__rbfreport__owner.html#ae6c904b239e04042f5aabc42717bc349">p_struct</a>==NULL )</div><div class="line"><a name="l07899"></a><span class="lineno"> 7899</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l07900"></a><span class="lineno"> 7900</span>&#160;    <span class="keywordflow">if</span>( !<a class="code" href="namespacealglib__impl.html#a5e8364eb84506208cb66399f40eadd2a">alglib_impl::_rbfreport_init</a>(<a class="code" href="classalglib_1_1__rbfreport__owner.html#ae6c904b239e04042f5aabc42717bc349">p_struct</a>, NULL, <a class="code" href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a>) )</div><div class="line"><a name="l07901"></a><span class="lineno"> 7901</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l07902"></a><span class="lineno"> 7902</span>&#160;}</div><div class="ttc" id="ap_8h_html_a0656913c5b7bc535cf5347662e769bef"><div class="ttname"><a href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a></div><div class="ttdeci">#define ae_false</div><div class="ttdef"><b>Definition:</b> <a href="ap_8h_source.html#l00196">ap.h:196</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_ae9734678725f1961bd032954a6bba1d8"><div class="ttname"><a href="namespacealglib__impl.html#ae9734678725f1961bd032954a6bba1d8">alglib_impl::ae_malloc</a></div><div class="ttdeci">void * ae_malloc(size_t size, ae_state *state)</div><div class="ttdef"><b>Definition:</b> <a href="ap_8cpp_source.html#l00222">ap.cpp:222</a></div></div>
+<div class="ttc" id="structalglib__impl_1_1rbfreport_html"><div class="ttname"><a href="structalglib__impl_1_1rbfreport.html">alglib_impl::rbfreport</a></div><div class="ttdef"><b>Definition:</b> <a href="interpolation_8h_source.html#l00214">interpolation.h:214</a></div></div>
+<div class="ttc" id="classalglib_1_1__rbfreport__owner_html_ae6c904b239e04042f5aabc42717bc349"><div class="ttname"><a href="classalglib_1_1__rbfreport__owner.html#ae6c904b239e04042f5aabc42717bc349">alglib::_rbfreport_owner::p_struct</a></div><div class="ttdeci">alglib_impl::rbfreport * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="interpolation_8h_source.html#l00653">interpolation.h:653</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_a5e8364eb84506208cb66399f40eadd2a"><div class="ttname"><a href="namespacealglib__impl.html#a5e8364eb84506208cb66399f40eadd2a">alglib_impl::_rbfreport_init</a></div><div class="ttdeci">ae_bool _rbfreport_init(void *_p, ae_state *_state, ae_bool make_automatic)</div><div class="ttdef"><b>Definition:</b> <a href="interpolation_8cpp_source.html#l27609">interpolation.cpp:27609</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a91d909e6c1683161a48fbd10cea3d6c0"></a>
@@ -167,6 +177,13 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="interpolation_8cpp_source.html#l07904">7904</a> of file <a class="el" href="interpolation_8cpp_source.html">interpolation.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l07905"></a><span class="lineno"> 7905</span>&#160;{</div><div class="line"><a name="l07906"></a><span class="lineno"> 7906</span>&#160;    <a class="code" href="classalglib_1_1__rbfreport__owner.html#ae6c904b239e04042f5aabc42717bc349">p_struct</a> = (<a class="code" href="structalglib__impl_1_1rbfreport.html">alglib_impl::rbfreport</a>*)<a class="code" href="namespacealglib__impl.html#ae9734678725f1961bd032954a6bba1d8">alglib_impl::ae_malloc</a>(<span class="keyword">sizeof</span>(<a class="code" href="structalglib__impl_1_1rbfreport.html">alglib_impl::rbfreport</a>), NULL);</div><div class="line"><a name="l07907"></a><span class="lineno"> 7907</span>&#160;    <span class="keywordflow">if</span>( <a class="code" href="classalglib_1_1__rbfreport__owner.html#ae6c904b239e04042f5aabc42717bc349">p_struct</a>==NULL )</div><div class="line"><a name="l07908"></a><span class="lineno"> 7908</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l07909"></a><span class="lineno"> 7909</span>&#160;    <span class="keywordflow">if</span>( !<a class="code" href="namespacealglib__impl.html#aec50df9131cd38d2901c8a6f33a0ba85">alglib_impl::_rbfreport_init_copy</a>(<a class="code" href="classalglib_1_1__rbfreport__owner.html#ae6c904b239e04042f5aabc42717bc349">p_struct</a>, const_cast&lt;alglib_impl::rbfreport*&gt;(rhs.p_struct), NULL, <a class="code" href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a>) )</div><div class="line"><a name="l07910"></a><span class="lineno"> 7910</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l07911"></a><span class="lineno"> 7911</span>&#160;}</div><div class="ttc" id="ap_8h_html_a0656913c5b7bc535cf5347662e769bef"><div class="ttname"><a href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a></div><div class="ttdeci">#define ae_false</div><div class="ttdef"><b>Definition:</b> <a href="ap_8h_source.html#l00196">ap.h:196</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_ae9734678725f1961bd032954a6bba1d8"><div class="ttname"><a href="namespacealglib__impl.html#ae9734678725f1961bd032954a6bba1d8">alglib_impl::ae_malloc</a></div><div class="ttdeci">void * ae_malloc(size_t size, ae_state *state)</div><div class="ttdef"><b>Definition:</b> <a href="ap_8cpp_source.html#l00222">ap.cpp:222</a></div></div>
+<div class="ttc" id="structalglib__impl_1_1rbfreport_html"><div class="ttname"><a href="structalglib__impl_1_1rbfreport.html">alglib_impl::rbfreport</a></div><div class="ttdef"><b>Definition:</b> <a href="interpolation_8h_source.html#l00214">interpolation.h:214</a></div></div>
+<div class="ttc" id="classalglib_1_1__rbfreport__owner_html_ae6c904b239e04042f5aabc42717bc349"><div class="ttname"><a href="classalglib_1_1__rbfreport__owner.html#ae6c904b239e04042f5aabc42717bc349">alglib::_rbfreport_owner::p_struct</a></div><div class="ttdeci">alglib_impl::rbfreport * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="interpolation_8h_source.html#l00653">interpolation.h:653</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_aec50df9131cd38d2901c8a6f33a0ba85"><div class="ttname"><a href="namespacealglib__impl.html#aec50df9131cd38d2901c8a6f33a0ba85">alglib_impl::_rbfreport_init_copy</a></div><div class="ttdeci">ae_bool _rbfreport_init_copy(void *_dst, void *_src, ae_state *_state, ae_bool make_automatic)</div><div class="ttdef"><b>Definition:</b> <a href="interpolation_8cpp_source.html#l27617">interpolation.cpp:27617</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aa0b2ac18b609fe6bd3741b621b5326a7"></a>
@@ -190,6 +207,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="interpolation_8cpp_source.html#l07923">7923</a> of file <a class="el" href="interpolation_8cpp_source.html">interpolation.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l07924"></a><span class="lineno"> 7924</span>&#160;{</div><div class="line"><a name="l07925"></a><span class="lineno"> 7925</span>&#160;    <a class="code" href="namespacealglib__impl.html#a9ce328e36fb9d89ef79b0e5c5d17fa1e">alglib_impl::_rbfreport_clear</a>(<a class="code" href="classalglib_1_1__rbfreport__owner.html#ae6c904b239e04042f5aabc42717bc349">p_struct</a>);</div><div class="line"><a name="l07926"></a><span class="lineno"> 7926</span>&#160;    <a class="code" href="namespacealglib__impl.html#a204f9cd46dfc1cc765720c2b5d473128">ae_free</a>(<a class="code" href="classalglib_1_1__rbfreport__owner.html#ae6c904b239e04042f5aabc42717bc349">p_struct</a>);</div><div class="line"><a name="l07927"></a><span class="lineno"> 7927</span>&#160;}</div><div class="ttc" id="classalglib_1_1__rbfreport__owner_html_ae6c904b239e04042f5aabc42717bc349"><div class="ttname"><a href="classalglib_1_1__rbfreport__owner.html#ae6c904b239e04042f5aabc42717bc349">alglib::_rbfreport_owner::p_struct</a></div><div class="ttdeci">alglib_impl::rbfreport * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="interpolation_8h_source.html#l00653">interpolation.h:653</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_a9ce328e36fb9d89ef79b0e5c5d17fa1e"><div class="ttname"><a href="namespacealglib__impl.html#a9ce328e36fb9d89ef79b0e5c5d17fa1e">alglib_impl::_rbfreport_clear</a></div><div class="ttdeci">void _rbfreport_clear(void *_p)</div><div class="ttdef"><b>Definition:</b> <a href="interpolation_8cpp_source.html#l27631">interpolation.cpp:27631</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_a204f9cd46dfc1cc765720c2b5d473128"><div class="ttname"><a href="namespacealglib__impl.html#a204f9cd46dfc1cc765720c2b5d473128">alglib_impl::ae_free</a></div><div class="ttdeci">void ae_free(void *p)</div><div class="ttdef"><b>Definition:</b> <a href="ap_8cpp_source.html#l00237">ap.cpp:237</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -206,6 +228,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="interpolation_8cpp_source.html#l07929">7929</a> of file <a class="el" href="interpolation_8cpp_source.html">interpolation.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l07930"></a><span class="lineno"> 7930</span>&#160;{</div><div class="line"><a name="l07931"></a><span class="lineno"> 7931</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classalglib_1_1__rbfreport__owner.html#ae6c904b239e04042f5aabc42717bc349">p_struct</a>;</div><div class="line"><a name="l07932"></a><span class="lineno"> 7932</span>&#160;}</div><div class="ttc" id="classalglib_1_1__rbfreport__owner_html_ae6c904b239e04042f5aabc42717bc349"><div class="ttname"><a href="classalglib_1_1__rbfreport__owner.html#ae6c904b239e04042f5aabc42717bc349">alglib::_rbfreport_owner::p_struct</a></div><div class="ttdeci">alglib_impl::rbfreport * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="interpolation_8h_source.html#l00653">interpolation.h:653</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ac9e67ab004796b65ca35b628c914c3b8"></a>
@@ -221,6 +246,10 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="interpolation_8cpp_source.html#l07934">7934</a> of file <a class="el" href="interpolation_8cpp_source.html">interpolation.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l07935"></a><span class="lineno"> 7935</span>&#160;{</div><div class="line"><a name="l07936"></a><span class="lineno"> 7936</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">const_cast&lt;</span><a class="code" href="structalglib__impl_1_1rbfreport.html">alglib_impl::rbfreport</a>*<span class="keyword">&gt;</span>(<a class="code" href="classalglib_1_1__rbfreport__owner.html#ae6c904b239e04042f5aabc42717bc349">p_struct</a>);</div><div class="line"><a name="l07937"></a><span class="lineno"> 7937</span>&#160;}</div><div class="ttc" id="structalglib__impl_1_1rbfreport_html"><div class="ttname"><a href="structalglib__impl_1_1rbfreport.html">alglib_impl::rbfreport</a></div><div class="ttdef"><b>Definition:</b> <a href="interpolation_8h_source.html#l00214">interpolation.h:214</a></div></div>
+<div class="ttc" id="classalglib_1_1__rbfreport__owner_html_ae6c904b239e04042f5aabc42717bc349"><div class="ttname"><a href="classalglib_1_1__rbfreport__owner.html#ae6c904b239e04042f5aabc42717bc349">alglib::_rbfreport_owner::p_struct</a></div><div class="ttdeci">alglib_impl::rbfreport * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="interpolation_8h_source.html#l00653">interpolation.h:653</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a634372848027d6c735ebb20a8de06dbc"></a>
@@ -237,6 +266,12 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="interpolation_8cpp_source.html#l07913">7913</a> of file <a class="el" href="interpolation_8cpp_source.html">interpolation.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l07914"></a><span class="lineno"> 7914</span>&#160;{</div><div class="line"><a name="l07915"></a><span class="lineno"> 7915</span>&#160;    <span class="keywordflow">if</span>( <span class="keyword">this</span>==&amp;rhs )</div><div class="line"><a name="l07916"></a><span class="lineno"> 7916</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l07917"></a><span class="lineno"> 7917</span>&#160;    <a class="code" href="namespacealglib__impl.html#a9ce328e36fb9d89ef79b0e5c5d17fa1e">alglib_impl::_rbfreport_clear</a>(<a class="code" href="classalglib_1_1__rbfreport__owner.html#ae6c904b239e04042f5aabc42717bc349">p_struct</a>);</div><div class="line"><a name="l07918"></a><span class="lineno"> 7918</span>&#160;    <span class="keywordflow">if</span>( !<a class="code" href="namespacealglib__impl.html#aec50df9131cd38d2901c8a6f33a0ba85">alglib_impl::_rbfreport_init_copy</a>(<a class="code" href="classalglib_1_1__rbfreport__owner.html#ae6c904b239e04042f5aabc42717bc349">p_struct</a>, const_cast&lt;alglib_impl::rbfreport*&gt;(rhs.p_struct), NULL, <a class="code" href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a>) )</div><div class="line"><a name="l07919"></a><span class="lineno"> 7919</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l07920"></a><span class="lineno"> 7920</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l07921"></a><span class="lineno"> 7921</span>&#160;}</div><div class="ttc" id="ap_8h_html_a0656913c5b7bc535cf5347662e769bef"><div class="ttname"><a href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a></div><div class="ttdeci">#define ae_false</div><div class="ttdef"><b>Definition:</b> <a href="ap_8h_source.html#l00196">ap.h:196</a></div></div>
+<div class="ttc" id="classalglib_1_1__rbfreport__owner_html_ae6c904b239e04042f5aabc42717bc349"><div class="ttname"><a href="classalglib_1_1__rbfreport__owner.html#ae6c904b239e04042f5aabc42717bc349">alglib::_rbfreport_owner::p_struct</a></div><div class="ttdeci">alglib_impl::rbfreport * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="interpolation_8h_source.html#l00653">interpolation.h:653</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_a9ce328e36fb9d89ef79b0e5c5d17fa1e"><div class="ttname"><a href="namespacealglib__impl.html#a9ce328e36fb9d89ef79b0e5c5d17fa1e">alglib_impl::_rbfreport_clear</a></div><div class="ttdeci">void _rbfreport_clear(void *_p)</div><div class="ttdef"><b>Definition:</b> <a href="interpolation_8cpp_source.html#l27631">interpolation.cpp:27631</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_aec50df9131cd38d2901c8a6f33a0ba85"><div class="ttname"><a href="namespacealglib__impl.html#aec50df9131cd38d2901c8a6f33a0ba85">alglib_impl::_rbfreport_init_copy</a></div><div class="ttdeci">ae_bool _rbfreport_init_copy(void *_dst, void *_src, ae_state *_state, ae_bool make_automatic)</div><div class="ttdef"><b>Definition:</b> <a href="interpolation_8cpp_source.html#l27617">interpolation.cpp:27617</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -258,11 +293,13 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="interpolation_8h_source.html#l00653">653</a> of file <a class="el" href="interpolation_8h_source.html">interpolation.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/alglib/<a class="el" href="interpolation_8h_source.html">interpolation.h</a></li>
-<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/alglib/<a class="el" href="interpolation_8cpp.html">interpolation.cpp</a></li>
+<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/alglib/<a class="el" href="interpolation_8cpp_source.html">interpolation.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

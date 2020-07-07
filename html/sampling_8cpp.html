@@ -131,7 +131,9 @@ Include dependency graph for sampling.cpp:</div>
 <area shape="rect" id="node46" href="xmipp__image__macros_8h.html" title="xmipp_image_macros.h" alt="" coords="1876,348,2036,375"/>
 </map>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="sampling_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:aaba46401ae4c6965b4bc66bf86ee2191"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sampling_8cpp.html#aaba46401ae4c6965b4bc66bf86ee2191">CLEAR_VECTORS</a>()</td></tr>
@@ -163,6 +165,8 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">no_redundant_sampling_points_vector.clear();\</div><div class="line">no_redundant_sampling_points_angles.clear();\</div><div class="line">no_redundant_sampling_points_index.clear()</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="sampling_8cpp_source.html#l00678">678</a> of file <a class="el" href="sampling_8cpp_source.html">sampling.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a42f26ffed146be0b8d50884787ee0c26"></a>
@@ -177,9 +181,11 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">size_t</span> __size = no_redundant_sampling_points_angles.size();\</div><div class="line">    no_redundant_sampling_points_index.resize(__size, 0);\</div><div class="line">    size_t * __ptrIndex = &amp;(no_redundant_sampling_points_index[0]);<a class="code" href="numerical__recipes_8cpp.html#aca6408d1d58d2334ecf5b80c3a9a8881">\</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#aca6408d1d58d2334ecf5b80c3a9a8881">    for</a> (<span class="keywordtype">size_t</span> <a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a> = 1; <a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a> &lt; __size; ++<a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>)\</div><div class="line">      __ptrIndex[<a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>] = <a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a></div><div class="ttc" id="project__crystal_8cpp_html_acb559820d9ca11295b4500f179ef6392"><div class="ttname"><a href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a></div><div class="ttdeci">#define i</div><div class="ttdef"><b>Definition:</b> numerical_recipes.cpp:2510</div></div>
-<div class="ttc" id="numerical__recipes_8cpp_html_aca6408d1d58d2334ecf5b80c3a9a8881"><div class="ttname"><a href="numerical__recipes_8cpp.html#aca6408d1d58d2334ecf5b80c3a9a8881">for</a></div><div class="ttdeci">for(j=1;j&lt;=i__1;++j)</div><div class="ttdef"><b>Definition:</b> numerical_recipes.cpp:2327</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">size_t</span> __size = no_redundant_sampling_points_angles.size();\</div><div class="line">    no_redundant_sampling_points_index.resize(__size, 0);\</div><div class="line">    size_t * __ptrIndex = &amp;(no_redundant_sampling_points_index[0]);<a class="code" href="numerical__recipes_8cpp.html#aca6408d1d58d2334ecf5b80c3a9a8881">\</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#aca6408d1d58d2334ecf5b80c3a9a8881">    for</a> (<span class="keywordtype">size_t</span> <a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a> = 1; <a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a> &lt; __size; ++<a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>)\</div><div class="line">      __ptrIndex[<a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>] = <a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a></div><div class="ttc" id="project__crystal_8cpp_html_acb559820d9ca11295b4500f179ef6392"><div class="ttname"><a href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a></div><div class="ttdeci">#define i</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02510">numerical_recipes.cpp:2510</a></div></div>
+<div class="ttc" id="numerical__recipes_8cpp_html_aca6408d1d58d2334ecf5b80c3a9a8881"><div class="ttname"><a href="numerical__recipes_8cpp.html#aca6408d1d58d2334ecf5b80c3a9a8881">for</a></div><div class="ttdeci">for(j=1;j&lt;=i__1;++j)</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02327">numerical_recipes.cpp:2327</a></div></div>
 </div><!-- fragment -->
+<p>Definition at line <a class="el" href="sampling_8cpp_source.html#l00683">683</a> of file <a class="el" href="sampling_8cpp_source.html">sampling.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a33a542cff32793e24c5cf98ca5666b1b"></a>
@@ -195,6 +201,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sampling_8cpp_source.html#l01491">1491</a> of file <a class="el" href="sampling_8cpp_source.html">sampling.cpp</a>.</p>
 
 </div>
 </div>
@@ -212,6 +220,8 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="sampling_8cpp_source.html#l01489">1489</a> of file <a class="el" href="sampling_8cpp_source.html">sampling.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a86a0659ff8500fcaadb2ed0853606c07"></a>
@@ -227,6 +237,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sampling_8cpp_source.html#l01490">1490</a> of file <a class="el" href="sampling_8cpp_source.html">sampling.cpp</a>.</p>
 
 </div>
 </div>
@@ -244,6 +256,8 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="sampling_8cpp_source.html#l01492">1492</a> of file <a class="el" href="sampling_8cpp_source.html">sampling.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a31851af96ca7a6c127d111b1feebe471"></a>
@@ -260,6 +274,8 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Remove all those points no closer than neighborhood_radius_rad </p>
+
+<p>Definition at line <a class="el" href="sampling_8cpp_source.html#l01912">1912</a> of file <a class="el" href="sampling_8cpp_source.html">sampling.cpp</a>.</p>
 
 </div>
 </div>

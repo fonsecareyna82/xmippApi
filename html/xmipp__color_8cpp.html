@@ -104,7 +104,9 @@ Include dependency graph for xmipp_color.cpp:</div>
 <area shape="rect" id="node4" href="xmipp__strings_8h.html" title="xmipp_strings.h" alt="" coords="100,199,215,225"/>
 </map>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="xmipp__color_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aa45f163d8f0ec94273c3191801f33d87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xmipp__color_8cpp.html#aa45f163d8f0ec94273c3191801f33d87">textcolor</a> (int attr, int fg, int bg)</td></tr>
@@ -149,6 +151,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="xmipp__color_8cpp_source.html#l00037">37</a> of file <a class="el" href="xmipp__color_8cpp_source.html">xmipp_color.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="numerical__recipes_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a> = strlen(msg);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">char</span> *formatBuffer = <span class="keyword">new</span> <span class="keywordtype">char</span>[n+20]; <span class="comment">// Extra space for color characters</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    sprintf(formatBuffer, <span class="stringliteral">&quot;%c[%d;%dm%s%c[0m&quot;</span>, 0x1B, attribute, color + 30, msg, 0x1B);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="xmipp__strings_8h.html#afbeda3fd1bdc8c37d01bdf9f5c8274ff">String</a> s = formatBuffer;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">delete</span>[] formatBuffer;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> s;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div><div class="ttc" id="xmipp__strings_8h_html_afbeda3fd1bdc8c37d01bdf9f5c8274ff"><div class="ttname"><a href="xmipp__strings_8h.html#afbeda3fd1bdc8c37d01bdf9f5c8274ff">String</a></div><div class="ttdeci">std::string String</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__strings_8h_source.html#l00034">xmipp_strings.h:34</a></div></div>
+<div class="ttc" id="numerical__recipes_8cpp_html_a76f11d9a0a47b94f72c2d0e77fb32240"><div class="ttname"><a href="numerical__recipes_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></div><div class="ttdeci">int * n</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02246">numerical_recipes.cpp:2246</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aa45f163d8f0ec94273c3191801f33d87"></a>
@@ -181,6 +187,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="xmipp__color_8cpp_source.html#l00028">28</a> of file <a class="el" href="xmipp__color_8cpp_source.html">xmipp_color.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">char</span> command[13];</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">/* Command is the control command to the terminal */</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    sprintf(command, <span class="stringliteral">&quot;%c[%d;%d;%dm&quot;</span>, 0x1B, attr, fg + 30, bg + 40);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    printf(<span class="stringliteral">&quot;%s&quot;</span>, command);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

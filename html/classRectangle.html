@@ -113,7 +113,13 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a740f727c20fce4f1e564d16db1acfe71"><td class="memItemLeft" align="right" valign="top">const T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRectangle.html#a740f727c20fce4f1e564d16db1acfe71">br</a></td></tr>
 <tr class="separator:a740f727c20fce4f1e564d16db1acfe71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+class Rectangle&lt; T &gt;</h3>
+
+
+<p>Definition at line <a class="el" href="rectangle_8h_source.html#l00034">34</a> of file <a class="el" href="rectangle_8h_source.html">rectangle.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a694d47864a08cb61217fa0f40ae3cfb3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -148,6 +154,10 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="rectangle_8h_source.html#l00036">36</a> of file <a class="el" href="rectangle_8h_source.html">rectangle.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                                               :</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="code" href="classRectangle.html#a3ceb2914b25d4f963e817908b208b969">tl</a>(std::move(topLeftCorner)), <a class="code" href="classRectangle.html#a740f727c20fce4f1e564d16db1acfe71">br</a>(std::move(bottomRightCorner)) {</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        static_assert(std::is_base_of&lt;Point, T&gt;::value, <span class="stringliteral">&quot;T must inherit from Point&quot;</span>);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div><div class="ttc" id="classRectangle_html_a3ceb2914b25d4f963e817908b208b969"><div class="ttname"><a href="classRectangle.html#a3ceb2914b25d4f963e817908b208b969">Rectangle::tl</a></div><div class="ttdeci">const T tl</div><div class="ttdef"><b>Definition:</b> <a href="rectangle_8h_source.html#l00050">rectangle.h:50</a></div></div>
+<div class="ttc" id="classRectangle_html_a740f727c20fce4f1e564d16db1acfe71"><div class="ttname"><a href="classRectangle.html#a740f727c20fce4f1e564d16db1acfe71">Rectangle::br</a></div><div class="ttdeci">const T br</div><div class="ttdef"><b>Definition:</b> <a href="rectangle_8h_source.html#l00051">rectangle.h:51</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -174,6 +184,10 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="rectangle_8h_source.html#l00042">42</a> of file <a class="el" href="rectangle_8h_source.html">rectangle.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                  {</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="classRectangle.html#a3ceb2914b25d4f963e817908b208b969">tl</a> + <a class="code" href="classRectangle.html#a740f727c20fce4f1e564d16db1acfe71">br</a>) / 2;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div><div class="ttc" id="classRectangle_html_a3ceb2914b25d4f963e817908b208b969"><div class="ttname"><a href="classRectangle.html#a3ceb2914b25d4f963e817908b208b969">Rectangle::tl</a></div><div class="ttdeci">const T tl</div><div class="ttdef"><b>Definition:</b> <a href="rectangle_8h_source.html#l00050">rectangle.h:50</a></div></div>
+<div class="ttc" id="classRectangle_html_a740f727c20fce4f1e564d16db1acfe71"><div class="ttname"><a href="classRectangle.html#a740f727c20fce4f1e564d16db1acfe71">Rectangle::br</a></div><div class="ttdeci">const T br</div><div class="ttdef"><b>Definition:</b> <a href="rectangle_8h_source.html#l00051">rectangle.h:51</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aa6e18610589e6766f8570c18702b52a6"></a>
@@ -199,6 +213,10 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="rectangle_8h_source.html#l00046">46</a> of file <a class="el" href="rectangle_8h_source.html">rectangle.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                {</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="classRectangle.html#a740f727c20fce4f1e564d16db1acfe71">br</a> - <a class="code" href="classRectangle.html#a3ceb2914b25d4f963e817908b208b969">tl</a>) + 1;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div><div class="ttc" id="classRectangle_html_a3ceb2914b25d4f963e817908b208b969"><div class="ttname"><a href="classRectangle.html#a3ceb2914b25d4f963e817908b208b969">Rectangle::tl</a></div><div class="ttdeci">const T tl</div><div class="ttdef"><b>Definition:</b> <a href="rectangle_8h_source.html#l00050">rectangle.h:50</a></div></div>
+<div class="ttc" id="classRectangle_html_a740f727c20fce4f1e564d16db1acfe71"><div class="ttname"><a href="classRectangle.html#a740f727c20fce4f1e564d16db1acfe71">Rectangle::br</a></div><div class="ttdeci">const T br</div><div class="ttdef"><b>Definition:</b> <a href="rectangle_8h_source.html#l00051">rectangle.h:51</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -214,6 +232,8 @@ template&lt;typename T&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="rectangle_8h_source.html#l00051">51</a> of file <a class="el" href="rectangle_8h_source.html">rectangle.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a3ceb2914b25d4f963e817908b208b969"></a>
@@ -227,6 +247,8 @@ template&lt;typename T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="rectangle_8h_source.html#l00050">50</a> of file <a class="el" href="rectangle_8h_source.html">rectangle.h</a>.</p>
 
 </div>
 </div>

@@ -164,6 +164,8 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Generic class for dimensionality reduction </p>
+
+<p>Definition at line <a class="el" href="dimred__tools_8h_source.html#l00136">136</a> of file <a class="el" href="dimred__tools_8h_source.html">dimred_tools.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a243ab9bc129776e739d9accac6405c32"></a>
 <div class="memitem">
@@ -180,6 +182,10 @@ Public Attributes</h2></td></tr>
 
 <p>Empty constructor. </p>
 
+<p>Definition at line <a class="el" href="dimred__tools_8cpp_source.html#l00450">450</a> of file <a class="el" href="dimred__tools_8cpp_source.html">dimred_tools.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;{</div><div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    <a class="code" href="classDimRedAlgorithm.html#a8fe30ae8f773842494cd8e05381a7640">X</a>=NULL;</div><div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <a class="code" href="classDimRedAlgorithm.html#a1a5089f877c40c387c06c5df084532c3">distance</a>=NULL;</div><div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;}</div><div class="ttc" id="classDimRedAlgorithm_html_a8fe30ae8f773842494cd8e05381a7640"><div class="ttname"><a href="classDimRedAlgorithm.html#a8fe30ae8f773842494cd8e05381a7640">DimRedAlgorithm::X</a></div><div class="ttdeci">Matrix2D&lt; double &gt; * X</div><div class="ttdoc">Pointer to input data. </div><div class="ttdef"><b>Definition:</b> <a href="dimred__tools_8h_source.html#l00140">dimred_tools.h:140</a></div></div>
+<div class="ttc" id="classDimRedAlgorithm_html_a1a5089f877c40c387c06c5df084532c3"><div class="ttname"><a href="classDimRedAlgorithm.html#a1a5089f877c40c387c06c5df084532c3">DimRedAlgorithm::distance</a></div><div class="ttdeci">DimRedDistance2 distance</div><div class="ttdoc">Distance function. </div><div class="ttdef"><b>Definition:</b> <a href="dimred__tools_8h_source.html#l00149">dimred_tools.h:149</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -198,6 +204,9 @@ Public Attributes</h2></td></tr>
 
 <p>Get reduced data. </p>
 
+<p>Definition at line <a class="el" href="dimred__tools_8cpp_source.html#l00466">466</a> of file <a class="el" href="dimred__tools_8cpp_source.html">dimred_tools.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;{</div><div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classDimRedAlgorithm.html#a78d67d1638ad2e4a566071e812208115">Y</a>;</div><div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;}</div><div class="ttc" id="classDimRedAlgorithm_html_a78d67d1638ad2e4a566071e812208115"><div class="ttname"><a href="classDimRedAlgorithm.html#a78d67d1638ad2e4a566071e812208115">DimRedAlgorithm::Y</a></div><div class="ttdeci">Matrix2D&lt; double &gt; Y</div><div class="ttdoc">Output data. </div><div class="ttdef"><b>Definition:</b> <a href="dimred__tools_8h_source.html#l00146">dimred_tools.h:146</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ab80dadeac929f7475e1651205d94c976"></a>
@@ -243,6 +252,9 @@ Public Attributes</h2></td></tr>
 
 <p>Set input data. </p>
 
+<p>Definition at line <a class="el" href="dimred__tools_8cpp_source.html#l00456">456</a> of file <a class="el" href="dimred__tools_8cpp_source.html">dimred_tools.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;{</div><div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    this-&gt;X=&amp;<a class="code" href="classDimRedAlgorithm.html#a8fe30ae8f773842494cd8e05381a7640">X</a>;</div><div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;}</div><div class="ttc" id="classDimRedAlgorithm_html_a8fe30ae8f773842494cd8e05381a7640"><div class="ttname"><a href="classDimRedAlgorithm.html#a8fe30ae8f773842494cd8e05381a7640">DimRedAlgorithm::X</a></div><div class="ttdeci">Matrix2D&lt; double &gt; * X</div><div class="ttdoc">Pointer to input data. </div><div class="ttdef"><b>Definition:</b> <a href="dimred__tools_8h_source.html#l00140">dimred_tools.h:140</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a18d007a028ec881b44ed21fa5d7c661d"></a>
@@ -261,6 +273,9 @@ Public Attributes</h2></td></tr>
 
 <p>Set output dimensionality. </p>
 
+<p>Definition at line <a class="el" href="dimred__tools_8cpp_source.html#l00461">461</a> of file <a class="el" href="dimred__tools_8cpp_source.html">dimred_tools.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;{</div><div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    this-&gt;<a class="code" href="classDimRedAlgorithm.html#a6cbfebd44c2f1efe3508fe7fcc4e5143">outputDim</a>=<a class="code" href="classDimRedAlgorithm.html#a6cbfebd44c2f1efe3508fe7fcc4e5143">outputDim</a>;</div><div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;}</div><div class="ttc" id="classDimRedAlgorithm_html_a6cbfebd44c2f1efe3508fe7fcc4e5143"><div class="ttname"><a href="classDimRedAlgorithm.html#a6cbfebd44c2f1efe3508fe7fcc4e5143">DimRedAlgorithm::outputDim</a></div><div class="ttdeci">size_t outputDim</div><div class="ttdoc">Output dim. </div><div class="ttdef"><b>Definition:</b> <a href="dimred__tools_8h_source.html#l00143">dimred_tools.h:143</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -276,6 +291,8 @@ Public Attributes</h2></td></tr>
 
 <p>Distance function. </p>
 
+<p>Definition at line <a class="el" href="dimred__tools_8h_source.html#l00149">149</a> of file <a class="el" href="dimred__tools_8h_source.html">dimred_tools.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a246b2cfb42faed4c807b0bc6125cd655"></a>
@@ -289,6 +306,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Save mapping. </p>
+
+<p>Definition at line <a class="el" href="dimred__tools_8h_source.html#l00152">152</a> of file <a class="el" href="dimred__tools_8h_source.html">dimred_tools.h</a>.</p>
 
 </div>
 </div>
@@ -304,6 +323,8 @@ Public Attributes</h2></td></tr>
 
 <p>Output dim. </p>
 
+<p>Definition at line <a class="el" href="dimred__tools_8h_source.html#l00143">143</a> of file <a class="el" href="dimred__tools_8h_source.html">dimred_tools.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a8fe30ae8f773842494cd8e05381a7640"></a>
@@ -317,6 +338,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pointer to input data. </p>
+
+<p>Definition at line <a class="el" href="dimred__tools_8h_source.html#l00140">140</a> of file <a class="el" href="dimred__tools_8h_source.html">dimred_tools.h</a>.</p>
 
 </div>
 </div>
@@ -332,11 +355,13 @@ Public Attributes</h2></td></tr>
 
 <p>Output data. </p>
 
+<p>Definition at line <a class="el" href="dimred__tools_8h_source.html#l00146">146</a> of file <a class="el" href="dimred__tools_8h_source.html">dimred_tools.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/dimred/<a class="el" href="dimred__tools_8h_source.html">dimred_tools.h</a></li>
-<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/dimred/<a class="el" href="dimred__tools_8cpp.html">dimred_tools.cpp</a></li>
+<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/dimred/<a class="el" href="dimred__tools_8cpp_source.html">dimred_tools.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

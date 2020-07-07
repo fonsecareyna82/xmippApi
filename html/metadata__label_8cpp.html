@@ -111,7 +111,9 @@ Include dependency graph for metadata_label.cpp:</div>
 <area shape="rect" id="node24" href="xmipp__error_8h.html" title="xmipp_error.h" alt="" coords="748,273,849,300"/>
 </map>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="metadata__label_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ac7645823926adc298d9a7180ca19d5c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="metadata__label_8cpp.html#ac7645823926adc298d9a7180ca19d5c0">MDOBJECT_INIT</a>()&#160;&#160;&#160;this-&gt;label = label; this-&gt;<a class="el" href="numerical__recipes_8cpp.html#ac2ea709cb05f339117cfca92335af42a">type</a> = <a class="el" href="classMDL.html#a4584b0d16c78b33c2a53c46729e13a22">MDL::labelType</a>(label); this-&gt;failed = false; this-&gt;chr = <a class="el" href="group__MetaData.html#ga28d4f5bd36751922c5846d04602f745f">_SPACE</a>;</td></tr>
@@ -145,6 +147,8 @@ Functions</h2></td></tr>
 
 <p>Macro to do some basic initialization. </p>
 
+<p>Definition at line <a class="el" href="metadata__label_8cpp_source.html#l00380">380</a> of file <a class="el" href="metadata__label_8cpp_source.html">metadata_label.cpp</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
@@ -172,6 +176,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="metadata__label_8cpp_source.html#l00618">618</a> of file <a class="el" href="metadata__label_8cpp_source.html">metadata_label.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;{</div><div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    value.<a class="code" href="classMDObject.html#a1a97b5ac920278003c3e2569023236cb">toStream</a>(os);</div><div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    <span class="keywordflow">return</span> os;</div><div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;}</div><div class="ttc" id="classMDObject_html_a1a97b5ac920278003c3e2569023236cb"><div class="ttname"><a href="classMDObject.html#a1a97b5ac920278003c3e2569023236cb">MDObject::toStream</a></div><div class="ttdeci">void toStream(std::ostream &amp;os, bool withFormat=false, bool isSql=false, bool escape=true) const </div><div class="ttdef"><b>Definition:</b> <a href="metadata__label_8cpp_source.html#l00530">metadata_label.cpp:530</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a155ee3385fcb8423204780b7f44a8305"></a>
@@ -199,6 +206,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Show </p>
 
+<p>Definition at line <a class="el" href="metadata__label_8cpp_source.html#l00887">887</a> of file <a class="el" href="metadata__label_8cpp_source.html">metadata_label.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;{</div><div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a> = 0; <a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a> &lt; row.<a class="code" href="classMDRow.html#a46e6a5675d0a8036b23a2074358c3663">_size</a>; ++<a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>)</div><div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;    {</div><div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;        row.<a class="code" href="classMDRow.html#a4601623ad953ee97e4e98441b66b997b">objects</a>[row.<a class="code" href="classMDRow.html#ae420469215bfbfb1fdc8e68d06bf8352">order</a>[<a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>]]-&gt;<a class="code" href="classMDObject.html#a1a97b5ac920278003c3e2569023236cb">toStream</a>(out);</div><div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;        out &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div><div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    }</div><div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;    <span class="keywordflow">return</span> out;</div><div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;}</div><div class="ttc" id="classMDRow_html_ae420469215bfbfb1fdc8e68d06bf8352"><div class="ttname"><a href="classMDRow.html#ae420469215bfbfb1fdc8e68d06bf8352">MDRow::order</a></div><div class="ttdeci">MDLabel order[MDL_LAST_LABEL]</div><div class="ttdef"><b>Definition:</b> <a href="metadata__label_8h_source.html#l01093">metadata_label.h:1093</a></div></div>
+<div class="ttc" id="project__crystal_8cpp_html_acb559820d9ca11295b4500f179ef6392"><div class="ttname"><a href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a></div><div class="ttdeci">#define i</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02510">numerical_recipes.cpp:2510</a></div></div>
+<div class="ttc" id="classMDObject_html_a1a97b5ac920278003c3e2569023236cb"><div class="ttname"><a href="classMDObject.html#a1a97b5ac920278003c3e2569023236cb">MDObject::toStream</a></div><div class="ttdeci">void toStream(std::ostream &amp;os, bool withFormat=false, bool isSql=false, bool escape=true) const </div><div class="ttdef"><b>Definition:</b> <a href="metadata__label_8cpp_source.html#l00530">metadata_label.cpp:530</a></div></div>
+<div class="ttc" id="classMDRow_html_a4601623ad953ee97e4e98441b66b997b"><div class="ttname"><a href="classMDRow.html#a4601623ad953ee97e4e98441b66b997b">MDRow::objects</a></div><div class="ttdeci">MDObject * objects[MDL_LAST_LABEL]</div><div class="ttdef"><b>Definition:</b> <a href="metadata__label_8h_source.html#l01092">metadata_label.h:1092</a></div></div>
+<div class="ttc" id="classMDRow_html_a46e6a5675d0a8036b23a2074358c3663"><div class="ttname"><a href="classMDRow.html#a46e6a5675d0a8036b23a2074358c3663">MDRow::_size</a></div><div class="ttdeci">int _size</div><div class="ttdef"><b>Definition:</b> <a href="metadata__label_8h_source.html#l01094">metadata_label.h:1094</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a6af319db910c571d2a82668fb3bd5302"></a>
@@ -225,6 +239,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="metadata__label_8cpp_source.html#l00625">625</a> of file <a class="el" href="metadata__label_8cpp_source.html">metadata_label.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;{</div><div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    value.<a class="code" href="classMDObject.html#acfa2eeffe3c5d585fede82385b8d910c">fromStream</a>(is);</div><div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    <span class="keywordflow">return</span> is;</div><div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;}</div><div class="ttc" id="classMDObject_html_acfa2eeffe3c5d585fede82385b8d910c"><div class="ttname"><a href="classMDObject.html#acfa2eeffe3c5d585fede82385b8d910c">MDObject::fromStream</a></div><div class="ttdeci">bool fromStream(std::istream &amp;is, bool fromString=false)</div><div class="ttdef"><b>Definition:</b> <a href="metadata__label_8cpp_source.html#l00631">metadata_label.cpp:631</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

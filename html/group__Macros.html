@@ -198,6 +198,8 @@ Miscellaneous</h2></td></tr>
 <p>Absolute value</p>
 <p>Valid for any kind of number (int, short, float, etc)</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;x = ABS(x);</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00142">142</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ga7e7a2d2e3911f497562fd7308abbf121"></a>
@@ -215,6 +217,8 @@ Miscellaneous</h2></td></tr>
 </div><div class="memdoc">
 <p>ArcCosine in degrees</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;if (ACOSD(0.5) == 60)</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    std::cout &lt;&lt; &quot;This is in degrees!\n&quot;;</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00338">338</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ga1a28202d513853ad372ddd2effa46621"></a>
@@ -232,6 +236,8 @@ Miscellaneous</h2></td></tr>
 </div><div class="memdoc">
 <p>ArcSine in degrees</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;if (ASIND(0.5) == 30.)</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    std::cout &lt;&lt; &quot;This is in degrees!\n&quot;;</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00356">356</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ga4ec18a98c812ab4d498c8111c193aa17"></a>
@@ -247,10 +253,12 @@ Miscellaneous</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) == (<span class="keywordtype">int</span>)(<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>)) ? (int)(<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>):(((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &gt; 0) ? (int)((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) + 1) : \</div><div class="line">                 (<span class="keywordtype">int</span>)(<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>)))</div><div class="ttc" id="numerical__recipes_8cpp_html_ab81d9253b246f09be9999505d515d517"><div class="ttname"><a href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a></div><div class="ttdeci">doublereal * x</div><div class="ttdef"><b>Definition:</b> numerical_recipes.cpp:2247</div></div>
+<b>Value:</b><div class="fragment"><div class="line">(((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) == (<span class="keywordtype">int</span>)(<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>)) ? (int)(<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>):(((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &gt; 0) ? (int)((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) + 1) : \</div><div class="line">                 (<span class="keywordtype">int</span>)(<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>)))</div><div class="ttc" id="numerical__recipes_8cpp_html_ab81d9253b246f09be9999505d515d517"><div class="ttname"><a href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a></div><div class="ttdeci">doublereal * x</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02247">numerical_recipes.cpp:2247</a></div></div>
 </div><!-- fragment --><p>Round to next larger integer.</p>
 <p>Valid for any kind of numbers (int, short, float, etc). The result is of type integer.</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;a = CEIL(-0.8); // a = 0</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;a = CEIL(-0.2); // a = 0</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;a = CEIL(0.2); // a = 1</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;a = CEIL(0.8); // a = 1</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00225">225</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="gad4d08cca0a39849cc247072eaebe7726"></a>
@@ -285,6 +293,8 @@ Miscellaneous</h2></td></tr>
 <p>Clip in a saturation fashion</p>
 <p>CLIP is a macro which acts like a saturation curve, a value x is "clipped" to a range defined by x0 and xF, for example the output values for the following x and CLIP(x,-2,2) would be</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;x = ... -8 -7 -6 -5 -4 -3 -2 -1 0 1 2 3 4 5 6 7 8 ...</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;output = ... -2 -2 -2 -2 -2 -2 -2 -1 0 1 2 2 2 2 2 2 2 ...</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00260">260</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="gac44bfd259a29050a07a58603ef1c9663"></a>
@@ -302,6 +312,8 @@ Miscellaneous</h2></td></tr>
 </div><div class="memdoc">
 <p>Cosine in degrees</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;if (COSD(90) == 0)</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    std::cout &lt;&lt; &quot;This is in degrees!\n&quot;;</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00329">329</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="gadec1e6bbd34c5cf8765a457da4876c91"></a>
@@ -319,6 +331,8 @@ Miscellaneous</h2></td></tr>
 </div><div class="memdoc">
 <p>Degrees to radians</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;angle_in_radians = DEG2RAD(ang_in_degrees);</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00312">312</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="gaa98d5342c84203dd981bd4d6a032194f"></a>
@@ -356,14 +370,16 @@ Miscellaneous</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{ <a class="code" href="numerical__recipes_8cpp.html#aba441ebef6931295ba1cb63e2cca89a8">\</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#aba441ebef6931295ba1cb63e2cca89a8">	if</a> (((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &gt;= (<a class="code" href="blobs_8cpp.html#a94ec8a7a5cf5c289d292aef5777c4c14">x0</a>) &amp;&amp; (<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &lt;= (<a class="code" href="blobs_8cpp.html#a8f613ddaea2048e3471a1f4f04ba4b79">xF</a>))) <a class="code" href="numerical__recipes_8cpp.html#ad919bbce6f061400a0bc5231a9cd1621">\</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#ad919bbce6f061400a0bc5231a9cd1621">		y</a>=<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>; <a class="code" href="numerical__recipes_8cpp.html#a0544c3fe466e421738dae463968b70ba">\</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#a0544c3fe466e421738dae463968b70ba">	else</a> \</div><div class="line">    { \</div><div class="line">        int range=(<a class="code" href="blobs_8cpp.html#a8f613ddaea2048e3471a1f4f04ba4b79">xF</a>) - (<a class="code" href="blobs_8cpp.html#a94ec8a7a5cf5c289d292aef5777c4c14">x0</a>) + 1; <a class="code" href="numerical__recipes_8cpp.html#aba441ebef6931295ba1cb63e2cca89a8">\</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#aba441ebef6931295ba1cb63e2cca89a8">		if</a> ((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>)&lt;(<a class="code" href="blobs_8cpp.html#a94ec8a7a5cf5c289d292aef5777c4c14">x0</a>)) <a class="code" href="numerical__recipes_8cpp.html#ad919bbce6f061400a0bc5231a9cd1621">\</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#ad919bbce6f061400a0bc5231a9cd1621">			y</a>=((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) - (<span class="keywordtype">int</span>)(((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) - (<a class="code" href="blobs_8cpp.html#a94ec8a7a5cf5c289d292aef5777c4c14">x0</a>) + 1) / range - 1) * range); <a class="code" href="numerical__recipes_8cpp.html#ad919bbce6f061400a0bc5231a9cd1621">\</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#ad919bbce6f061400a0bc5231a9cd1621">		else \</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#ad919bbce6f061400a0bc5231a9cd1621">			y</a>=((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) - (<span class="keywordtype">int</span>)(((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) - (<a class="code" href="blobs_8cpp.html#a8f613ddaea2048e3471a1f4f04ba4b79">xF</a>) - 1) / range + 1) * range); \</div><div class="line">    } \</div><div class="line">}</div><div class="ttc" id="numerical__recipes_8cpp_html_a0544c3fe466e421738dae463968b70ba"><div class="ttname"><a href="numerical__recipes_8cpp.html#a0544c3fe466e421738dae463968b70ba">else</a></div><div class="ttdeci">else</div><div class="ttdef"><b>Definition:</b> numerical_recipes.cpp:2919</div></div>
-<div class="ttc" id="numerical__recipes_8cpp_html_ad919bbce6f061400a0bc5231a9cd1621"><div class="ttname"><a href="numerical__recipes_8cpp.html#ad919bbce6f061400a0bc5231a9cd1621">y</a></div><div class="ttdeci">static double * y</div><div class="ttdef"><b>Definition:</b> numerical_recipes.cpp:8506</div></div>
-<div class="ttc" id="numerical__recipes_8cpp_html_ab81d9253b246f09be9999505d515d517"><div class="ttname"><a href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a></div><div class="ttdeci">doublereal * x</div><div class="ttdef"><b>Definition:</b> numerical_recipes.cpp:2247</div></div>
+<b>Value:</b><div class="fragment"><div class="line">{ <a class="code" href="numerical__recipes_8cpp.html#aba441ebef6931295ba1cb63e2cca89a8">\</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#aba441ebef6931295ba1cb63e2cca89a8">	if</a> (((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &gt;= (<a class="code" href="blobs_8cpp.html#a94ec8a7a5cf5c289d292aef5777c4c14">x0</a>) &amp;&amp; (<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &lt;= (<a class="code" href="blobs_8cpp.html#a8f613ddaea2048e3471a1f4f04ba4b79">xF</a>))) <a class="code" href="numerical__recipes_8cpp.html#ad919bbce6f061400a0bc5231a9cd1621">\</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#ad919bbce6f061400a0bc5231a9cd1621">		y</a>=<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>; <a class="code" href="numerical__recipes_8cpp.html#a0544c3fe466e421738dae463968b70ba">\</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#a0544c3fe466e421738dae463968b70ba">	else</a> \</div><div class="line">    { \</div><div class="line">        int range=(<a class="code" href="blobs_8cpp.html#a8f613ddaea2048e3471a1f4f04ba4b79">xF</a>) - (<a class="code" href="blobs_8cpp.html#a94ec8a7a5cf5c289d292aef5777c4c14">x0</a>) + 1; <a class="code" href="numerical__recipes_8cpp.html#aba441ebef6931295ba1cb63e2cca89a8">\</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#aba441ebef6931295ba1cb63e2cca89a8">		if</a> ((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>)&lt;(<a class="code" href="blobs_8cpp.html#a94ec8a7a5cf5c289d292aef5777c4c14">x0</a>)) <a class="code" href="numerical__recipes_8cpp.html#ad919bbce6f061400a0bc5231a9cd1621">\</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#ad919bbce6f061400a0bc5231a9cd1621">			y</a>=((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) - (<span class="keywordtype">int</span>)(((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) - (<a class="code" href="blobs_8cpp.html#a94ec8a7a5cf5c289d292aef5777c4c14">x0</a>) + 1) / range - 1) * range); <a class="code" href="numerical__recipes_8cpp.html#ad919bbce6f061400a0bc5231a9cd1621">\</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#ad919bbce6f061400a0bc5231a9cd1621">		else \</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#ad919bbce6f061400a0bc5231a9cd1621">			y</a>=((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) - (<span class="keywordtype">int</span>)(((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) - (<a class="code" href="blobs_8cpp.html#a8f613ddaea2048e3471a1f4f04ba4b79">xF</a>) - 1) / range + 1) * range); \</div><div class="line">    } \</div><div class="line">}</div><div class="ttc" id="numerical__recipes_8cpp_html_a0544c3fe466e421738dae463968b70ba"><div class="ttname"><a href="numerical__recipes_8cpp.html#a0544c3fe466e421738dae463968b70ba">else</a></div><div class="ttdeci">else</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02919">numerical_recipes.cpp:2919</a></div></div>
+<div class="ttc" id="numerical__recipes_8cpp_html_ad919bbce6f061400a0bc5231a9cd1621"><div class="ttname"><a href="numerical__recipes_8cpp.html#ad919bbce6f061400a0bc5231a9cd1621">y</a></div><div class="ttdeci">static double * y</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l08506">numerical_recipes.cpp:8506</a></div></div>
+<div class="ttc" id="numerical__recipes_8cpp_html_ab81d9253b246f09be9999505d515d517"><div class="ttname"><a href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a></div><div class="ttdeci">doublereal * x</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02247">numerical_recipes.cpp:2247</a></div></div>
 <div class="ttc" id="blobs_8cpp_html_a94ec8a7a5cf5c289d292aef5777c4c14"><div class="ttname"><a href="blobs_8cpp.html#a94ec8a7a5cf5c289d292aef5777c4c14">x0</a></div><div class="ttdeci">#define x0</div></div>
 <div class="ttc" id="blobs_8cpp_html_a8f613ddaea2048e3471a1f4f04ba4b79"><div class="ttname"><a href="blobs_8cpp.html#a8f613ddaea2048e3471a1f4f04ba4b79">xF</a></div><div class="ttdeci">#define xF</div></div>
-<div class="ttc" id="numerical__recipes_8cpp_html_aba441ebef6931295ba1cb63e2cca89a8"><div class="ttname"><a href="numerical__recipes_8cpp.html#aba441ebef6931295ba1cb63e2cca89a8">if</a></div><div class="ttdeci">if(fabs(c[*nmax+*nmax *c_dim1])==0.e0)</div><div class="ttdef"><b>Definition:</b> numerical_recipes.cpp:2296</div></div>
+<div class="ttc" id="numerical__recipes_8cpp_html_aba441ebef6931295ba1cb63e2cca89a8"><div class="ttname"><a href="numerical__recipes_8cpp.html#aba441ebef6931295ba1cb63e2cca89a8">if</a></div><div class="ttdeci">if(fabs(c[*nmax+*nmax *c_dim1])==0.e0)</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02296">numerical_recipes.cpp:2296</a></div></div>
 </div><!-- fragment --><p>Fast wrapping for integers</p>
 <p>y=<a class="el" href="group__Macros.html#ga10de40044d2903ec0d4e7e57c31322aa">intWRAP(x,x0,xF)</a> </p>
+
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00280">280</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
 
 </div>
 </div>
@@ -383,6 +399,8 @@ Miscellaneous</h2></td></tr>
 <p>Starting point for Xmipp volume/image</p>
 <p>Given a size (in some direction), this function returns the first index for a volume/image/array with this size. The formula is -(int) ((float) (size) / 2.0) </p>
 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00439">439</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ga2f0eecb0f7856721f56faff8f27b0dc1"></a>
@@ -398,10 +416,12 @@ Miscellaneous</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) == (<span class="keywordtype">int</span>)(<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>)) ? (int)(<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>):(((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &gt; 0) ? (int)(<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) : \</div><div class="line">                  (int)((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) - 1)))</div><div class="ttc" id="numerical__recipes_8cpp_html_ab81d9253b246f09be9999505d515d517"><div class="ttname"><a href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a></div><div class="ttdeci">doublereal * x</div><div class="ttdef"><b>Definition:</b> numerical_recipes.cpp:2247</div></div>
+<b>Value:</b><div class="fragment"><div class="line">(((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) == (<span class="keywordtype">int</span>)(<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>)) ? (int)(<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>):(((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &gt; 0) ? (int)(<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) : \</div><div class="line">                  (int)((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) - 1)))</div><div class="ttc" id="numerical__recipes_8cpp_html_ab81d9253b246f09be9999505d515d517"><div class="ttname"><a href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a></div><div class="ttdeci">doublereal * x</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02247">numerical_recipes.cpp:2247</a></div></div>
 </div><!-- fragment --><p>Round to next smaller integer</p>
 <p>Valid for any kind of numbers (int, short, float, etc). The result is of type integer.</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;a = FLOOR(-0.8); // a = -1</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;a = FLOOR(-0.2); // a = -1</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;a = FLOOR(0.2); // a = 0</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;a = FLOOR(0.8); // a = 0</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00240">240</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ga3fa07fee2d280ed0881de0dbe0bea4f8"></a>
@@ -420,6 +440,8 @@ Miscellaneous</h2></td></tr>
 <p>Return the fractional part of a value</p>
 <p>The fractional part of 3.7 is 0.7 and of -3.7 is -0.7. </p>
 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00247">247</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ga59d83d878ab677f99e48bd48ad80eef0"></a>
@@ -432,6 +454,8 @@ Miscellaneous</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Pi/2 </p>
+
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00104">104</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
 
 </div>
 </div>
@@ -464,12 +488,14 @@ Miscellaneous</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &gt;= (<a class="code" href="blobs_8cpp.html#a94ec8a7a5cf5c289d292aef5777c4c14">x0</a>) &amp;&amp; (<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &lt;= (<a class="code" href="blobs_8cpp.html#a8f613ddaea2048e3471a1f4f04ba4b79">xF</a>)) ? (<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) : ((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &lt; (<a class="code" href="blobs_8cpp.html#a94ec8a7a5cf5c289d292aef5777c4c14">x0</a>)) \</div><div class="line">                            ? ((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) - (int)(((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) - (<a class="code" href="blobs_8cpp.html#a94ec8a7a5cf5c289d292aef5777c4c14">x0</a>) + 1) / ((<a class="code" href="blobs_8cpp.html#a8f613ddaea2048e3471a1f4f04ba4b79">xF</a>) - (<a class="code" href="blobs_8cpp.html#a94ec8a7a5cf5c289d292aef5777c4c14">x0</a>) + 1) - 1) * \</div><div class="line">                               ((<a class="code" href="blobs_8cpp.html#a8f613ddaea2048e3471a1f4f04ba4b79">xF</a>) - (<a class="code" href="blobs_8cpp.html#a94ec8a7a5cf5c289d292aef5777c4c14">x0</a>) + 1)) : ((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) - (<span class="keywordtype">int</span>)(((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) - (<a class="code" href="blobs_8cpp.html#a8f613ddaea2048e3471a1f4f04ba4b79">xF</a>) - 1) / ((<a class="code" href="blobs_8cpp.html#a8f613ddaea2048e3471a1f4f04ba4b79">xF</a>) - (<a class="code" href="blobs_8cpp.html#a94ec8a7a5cf5c289d292aef5777c4c14">x0</a>) + 1) \</div><div class="line">                                                                 + 1) * ((<a class="code" href="blobs_8cpp.html#a8f613ddaea2048e3471a1f4f04ba4b79">xF</a>) - (<a class="code" href="blobs_8cpp.html#a94ec8a7a5cf5c289d292aef5777c4c14">x0</a>) + 1)))</div><div class="ttc" id="numerical__recipes_8cpp_html_ab81d9253b246f09be9999505d515d517"><div class="ttname"><a href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a></div><div class="ttdeci">doublereal * x</div><div class="ttdef"><b>Definition:</b> numerical_recipes.cpp:2247</div></div>
+<b>Value:</b><div class="fragment"><div class="line">(((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &gt;= (<a class="code" href="blobs_8cpp.html#a94ec8a7a5cf5c289d292aef5777c4c14">x0</a>) &amp;&amp; (<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &lt;= (<a class="code" href="blobs_8cpp.html#a8f613ddaea2048e3471a1f4f04ba4b79">xF</a>)) ? (<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) : ((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &lt; (<a class="code" href="blobs_8cpp.html#a94ec8a7a5cf5c289d292aef5777c4c14">x0</a>)) \</div><div class="line">                            ? ((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) - (int)(((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) - (<a class="code" href="blobs_8cpp.html#a94ec8a7a5cf5c289d292aef5777c4c14">x0</a>) + 1) / ((<a class="code" href="blobs_8cpp.html#a8f613ddaea2048e3471a1f4f04ba4b79">xF</a>) - (<a class="code" href="blobs_8cpp.html#a94ec8a7a5cf5c289d292aef5777c4c14">x0</a>) + 1) - 1) * \</div><div class="line">                               ((<a class="code" href="blobs_8cpp.html#a8f613ddaea2048e3471a1f4f04ba4b79">xF</a>) - (<a class="code" href="blobs_8cpp.html#a94ec8a7a5cf5c289d292aef5777c4c14">x0</a>) + 1)) : ((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) - (<span class="keywordtype">int</span>)(((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) - (<a class="code" href="blobs_8cpp.html#a8f613ddaea2048e3471a1f4f04ba4b79">xF</a>) - 1) / ((<a class="code" href="blobs_8cpp.html#a8f613ddaea2048e3471a1f4f04ba4b79">xF</a>) - (<a class="code" href="blobs_8cpp.html#a94ec8a7a5cf5c289d292aef5777c4c14">x0</a>) + 1) \</div><div class="line">                                                                 + 1) * ((<a class="code" href="blobs_8cpp.html#a8f613ddaea2048e3471a1f4f04ba4b79">xF</a>) - (<a class="code" href="blobs_8cpp.html#a94ec8a7a5cf5c289d292aef5777c4c14">x0</a>) + 1)))</div><div class="ttc" id="numerical__recipes_8cpp_html_ab81d9253b246f09be9999505d515d517"><div class="ttname"><a href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a></div><div class="ttdeci">doublereal * x</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02247">numerical_recipes.cpp:2247</a></div></div>
 <div class="ttc" id="blobs_8cpp_html_a94ec8a7a5cf5c289d292aef5777c4c14"><div class="ttname"><a href="blobs_8cpp.html#a94ec8a7a5cf5c289d292aef5777c4c14">x0</a></div><div class="ttdeci">#define x0</div></div>
 <div class="ttc" id="blobs_8cpp_html_a8f613ddaea2048e3471a1f4f04ba4b79"><div class="ttname"><a href="blobs_8cpp.html#a8f613ddaea2048e3471a1f4f04ba4b79">xF</a></div><div class="ttdeci">#define xF</div></div>
 </div><!-- fragment --><p>Wrapping for integers</p>
 <p>intWRAP performs a wrapping in the integer set, when the cycle is finsihed it begins again. For example, for intWRAP(x,-2,2) would be</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;x = ... -8 -7 -6 -5 -4 -3 -2 -1  0  1  2  3  4  5  6  7  8 ...</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;output = ...  2 -2 -1  0  1  2 -2 -1  0  1  2 -2 -1  0  1  2 -2 ...</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00272">272</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ga37ce421600f14de73f7006bf40cc5b3a"></a>
@@ -487,6 +513,8 @@ Miscellaneous</h2></td></tr>
 </div><div class="memdoc">
 <p>Starting point for Xmipp volume/image</p>
 <p>Given a size (in some direction), this function returns the first index for a volume/image/array with this size. The formula is <a class="el" href="group__Macros.html#gaf809d730a6aa2f55cd4c3d0251f433a7">FIRST_XMIPP_INDEX(size)</a> + (size) - 1 </p>
+
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00448">448</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
 
 </div>
 </div>
@@ -522,6 +550,8 @@ Miscellaneous</h2></td></tr>
 <p>Linear interpolation</p>
 <p>From low (when a=0) to high (when a=1). The following value is returned (equal to (a*h)+((1-a)*l) </p>
 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00381">381</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ga03fdb5946fa314b990ef7a16ee4f1ed1"></a>
@@ -540,6 +570,8 @@ Miscellaneous</h2></td></tr>
 <p>Returns next positive power of 2</p>
 <p>It is supposed that the given number is positive although it's not needed to be an integer</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;next_power = NEXT_POWER_OF_2(1000); // next_power = 1024</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00374">374</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ga598a3330b3c21701223ee0ca14316eca"></a>
@@ -552,6 +584,8 @@ Miscellaneous</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Pi </p>
+
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00097">97</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
 
 </div>
 </div>
@@ -570,6 +604,8 @@ Miscellaneous</h2></td></tr>
 </div><div class="memdoc">
 <p>Radians to degrees</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;angle_in_degrees = RAD2DEG(ang_in_radians);</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00320">320</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ga25935c2309abe02cff60809c4d7d9b9e"></a>
@@ -604,6 +640,8 @@ Miscellaneous</h2></td></tr>
 <p>Wrapping for real numbers</p>
 <p>realWRAP is used to keep a floating number between a range with a wrapping fashion. For instance, it is used in trigonometry to say that an angle of 5*PI is the same as PI, ie, to keep an angle in the range 0...2*PI</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;Corrected_angle = realWRAP(angle, 0, 2*PI);</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00304">304</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="gacd66e8cacf954c3bc3bba81d09425a12"></a>
@@ -622,6 +660,8 @@ Miscellaneous</h2></td></tr>
 <p>Round to next integer</p>
 <p>Valid for any kind of numbers (int, short, float, etc). The result is of type integer.</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;a = ROUND(-0.8); // a = -1</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;a = ROUND(-0.2); // a = 0</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;a = ROUND(0.2); // a = 0</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;a = ROUND(0.8); // a = 1</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00210">210</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ga95ed41486ca0ed53262e4b8934d4afac"></a>
@@ -640,6 +680,8 @@ Miscellaneous</h2></td></tr>
 <p>Sign of</p>
 <p>Valid for any kind of number (int, short, float, etc). It returns +1 or -1</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;if (SGN(x) == -1)</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    std::cout &lt;&lt; &quot;x is negative&quot; &lt;&lt; std::endl;</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00155">155</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ga734979f161228483e36cea562161f48c"></a>
@@ -658,6 +700,8 @@ Miscellaneous</h2></td></tr>
 <p>Sign of, considering 0 as 0</p>
 <p>Valid for any kind of number (int, short, float, etc). It returns +1 if the number is positive, -1 if the number is negative, and 0 if the number is 0.</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;if (SGN0(x) == -1)</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    std::cout &lt;&lt; &quot;x is negative&quot; &lt;&lt; std::endl;</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00169">169</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ga106948f3882a4fb786ec0c2547bab930"></a>
@@ -673,10 +717,12 @@ Miscellaneous</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &lt; 0.0001 &amp;&amp; (<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &gt; -0.0001) ? 1 : sin(<a class="code" href="group__Macros.html#ga598a3330b3c21701223ee0ca14316eca">PI</a> * (<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>)) \</div><div class="line">                 / (<a class="code" href="group__Macros.html#ga598a3330b3c21701223ee0ca14316eca">PI</a> * (<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>)))</div><div class="ttc" id="numerical__recipes_8cpp_html_ab81d9253b246f09be9999505d515d517"><div class="ttname"><a href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a></div><div class="ttdeci">doublereal * x</div><div class="ttdef"><b>Definition:</b> numerical_recipes.cpp:2247</div></div>
-<div class="ttc" id="group__Macros_html_ga598a3330b3c21701223ee0ca14316eca"><div class="ttname"><a href="group__Macros.html#ga598a3330b3c21701223ee0ca14316eca">PI</a></div><div class="ttdeci">#define PI</div><div class="ttdef"><b>Definition:</b> xmipp_macros.h:97</div></div>
+<b>Value:</b><div class="fragment"><div class="line">(((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &lt; 0.0001 &amp;&amp; (<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &gt; -0.0001) ? 1 : sin(<a class="code" href="group__Macros.html#ga598a3330b3c21701223ee0ca14316eca">PI</a> * (<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>)) \</div><div class="line">                 / (<a class="code" href="group__Macros.html#ga598a3330b3c21701223ee0ca14316eca">PI</a> * (<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>)))</div><div class="ttc" id="numerical__recipes_8cpp_html_ab81d9253b246f09be9999505d515d517"><div class="ttname"><a href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a></div><div class="ttdeci">doublereal * x</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02247">numerical_recipes.cpp:2247</a></div></div>
+<div class="ttc" id="group__Macros_html_ga598a3330b3c21701223ee0ca14316eca"><div class="ttname"><a href="group__Macros.html#ga598a3330b3c21701223ee0ca14316eca">PI</a></div><div class="ttdeci">#define PI</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__macros_8h_source.html#l00097">xmipp_macros.h:97</a></div></div>
 </div><!-- fragment --><p>SINC function</p>
 <p>The sinc function is defined as sin(PI*x)/(PI*x). </p>
+
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00362">362</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
 
 </div>
 </div>
@@ -695,6 +741,8 @@ Miscellaneous</h2></td></tr>
 </div><div class="memdoc">
 <p>Sine in degrees</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;if (SIND(90) == 1)</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    std::cout &lt;&lt; &quot;This is in degrees!\n&quot;;</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00347">347</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ga536d5c60e25ce994a433d115ca6de5c9"></a>
@@ -706,9 +754,11 @@ Miscellaneous</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="group__Macros.html#gaf8a261813b559b0adb0417213984a591">SPEED_UP_tempsDouble</a>; <a class="code" href="group__Macros.html#ga4c9386c11dfbaac4b99d2f7799dbc0c1">\</a></div><div class="line"><a class="code" href="group__Macros.html#ga4c9386c11dfbaac4b99d2f7799dbc0c1">    SPEED_UP_tempsInt</a></div><div class="ttc" id="group__Macros_html_gaf8a261813b559b0adb0417213984a591"><div class="ttname"><a href="group__Macros.html#gaf8a261813b559b0adb0417213984a591">SPEED_UP_tempsDouble</a></div><div class="ttdeci">#define SPEED_UP_tempsDouble</div><div class="ttdef"><b>Definition:</b> xmipp_macros.h:413</div></div>
-<div class="ttc" id="group__Macros_html_ga4c9386c11dfbaac4b99d2f7799dbc0c1"><div class="ttname"><a href="group__Macros.html#ga4c9386c11dfbaac4b99d2f7799dbc0c1">SPEED_UP_tempsInt</a></div><div class="ttdeci">#define SPEED_UP_tempsInt</div><div class="ttdef"><b>Definition:</b> xmipp_macros.h:408</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="group__Macros.html#gaf8a261813b559b0adb0417213984a591">SPEED_UP_tempsDouble</a>; <a class="code" href="group__Macros.html#ga4c9386c11dfbaac4b99d2f7799dbc0c1">\</a></div><div class="line"><a class="code" href="group__Macros.html#ga4c9386c11dfbaac4b99d2f7799dbc0c1">    SPEED_UP_tempsInt</a></div><div class="ttc" id="group__Macros_html_gaf8a261813b559b0adb0417213984a591"><div class="ttname"><a href="group__Macros.html#gaf8a261813b559b0adb0417213984a591">SPEED_UP_tempsDouble</a></div><div class="ttdeci">#define SPEED_UP_tempsDouble</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__macros_8h_source.html#l00413">xmipp_macros.h:413</a></div></div>
+<div class="ttc" id="group__Macros_html_ga4c9386c11dfbaac4b99d2f7799dbc0c1"><div class="ttname"><a href="group__Macros.html#ga4c9386c11dfbaac4b99d2f7799dbc0c1">SPEED_UP_tempsInt</a></div><div class="ttdeci">#define SPEED_UP_tempsInt</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__macros_8h_source.html#l00408">xmipp_macros.h:408</a></div></div>
 </div><!-- fragment --><p>Speed up temporary variables </p>
+
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00419">419</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
 
 </div>
 </div>
@@ -723,6 +773,8 @@ Miscellaneous</h2></td></tr>
 </div><div class="memdoc">
 <p>Speed up temporary variables </p>
 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00394">394</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ga0714b7b60ab5b804af1c9b124863178e"></a>
@@ -734,8 +786,10 @@ Miscellaneous</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="group__Macros.html#gabe004d11d01f4baec26169abb44a6d18">SPEED_UP_temps0</a>; \</div><div class="line">    double spduptmp1;</div><div class="ttc" id="group__Macros_html_gabe004d11d01f4baec26169abb44a6d18"><div class="ttname"><a href="group__Macros.html#gabe004d11d01f4baec26169abb44a6d18">SPEED_UP_temps0</a></div><div class="ttdeci">#define SPEED_UP_temps0</div><div class="ttdef"><b>Definition:</b> xmipp_macros.h:394</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="group__Macros.html#gabe004d11d01f4baec26169abb44a6d18">SPEED_UP_temps0</a>; \</div><div class="line">    double spduptmp1;</div><div class="ttc" id="group__Macros_html_gabe004d11d01f4baec26169abb44a6d18"><div class="ttname"><a href="group__Macros.html#gabe004d11d01f4baec26169abb44a6d18">SPEED_UP_temps0</a></div><div class="ttdeci">#define SPEED_UP_temps0</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__macros_8h_source.html#l00394">xmipp_macros.h:394</a></div></div>
 </div><!-- fragment --><p>Speed up temporary variables </p>
+
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00398">398</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
 
 </div>
 </div>
@@ -748,8 +802,10 @@ Miscellaneous</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="group__Macros.html#ga0714b7b60ab5b804af1c9b124863178e">SPEED_UP_temps01</a>; \</div><div class="line">    double spduptmp2;</div><div class="ttc" id="group__Macros_html_ga0714b7b60ab5b804af1c9b124863178e"><div class="ttname"><a href="group__Macros.html#ga0714b7b60ab5b804af1c9b124863178e">SPEED_UP_temps01</a></div><div class="ttdeci">#define SPEED_UP_temps01</div><div class="ttdef"><b>Definition:</b> xmipp_macros.h:398</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="group__Macros.html#ga0714b7b60ab5b804af1c9b124863178e">SPEED_UP_temps01</a>; \</div><div class="line">    double spduptmp2;</div><div class="ttc" id="group__Macros_html_ga0714b7b60ab5b804af1c9b124863178e"><div class="ttname"><a href="group__Macros.html#ga0714b7b60ab5b804af1c9b124863178e">SPEED_UP_temps01</a></div><div class="ttdeci">#define SPEED_UP_temps01</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__macros_8h_source.html#l00398">xmipp_macros.h:398</a></div></div>
 </div><!-- fragment --><p>Speed up temporary variables </p>
+
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00403">403</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
 
 </div>
 </div>
@@ -762,8 +818,10 @@ Miscellaneous</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="group__Macros.html#ga20716e3da0ba25d3c4c9a2421573391f">SPEED_UP_temps012</a>; \</div><div class="line">    double spduptmp3, spduptmp4, spduptmp5, \</div><div class="line">    spduptmp6, spduptmp7, spduptmp8; \</div><div class="ttc" id="group__Macros_html_ga20716e3da0ba25d3c4c9a2421573391f"><div class="ttname"><a href="group__Macros.html#ga20716e3da0ba25d3c4c9a2421573391f">SPEED_UP_temps012</a></div><div class="ttdeci">#define SPEED_UP_temps012</div><div class="ttdef"><b>Definition:</b> xmipp_macros.h:403</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="group__Macros.html#ga20716e3da0ba25d3c4c9a2421573391f">SPEED_UP_temps012</a>; \</div><div class="line">    double spduptmp3, spduptmp4, spduptmp5, \</div><div class="line">    spduptmp6, spduptmp7, spduptmp8; \</div><div class="ttc" id="group__Macros_html_ga20716e3da0ba25d3c4c9a2421573391f"><div class="ttname"><a href="group__Macros.html#ga20716e3da0ba25d3c4c9a2421573391f">SPEED_UP_temps012</a></div><div class="ttdeci">#define SPEED_UP_temps012</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__macros_8h_source.html#l00403">xmipp_macros.h:403</a></div></div>
 </div><!-- fragment --><p>Speed up temporary variables </p>
+
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00413">413</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
 
 </div>
 </div>
@@ -777,6 +835,8 @@ Miscellaneous</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">int</span>   ispduptmp0, ispduptmp1, ispduptmp2, \</div><div class="line">    ispduptmp3, ispduptmp4, ispduptmp5;</div></div><!-- fragment --><p>Speed up temporary variables </p>
+
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00408">408</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
 
 </div>
 </div>
@@ -805,6 +865,8 @@ Miscellaneous</h2></td></tr>
 </div><div class="memdoc">
 <p>Sum values, initializing with the first one</p>
 <p>Inside a loop, the first time the value will be assigned and after that it will be summed. This macro assumes there exists a boolean flag named first_time The second macro is the same but allowing a diffent flag name </p>
+
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00458">458</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
 
 </div>
 </div>
@@ -838,6 +900,8 @@ Miscellaneous</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00459">459</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ga2bd154f0d54e3b3bfaae12a8d8384519"></a>
@@ -869,10 +933,12 @@ Miscellaneous</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{\</div><div class="line">        tmp = <a class="code" href="numerical__recipes_8cpp.html#af2a333b1670df64a88d3a2f22210d155">a</a>; <a class="code" href="numerical__recipes_8cpp.html#af2a333b1670df64a88d3a2f22210d155">\</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#af2a333b1670df64a88d3a2f22210d155">        a</a> = <a class="code" href="numerical__recipes_8cpp.html#af090b2fbbd2916bfb2e493c5162969d6">b</a>; <a class="code" href="numerical__recipes_8cpp.html#af090b2fbbd2916bfb2e493c5162969d6">\</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#af090b2fbbd2916bfb2e493c5162969d6">        b</a> = tmp; }</div><div class="ttc" id="numerical__recipes_8cpp_html_af090b2fbbd2916bfb2e493c5162969d6"><div class="ttname"><a href="numerical__recipes_8cpp.html#af090b2fbbd2916bfb2e493c5162969d6">b</a></div><div class="ttdeci">doublereal * b</div><div class="ttdef"><b>Definition:</b> numerical_recipes.cpp:2247</div></div>
-<div class="ttc" id="numerical__recipes_8cpp_html_af2a333b1670df64a88d3a2f22210d155"><div class="ttname"><a href="numerical__recipes_8cpp.html#af2a333b1670df64a88d3a2f22210d155">a</a></div><div class="ttdeci">doublereal * a</div><div class="ttdef"><b>Definition:</b> numerical_recipes.cpp:2247</div></div>
+<b>Value:</b><div class="fragment"><div class="line">{\</div><div class="line">        tmp = <a class="code" href="numerical__recipes_8cpp.html#af2a333b1670df64a88d3a2f22210d155">a</a>; <a class="code" href="numerical__recipes_8cpp.html#af2a333b1670df64a88d3a2f22210d155">\</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#af2a333b1670df64a88d3a2f22210d155">        a</a> = <a class="code" href="numerical__recipes_8cpp.html#af090b2fbbd2916bfb2e493c5162969d6">b</a>; <a class="code" href="numerical__recipes_8cpp.html#af090b2fbbd2916bfb2e493c5162969d6">\</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#af090b2fbbd2916bfb2e493c5162969d6">        b</a> = tmp; }</div><div class="ttc" id="numerical__recipes_8cpp_html_af090b2fbbd2916bfb2e493c5162969d6"><div class="ttname"><a href="numerical__recipes_8cpp.html#af090b2fbbd2916bfb2e493c5162969d6">b</a></div><div class="ttdeci">doublereal * b</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02247">numerical_recipes.cpp:2247</a></div></div>
+<div class="ttc" id="numerical__recipes_8cpp_html_af2a333b1670df64a88d3a2f22210d155"><div class="ttname"><a href="numerical__recipes_8cpp.html#af2a333b1670df64a88d3a2f22210d155">a</a></div><div class="ttdeci">doublereal * a</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02247">numerical_recipes.cpp:2247</a></div></div>
 </div><!-- fragment --><p>Swap two values</p>
 <p>It uses a temporal variable which must be of the same type as the two parameters </p>
+
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00428">428</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
 
 </div>
 </div>
@@ -886,6 +952,8 @@ Miscellaneous</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>2 * Pi </p>
+
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00111">111</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
 
 </div>
 </div>
@@ -914,6 +982,8 @@ Miscellaneous</h2></td></tr>
 </div><div class="memdoc">
 <p><a class="el" href="group__Macros.html#ga366d36fc6bcf504c58ed36efb8a7b50f">XMIPP_ASSUME_ALIGNED(ptr, alignment)</a> Tell compiler to assume, that ptr has given alignment, even if the compiler can't prove it. This serves as a performance hint, useful to allow auto-vectorization. </p>
 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00467">467</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="gad584f97e936242b173add43261376ba5"></a>
@@ -927,6 +997,8 @@ Miscellaneous</h2></td></tr>
 </div><div class="memdoc">
 <p>Equal accuracy</p>
 <p>In a comparison if two values are closer than this epsilon they are said to be the same. Actually set to 1e-6 </p>
+
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00119">119</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
 
 </div>
 </div>
@@ -955,6 +1027,8 @@ Miscellaneous</h2></td></tr>
 </div><div class="memdoc">
 <p>Compare if two real values are equals </p>
 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00122">122</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="gaa411dfe44bddb4ce8cce9468359407f2"></a>
@@ -970,6 +1044,8 @@ Miscellaneous</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00123">123</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
 
 </div>
 </div>
@@ -999,6 +1075,8 @@ Miscellaneous</h2></td></tr>
 <p>Maximum</p>
 <p>Valid for any kind of numbers (int, short, float, etc).</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;max_val = XMIPP_MAX(x, y);</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00193">193</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="gac9ae6a207f10c821b06a8c0df153a7d5"></a>
@@ -1027,6 +1105,8 @@ Miscellaneous</h2></td></tr>
 <p>Minimum</p>
 <p>Valid for any kind of numbers (int, short, float, etc).</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;min_val = XMIPP_MIN(x, y);</div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00181">181</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ga0f9006088452d60a966e25b71700cd74"></a>
@@ -1058,11 +1138,13 @@ Miscellaneous</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &gt;= (<a class="code" href="image__operate_8cpp.html#afbbd36781c10524238c70745c6f6f35d">min</a>) - <a class="code" href="group__Macros.html#gad584f97e936242b173add43261376ba5">XMIPP_EQUAL_ACCURACY</a> &amp;&amp; \</div><div class="line">                                          (<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &lt; (<a class="code" href="image__operate_8cpp.html#ac5474a01d203d14c046620266b2f1954">max</a>) + <a class="code" href="group__Macros.html#gad584f97e936242b173add43261376ba5">XMIPP_EQUAL_ACCURACY</a>)</div><div class="ttc" id="image__operate_8cpp_html_afbbd36781c10524238c70745c6f6f35d"><div class="ttname"><a href="image__operate_8cpp.html#afbbd36781c10524238c70745c6f6f35d">min</a></div><div class="ttdeci">void min(Image&lt; double &gt; &amp;op1, const Image&lt; double &gt; &amp;op2)</div><div class="ttdef"><b>Definition:</b> image_operate.cpp:115</div></div>
-<div class="ttc" id="numerical__recipes_8cpp_html_ab81d9253b246f09be9999505d515d517"><div class="ttname"><a href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a></div><div class="ttdeci">doublereal * x</div><div class="ttdef"><b>Definition:</b> numerical_recipes.cpp:2247</div></div>
-<div class="ttc" id="group__Macros_html_gad584f97e936242b173add43261376ba5"><div class="ttname"><a href="group__Macros.html#gad584f97e936242b173add43261376ba5">XMIPP_EQUAL_ACCURACY</a></div><div class="ttdeci">#define XMIPP_EQUAL_ACCURACY</div><div class="ttdef"><b>Definition:</b> xmipp_macros.h:119</div></div>
-<div class="ttc" id="image__operate_8cpp_html_ac5474a01d203d14c046620266b2f1954"><div class="ttname"><a href="image__operate_8cpp.html#ac5474a01d203d14c046620266b2f1954">max</a></div><div class="ttdeci">void max(Image&lt; double &gt; &amp;op1, const Image&lt; double &gt; &amp;op2)</div><div class="ttdef"><b>Definition:</b> image_operate.cpp:125</div></div>
+<b>Value:</b><div class="fragment"><div class="line">((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &gt;= (<a class="code" href="image__operate_8cpp.html#afbbd36781c10524238c70745c6f6f35d">min</a>) - <a class="code" href="group__Macros.html#gad584f97e936242b173add43261376ba5">XMIPP_EQUAL_ACCURACY</a> &amp;&amp; \</div><div class="line">                                          (<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &lt; (<a class="code" href="image__operate_8cpp.html#ac5474a01d203d14c046620266b2f1954">max</a>) + <a class="code" href="group__Macros.html#gad584f97e936242b173add43261376ba5">XMIPP_EQUAL_ACCURACY</a>)</div><div class="ttc" id="image__operate_8cpp_html_afbbd36781c10524238c70745c6f6f35d"><div class="ttname"><a href="image__operate_8cpp.html#afbbd36781c10524238c70745c6f6f35d">min</a></div><div class="ttdeci">void min(Image&lt; double &gt; &amp;op1, const Image&lt; double &gt; &amp;op2)</div><div class="ttdef"><b>Definition:</b> <a href="image__operate_8cpp_source.html#l00115">image_operate.cpp:115</a></div></div>
+<div class="ttc" id="numerical__recipes_8cpp_html_ab81d9253b246f09be9999505d515d517"><div class="ttname"><a href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a></div><div class="ttdeci">doublereal * x</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02247">numerical_recipes.cpp:2247</a></div></div>
+<div class="ttc" id="group__Macros_html_gad584f97e936242b173add43261376ba5"><div class="ttname"><a href="group__Macros.html#gad584f97e936242b173add43261376ba5">XMIPP_EQUAL_ACCURACY</a></div><div class="ttdeci">#define XMIPP_EQUAL_ACCURACY</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__macros_8h_source.html#l00119">xmipp_macros.h:119</a></div></div>
+<div class="ttc" id="image__operate_8cpp_html_ac5474a01d203d14c046620266b2f1954"><div class="ttname"><a href="image__operate_8cpp.html#ac5474a01d203d14c046620266b2f1954">max</a></div><div class="ttdeci">void max(Image&lt; double &gt; &amp;op1, const Image&lt; double &gt; &amp;op2)</div><div class="ttdef"><b>Definition:</b> <a href="image__operate_8cpp_source.html#l00125">image_operate.cpp:125</a></div></div>
 </div><!-- fragment -->
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00124">124</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="gaa55c0ac94d4814102fceaa4bf761bb10"></a>
@@ -1094,11 +1176,13 @@ Miscellaneous</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &lt; (<a class="code" href="image__operate_8cpp.html#afbbd36781c10524238c70745c6f6f35d">min</a>) - <a class="code" href="group__Macros.html#gad584f97e936242b173add43261376ba5">XMIPP_EQUAL_ACCURACY</a> || \</div><div class="line">                                          (<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &gt;= (<a class="code" href="image__operate_8cpp.html#ac5474a01d203d14c046620266b2f1954">max</a>) + <a class="code" href="group__Macros.html#gad584f97e936242b173add43261376ba5">XMIPP_EQUAL_ACCURACY</a>)</div><div class="ttc" id="image__operate_8cpp_html_afbbd36781c10524238c70745c6f6f35d"><div class="ttname"><a href="image__operate_8cpp.html#afbbd36781c10524238c70745c6f6f35d">min</a></div><div class="ttdeci">void min(Image&lt; double &gt; &amp;op1, const Image&lt; double &gt; &amp;op2)</div><div class="ttdef"><b>Definition:</b> image_operate.cpp:115</div></div>
-<div class="ttc" id="numerical__recipes_8cpp_html_ab81d9253b246f09be9999505d515d517"><div class="ttname"><a href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a></div><div class="ttdeci">doublereal * x</div><div class="ttdef"><b>Definition:</b> numerical_recipes.cpp:2247</div></div>
-<div class="ttc" id="group__Macros_html_gad584f97e936242b173add43261376ba5"><div class="ttname"><a href="group__Macros.html#gad584f97e936242b173add43261376ba5">XMIPP_EQUAL_ACCURACY</a></div><div class="ttdeci">#define XMIPP_EQUAL_ACCURACY</div><div class="ttdef"><b>Definition:</b> xmipp_macros.h:119</div></div>
-<div class="ttc" id="image__operate_8cpp_html_ac5474a01d203d14c046620266b2f1954"><div class="ttname"><a href="image__operate_8cpp.html#ac5474a01d203d14c046620266b2f1954">max</a></div><div class="ttdeci">void max(Image&lt; double &gt; &amp;op1, const Image&lt; double &gt; &amp;op2)</div><div class="ttdef"><b>Definition:</b> image_operate.cpp:125</div></div>
+<b>Value:</b><div class="fragment"><div class="line">((<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &lt; (<a class="code" href="image__operate_8cpp.html#afbbd36781c10524238c70745c6f6f35d">min</a>) - <a class="code" href="group__Macros.html#gad584f97e936242b173add43261376ba5">XMIPP_EQUAL_ACCURACY</a> || \</div><div class="line">                                          (<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>) &gt;= (<a class="code" href="image__operate_8cpp.html#ac5474a01d203d14c046620266b2f1954">max</a>) + <a class="code" href="group__Macros.html#gad584f97e936242b173add43261376ba5">XMIPP_EQUAL_ACCURACY</a>)</div><div class="ttc" id="image__operate_8cpp_html_afbbd36781c10524238c70745c6f6f35d"><div class="ttname"><a href="image__operate_8cpp.html#afbbd36781c10524238c70745c6f6f35d">min</a></div><div class="ttdeci">void min(Image&lt; double &gt; &amp;op1, const Image&lt; double &gt; &amp;op2)</div><div class="ttdef"><b>Definition:</b> <a href="image__operate_8cpp_source.html#l00115">image_operate.cpp:115</a></div></div>
+<div class="ttc" id="numerical__recipes_8cpp_html_ab81d9253b246f09be9999505d515d517"><div class="ttname"><a href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a></div><div class="ttdeci">doublereal * x</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02247">numerical_recipes.cpp:2247</a></div></div>
+<div class="ttc" id="group__Macros_html_gad584f97e936242b173add43261376ba5"><div class="ttname"><a href="group__Macros.html#gad584f97e936242b173add43261376ba5">XMIPP_EQUAL_ACCURACY</a></div><div class="ttdeci">#define XMIPP_EQUAL_ACCURACY</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__macros_8h_source.html#l00119">xmipp_macros.h:119</a></div></div>
+<div class="ttc" id="image__operate_8cpp_html_ac5474a01d203d14c046620266b2f1954"><div class="ttname"><a href="image__operate_8cpp.html#ac5474a01d203d14c046620266b2f1954">max</a></div><div class="ttdeci">void max(Image&lt; double &gt; &amp;op1, const Image&lt; double &gt; &amp;op2)</div><div class="ttdef"><b>Definition:</b> <a href="image__operate_8cpp_source.html#l00125">image_operate.cpp:125</a></div></div>
 </div><!-- fragment -->
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00126">126</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="gad1e8225913883a6887c786d6d44c8f48"></a>
@@ -1131,6 +1215,8 @@ Miscellaneous</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00128">128</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="gaf68c93838d750937b129e406f849ed94"></a>
@@ -1158,6 +1244,8 @@ Miscellaneous</h2></td></tr>
 </div><div class="memdoc">
 <p>XOR</p>
 <p>Logical Xor </p>
+
+<p>Definition at line <a class="el" href="xmipp__macros_8h_source.html#l00387">387</a> of file <a class="el" href="xmipp__macros_8h_source.html">xmipp_macros.h</a>.</p>
 
 </div>
 </div>

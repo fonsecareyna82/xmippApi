@@ -131,7 +131,9 @@ Include dependency graph for cuda_volume_halves_restorator.cpp:</div>
 <area shape="rect" id="node45" href="cudaAsserts_8h.html" title="cuFFTAdvisor/cudaAsserts.h" alt="" coords="1735,228,1927,255"/>
 </map>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="cuda__volume__halves__restorator_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae7d70bc7e57da450e51240dc227ab574"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cuda__volume__halves__restorator_8cpp.html#ae7d70bc7e57da450e51240dc227ab574">fft_idx2digfreq</a> (int idx, size_t size)</td></tr>
@@ -162,6 +164,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="cuda__volume__halves__restorator_8cpp_source.html#l00092">92</a> of file <a class="el" href="cuda__volume__halves__restorator_8cpp_source.html">cuda_volume_halves_restorator.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                             {</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">return</span> (size&lt;=1)? 0:(( (((int)idx) &lt;= (((int)(size)) &gt;&gt; 1)) ? ((<span class="keywordtype">int</span>)(idx)) : -((int)(size)) + ((<span class="keywordtype">int</span>)(idx))) / (<span class="keywordtype">double</span>)(size));</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

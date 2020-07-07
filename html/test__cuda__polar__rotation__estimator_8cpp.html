@@ -127,7 +127,9 @@ Include dependency graph for test_cuda_polar_rotation_estimator.cpp:</div>
 <area shape="rect" id="node50" href="cpu_8h.html" title="data/cpu.h" alt="" coords="1911,339,1994,366"/>
 </map>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="test__cuda__polar__rotation__estimator_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classARotationEstimator__Test.html">ARotationEstimator_Test&lt; T &gt;</a></td></tr>
@@ -160,8 +162,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">void</span> SetUp() { \</div><div class="line">        estimator = <span class="keyword">new</span> <a class="code" href="classAlignment_1_1CudaRotPolarEstimator.html">Alignment::CudaRotPolarEstimator&lt;T&gt;</a>(); \</div><div class="line">    }</div><div class="ttc" id="classAlignment_1_1CudaRotPolarEstimator_html"><div class="ttname"><a href="classAlignment_1_1CudaRotPolarEstimator.html">Alignment::CudaRotPolarEstimator</a></div><div class="ttdef"><b>Definition:</b> cuda_rot_polar_estimator.h:41</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">void</span> SetUp() { \</div><div class="line">        estimator = <span class="keyword">new</span> <a class="code" href="classAlignment_1_1CudaRotPolarEstimator.html">Alignment::CudaRotPolarEstimator&lt;T&gt;</a>(); \</div><div class="line">    }</div><div class="ttc" id="classAlignment_1_1CudaRotPolarEstimator_html"><div class="ttname"><a href="classAlignment_1_1CudaRotPolarEstimator.html">Alignment::CudaRotPolarEstimator</a></div><div class="ttdef"><b>Definition:</b> <a href="cuda__rot__polar__estimator_8h_source.html#l00041">cuda_rot_polar_estimator.h:41</a></div></div>
 </div><!-- fragment -->
+<p>Definition at line <a class="el" href="test__cuda__polar__rotation__estimator_8cpp_source.html#l00007">7</a> of file <a class="el" href="test__cuda__polar__rotation__estimator_8cpp_source.html">test_cuda_polar_rotation_estimator.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a280049cce62ff4a00c1de108cb0127be"></a>
@@ -173,11 +177,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> SetUpTestCase() { <a class="code" href="numerical__recipes_8cpp.html#aca6408d1d58d2334ecf5b80c3a9a8881">\</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#aca6408d1d58d2334ecf5b80c3a9a8881">        for</a> (<span class="keywordtype">int</span> <a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a> = 0; <a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a> &lt; 2; ++<a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>) { \</div><div class="line">            auto <a class="code" href="numerical__recipes_8cpp.html#af72286acf4184005499476fbc853146f">g</a> = <span class="keyword">new</span> <a class="code" href="movie__optical__alignment__gpu_8cpp.html#a39cb9803524b6f3b783344b2f89867b4">GPU</a>(); <a class="code" href="numerical__recipes_8cpp.html#af72286acf4184005499476fbc853146f">\</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#af72286acf4184005499476fbc853146f">            g</a>-&gt;set(); \</div><div class="line">            hw.push_back(g); \</div><div class="line">        } \</div><div class="line">    }</div><div class="ttc" id="numerical__recipes_8cpp_html_af72286acf4184005499476fbc853146f"><div class="ttname"><a href="numerical__recipes_8cpp.html#af72286acf4184005499476fbc853146f">g</a></div><div class="ttdeci">doublereal * g</div><div class="ttdef"><b>Definition:</b> numerical_recipes.cpp:2490</div></div>
-<div class="ttc" id="project__crystal_8cpp_html_acb559820d9ca11295b4500f179ef6392"><div class="ttname"><a href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a></div><div class="ttdeci">#define i</div><div class="ttdef"><b>Definition:</b> numerical_recipes.cpp:2510</div></div>
-<div class="ttc" id="numerical__recipes_8cpp_html_aca6408d1d58d2334ecf5b80c3a9a8881"><div class="ttname"><a href="numerical__recipes_8cpp.html#aca6408d1d58d2334ecf5b80c3a9a8881">for</a></div><div class="ttdeci">for(j=1;j&lt;=i__1;++j)</div><div class="ttdef"><b>Definition:</b> numerical_recipes.cpp:2327</div></div>
-<div class="ttc" id="movie__optical__alignment__gpu_8cpp_html_a39cb9803524b6f3b783344b2f89867b4"><div class="ttname"><a href="movie__optical__alignment__gpu_8cpp.html#a39cb9803524b6f3b783344b2f89867b4">GPU</a></div><div class="ttdeci">#define GPU</div><div class="ttdef"><b>Definition:</b> movie_optical_alignment_gpu.cpp:1</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> SetUpTestCase() { <a class="code" href="numerical__recipes_8cpp.html#aca6408d1d58d2334ecf5b80c3a9a8881">\</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#aca6408d1d58d2334ecf5b80c3a9a8881">        for</a> (<span class="keywordtype">int</span> <a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a> = 0; <a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a> &lt; 2; ++<a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>) { \</div><div class="line">            auto <a class="code" href="numerical__recipes_8cpp.html#af72286acf4184005499476fbc853146f">g</a> = <span class="keyword">new</span> <a class="code" href="movie__optical__alignment__gpu_8cpp.html#a39cb9803524b6f3b783344b2f89867b4">GPU</a>(); <a class="code" href="numerical__recipes_8cpp.html#af72286acf4184005499476fbc853146f">\</a></div><div class="line"><a class="code" href="numerical__recipes_8cpp.html#af72286acf4184005499476fbc853146f">            g</a>-&gt;set(); \</div><div class="line">            hw.push_back(g); \</div><div class="line">        } \</div><div class="line">    }</div><div class="ttc" id="numerical__recipes_8cpp_html_af72286acf4184005499476fbc853146f"><div class="ttname"><a href="numerical__recipes_8cpp.html#af72286acf4184005499476fbc853146f">g</a></div><div class="ttdeci">doublereal * g</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02490">numerical_recipes.cpp:2490</a></div></div>
+<div class="ttc" id="project__crystal_8cpp_html_acb559820d9ca11295b4500f179ef6392"><div class="ttname"><a href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a></div><div class="ttdeci">#define i</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02510">numerical_recipes.cpp:2510</a></div></div>
+<div class="ttc" id="numerical__recipes_8cpp_html_aca6408d1d58d2334ecf5b80c3a9a8881"><div class="ttname"><a href="numerical__recipes_8cpp.html#aca6408d1d58d2334ecf5b80c3a9a8881">for</a></div><div class="ttdeci">for(j=1;j&lt;=i__1;++j)</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02327">numerical_recipes.cpp:2327</a></div></div>
+<div class="ttc" id="movie__optical__alignment__gpu_8cpp_html_a39cb9803524b6f3b783344b2f89867b4"><div class="ttname"><a href="movie__optical__alignment__gpu_8cpp.html#a39cb9803524b6f3b783344b2f89867b4">GPU</a></div><div class="ttdeci">#define GPU</div><div class="ttdef"><b>Definition:</b> <a href="movie__optical__alignment__gpu_8cpp_source.html#l00001">movie_optical_alignment_gpu.cpp:1</a></div></div>
 </div><!-- fragment -->
+<p>Definition at line <a class="el" href="test__cuda__polar__rotation__estimator_8cpp_source.html#l00012">12</a> of file <a class="el" href="test__cuda__polar__rotation__estimator_8cpp_source.html">test_cuda_polar_rotation_estimator.cpp</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -190,6 +196,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="test__cuda__polar__rotation__estimator_8cpp_source.html#l00023">23</a> of file <a class="el" href="test__cuda__polar__rotation__estimator_8cpp_source.html">test_cuda_polar_rotation_estimator.cpp</a>.</p>
 
 </div>
 </div>

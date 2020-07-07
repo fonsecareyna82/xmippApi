@@ -134,7 +134,9 @@ Include dependency graph for tomo_align_dual_tilt_series.cpp:</div>
 <area shape="rect" id="node50" href="xmipp__fft_8h.html" title="xmipp_fft.h" alt="" coords="1675,527,1762,553"/>
 </map>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="tomo__align__dual__tilt__series_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aca5d1102e11ca4bffd096bde3c33965c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tomo__align__dual__tilt__series_8cpp.html#aca5d1102e11ca4bffd096bde3c33965c">wrapperDualAligment</a> (double *p, void *<a class="el" href="mpi__classify__CL2D_8cpp.html#a831c08adbb8230fd6a60f4a130923a19">prm</a>)</td></tr>
@@ -165,6 +167,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="tomo__align__dual__tilt__series_8cpp_source.html#l00031">31</a> of file <a class="el" href="tomo__align__dual__tilt__series_8cpp_source.html">tomo_align_dual_tilt_series.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classProgAlignDualTiltSeries.html">ProgAlignDualTiltSeries</a> *eprm=(<a class="code" href="classProgAlignDualTiltSeries.html">ProgAlignDualTiltSeries</a> *)<a class="code" href="mpi__classify__CL2D_8cpp.html#a831c08adbb8230fd6a60f4a130923a19">prm</a>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classMatrix1D.html">Matrix1D&lt;double&gt;</a> aux(6);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="group__Vectors.html#ga8333ba47b67df6174e1d4cfb85920c71">FOR_ALL_ELEMENTS_IN_MATRIX1D</a>(aux)</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    aux(<a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>)=p[<a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>+1];</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="numerical__recipes_8cpp.html#a5ea9a6a7bd724d30070df9316ccc8199">return</a> eprm-&gt;evaluateAlignment(aux);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div><div class="ttc" id="project__crystal_8cpp_html_acb559820d9ca11295b4500f179ef6392"><div class="ttname"><a href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a></div><div class="ttdeci">#define i</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02510">numerical_recipes.cpp:2510</a></div></div>
+<div class="ttc" id="group__Vectors_html_ga8333ba47b67df6174e1d4cfb85920c71"><div class="ttname"><a href="group__Vectors.html#ga8333ba47b67df6174e1d4cfb85920c71">FOR_ALL_ELEMENTS_IN_MATRIX1D</a></div><div class="ttdeci">#define FOR_ALL_ELEMENTS_IN_MATRIX1D(v)</div><div class="ttdef"><b>Definition:</b> <a href="matrix1d_8h_source.html#l00075">matrix1d.h:75</a></div></div>
+<div class="ttc" id="classMatrix1D_html"><div class="ttname"><a href="classMatrix1D.html">Matrix1D&lt; double &gt;</a></div></div>
+<div class="ttc" id="mpi__classify__CL2D_8cpp_html_a831c08adbb8230fd6a60f4a130923a19"><div class="ttname"><a href="mpi__classify__CL2D_8cpp.html#a831c08adbb8230fd6a60f4a130923a19">prm</a></div><div class="ttdeci">ProgClassifyCL2D * prm</div><div class="ttdef"><b>Definition:</b> <a href="mpi__classify__CL2D_8cpp_source.html#l00033">mpi_classify_CL2D.cpp:33</a></div></div>
+<div class="ttc" id="classProgAlignDualTiltSeries_html"><div class="ttname"><a href="classProgAlignDualTiltSeries.html">ProgAlignDualTiltSeries</a></div><div class="ttdef"><b>Definition:</b> <a href="tomo__align__dual__tilt__series_8h_source.html#l00038">tomo_align_dual_tilt_series.h:38</a></div></div>
+<div class="ttc" id="numerical__recipes_8cpp_html_a5ea9a6a7bd724d30070df9316ccc8199"><div class="ttname"><a href="numerical__recipes_8cpp.html#a5ea9a6a7bd724d30070df9316ccc8199">return</a></div><div class="ttdeci">return</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02411">numerical_recipes.cpp:2411</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

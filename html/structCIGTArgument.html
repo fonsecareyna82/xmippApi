@@ -131,7 +131,10 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:acbae448b417207306643be0536a6f824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intensity in the beginning of the volume to project.  <a href="#acbae448b417207306643be0536a6f824">More...</a><br /></td></tr>
 <tr class="separator:acbae448b417207306643be0536a6f824"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="project__xray_8h_source.html#l00153">153</a> of file <a class="el" href="project__xray_8h_source.html">project_xray.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad041511af4790099f6da2c84f7ca65ed"></a>
 <div class="memitem">
 <div class="memproto">
@@ -153,6 +156,14 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="project__xray_8h_source.html#l00162">162</a> of file <a class="el" href="project__xray_8h_source.html">project_xray.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    {</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <a class="code" href="structCIGTArgument.html#aa5987836f4d7315e36ffd97d1738534f">samplingZ</a> = 0;</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <a class="code" href="structCIGTArgument.html#af3d5bdfbb2df67c9199670ab15807ed9">muVol</a> = <a class="code" href="structCIGTArgument.html#af6350c19badf742d5ea3750055ab6f43">cumMu</a> = <a class="code" href="structCIGTArgument.html#a3feff83531215aa3e21034d9768e32df">IgeoVol</a> = <a class="code" href="structCIGTArgument.html#a23777e016581f3dcfdfb80aa32db5434">IgeoZb</a> = NULL;</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <a class="code" href="structCIGTArgument.html#acbae448b417207306643be0536a6f824">td</a> = NULL;</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div><div class="ttc" id="structCIGTArgument_html_aa5987836f4d7315e36ffd97d1738534f"><div class="ttname"><a href="structCIGTArgument.html#aa5987836f4d7315e36ffd97d1738534f">CIGTArgument::samplingZ</a></div><div class="ttdeci">double samplingZ</div><div class="ttdef"><b>Definition:</b> <a href="project__xray_8h_source.html#l00155">project_xray.h:155</a></div></div>
+<div class="ttc" id="structCIGTArgument_html_acbae448b417207306643be0536a6f824"><div class="ttname"><a href="structCIGTArgument.html#acbae448b417207306643be0536a6f824">CIGTArgument::td</a></div><div class="ttdeci">ParallelTaskDistributor * td</div><div class="ttdoc">Intensity in the beginning of the volume to project. </div><div class="ttdef"><b>Definition:</b> <a href="project__xray_8h_source.html#l00160">project_xray.h:160</a></div></div>
+<div class="ttc" id="structCIGTArgument_html_af3d5bdfbb2df67c9199670ab15807ed9"><div class="ttname"><a href="structCIGTArgument.html#af3d5bdfbb2df67c9199670ab15807ed9">CIGTArgument::muVol</a></div><div class="ttdeci">MultidimArray&lt; double &gt; * muVol</div><div class="ttdef"><b>Definition:</b> <a href="project__xray_8h_source.html#l00156">project_xray.h:156</a></div></div>
+<div class="ttc" id="structCIGTArgument_html_a3feff83531215aa3e21034d9768e32df"><div class="ttname"><a href="structCIGTArgument.html#a3feff83531215aa3e21034d9768e32df">CIGTArgument::IgeoVol</a></div><div class="ttdeci">MultidimArray&lt; double &gt; * IgeoVol</div><div class="ttdoc">Accumulated Mu == Standard EM projection used as reference for reconstruction. </div><div class="ttdef"><b>Definition:</b> <a href="project__xray_8h_source.html#l00158">project_xray.h:158</a></div></div>
+<div class="ttc" id="structCIGTArgument_html_a23777e016581f3dcfdfb80aa32db5434"><div class="ttname"><a href="structCIGTArgument.html#a23777e016581f3dcfdfb80aa32db5434">CIGTArgument::IgeoZb</a></div><div class="ttdeci">MultidimArray&lt; double &gt; * IgeoZb</div><div class="ttdoc">Igeo accumulated along Z axis. </div><div class="ttdef"><b>Definition:</b> <a href="project__xray_8h_source.html#l00159">project_xray.h:159</a></div></div>
+<div class="ttc" id="structCIGTArgument_html_af6350c19badf742d5ea3750055ab6f43"><div class="ttname"><a href="structCIGTArgument.html#af6350c19badf742d5ea3750055ab6f43">CIGTArgument::cumMu</a></div><div class="ttdeci">MultidimArray&lt; double &gt; * cumMu</div><div class="ttdoc">Phantom volume. </div><div class="ttdef"><b>Definition:</b> <a href="project__xray_8h_source.html#l00157">project_xray.h:157</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -168,6 +179,8 @@ Public Attributes</h2></td></tr>
 
 <p><a class="el" href="classPhantom.html">Phantom</a> volume. </p>
 
+<p>Definition at line <a class="el" href="project__xray_8h_source.html#l00157">157</a> of file <a class="el" href="project__xray_8h_source.html">project_xray.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a3feff83531215aa3e21034d9768e32df"></a>
@@ -181,6 +194,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Accumulated Mu == Standard EM projection used as reference for reconstruction. </p>
+
+<p>Definition at line <a class="el" href="project__xray_8h_source.html#l00158">158</a> of file <a class="el" href="project__xray_8h_source.html">project_xray.h</a>.</p>
 
 </div>
 </div>
@@ -196,6 +211,8 @@ Public Attributes</h2></td></tr>
 
 <p>Igeo accumulated along Z axis. </p>
 
+<p>Definition at line <a class="el" href="project__xray_8h_source.html#l00159">159</a> of file <a class="el" href="project__xray_8h_source.html">project_xray.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="af3d5bdfbb2df67c9199670ab15807ed9"></a>
@@ -208,6 +225,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="project__xray_8h_source.html#l00156">156</a> of file <a class="el" href="project__xray_8h_source.html">project_xray.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aa5987836f4d7315e36ffd97d1738534f"></a>
@@ -219,6 +238,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="project__xray_8h_source.html#l00155">155</a> of file <a class="el" href="project__xray_8h_source.html">project_xray.h</a>.</p>
 
 </div>
 </div>
@@ -233,6 +254,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Intensity in the beginning of the volume to project. </p>
+
+<p>Definition at line <a class="el" href="project__xray_8h_source.html#l00160">160</a> of file <a class="el" href="project__xray_8h_source.html">project_xray.h</a>.</p>
 
 </div>
 </div>

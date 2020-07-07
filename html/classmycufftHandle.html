@@ -111,7 +111,10 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a1010e8dfeb750cb95b853b2003009cf3"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmycufftHandle.html#a1010e8dfeb750cb95b853b2003009cf3">ptr</a></td></tr>
 <tr class="separator:a1010e8dfeb750cb95b853b2003009cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="cuda__xmipp__utils_8h_source.html#l00033">33</a> of file <a class="el" href="cuda__xmipp__utils_8h_source.html">cuda_xmipp_utils.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a46582a046f6e1c3cbc56706be0010874"></a>
 <div class="memitem">
 <div class="memproto">
@@ -133,6 +136,9 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="cuda__xmipp__utils_8h_source.html#l00037">37</a> of file <a class="el" href="cuda__xmipp__utils_8h_source.html">cuda_xmipp_utils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{ <a class="code" href="classmycufftHandle.html#a6441f8a327026c7e65e7c0bee47beac8">clear</a>(); }</div><div class="ttc" id="classmycufftHandle_html_a6441f8a327026c7e65e7c0bee47beac8"><div class="ttname"><a href="classmycufftHandle.html#a6441f8a327026c7e65e7c0bee47beac8">mycufftHandle::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> <a href="cuda__xmipp__utils_8h_source.html#l00043">cuda_xmipp_utils.h:43</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a92ffc0fbe8f58d5786f050971709cad6"></a>
@@ -156,6 +162,9 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="cuda__xmipp__utils_8h_source.html#l00039">39</a> of file <a class="el" href="cuda__xmipp__utils_8h_source.html">cuda_xmipp_utils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                   {</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="classmycufftHandle.html#a1010e8dfeb750cb95b853b2003009cf3">ptr</a>=NULL;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div><div class="ttc" id="classmycufftHandle_html_a1010e8dfeb750cb95b853b2003009cf3"><div class="ttname"><a href="classmycufftHandle.html#a1010e8dfeb750cb95b853b2003009cf3">mycufftHandle::ptr</a></div><div class="ttdeci">void * ptr</div><div class="ttdef"><b>Definition:</b> <a href="cuda__xmipp__utils_8h_source.html#l00035">cuda_xmipp_utils.h:35</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -180,6 +189,10 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="cuda__xmipp__utils_8h_source.html#l00043">43</a> of file <a class="el" href="cuda__xmipp__utils_8h_source.html">cuda_xmipp_utils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classmycufftHandle.html#a1010e8dfeb750cb95b853b2003009cf3">ptr</a>!=NULL)</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="code" href="cuda__xmipp__utils_8h.html#a8e64f7b333cba58620e6267ade2ff89d">mycufftDestroy</a>(<a class="code" href="classmycufftHandle.html#a1010e8dfeb750cb95b853b2003009cf3">ptr</a>);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="classmycufftHandle.html#a1010e8dfeb750cb95b853b2003009cf3">ptr</a>=NULL;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div><div class="ttc" id="cuda__xmipp__utils_8h_html_a8e64f7b333cba58620e6267ade2ff89d"><div class="ttname"><a href="cuda__xmipp__utils_8h.html#a8e64f7b333cba58620e6267ade2ff89d">mycufftDestroy</a></div><div class="ttdeci">void mycufftDestroy(void *ptr)</div><div class="ttdef"><b>Definition:</b> <a href="cuda__xmipp__utils_8cpp_source.html#l00072">cuda_xmipp_utils.cpp:72</a></div></div>
+<div class="ttc" id="classmycufftHandle_html_a1010e8dfeb750cb95b853b2003009cf3"><div class="ttname"><a href="classmycufftHandle.html#a1010e8dfeb750cb95b853b2003009cf3">mycufftHandle::ptr</a></div><div class="ttdeci">void * ptr</div><div class="ttdef"><b>Definition:</b> <a href="cuda__xmipp__utils_8h_source.html#l00035">cuda_xmipp_utils.h:35</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -192,6 +205,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cuda__xmipp__utils_8h_source.html#l00035">35</a> of file <a class="el" href="cuda__xmipp__utils_8h_source.html">cuda_xmipp_utils.h</a>.</p>
 
 </div>
 </div>

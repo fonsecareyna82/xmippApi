@@ -138,7 +138,13 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:afedbf147b2a213517b315880d8c81427 inherit pro_methods_classtesting_1_1internal_1_1TestFactoryBase"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1TestFactoryBase.html#afedbf147b2a213517b315880d8c81427">TestFactoryBase</a> ()</td></tr>
 <tr class="separator:afedbf147b2a213517b315880d8c81427 inherit pro_methods_classtesting_1_1internal_1_1TestFactoryBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class TestClass&gt;<br />
+class testing::internal::ParameterizedTestFactory&lt; TestClass &gt;</h3>
+
+
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10287">10287</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="ad9a27b8e1a83de2f1687625bccff460d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -150,6 +156,8 @@ template&lt;class TestClass &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10289">10289</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
 
 </div>
 </div>
@@ -178,6 +186,8 @@ template&lt;class TestClass &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10290">10290</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l10290"></a><span class="lineno">10290</span>&#160;                                                         :</div><div class="line"><a name="l10291"></a><span class="lineno">10291</span>&#160;      parameter_(parameter) {}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -206,6 +216,8 @@ template&lt;class TestClass &gt; </div>
 
 <p>Implements <a class="el" href="classtesting_1_1internal_1_1TestFactoryBase.html#a07ac3ca0b196cdb092da0bb186b7c030">testing::internal::TestFactoryBase</a>.</p>
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l10292">10292</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l10292"></a><span class="lineno">10292</span>&#160;                             {</div><div class="line"><a name="l10293"></a><span class="lineno">10293</span>&#160;    TestClass::SetParam(&amp;parameter_);</div><div class="line"><a name="l10294"></a><span class="lineno">10294</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> TestClass();</div><div class="line"><a name="l10295"></a><span class="lineno">10295</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

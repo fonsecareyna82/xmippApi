@@ -294,7 +294,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a95f826fa543dafe9afee959919537f9b inherit pro_methods_classXmippProgram"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classXmippProgram.html#a95f826fa543dafe9afee959919537f9b">defineCommons</a> ()</td></tr>
 <tr class="separator:a95f826fa543dafe9afee959919537f9b inherit pro_methods_classXmippProgram"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="xmipp__mpi_8h_source.html#l00187">187</a> of file <a class="el" href="xmipp__mpi_8h_source.html">xmipp_mpi.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a8ce7565f6e3d1bb08895bf3b3643aaac"></a>
 <div class="memitem">
 <div class="memproto">
@@ -309,6 +312,10 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Constructor </p>
 
+<p>Definition at line <a class="el" href="xmipp__mpi_8cpp_source.html#l00286">286</a> of file <a class="el" href="xmipp__mpi_8cpp_source.html">xmipp_mpi.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;{</div><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <a class="code" href="classXmippMpiProgram.html#ab817b1d118e33ba61109204db203d8e4">node</a> = NULL;</div><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <a class="code" href="classMpiMetadataProgram.html#aa5fc53b9201b27ef1ec066dfcda39805">distributor</a> = NULL;</div><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;}</div><div class="ttc" id="classXmippMpiProgram_html_ab817b1d118e33ba61109204db203d8e4"><div class="ttname"><a href="classXmippMpiProgram.html#ab817b1d118e33ba61109204db203d8e4">XmippMpiProgram::node</a></div><div class="ttdeci">MpiNode * node</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__mpi_8h_source.html#l00163">xmipp_mpi.h:163</a></div></div>
+<div class="ttc" id="classMpiMetadataProgram_html_aa5fc53b9201b27ef1ec066dfcda39805"><div class="ttname"><a href="classMpiMetadataProgram.html#aa5fc53b9201b27ef1ec066dfcda39805">MpiMetadataProgram::distributor</a></div><div class="ttdeci">MpiTaskDistributor * distributor</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__mpi_8h_source.html#l00192">xmipp_mpi.h:192</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a64c82581b9ee81ae949d8aa7ba060a84"></a>
@@ -325,6 +332,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Destructor </p>
 
+<p>Definition at line <a class="el" href="xmipp__mpi_8cpp_source.html#l00292">292</a> of file <a class="el" href="xmipp__mpi_8cpp_source.html">xmipp_mpi.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;{</div><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keyword">delete</span> <a class="code" href="classMpiMetadataProgram.html#aa5fc53b9201b27ef1ec066dfcda39805">distributor</a>;</div><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;}</div><div class="ttc" id="classMpiMetadataProgram_html_aa5fc53b9201b27ef1ec066dfcda39805"><div class="ttname"><a href="classMpiMetadataProgram.html#aa5fc53b9201b27ef1ec066dfcda39805">MpiMetadataProgram::distributor</a></div><div class="ttdeci">MpiTaskDistributor * distributor</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__mpi_8h_source.html#l00192">xmipp_mpi.h:192</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -353,6 +363,17 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Create task distributor </p>
 
+<p>Definition at line <a class="el" href="xmipp__mpi_8cpp_source.html#l00315">315</a> of file <a class="el" href="xmipp__mpi_8cpp_source.html">xmipp_mpi.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;{</div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordtype">size_t</span> size = mdIn.<a class="code" href="classMetaData.html#ad844b6a5655be4205e4bb03ab6372562">size</a>();</div><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classMpiMetadataProgram.html#a42806cf6521b0539105491505e49a424">blockSize</a> &lt; 1)</div><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <a class="code" href="classMpiMetadataProgram.html#a42806cf6521b0539105491505e49a424">blockSize</a> = <a class="code" href="group__Macros.html#gae0a4180e923e3ffca3989e20e441aa3c">XMIPP_MAX</a>(1, size/(<a class="code" href="classXmippMpiProgram.html#ab817b1d118e33ba61109204db203d8e4">node</a>-&gt;<a class="code" href="classMpiNode.html#a9733b9a9debd66b138d148f7f7041b68">size</a> * 5));</div><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classMpiMetadataProgram.html#a42806cf6521b0539105491505e49a424">blockSize</a> &gt; size)</div><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <a class="code" href="classMpiMetadataProgram.html#a42806cf6521b0539105491505e49a424">blockSize</a> = size;</div><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    mdIn.<a class="code" href="classMetaData.html#a1a76384897857d639447524ff2f14ab3">findObjects</a>(<a class="code" href="classMpiMetadataProgram.html#aa57bd147c005427f3afed79f414f3d9a">imgsId</a>);</div><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <a class="code" href="classMpiMetadataProgram.html#aa5fc53b9201b27ef1ec066dfcda39805">distributor</a> = <span class="keyword">new</span> <a class="code" href="classMpiTaskDistributor.html">MpiTaskDistributor</a>(size, <a class="code" href="classMpiMetadataProgram.html#a42806cf6521b0539105491505e49a424">blockSize</a>, <a class="code" href="classXmippMpiProgram.html#ab817b1d118e33ba61109204db203d8e4">node</a>);</div><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;}</div><div class="ttc" id="classMpiNode_html_a9733b9a9debd66b138d148f7f7041b68"><div class="ttname"><a href="classMpiNode.html#a9733b9a9debd66b138d148f7f7041b68">MpiNode::size</a></div><div class="ttdeci">size_t size</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__mpi_8h_source.html#l00054">xmipp_mpi.h:54</a></div></div>
+<div class="ttc" id="group__Macros_html_gae0a4180e923e3ffca3989e20e441aa3c"><div class="ttname"><a href="group__Macros.html#gae0a4180e923e3ffca3989e20e441aa3c">XMIPP_MAX</a></div><div class="ttdeci">#define XMIPP_MAX(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__macros_8h_source.html#l00193">xmipp_macros.h:193</a></div></div>
+<div class="ttc" id="classMpiMetadataProgram_html_a42806cf6521b0539105491505e49a424"><div class="ttname"><a href="classMpiMetadataProgram.html#a42806cf6521b0539105491505e49a424">MpiMetadataProgram::blockSize</a></div><div class="ttdeci">int blockSize</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__mpi_8h_source.html#l00191">xmipp_mpi.h:191</a></div></div>
+<div class="ttc" id="classMetaData_html_ad844b6a5655be4205e4bb03ab6372562"><div class="ttname"><a href="classMetaData.html#ad844b6a5655be4205e4bb03ab6372562">MetaData::size</a></div><div class="ttdeci">size_t size() const </div><div class="ttdef"><b>Definition:</b> <a href="metadata_8cpp_source.html#l00702">metadata.cpp:702</a></div></div>
+<div class="ttc" id="classMpiTaskDistributor_html"><div class="ttname"><a href="classMpiTaskDistributor.html">MpiTaskDistributor</a></div><div class="ttdef"><b>Definition:</b> <a href="xmipp__mpi_8h_source.html#l00089">xmipp_mpi.h:89</a></div></div>
+<div class="ttc" id="classXmippMpiProgram_html_ab817b1d118e33ba61109204db203d8e4"><div class="ttname"><a href="classXmippMpiProgram.html#ab817b1d118e33ba61109204db203d8e4">XmippMpiProgram::node</a></div><div class="ttdeci">MpiNode * node</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__mpi_8h_source.html#l00163">xmipp_mpi.h:163</a></div></div>
+<div class="ttc" id="classMetaData_html_a1a76384897857d639447524ff2f14ab3"><div class="ttname"><a href="classMetaData.html#a1a76384897857d639447524ff2f14ab3">MetaData::findObjects</a></div><div class="ttdeci">void findObjects(std::vector&lt; size_t &gt; &amp;objectsOut, const MDQuery &amp;query) const </div><div class="ttdef"><b>Definition:</b> <a href="metadata_8cpp_source.html#l00868">metadata.cpp:868</a></div></div>
+<div class="ttc" id="classMpiMetadataProgram_html_aa57bd147c005427f3afed79f414f3d9a"><div class="ttname"><a href="classMpiMetadataProgram.html#aa57bd147c005427f3afed79f414f3d9a">MpiMetadataProgram::imgsId</a></div><div class="ttdeci">std::vector&lt; size_t &gt; imgsId</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__mpi_8h_source.html#l00193">xmipp_mpi.h:193</a></div></div>
+<div class="ttc" id="classMpiMetadataProgram_html_aa5fc53b9201b27ef1ec066dfcda39805"><div class="ttname"><a href="classMpiMetadataProgram.html#aa5fc53b9201b27ef1ec066dfcda39805">MpiMetadataProgram::distributor</a></div><div class="ttdeci">MpiTaskDistributor * distributor</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__mpi_8h_source.html#l00192">xmipp_mpi.h:192</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a251da14b5500433cc25bd5da60df6ecb"></a>
@@ -379,6 +400,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classXmippProgram.html#a75ba820f6afd62c89524b497ae9b560d">XmippProgram</a>.</p>
 
+<p>Definition at line <a class="el" href="xmipp__mpi_8cpp_source.html#l00304">304</a> of file <a class="el" href="xmipp__mpi_8cpp_source.html">xmipp_mpi.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;{</div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <a class="code" href="classXmippProgram.html#aaeb37f0bac83f5d2a605aaa0e5c4b6ef">addParamsLine</a>(<span class="stringliteral">&quot;== MPI ==&quot;</span>);</div><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <a class="code" href="classXmippProgram.html#aaeb37f0bac83f5d2a605aaa0e5c4b6ef">addParamsLine</a>(<span class="stringliteral">&quot; [--mpi_job_size &lt;size=0&gt;]     : Number of images sent simultaneously to a mpi node&quot;</span>);</div><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;}</div><div class="ttc" id="classXmippProgram_html_aaeb37f0bac83f5d2a605aaa0e5c4b6ef"><div class="ttname"><a href="classXmippProgram.html#aaeb37f0bac83f5d2a605aaa0e5c4b6ef">XmippProgram::addParamsLine</a></div><div class="ttdeci">void addParamsLine(const String &amp;line)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8cpp_source.html#l00361">xmipp_program.cpp:361</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aab22245defde3dc41d37832cdbefab21"></a>
@@ -422,6 +446,14 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Get task to process </p>
 
+<p>Definition at line <a class="el" href="xmipp__mpi_8cpp_source.html#l00329">329</a> of file <a class="el" href="xmipp__mpi_8cpp_source.html">xmipp_mpi.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;{</div><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordtype">bool</span> moreTasks = <span class="keyword">true</span>;</div><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classMpiMetadataProgram.html#a0685f0a9539012b14a697a83b5bf4447">first</a> &gt; <a class="code" href="classMpiMetadataProgram.html#a59c2d481c25b2176546667e11678d5b1">last</a>)</div><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        moreTasks = <a class="code" href="classMpiMetadataProgram.html#aa5fc53b9201b27ef1ec066dfcda39805">distributor</a>-&gt;<a class="code" href="classParallelTaskDistributor.html#a28f70bcc333b8b06d7571db06c67bdc3">getTasks</a>(<a class="code" href="classMpiMetadataProgram.html#a0685f0a9539012b14a697a83b5bf4447">first</a>, <a class="code" href="classMpiMetadataProgram.html#a59c2d481c25b2176546667e11678d5b1">last</a>);</div><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordflow">if</span> (moreTasks)</div><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    {</div><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        objIndex = <a class="code" href="classMpiMetadataProgram.html#a0685f0a9539012b14a697a83b5bf4447">first</a>;</div><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        objId = <a class="code" href="classMpiMetadataProgram.html#aa57bd147c005427f3afed79f414f3d9a">imgsId</a>[<a class="code" href="classMpiMetadataProgram.html#a0685f0a9539012b14a697a83b5bf4447">first</a>++];</div><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    }</div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <a class="code" href="classMpiMetadataProgram.html#a0685f0a9539012b14a697a83b5bf4447">first</a> = <a class="code" href="classMpiMetadataProgram.html#aa5fc53b9201b27ef1ec066dfcda39805">distributor</a>-&gt;<a class="code" href="classParallelTaskDistributor.html#a421bc0b36ebb7294d09d1ddcc4a5a8c0">numberOfTasks</a> - 1;</div><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;}</div><div class="ttc" id="classParallelTaskDistributor_html_a28f70bcc333b8b06d7571db06c67bdc3"><div class="ttname"><a href="classParallelTaskDistributor.html#a28f70bcc333b8b06d7571db06c67bdc3">ParallelTaskDistributor::getTasks</a></div><div class="ttdeci">bool getTasks(size_t &amp;first, size_t &amp;last)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__threads_8cpp_source.html#l00318">xmipp_threads.cpp:318</a></div></div>
+<div class="ttc" id="classMpiMetadataProgram_html_a0685f0a9539012b14a697a83b5bf4447"><div class="ttname"><a href="classMpiMetadataProgram.html#a0685f0a9539012b14a697a83b5bf4447">MpiMetadataProgram::first</a></div><div class="ttdeci">size_t first</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__mpi_8h_source.html#l00194">xmipp_mpi.h:194</a></div></div>
+<div class="ttc" id="classMpiMetadataProgram_html_aa57bd147c005427f3afed79f414f3d9a"><div class="ttname"><a href="classMpiMetadataProgram.html#aa57bd147c005427f3afed79f414f3d9a">MpiMetadataProgram::imgsId</a></div><div class="ttdeci">std::vector&lt; size_t &gt; imgsId</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__mpi_8h_source.html#l00193">xmipp_mpi.h:193</a></div></div>
+<div class="ttc" id="classMpiMetadataProgram_html_a59c2d481c25b2176546667e11678d5b1"><div class="ttname"><a href="classMpiMetadataProgram.html#a59c2d481c25b2176546667e11678d5b1">MpiMetadataProgram::last</a></div><div class="ttdeci">size_t last</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__mpi_8h_source.html#l00194">xmipp_mpi.h:194</a></div></div>
+<div class="ttc" id="classMpiMetadataProgram_html_aa5fc53b9201b27ef1ec066dfcda39805"><div class="ttname"><a href="classMpiMetadataProgram.html#aa5fc53b9201b27ef1ec066dfcda39805">MpiMetadataProgram::distributor</a></div><div class="ttdeci">MpiTaskDistributor * distributor</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__mpi_8h_source.html#l00192">xmipp_mpi.h:192</a></div></div>
+<div class="ttc" id="classParallelTaskDistributor_html_a421bc0b36ebb7294d09d1ddcc4a5a8c0"><div class="ttname"><a href="classParallelTaskDistributor.html#a421bc0b36ebb7294d09d1ddcc4a5a8c0">ParallelTaskDistributor::numberOfTasks</a></div><div class="ttdeci">size_t numberOfTasks</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__threads_8h_source.html#l00376">xmipp_threads.h:376</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a591c2dce23ca84cf6b1ac309aab31287"></a>
@@ -465,6 +497,13 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Read arguments </p>
 
+<p>Definition at line <a class="el" href="xmipp__mpi_8cpp_source.html#l00297">297</a> of file <a class="el" href="xmipp__mpi_8cpp_source.html">xmipp_mpi.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;{</div><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <a class="code" href="classXmippMpiProgram.html#af904f672569a4fcf17118f7ed3e208dc">XmippMpiProgram::read</a>(<a class="code" href="classXmippProgram.html#a8659f9e603143c1788360f0eeb01e589">argc</a>, <a class="code" href="classXmippProgram.html#af2f60708934c302e1289c5405109dd45">argv</a>);</div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <a class="code" href="classMpiMetadataProgram.html#a59c2d481c25b2176546667e11678d5b1">last</a> = 0;</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <a class="code" href="classMpiMetadataProgram.html#a0685f0a9539012b14a697a83b5bf4447">first</a> = 1;</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;}</div><div class="ttc" id="classXmippProgram_html_a8659f9e603143c1788360f0eeb01e589"><div class="ttname"><a href="classXmippProgram.html#a8659f9e603143c1788360f0eeb01e589">XmippProgram::argc</a></div><div class="ttdeci">int argc</div><div class="ttdoc">Original command line arguments. </div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8h_source.html#l00095">xmipp_program.h:95</a></div></div>
+<div class="ttc" id="classMpiMetadataProgram_html_a0685f0a9539012b14a697a83b5bf4447"><div class="ttname"><a href="classMpiMetadataProgram.html#a0685f0a9539012b14a697a83b5bf4447">MpiMetadataProgram::first</a></div><div class="ttdeci">size_t first</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__mpi_8h_source.html#l00194">xmipp_mpi.h:194</a></div></div>
+<div class="ttc" id="classXmippProgram_html_af2f60708934c302e1289c5405109dd45"><div class="ttname"><a href="classXmippProgram.html#af2f60708934c302e1289c5405109dd45">XmippProgram::argv</a></div><div class="ttdeci">const char ** argv</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8h_source.html#l00096">xmipp_program.h:96</a></div></div>
+<div class="ttc" id="classMpiMetadataProgram_html_a59c2d481c25b2176546667e11678d5b1"><div class="ttname"><a href="classMpiMetadataProgram.html#a59c2d481c25b2176546667e11678d5b1">MpiMetadataProgram::last</a></div><div class="ttdeci">size_t last</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__mpi_8h_source.html#l00194">xmipp_mpi.h:194</a></div></div>
+<div class="ttc" id="classXmippMpiProgram_html_af904f672569a4fcf17118f7ed3e208dc"><div class="ttname"><a href="classXmippMpiProgram.html#af904f672569a4fcf17118f7ed3e208dc">XmippMpiProgram::read</a></div><div class="ttdeci">void read(int argc, char **argv)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__mpi_8cpp_source.html#l00245">xmipp_mpi.cpp:245</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aa94a9c19468f4b214d9d8910dbda99d7"></a>
@@ -491,6 +530,10 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classXmippProgram.html#a4f3c0b1ec483442cf6a2cba6666baa18">XmippProgram</a>.</p>
 
+<p>Definition at line <a class="el" href="xmipp__mpi_8cpp_source.html#l00310">310</a> of file <a class="el" href="xmipp__mpi_8cpp_source.html">xmipp_mpi.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;{</div><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <a class="code" href="classMpiMetadataProgram.html#a42806cf6521b0539105491505e49a424">blockSize</a> = <a class="code" href="classXmippProgram.html#a7b7ddf0836dc1079ea2622e2a420c39c">getIntParam</a>(<span class="stringliteral">&quot;--mpi_job_size&quot;</span>);</div><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;}</div><div class="ttc" id="classMpiMetadataProgram_html_a42806cf6521b0539105491505e49a424"><div class="ttname"><a href="classMpiMetadataProgram.html#a42806cf6521b0539105491505e49a424">MpiMetadataProgram::blockSize</a></div><div class="ttdeci">int blockSize</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__mpi_8h_source.html#l00191">xmipp_mpi.h:191</a></div></div>
+<div class="ttc" id="classXmippProgram_html_a7b7ddf0836dc1079ea2622e2a420c39c"><div class="ttname"><a href="classXmippProgram.html#a7b7ddf0836dc1079ea2622e2a420c39c">XmippProgram::getIntParam</a></div><div class="ttdeci">int getIntParam(const char *param, int arg=0)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8cpp_source.html#l00387">xmipp_program.cpp:387</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -513,6 +556,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Divide the job in this number block with this number of images </p>
 
+<p>Definition at line <a class="el" href="xmipp__mpi_8h_source.html#l00191">191</a> of file <a class="el" href="xmipp__mpi_8h_source.html">xmipp_mpi.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aa5fc53b9201b27ef1ec066dfcda39805"></a>
@@ -532,6 +577,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xmipp__mpi_8h_source.html#l00192">192</a> of file <a class="el" href="xmipp__mpi_8h_source.html">xmipp_mpi.h</a>.</p>
 
 </div>
 </div>
@@ -553,6 +600,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="xmipp__mpi_8h_source.html#l00194">194</a> of file <a class="el" href="xmipp__mpi_8h_source.html">xmipp_mpi.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aa57bd147c005427f3afed79f414f3d9a"></a>
@@ -572,6 +621,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xmipp__mpi_8h_source.html#l00193">193</a> of file <a class="el" href="xmipp__mpi_8h_source.html">xmipp_mpi.h</a>.</p>
 
 </div>
 </div>
@@ -593,11 +644,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="xmipp__mpi_8h_source.html#l00194">194</a> of file <a class="el" href="xmipp__mpi_8h_source.html">xmipp_mpi.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/parallel/<a class="el" href="xmipp__mpi_8h_source.html">xmipp_mpi.h</a></li>
-<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/parallel/<a class="el" href="xmipp__mpi_8cpp.html">xmipp_mpi.cpp</a></li>
+<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/parallel/<a class="el" href="xmipp__mpi_8cpp_source.html">xmipp_mpi.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

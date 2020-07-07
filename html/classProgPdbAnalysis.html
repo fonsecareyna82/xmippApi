@@ -253,6 +253,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Parameter class for the <a class="el" href="structPDB.html">PDB</a> Analysis program </p>
+
+<p>Definition at line <a class="el" href="pdb__analysis_8h_source.html#l00036">36</a> of file <a class="el" href="pdb__analysis_8h_source.html">pdb_analysis.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a19c1323ca1ad4dd30c1e7b7f9fead8c6"></a>
 <div class="memitem">
@@ -278,6 +280,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classXmippProgram.html#a75ba820f6afd62c89524b497ae9b560d">XmippProgram</a>.</p>
 
+<p>Definition at line <a class="el" href="pdb__analysis_8cpp_source.html#l00029">29</a> of file <a class="el" href="pdb__analysis_8cpp_source.html">pdb_analysis.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classXmippProgram.html#a4f396af57519ec443b4656176eb962bf">addUsageLine</a>(<span class="stringliteral">&quot;Analyze a PDB file and produce different statistics&quot;</span>);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classXmippProgram.html#aaeb37f0bac83f5d2a605aaa0e5c4b6ef">addParamsLine</a>(<span class="stringliteral">&quot;-i &lt;file&gt;    : PDB to study&quot;</span>);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classXmippProgram.html#aaeb37f0bac83f5d2a605aaa0e5c4b6ef">addParamsLine</a>(<span class="stringliteral">&quot;--operation &lt;op&gt;  : Operation to perform&quot;</span>);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classXmippProgram.html#aaeb37f0bac83f5d2a605aaa0e5c4b6ef">addParamsLine</a>(<span class="stringliteral">&quot;    where &lt;op&gt;&quot;</span>);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classXmippProgram.html#aaeb37f0bac83f5d2a605aaa0e5c4b6ef">addParamsLine</a>(<span class="stringliteral">&quot;          distance_histogram &lt;fileOut&gt; &lt;Nnearest=3&gt; &lt;MaxDistance=-1&gt;: Compute the distance histogram between&quot;</span>);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classXmippProgram.html#aaeb37f0bac83f5d2a605aaa0e5c4b6ef">addParamsLine</a>(<span class="stringliteral">&quot;                                                                    : an atom and its N nearest neighbours&quot;</span>);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classXmippProgram.html#aaeb37f0bac83f5d2a605aaa0e5c4b6ef">addParamsLine</a>(<span class="stringliteral">&quot;                                                                    : The maximum distance of the neighbours may be limited (in Angstroms)&quot;</span>);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classXmippProgram.html#a4b8f0a6e1bd09e4dbf56a412101e905e">addExampleLine</a>(<span class="stringliteral">&quot;Compute the histogram of interatomic distances&quot;</span>,<span class="keyword">false</span>);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classXmippProgram.html#a4b8f0a6e1bd09e4dbf56a412101e905e">addExampleLine</a>(<span class="stringliteral">&quot;xmipp_pdb_analysis -i mypdb.pdb --operation distance_histogram distance.hist&quot;</span>);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div><div class="ttc" id="classXmippProgram_html_a4b8f0a6e1bd09e4dbf56a412101e905e"><div class="ttname"><a href="classXmippProgram.html#a4b8f0a6e1bd09e4dbf56a412101e905e">XmippProgram::addExampleLine</a></div><div class="ttdeci">void addExampleLine(const char *example, bool verbatim=true)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8cpp_source.html#l00342">xmipp_program.cpp:342</a></div></div>
+<div class="ttc" id="classXmippProgram_html_a4f396af57519ec443b4656176eb962bf"><div class="ttname"><a href="classXmippProgram.html#a4f396af57519ec443b4656176eb962bf">XmippProgram::addUsageLine</a></div><div class="ttdeci">void addUsageLine(const char *line, bool verbatim=false)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8cpp_source.html#l00338">xmipp_program.cpp:338</a></div></div>
+<div class="ttc" id="classXmippProgram_html_aaeb37f0bac83f5d2a605aaa0e5c4b6ef"><div class="ttname"><a href="classXmippProgram.html#aaeb37f0bac83f5d2a605aaa0e5c4b6ef">XmippProgram::addParamsLine</a></div><div class="ttdeci">void addParamsLine(const String &amp;line)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8cpp_source.html#l00361">xmipp_program.cpp:361</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a010b8fc724636260499b293ca8deb0d5"></a>
@@ -304,6 +311,16 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classXmippProgram.html#a4f3c0b1ec483442cf6a2cba6666baa18">XmippProgram</a>.</p>
 
+<p>Definition at line <a class="el" href="pdb__analysis_8cpp_source.html#l00042">42</a> of file <a class="el" href="pdb__analysis_8cpp_source.html">pdb_analysis.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classProgPdbAnalysis.html#ad475410478ab35d3c4ba0c4a79f1ce0e">fn_pdb</a>=<a class="code" href="classXmippProgram.html#a5d9e1f008822effa47814c59e9a3c797">getParam</a>(<span class="stringliteral">&quot;-i&quot;</span>);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classProgPdbAnalysis.html#a3261262b96e8aee41d8224d6362d0c05">op</a>=<a class="code" href="classXmippProgram.html#a5d9e1f008822effa47814c59e9a3c797">getParam</a>(<span class="stringliteral">&quot;--operation&quot;</span>);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classProgPdbAnalysis.html#a3261262b96e8aee41d8224d6362d0c05">op</a>==<span class="stringliteral">&quot;distance_histogram&quot;</span>)</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="classProgPdbAnalysis.html#a1b169053f6ec4f06b40d53aff5636f50">fn_hist</a>=<a class="code" href="classXmippProgram.html#a5d9e1f008822effa47814c59e9a3c797">getParam</a>(<span class="stringliteral">&quot;--operation&quot;</span>,1);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classProgPdbAnalysis.html#aee09a4bf3df9644a93fdb6f359c1d47d">Nnearest</a>=<a class="code" href="classXmippProgram.html#a7b7ddf0836dc1079ea2622e2a420c39c">getIntParam</a>(<span class="stringliteral">&quot;--operation&quot;</span>,2);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="classProgPdbAnalysis.html#aa78e09bf799d33b0d98f57b8a1e43592">maxDistance</a>=<a class="code" href="classXmippProgram.html#a552e1ea4a84576d9149b965d9edb6277">getDoubleParam</a>(<span class="stringliteral">&quot;--operation&quot;</span>,3);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div><div class="ttc" id="classXmippProgram_html_a552e1ea4a84576d9149b965d9edb6277"><div class="ttname"><a href="classXmippProgram.html#a552e1ea4a84576d9149b965d9edb6277">XmippProgram::getDoubleParam</a></div><div class="ttdeci">double getDoubleParam(const char *param, int arg=0)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8cpp_source.html#l00397">xmipp_program.cpp:397</a></div></div>
+<div class="ttc" id="classProgPdbAnalysis_html_aa78e09bf799d33b0d98f57b8a1e43592"><div class="ttname"><a href="classProgPdbAnalysis.html#aa78e09bf799d33b0d98f57b8a1e43592">ProgPdbAnalysis::maxDistance</a></div><div class="ttdeci">double maxDistance</div><div class="ttdef"><b>Definition:</b> <a href="pdb__analysis_8h_source.html#l00052">pdb_analysis.h:52</a></div></div>
+<div class="ttc" id="classProgPdbAnalysis_html_aee09a4bf3df9644a93fdb6f359c1d47d"><div class="ttname"><a href="classProgPdbAnalysis.html#aee09a4bf3df9644a93fdb6f359c1d47d">ProgPdbAnalysis::Nnearest</a></div><div class="ttdeci">int Nnearest</div><div class="ttdef"><b>Definition:</b> <a href="pdb__analysis_8h_source.html#l00049">pdb_analysis.h:49</a></div></div>
+<div class="ttc" id="classXmippProgram_html_a5d9e1f008822effa47814c59e9a3c797"><div class="ttname"><a href="classXmippProgram.html#a5d9e1f008822effa47814c59e9a3c797">XmippProgram::getParam</a></div><div class="ttdeci">const char * getParam(const char *param, int arg=0)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8cpp_source.html#l00377">xmipp_program.cpp:377</a></div></div>
+<div class="ttc" id="classProgPdbAnalysis_html_ad475410478ab35d3c4ba0c4a79f1ce0e"><div class="ttname"><a href="classProgPdbAnalysis.html#ad475410478ab35d3c4ba0c4a79f1ce0e">ProgPdbAnalysis::fn_pdb</a></div><div class="ttdeci">FileName fn_pdb</div><div class="ttdef"><b>Definition:</b> <a href="pdb__analysis_8h_source.html#l00040">pdb_analysis.h:40</a></div></div>
+<div class="ttc" id="classProgPdbAnalysis_html_a3261262b96e8aee41d8224d6362d0c05"><div class="ttname"><a href="classProgPdbAnalysis.html#a3261262b96e8aee41d8224d6362d0c05">ProgPdbAnalysis::op</a></div><div class="ttdeci">String op</div><div class="ttdef"><b>Definition:</b> <a href="pdb__analysis_8h_source.html#l00043">pdb_analysis.h:43</a></div></div>
+<div class="ttc" id="classXmippProgram_html_a7b7ddf0836dc1079ea2622e2a420c39c"><div class="ttname"><a href="classXmippProgram.html#a7b7ddf0836dc1079ea2622e2a420c39c">XmippProgram::getIntParam</a></div><div class="ttdeci">int getIntParam(const char *param, int arg=0)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8cpp_source.html#l00387">xmipp_program.cpp:387</a></div></div>
+<div class="ttc" id="classProgPdbAnalysis_html_a1b169053f6ec4f06b40d53aff5636f50"><div class="ttname"><a href="classProgPdbAnalysis.html#a1b169053f6ec4f06b40d53aff5636f50">ProgPdbAnalysis::fn_hist</a></div><div class="ttdeci">FileName fn_hist</div><div class="ttdef"><b>Definition:</b> <a href="pdb__analysis_8h_source.html#l00046">pdb_analysis.h:46</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ae281a0d1ff259a8aa7a02cab869824d6"></a>
@@ -330,6 +347,18 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classXmippProgram.html#a1d64156309778b3416ba0a153db21447">XmippProgram</a>.</p>
 
+<p>Definition at line <a class="el" href="pdb__analysis_8cpp_source.html#l00067">67</a> of file <a class="el" href="pdb__analysis_8cpp_source.html">pdb_analysis.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classProgPdbAnalysis.html#a3261262b96e8aee41d8224d6362d0c05">op</a>==<span class="stringliteral">&quot;distance_histogram&quot;</span>)</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    {</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="classPDBPhantom.html">PDBPhantom</a> pdb; <span class="comment">// It cannot be a PDBRichAtom because it also has to work with pseudoatomic structures</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        pdb.<a class="code" href="classPDBPhantom.html#ace3a3f89bac428fd769ef10ea300e4dc">read</a>(<a class="code" href="classProgPdbAnalysis.html#ad475410478ab35d3c4ba0c4a79f1ce0e">fn_pdb</a>);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="classHistogram1D.html">Histogram1D</a> hist;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="group__PDBinterface.html#ga1ae71a9378a4ca0ef298ec1a3786612e">distanceHistogramPDB</a>(pdb,<a class="code" href="classProgPdbAnalysis.html#aee09a4bf3df9644a93fdb6f359c1d47d">Nnearest</a>,<a class="code" href="classProgPdbAnalysis.html#aa78e09bf799d33b0d98f57b8a1e43592">maxDistance</a>,200,hist);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        hist.<a class="code" href="classHistogram1D.html#a5901ea37d7b6207934c08d4c3a9ee86d">write</a>(<a class="code" href="classProgPdbAnalysis.html#a1b169053f6ec4f06b40d53aff5636f50">fn_hist</a>);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div><div class="ttc" id="classPDBPhantom_html_ace3a3f89bac428fd769ef10ea300e4dc"><div class="ttname"><a href="classPDBPhantom.html#ace3a3f89bac428fd769ef10ea300e4dc">PDBPhantom::read</a></div><div class="ttdeci">void read(const FileName &amp;fnPDB)</div><div class="ttdoc">Read from PDB file. </div><div class="ttdef"><b>Definition:</b> <a href="pdb_8cpp_source.html#l00289">pdb.cpp:289</a></div></div>
+<div class="ttc" id="classProgPdbAnalysis_html_aa78e09bf799d33b0d98f57b8a1e43592"><div class="ttname"><a href="classProgPdbAnalysis.html#aa78e09bf799d33b0d98f57b8a1e43592">ProgPdbAnalysis::maxDistance</a></div><div class="ttdeci">double maxDistance</div><div class="ttdef"><b>Definition:</b> <a href="pdb__analysis_8h_source.html#l00052">pdb_analysis.h:52</a></div></div>
+<div class="ttc" id="classHistogram1D_html"><div class="ttname"><a href="classHistogram1D.html">Histogram1D</a></div><div class="ttdef"><b>Definition:</b> <a href="histogram_8h_source.html#l00121">histogram.h:121</a></div></div>
+<div class="ttc" id="classPDBPhantom_html"><div class="ttname"><a href="classPDBPhantom.html">PDBPhantom</a></div><div class="ttdef"><b>Definition:</b> <a href="pdb_8h_source.html#l00089">pdb.h:89</a></div></div>
+<div class="ttc" id="classProgPdbAnalysis_html_aee09a4bf3df9644a93fdb6f359c1d47d"><div class="ttname"><a href="classProgPdbAnalysis.html#aee09a4bf3df9644a93fdb6f359c1d47d">ProgPdbAnalysis::Nnearest</a></div><div class="ttdeci">int Nnearest</div><div class="ttdef"><b>Definition:</b> <a href="pdb__analysis_8h_source.html#l00049">pdb_analysis.h:49</a></div></div>
+<div class="ttc" id="group__PDBinterface_html_ga1ae71a9378a4ca0ef298ec1a3786612e"><div class="ttname"><a href="group__PDBinterface.html#ga1ae71a9378a4ca0ef298ec1a3786612e">distanceHistogramPDB</a></div><div class="ttdeci">void distanceHistogramPDB(const PDBPhantom &amp;phantomPDB, size_t Nnearest, double maxDistance, int Nbins, Histogram1D &amp;hist)</div><div class="ttdef"><b>Definition:</b> <a href="pdb_8cpp_source.html#l01157">pdb.cpp:1157</a></div></div>
+<div class="ttc" id="classHistogram1D_html_a5901ea37d7b6207934c08d4c3a9ee86d"><div class="ttname"><a href="classHistogram1D.html#a5901ea37d7b6207934c08d4c3a9ee86d">Histogram1D::write</a></div><div class="ttdeci">void write(const FileName &amp;fn, MDLabel=MDL_X, MDLabel=MDL_COUNT)</div><div class="ttdef"><b>Definition:</b> <a href="histogram_8cpp_source.html#l00127">histogram.cpp:127</a></div></div>
+<div class="ttc" id="classProgPdbAnalysis_html_ad475410478ab35d3c4ba0c4a79f1ce0e"><div class="ttname"><a href="classProgPdbAnalysis.html#ad475410478ab35d3c4ba0c4a79f1ce0e">ProgPdbAnalysis::fn_pdb</a></div><div class="ttdeci">FileName fn_pdb</div><div class="ttdef"><b>Definition:</b> <a href="pdb__analysis_8h_source.html#l00040">pdb_analysis.h:40</a></div></div>
+<div class="ttc" id="classProgPdbAnalysis_html_a3261262b96e8aee41d8224d6362d0c05"><div class="ttname"><a href="classProgPdbAnalysis.html#a3261262b96e8aee41d8224d6362d0c05">ProgPdbAnalysis::op</a></div><div class="ttdeci">String op</div><div class="ttdef"><b>Definition:</b> <a href="pdb__analysis_8h_source.html#l00043">pdb_analysis.h:43</a></div></div>
+<div class="ttc" id="classProgPdbAnalysis_html_a1b169053f6ec4f06b40d53aff5636f50"><div class="ttname"><a href="classProgPdbAnalysis.html#a1b169053f6ec4f06b40d53aff5636f50">ProgPdbAnalysis::fn_hist</a></div><div class="ttdeci">FileName fn_hist</div><div class="ttdef"><b>Definition:</b> <a href="pdb__analysis_8h_source.html#l00046">pdb_analysis.h:46</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="af36bc674c0069176b6cd0329892a71a4"></a>
@@ -346,6 +375,14 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Show parameters. </p>
 
+<p>Definition at line <a class="el" href="pdb__analysis_8cpp_source.html#l00054">54</a> of file <a class="el" href="pdb__analysis_8cpp_source.html">pdb_analysis.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classXmippProgram.html#aed62cfe3c074e69076bf348fc101a717">verbose</a>==0)</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span>;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::cout</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    &lt;&lt; <span class="stringliteral">&quot;PDB:          &quot;</span> &lt;&lt; <a class="code" href="classProgPdbAnalysis.html#ad475410478ab35d3c4ba0c4a79f1ce0e">fn_pdb</a> &lt;&lt; std::endl</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    &lt;&lt; <span class="stringliteral">&quot;Operation:    &quot;</span> &lt;&lt; <a class="code" href="classProgPdbAnalysis.html#a3261262b96e8aee41d8224d6362d0c05">op</a> &lt;&lt; std::endl;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classProgPdbAnalysis.html#a3261262b96e8aee41d8224d6362d0c05">op</a>==<span class="stringliteral">&quot;distance_histogram&quot;</span>)</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Output histogram: &quot;</span> &lt;&lt; <a class="code" href="classProgPdbAnalysis.html#a1b169053f6ec4f06b40d53aff5636f50">fn_hist</a> &lt;&lt; std::endl</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;Nnearest:         &quot;</span> &lt;&lt; <a class="code" href="classProgPdbAnalysis.html#aee09a4bf3df9644a93fdb6f359c1d47d">Nnearest</a> &lt;&lt; std::endl</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;MaxDistance:      &quot;</span> &lt;&lt; <a class="code" href="classProgPdbAnalysis.html#aa78e09bf799d33b0d98f57b8a1e43592">maxDistance</a> &lt;&lt; std::endl;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div><div class="ttc" id="classProgPdbAnalysis_html_aa78e09bf799d33b0d98f57b8a1e43592"><div class="ttname"><a href="classProgPdbAnalysis.html#aa78e09bf799d33b0d98f57b8a1e43592">ProgPdbAnalysis::maxDistance</a></div><div class="ttdeci">double maxDistance</div><div class="ttdef"><b>Definition:</b> <a href="pdb__analysis_8h_source.html#l00052">pdb_analysis.h:52</a></div></div>
+<div class="ttc" id="classProgPdbAnalysis_html_aee09a4bf3df9644a93fdb6f359c1d47d"><div class="ttname"><a href="classProgPdbAnalysis.html#aee09a4bf3df9644a93fdb6f359c1d47d">ProgPdbAnalysis::Nnearest</a></div><div class="ttdeci">int Nnearest</div><div class="ttdef"><b>Definition:</b> <a href="pdb__analysis_8h_source.html#l00049">pdb_analysis.h:49</a></div></div>
+<div class="ttc" id="classXmippProgram_html_aed62cfe3c074e69076bf348fc101a717"><div class="ttname"><a href="classXmippProgram.html#aed62cfe3c074e69076bf348fc101a717">XmippProgram::verbose</a></div><div class="ttdeci">int verbose</div><div class="ttdoc">Verbosity level. </div><div class="ttdef"><b>Definition:</b> <a href="xmipp__program_8h_source.html#l00168">xmipp_program.h:168</a></div></div>
+<div class="ttc" id="classProgPdbAnalysis_html_ad475410478ab35d3c4ba0c4a79f1ce0e"><div class="ttname"><a href="classProgPdbAnalysis.html#ad475410478ab35d3c4ba0c4a79f1ce0e">ProgPdbAnalysis::fn_pdb</a></div><div class="ttdeci">FileName fn_pdb</div><div class="ttdef"><b>Definition:</b> <a href="pdb__analysis_8h_source.html#l00040">pdb_analysis.h:40</a></div></div>
+<div class="ttc" id="classProgPdbAnalysis_html_a3261262b96e8aee41d8224d6362d0c05"><div class="ttname"><a href="classProgPdbAnalysis.html#a3261262b96e8aee41d8224d6362d0c05">ProgPdbAnalysis::op</a></div><div class="ttdeci">String op</div><div class="ttdef"><b>Definition:</b> <a href="pdb__analysis_8h_source.html#l00043">pdb_analysis.h:43</a></div></div>
+<div class="ttc" id="classProgPdbAnalysis_html_a1b169053f6ec4f06b40d53aff5636f50"><div class="ttname"><a href="classProgPdbAnalysis.html#a1b169053f6ec4f06b40d53aff5636f50">ProgPdbAnalysis::fn_hist</a></div><div class="ttdeci">FileName fn_hist</div><div class="ttdef"><b>Definition:</b> <a href="pdb__analysis_8h_source.html#l00046">pdb_analysis.h:46</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -360,6 +397,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Output distance histogram </p>
 
+<p>Definition at line <a class="el" href="pdb__analysis_8h_source.html#l00046">46</a> of file <a class="el" href="pdb__analysis_8h_source.html">pdb_analysis.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ad475410478ab35d3c4ba0c4a79f1ce0e"></a>
@@ -372,6 +411,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p><a class="el" href="structPDB.html">PDB</a> file </p>
+
+<p>Definition at line <a class="el" href="pdb__analysis_8h_source.html#l00040">40</a> of file <a class="el" href="pdb__analysis_8h_source.html">pdb_analysis.h</a>.</p>
 
 </div>
 </div>
@@ -386,6 +427,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>MaxDistance </p>
 
+<p>Definition at line <a class="el" href="pdb__analysis_8h_source.html#l00052">52</a> of file <a class="el" href="pdb__analysis_8h_source.html">pdb_analysis.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aee09a4bf3df9644a93fdb6f359c1d47d"></a>
@@ -398,6 +441,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Nearest neighbours to explore </p>
+
+<p>Definition at line <a class="el" href="pdb__analysis_8h_source.html#l00049">49</a> of file <a class="el" href="pdb__analysis_8h_source.html">pdb_analysis.h</a>.</p>
 
 </div>
 </div>
@@ -412,11 +457,13 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Operation </p>
 
+<p>Definition at line <a class="el" href="pdb__analysis_8h_source.html#l00043">43</a> of file <a class="el" href="pdb__analysis_8h_source.html">pdb_analysis.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/reconstruction/<a class="el" href="pdb__analysis_8h_source.html">pdb_analysis.h</a></li>
-<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/reconstruction/<a class="el" href="pdb__analysis_8cpp.html">pdb_analysis.cpp</a></li>
+<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/reconstruction/<a class="el" href="pdb__analysis_8cpp_source.html">pdb_analysis.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

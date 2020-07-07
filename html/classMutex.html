@@ -123,6 +123,8 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class wrapping around the pthreads mutex. This class will provide a more object oriented implementation of a mutex, to ensure the unique access to critical regions of code and other synchronization problems. </p>
+
+<p>Definition at line <a class="el" href="xmipp__threads_8h_source.html#l00052">52</a> of file <a class="el" href="xmipp__threads_8h_source.html">xmipp_threads.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a593423d868daf926c7b0d63a833ae29a"></a>
 <div class="memitem">
@@ -138,6 +140,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Default constructor. This constructor just initialize the pthread_mutex_t structure with its defaults values, just like static initialization with PTHREAD_MUTEX_INITIALIZER </p>
 
+<p>Definition at line <a class="el" href="xmipp__threads_8cpp_source.html#l00036">36</a> of file <a class="el" href="xmipp__threads_8cpp_source.html">xmipp_threads.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    pthread_mutex_init(&amp;<a class="code" href="group__ProjectionXRProgram.html#gae8b85b4f519a4945ba9ea43e9b503531">mutex</a>, NULL);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div><div class="ttc" id="group__ProjectionXRProgram_html_gae8b85b4f519a4945ba9ea43e9b503531"><div class="ttname"><a href="group__ProjectionXRProgram.html#gae8b85b4f519a4945ba9ea43e9b503531">mutex</a></div><div class="ttdeci">Mutex mutex</div><div class="ttdef"><b>Definition:</b> <a href="project__xray_8cpp_source.html#l00081">project_xray.cpp:81</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ac9e9182407f5f74892318607888e9be4"></a>
@@ -162,6 +167,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Destructor. </p>
 
+<p>Definition at line <a class="el" href="xmipp__threads_8cpp_source.html#l00041">41</a> of file <a class="el" href="xmipp__threads_8cpp_source.html">xmipp_threads.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    pthread_mutex_destroy(&amp;<a class="code" href="group__ProjectionXRProgram.html#gae8b85b4f519a4945ba9ea43e9b503531">mutex</a>);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div><div class="ttc" id="group__ProjectionXRProgram_html_gae8b85b4f519a4945ba9ea43e9b503531"><div class="ttname"><a href="group__ProjectionXRProgram.html#gae8b85b4f519a4945ba9ea43e9b503531">mutex</a></div><div class="ttdeci">Mutex mutex</div><div class="ttdef"><b>Definition:</b> <a href="project__xray_8cpp_source.html#l00081">project_xray.cpp:81</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -189,6 +197,9 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classMpiFileMutex.html#a06c4f73d72c604d1d2c819f2920f1466">MpiFileMutex</a>.</p>
 
+<p>Definition at line <a class="el" href="xmipp__threads_8cpp_source.html#l00046">46</a> of file <a class="el" href="xmipp__threads_8cpp_source.html">xmipp_threads.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    pthread_mutex_lock(&amp;<a class="code" href="group__ProjectionXRProgram.html#gae8b85b4f519a4945ba9ea43e9b503531">mutex</a>);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div><div class="ttc" id="group__ProjectionXRProgram_html_gae8b85b4f519a4945ba9ea43e9b503531"><div class="ttname"><a href="group__ProjectionXRProgram.html#gae8b85b4f519a4945ba9ea43e9b503531">mutex</a></div><div class="ttdeci">Mutex mutex</div><div class="ttdef"><b>Definition:</b> <a href="project__xray_8cpp_source.html#l00081">project_xray.cpp:81</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a546a5b797ba29959357586aa2b3740a8"></a>
@@ -215,6 +226,9 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classMpiFileMutex.html#ae5b587078040442eba0fd9144cd5b227">MpiFileMutex</a>.</p>
 
+<p>Definition at line <a class="el" href="xmipp__threads_8cpp_source.html#l00051">51</a> of file <a class="el" href="xmipp__threads_8cpp_source.html">xmipp_threads.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    pthread_mutex_unlock(&amp;<a class="code" href="group__ProjectionXRProgram.html#gae8b85b4f519a4945ba9ea43e9b503531">mutex</a>);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div><div class="ttc" id="group__ProjectionXRProgram_html_gae8b85b4f519a4945ba9ea43e9b503531"><div class="ttname"><a href="group__ProjectionXRProgram.html#gae8b85b4f519a4945ba9ea43e9b503531">mutex</a></div><div class="ttdeci">Mutex mutex</div><div class="ttdef"><b>Definition:</b> <a href="project__xray_8cpp_source.html#l00081">project_xray.cpp:81</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
@@ -236,11 +250,13 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="xmipp__threads_8h_source.html#l00080">80</a> of file <a class="el" href="xmipp__threads_8h_source.html">xmipp_threads.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/<a class="el" href="xmipp__threads_8h_source.html">xmipp_threads.h</a></li>
-<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/<a class="el" href="xmipp__threads_8cpp.html">xmipp_threads.cpp</a></li>
+<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/<a class="el" href="xmipp__threads_8cpp_source.html">xmipp_threads.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -105,7 +105,9 @@ Include dependency graph for lib_tim.cpp:</div>
 <area shape="rect" id="node13" href="lib__tim_8h.html" title="lib_tim.h" alt="" coords="487,139,558,165"/>
 </map>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="lib__tim_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ad01fe0ad9b4b98c0387b5a48d289df92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lib__tim_8h.html#aafa47f47409804a56d7eb45d671f0adf">the_time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__tim_8cpp.html#ad01fe0ad9b4b98c0387b5a48d289df92">get_the_time</a> (void)</td></tr>
@@ -132,6 +134,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="lib__tim_8cpp_source.html#l00019">19</a> of file <a class="el" href="lib__tim_8cpp_source.html">lib_tim.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="lib__tim_8h.html#aafa47f47409804a56d7eb45d671f0adf">the_time</a> tv;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  gettimeofday(&amp;tv, 0);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordflow">return</span> tv;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div><div class="ttc" id="lib__tim_8h_html_aafa47f47409804a56d7eb45d671f0adf"><div class="ttname"><a href="lib__tim_8h.html#aafa47f47409804a56d7eb45d671f0adf">the_time</a></div><div class="ttdeci">struct timeval the_time</div><div class="ttdef"><b>Definition:</b> <a href="lib__tim_8h_source.html#l00009">lib_tim.h:9</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a8f67047175df3d974c69b801094ca655"></a>
@@ -148,6 +153,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="lib__tim_8cpp_source.html#l00044">44</a> of file <a class="el" href="lib__tim_8cpp_source.html">lib_tim.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">char</span> buf[128];</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a> &lt; 1.0E-6)</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    sprintf(buf, <span class="stringliteral">&quot;%f ns&quot;</span>, <a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a> * 1.0E9);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a> &lt; 1.0E-3)</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    sprintf(buf, <span class="stringliteral">&quot;%f us&quot;</span>, <a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a> * 1.0E6);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a> &lt; 1.0)</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    sprintf(buf, <span class="stringliteral">&quot;%f ms&quot;</span>, <a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a> * 1.0E3);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a> &lt; 60.0)</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    sprintf(buf, <span class="stringliteral">&quot;%f s&quot;</span>, <a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">else</span> sprintf(buf, <span class="stringliteral">&quot;%d h %d m %d s&quot;</span>, (<span class="keywordtype">int</span>) <a class="code" href="cuda__basic__math_8h.html#a2065eb145275f878c1d045c9f3fb1cc7">floor</a>(<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a> / 3600.0), ((<span class="keywordtype">int</span>) <a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a> / 60 % 60), ((<span class="keywordtype">int</span>)<a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a> % 60));</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">return</span> buf;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div><div class="ttc" id="cuda__basic__math_8h_html_a2065eb145275f878c1d045c9f3fb1cc7"><div class="ttname"><a href="cuda__basic__math_8h.html#a2065eb145275f878c1d045c9f3fb1cc7">floor</a></div><div class="ttdeci">__host__ __device__ float2 floor(const float2 v)</div><div class="ttdef"><b>Definition:</b> <a href="cuda__basic__math_8h_source.html#l00175">cuda_basic_math.h:175</a></div></div>
+<div class="ttc" id="numerical__recipes_8cpp_html_ab81d9253b246f09be9999505d515d517"><div class="ttname"><a href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a></div><div class="ttdeci">doublereal * x</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02247">numerical_recipes.cpp:2247</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a2bed9bb04dfb9a99f9ab5ce74a0bb888"></a>
@@ -174,6 +183,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="lib__tim_8cpp_source.html#l00028">28</a> of file <a class="el" href="lib__tim_8cpp_source.html">lib_tim.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="lib__tim_8h.html#aafa47f47409804a56d7eb45d671f0adf">the_time</a> diff;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  diff.tv_sec = t1.tv_sec - t2.tv_sec;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  diff.tv_usec = t1.tv_usec - t2.tv_usec;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="comment">/* normalize */</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordflow">while</span> (diff.tv_usec &lt; 0) {</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    diff.tv_usec += 1000000L;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    diff.tv_sec -= 1;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  }</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordflow">return</span> diff;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div><div class="ttc" id="lib__tim_8h_html_aafa47f47409804a56d7eb45d671f0adf"><div class="ttname"><a href="lib__tim_8h.html#aafa47f47409804a56d7eb45d671f0adf">the_time</a></div><div class="ttdeci">struct timeval the_time</div><div class="ttdef"><b>Definition:</b> <a href="lib__tim_8h_source.html#l00009">lib_tim.h:9</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="af55e01604eb3888d73f6e200986e5809"></a>
@@ -190,6 +202,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="lib__tim_8cpp_source.html#l00061">61</a> of file <a class="el" href="lib__tim_8cpp_source.html">lib_tim.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordflow">return</span> (t.tv_sec + t.tv_usec * 1.0E-6);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

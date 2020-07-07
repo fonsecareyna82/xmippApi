@@ -146,7 +146,13 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a263582ff9a02f5dbad0cc6a874be384b inherit pro_methods_classAMeritComputer"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAMeritComputer.html#a263582ff9a02f5dbad0cc6a874be384b">getFiguresOfMerit</a> ()</td></tr>
 <tr class="separator:a263582ff9a02f5dbad0cc6a874be384b inherit pro_methods_classAMeritComputer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+class CorrelationComputer&lt; T &gt;</h3>
+
+
+<p>Definition at line <a class="el" href="correlation__computer_8h_source.html#l00035">35</a> of file <a class="el" href="correlation__computer_8h_source.html">correlation_computer.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a088290ff5f2b3d9ea6f5eb748d1c0137"></a>
 <div class="memitem">
 <div class="memproto">
@@ -170,6 +176,8 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="correlation__computer_8h_source.html#l00037">37</a> of file <a class="el" href="correlation__computer_8h_source.html">correlation_computer.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                          {</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        setDefault();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="af54385ce34b3bd54298be088825b3545"></a>
@@ -195,6 +203,8 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="correlation__computer_8h_source.html#l00041">41</a> of file <a class="el" href="correlation__computer_8h_source.html">correlation_computer.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                           {</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        release();</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -224,6 +234,15 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="classAMeritComputer.html#a9bcb9211ffbcdbc972a2939b16abdd3d">AMeritComputer&lt; T &gt;</a>.</p>
 
+<p>Definition at line <a class="el" href="correlation__computer_8cpp_source.html#l00060">60</a> of file <a class="el" href="correlation__computer_8cpp_source.html">correlation_computer.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                              {</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">bool</span> isReady = this-&gt;<a class="code" href="classAMeritComputer.html#a5d99408435969e40c54df38448a6af32">isInitialized</a>() &amp;&amp; this-&gt;<a class="code" href="classAMeritComputer.html#a65f8c565bfef9d2d7463e32dfb7ba396">isRefLoaded</a>();</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span> ( ! isReady) {</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="group__ErrorHandling.html#ga4ab7f9b2fd1ec4b9efcfba0c9b33052c">REPORT_ERROR</a>(<a class="code" href="group__ErrorHandling.html#ggab0df38968e4f03a3f1f6d6df0f31f45aa959f5ee071071cb558bac2192f6248cd">ERR_LOGIC_ERROR</a>, <span class="stringliteral">&quot;Not ready to execute. Call init() and load reference&quot;</span>);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> &amp;s = this-&gt;<a class="code" href="classAMeritComputer.html#a36e6e40d4fe605d91b7fa55011e68f3a">getSettings</a>();</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">switch</span>(s.type) {</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="amerit__computer_8h.html#a9a64e84a0c7f46498c79033c2df955faa89612de8e49cfb7e0dc3f6e315012342">MeritType::OneToN</a>: {</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">if</span> (s.normalizeResult) {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                computeOneToN&lt;true&gt;(others);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                computeOneToN&lt;false&gt;(others);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            }</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">break</span>;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">default</span>:</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <a class="code" href="group__ErrorHandling.html#ga4ab7f9b2fd1ec4b9efcfba0c9b33052c">REPORT_ERROR</a>(<a class="code" href="group__ErrorHandling.html#ggab0df38968e4f03a3f1f6d6df0f31f45aa5bed3f42a08e195b307cf8622e913327">ERR_NOT_IMPLEMENTED</a>, <span class="stringliteral">&quot;This case is not implemented&quot;</span>);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div><div class="ttc" id="group__ErrorHandling_html_ggab0df38968e4f03a3f1f6d6df0f31f45aa5bed3f42a08e195b307cf8622e913327"><div class="ttname"><a href="group__ErrorHandling.html#ggab0df38968e4f03a3f1f6d6df0f31f45aa5bed3f42a08e195b307cf8622e913327">ERR_NOT_IMPLEMENTED</a></div><div class="ttdoc">Case or algorithm not implemented yet. </div><div class="ttdef"><b>Definition:</b> <a href="xmipp__error_8h_source.html#l00182">xmipp_error.h:182</a></div></div>
+<div class="ttc" id="group__ErrorHandling_html_ga4ab7f9b2fd1ec4b9efcfba0c9b33052c"><div class="ttname"><a href="group__ErrorHandling.html#ga4ab7f9b2fd1ec4b9efcfba0c9b33052c">REPORT_ERROR</a></div><div class="ttdeci">#define REPORT_ERROR(nerr, ErrormMsg)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__error_8h_source.html#l00238">xmipp_error.h:238</a></div></div>
+<div class="ttc" id="classAMeritComputer_html_a65f8c565bfef9d2d7463e32dfb7ba396"><div class="ttname"><a href="classAMeritComputer.html#a65f8c565bfef9d2d7463e32dfb7ba396">AMeritComputer::isRefLoaded</a></div><div class="ttdeci">constexpr bool isRefLoaded() const </div><div class="ttdef"><b>Definition:</b> <a href="amerit__computer_8h_source.html#l00105">amerit_computer.h:105</a></div></div>
+<div class="ttc" id="classAMeritComputer_html_a36e6e40d4fe605d91b7fa55011e68f3a"><div class="ttname"><a href="classAMeritComputer.html#a36e6e40d4fe605d91b7fa55011e68f3a">AMeritComputer::getSettings</a></div><div class="ttdeci">const MeritSettings &amp; getSettings() const </div><div class="ttdef"><b>Definition:</b> <a href="amerit__computer_8h_source.html#l00084">amerit_computer.h:84</a></div></div>
+<div class="ttc" id="classAMeritComputer_html_a5d99408435969e40c54df38448a6af32"><div class="ttname"><a href="classAMeritComputer.html#a5d99408435969e40c54df38448a6af32">AMeritComputer::isInitialized</a></div><div class="ttdeci">constexpr bool isInitialized() const </div><div class="ttdef"><b>Definition:</b> <a href="amerit__computer_8h_source.html#l00101">amerit_computer.h:101</a></div></div>
+<div class="ttc" id="amerit__computer_8h_html_a9a64e84a0c7f46498c79033c2df955faa89612de8e49cfb7e0dc3f6e315012342"><div class="ttname"><a href="amerit__computer_8h.html#a9a64e84a0c7f46498c79033c2df955faa89612de8e49cfb7e0dc3f6e315012342">MeritType::OneToN</a></div></div>
+<div class="ttc" id="group__ErrorHandling_html_ggab0df38968e4f03a3f1f6d6df0f31f45aa959f5ee071071cb558bac2192f6248cd"><div class="ttname"><a href="group__ErrorHandling.html#ggab0df38968e4f03a3f1f6d6df0f31f45aa959f5ee071071cb558bac2192f6248cd">ERR_LOGIC_ERROR</a></div><div class="ttdoc">Some logical error in the pipeline. </div><div class="ttdef"><b>Definition:</b> <a href="xmipp__error_8h_source.html#l00152">xmipp_error.h:152</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a6a0a651e54e7c3b1a03d1d5e593911c4"></a>
@@ -252,11 +271,14 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="classAMeritComputer.html#a85d17f66a465d36a9c0391d4a7bf8b5b">AMeritComputer&lt; T &gt;</a>.</p>
 
+<p>Definition at line <a class="el" href="correlation__computer_8cpp_source.html#l00081">81</a> of file <a class="el" href="correlation__computer_8cpp_source.html">correlation_computer.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                                       {</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    m_ref = ref; <span class="comment">// just copy pointer</span></div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    this-&gt;<a class="code" href="classAMeritComputer.html#a6c8fec4edb99e7d8a140ed932b52fca1">setIsRefLoaded</a>(<span class="keyword">nullptr</span> != ref);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div><div class="ttc" id="classAMeritComputer_html_a6c8fec4edb99e7d8a140ed932b52fca1"><div class="ttname"><a href="classAMeritComputer.html#a6c8fec4edb99e7d8a140ed932b52fca1">AMeritComputer::setIsRefLoaded</a></div><div class="ttdeci">void setIsRefLoaded(bool status)</div><div class="ttdef"><b>Definition:</b> <a href="amerit__computer_8h_source.html#l00109">amerit_computer.h:109</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/reconstruction/<a class="el" href="correlation__computer_8h_source.html">correlation_computer.h</a></li>
-<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/reconstruction/<a class="el" href="correlation__computer_8cpp.html">correlation_computer.cpp</a></li>
+<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/reconstruction/<a class="el" href="correlation__computer_8cpp_source.html">correlation_computer.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

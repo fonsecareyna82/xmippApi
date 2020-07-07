@@ -125,7 +125,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a97495dd4c2bb9589522823f060c8e8ba"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1RE.html#a97495dd4c2bb9589522823f060c8e8ba">PartialMatch</a> (const char *str, const <a class="el" href="classtesting_1_1internal_1_1RE.html">RE</a> &amp;re)</td></tr>
 <tr class="separator:a97495dd4c2bb9589522823f060c8e8ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l01871">1871</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ab215dbc2565fce641e1746ca43e9d68a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -148,6 +151,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l01875">1875</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l01875"></a><span class="lineno"> 1875</span>&#160;{ Init(other.pattern()); }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a8840bd639642f3d4769a94a68ce463c2"></a>
@@ -172,6 +177,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l01878">1878</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l01878"></a><span class="lineno"> 1878</span>&#160;{ Init(regex.c_str()); }  <span class="comment">// NOLINT</span></div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a908ea936a5b7a14479a1b292a7189ca6"></a>
@@ -196,6 +203,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l01886">1886</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l01886"></a><span class="lineno"> 1886</span>&#160;{ Init(regex); }  <span class="comment">// NOLINT</span></div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="af3ad18e6c0b433f3d85ed23eda8119f3"></a>
@@ -246,6 +255,9 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l01899">1899</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l01899"></a><span class="lineno"> 1899</span>&#160;                                                            {</div><div class="line"><a name="l01900"></a><span class="lineno"> 1900</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classtesting_1_1internal_1_1RE.html#aa79a950758d0f1d62f7762d1e9cefe86">FullMatch</a>(str.c_str(), re);</div><div class="line"><a name="l01901"></a><span class="lineno"> 1901</span>&#160;  }</div><div class="ttc" id="classtesting_1_1internal_1_1RE_html_aa79a950758d0f1d62f7762d1e9cefe86"><div class="ttname"><a href="classtesting_1_1internal_1_1RE.html#aa79a950758d0f1d62f7762d1e9cefe86">testing::internal::RE::FullMatch</a></div><div class="ttdeci">static bool FullMatch(const ::std::string &amp;str, const RE &amp;re)</div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l01899">gtest.h:1899</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a2b13ec1f6ccd6c32f7efa01e21588f0b"></a>
@@ -314,6 +326,9 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l01902">1902</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l01902"></a><span class="lineno"> 1902</span>&#160;                                                               {</div><div class="line"><a name="l01903"></a><span class="lineno"> 1903</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classtesting_1_1internal_1_1RE.html#a1e81f9a87211bdca645e025f8f0236c8">PartialMatch</a>(str.c_str(), re);</div><div class="line"><a name="l01904"></a><span class="lineno"> 1904</span>&#160;  }</div><div class="ttc" id="classtesting_1_1internal_1_1RE_html_a1e81f9a87211bdca645e025f8f0236c8"><div class="ttname"><a href="classtesting_1_1internal_1_1RE.html#a1e81f9a87211bdca645e025f8f0236c8">testing::internal::RE::PartialMatch</a></div><div class="ttdeci">static bool PartialMatch(const ::std::string &amp;str, const RE &amp;re)</div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l01902">gtest.h:1902</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a97495dd4c2bb9589522823f060c8e8ba"></a>
@@ -371,6 +386,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l01890">1890</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l01890"></a><span class="lineno"> 1890</span>&#160;{ <span class="keywordflow">return</span> pattern_; }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

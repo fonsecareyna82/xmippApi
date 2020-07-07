@@ -143,7 +143,10 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ae87485204e2078053f419706182baded"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structalglib__impl_1_1mincgstate.html">alglib_impl::mincgstate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalglib_1_1__mincgstate__owner.html#ae87485204e2078053f419706182baded">p_struct</a></td></tr>
 <tr class="separator:ae87485204e2078053f419706182baded"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="optimization_8h_source.html#l00597">597</a> of file <a class="el" href="optimization_8h_source.html">optimization.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a79dadd4f2c3332b36ccdbf297ad33ecd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -157,6 +160,13 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="optimization_8cpp_source.html#l00053">53</a> of file <a class="el" href="optimization_8cpp_source.html">optimization.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classalglib_1_1__mincgstate__owner.html#ae87485204e2078053f419706182baded">p_struct</a> = (<a class="code" href="structalglib__impl_1_1mincgstate.html">alglib_impl::mincgstate</a>*)<a class="code" href="namespacealglib__impl.html#ae9734678725f1961bd032954a6bba1d8">alglib_impl::ae_malloc</a>(<span class="keyword">sizeof</span>(<a class="code" href="structalglib__impl_1_1mincgstate.html">alglib_impl::mincgstate</a>), NULL);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">if</span>( <a class="code" href="classalglib_1_1__mincgstate__owner.html#ae87485204e2078053f419706182baded">p_struct</a>==NULL )</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span>( !<a class="code" href="namespacealglib__impl.html#a75acd75777d15af17545c7481856a187">alglib_impl::_mincgstate_init</a>(<a class="code" href="classalglib_1_1__mincgstate__owner.html#ae87485204e2078053f419706182baded">p_struct</a>, NULL, <a class="code" href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a>) )</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div><div class="ttc" id="namespacealglib__impl_html_a75acd75777d15af17545c7481856a187"><div class="ttname"><a href="namespacealglib__impl.html#a75acd75777d15af17545c7481856a187">alglib_impl::_mincgstate_init</a></div><div class="ttdeci">ae_bool _mincgstate_init(void *_p, ae_state *_state, ae_bool make_automatic)</div><div class="ttdef"><b>Definition:</b> <a href="optimization_8cpp_source.html#l14518">optimization.cpp:14518</a></div></div>
+<div class="ttc" id="ap_8h_html_a0656913c5b7bc535cf5347662e769bef"><div class="ttname"><a href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a></div><div class="ttdeci">#define ae_false</div><div class="ttdef"><b>Definition:</b> <a href="ap_8h_source.html#l00196">ap.h:196</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_ae9734678725f1961bd032954a6bba1d8"><div class="ttname"><a href="namespacealglib__impl.html#ae9734678725f1961bd032954a6bba1d8">alglib_impl::ae_malloc</a></div><div class="ttdeci">void * ae_malloc(size_t size, ae_state *state)</div><div class="ttdef"><b>Definition:</b> <a href="ap_8cpp_source.html#l00222">ap.cpp:222</a></div></div>
+<div class="ttc" id="classalglib_1_1__mincgstate__owner_html_ae87485204e2078053f419706182baded"><div class="ttname"><a href="classalglib_1_1__mincgstate__owner.html#ae87485204e2078053f419706182baded">alglib::_mincgstate_owner::p_struct</a></div><div class="ttdeci">alglib_impl::mincgstate * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="optimization_8h_source.html#l00607">optimization.h:607</a></div></div>
+<div class="ttc" id="structalglib__impl_1_1mincgstate_html"><div class="ttname"><a href="structalglib__impl_1_1mincgstate.html">alglib_impl::mincgstate</a></div><div class="ttdef"><b>Definition:</b> <a href="optimization_8h_source.html#l00142">optimization.h:142</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a932c114642f8962a85b865f867f1b571"></a>
@@ -173,6 +183,13 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="optimization_8cpp_source.html#l00062">62</a> of file <a class="el" href="optimization_8cpp_source.html">optimization.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classalglib_1_1__mincgstate__owner.html#ae87485204e2078053f419706182baded">p_struct</a> = (<a class="code" href="structalglib__impl_1_1mincgstate.html">alglib_impl::mincgstate</a>*)<a class="code" href="namespacealglib__impl.html#ae9734678725f1961bd032954a6bba1d8">alglib_impl::ae_malloc</a>(<span class="keyword">sizeof</span>(<a class="code" href="structalglib__impl_1_1mincgstate.html">alglib_impl::mincgstate</a>), NULL);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span>( <a class="code" href="classalglib_1_1__mincgstate__owner.html#ae87485204e2078053f419706182baded">p_struct</a>==NULL )</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span>( !<a class="code" href="namespacealglib__impl.html#a18cb709e10e6e55ed8ee2325ad61b989">alglib_impl::_mincgstate_init_copy</a>(<a class="code" href="classalglib_1_1__mincgstate__owner.html#ae87485204e2078053f419706182baded">p_struct</a>, const_cast&lt;alglib_impl::mincgstate*&gt;(rhs.p_struct), NULL, <a class="code" href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a>) )</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div><div class="ttc" id="ap_8h_html_a0656913c5b7bc535cf5347662e769bef"><div class="ttname"><a href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a></div><div class="ttdeci">#define ae_false</div><div class="ttdef"><b>Definition:</b> <a href="ap_8h_source.html#l00196">ap.h:196</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_ae9734678725f1961bd032954a6bba1d8"><div class="ttname"><a href="namespacealglib__impl.html#ae9734678725f1961bd032954a6bba1d8">alglib_impl::ae_malloc</a></div><div class="ttdeci">void * ae_malloc(size_t size, ae_state *state)</div><div class="ttdef"><b>Definition:</b> <a href="ap_8cpp_source.html#l00222">ap.cpp:222</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_a18cb709e10e6e55ed8ee2325ad61b989"><div class="ttname"><a href="namespacealglib__impl.html#a18cb709e10e6e55ed8ee2325ad61b989">alglib_impl::_mincgstate_init_copy</a></div><div class="ttdeci">ae_bool _mincgstate_init_copy(void *_dst, void *_src, ae_state *_state, ae_bool make_automatic)</div><div class="ttdef"><b>Definition:</b> <a href="optimization_8cpp_source.html#l14558">optimization.cpp:14558</a></div></div>
+<div class="ttc" id="classalglib_1_1__mincgstate__owner_html_ae87485204e2078053f419706182baded"><div class="ttname"><a href="classalglib_1_1__mincgstate__owner.html#ae87485204e2078053f419706182baded">alglib::_mincgstate_owner::p_struct</a></div><div class="ttdeci">alglib_impl::mincgstate * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="optimization_8h_source.html#l00607">optimization.h:607</a></div></div>
+<div class="ttc" id="structalglib__impl_1_1mincgstate_html"><div class="ttname"><a href="structalglib__impl_1_1mincgstate.html">alglib_impl::mincgstate</a></div><div class="ttdef"><b>Definition:</b> <a href="optimization_8h_source.html#l00142">optimization.h:142</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a6e51f4b64841afb74ec9edd7c045db62"></a>
@@ -196,6 +213,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="optimization_8cpp_source.html#l00081">81</a> of file <a class="el" href="optimization_8cpp_source.html">optimization.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="namespacealglib__impl.html#a36aedb49b441d9cee8e6ebfe791c93ff">alglib_impl::_mincgstate_clear</a>(<a class="code" href="classalglib_1_1__mincgstate__owner.html#ae87485204e2078053f419706182baded">p_struct</a>);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="namespacealglib__impl.html#a204f9cd46dfc1cc765720c2b5d473128">ae_free</a>(<a class="code" href="classalglib_1_1__mincgstate__owner.html#ae87485204e2078053f419706182baded">p_struct</a>);</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div><div class="ttc" id="classalglib_1_1__mincgstate__owner_html_ae87485204e2078053f419706182baded"><div class="ttname"><a href="classalglib_1_1__mincgstate__owner.html#ae87485204e2078053f419706182baded">alglib::_mincgstate_owner::p_struct</a></div><div class="ttdeci">alglib_impl::mincgstate * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="optimization_8h_source.html#l00607">optimization.h:607</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_a204f9cd46dfc1cc765720c2b5d473128"><div class="ttname"><a href="namespacealglib__impl.html#a204f9cd46dfc1cc765720c2b5d473128">alglib_impl::ae_free</a></div><div class="ttdeci">void ae_free(void *p)</div><div class="ttdef"><b>Definition:</b> <a href="ap_8cpp_source.html#l00237">ap.cpp:237</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_a36aedb49b441d9cee8e6ebfe791c93ff"><div class="ttname"><a href="namespacealglib__impl.html#a36aedb49b441d9cee8e6ebfe791c93ff">alglib_impl::_mincgstate_clear</a></div><div class="ttdeci">void _mincgstate_clear(void *_p)</div><div class="ttdef"><b>Definition:</b> <a href="optimization_8cpp_source.html#l14644">optimization.cpp:14644</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -212,6 +234,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="optimization_8cpp_source.html#l00087">87</a> of file <a class="el" href="optimization_8cpp_source.html">optimization.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classalglib_1_1__mincgstate__owner.html#ae87485204e2078053f419706182baded">p_struct</a>;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div><div class="ttc" id="classalglib_1_1__mincgstate__owner_html_ae87485204e2078053f419706182baded"><div class="ttname"><a href="classalglib_1_1__mincgstate__owner.html#ae87485204e2078053f419706182baded">alglib::_mincgstate_owner::p_struct</a></div><div class="ttdeci">alglib_impl::mincgstate * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="optimization_8h_source.html#l00607">optimization.h:607</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ae6aaae4a3eaaf364eff544515e01e36a"></a>
@@ -227,6 +252,10 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="optimization_8cpp_source.html#l00092">92</a> of file <a class="el" href="optimization_8cpp_source.html">optimization.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">const_cast&lt;</span><a class="code" href="structalglib__impl_1_1mincgstate.html">alglib_impl::mincgstate</a>*<span class="keyword">&gt;</span>(<a class="code" href="classalglib_1_1__mincgstate__owner.html#ae87485204e2078053f419706182baded">p_struct</a>);</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div><div class="ttc" id="classalglib_1_1__mincgstate__owner_html_ae87485204e2078053f419706182baded"><div class="ttname"><a href="classalglib_1_1__mincgstate__owner.html#ae87485204e2078053f419706182baded">alglib::_mincgstate_owner::p_struct</a></div><div class="ttdeci">alglib_impl::mincgstate * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="optimization_8h_source.html#l00607">optimization.h:607</a></div></div>
+<div class="ttc" id="structalglib__impl_1_1mincgstate_html"><div class="ttname"><a href="structalglib__impl_1_1mincgstate.html">alglib_impl::mincgstate</a></div><div class="ttdef"><b>Definition:</b> <a href="optimization_8h_source.html#l00142">optimization.h:142</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a4b96348a62624bfa5e603e57ec810715"></a>
@@ -243,6 +272,12 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="optimization_8cpp_source.html#l00071">71</a> of file <a class="el" href="optimization_8cpp_source.html">optimization.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">if</span>( <span class="keyword">this</span>==&amp;rhs )</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="namespacealglib__impl.html#a36aedb49b441d9cee8e6ebfe791c93ff">alglib_impl::_mincgstate_clear</a>(<a class="code" href="classalglib_1_1__mincgstate__owner.html#ae87485204e2078053f419706182baded">p_struct</a>);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span>( !<a class="code" href="namespacealglib__impl.html#a18cb709e10e6e55ed8ee2325ad61b989">alglib_impl::_mincgstate_init_copy</a>(<a class="code" href="classalglib_1_1__mincgstate__owner.html#ae87485204e2078053f419706182baded">p_struct</a>, const_cast&lt;alglib_impl::mincgstate*&gt;(rhs.p_struct), NULL, <a class="code" href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a>) )</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div><div class="ttc" id="ap_8h_html_a0656913c5b7bc535cf5347662e769bef"><div class="ttname"><a href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a></div><div class="ttdeci">#define ae_false</div><div class="ttdef"><b>Definition:</b> <a href="ap_8h_source.html#l00196">ap.h:196</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_a18cb709e10e6e55ed8ee2325ad61b989"><div class="ttname"><a href="namespacealglib__impl.html#a18cb709e10e6e55ed8ee2325ad61b989">alglib_impl::_mincgstate_init_copy</a></div><div class="ttdeci">ae_bool _mincgstate_init_copy(void *_dst, void *_src, ae_state *_state, ae_bool make_automatic)</div><div class="ttdef"><b>Definition:</b> <a href="optimization_8cpp_source.html#l14558">optimization.cpp:14558</a></div></div>
+<div class="ttc" id="classalglib_1_1__mincgstate__owner_html_ae87485204e2078053f419706182baded"><div class="ttname"><a href="classalglib_1_1__mincgstate__owner.html#ae87485204e2078053f419706182baded">alglib::_mincgstate_owner::p_struct</a></div><div class="ttdeci">alglib_impl::mincgstate * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="optimization_8h_source.html#l00607">optimization.h:607</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_a36aedb49b441d9cee8e6ebfe791c93ff"><div class="ttname"><a href="namespacealglib__impl.html#a36aedb49b441d9cee8e6ebfe791c93ff">alglib_impl::_mincgstate_clear</a></div><div class="ttdeci">void _mincgstate_clear(void *_p)</div><div class="ttdef"><b>Definition:</b> <a href="optimization_8cpp_source.html#l14644">optimization.cpp:14644</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -264,11 +299,13 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="optimization_8h_source.html#l00607">607</a> of file <a class="el" href="optimization_8h_source.html">optimization.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/alglib/<a class="el" href="optimization_8h_source.html">optimization.h</a></li>
-<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/alglib/<a class="el" href="optimization_8cpp.html">optimization.cpp</a></li>
+<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/alglib/<a class="el" href="optimization_8cpp_source.html">optimization.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

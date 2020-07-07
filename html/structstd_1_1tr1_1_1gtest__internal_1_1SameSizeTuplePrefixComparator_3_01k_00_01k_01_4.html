@@ -106,7 +106,13 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a5564fbade05a2d0522d9899da62c2119"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structstd_1_1tr1_1_1gtest__internal_1_1SameSizeTuplePrefixComparator_3_01k_00_01k_01_4.html#a5564fbade05a2d0522d9899da62c2119">Eq</a> (const Tuple1 &amp;t1, const Tuple2 &amp;t2)</td></tr>
 <tr class="separator:a5564fbade05a2d0522d9899da62c2119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;int k&gt;<br />
+struct std::tr1::gtest_internal::SameSizeTuplePrefixComparator&lt; k, k &gt;</h3>
+
+
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l01472">1472</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a5564fbade05a2d0522d9899da62c2119"></a>
 <div class="memitem">
 <div class="memproto">
@@ -143,6 +149,9 @@ template&lt;class Tuple1 , class Tuple2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l01474">1474</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;                                                     {</div><div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;    <span class="keywordflow">return</span> SameSizeTuplePrefixComparator&lt;k - 1, k - 1&gt;::Eq(t1, t2) &amp;&amp;</div><div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;        ::std::tr1::get&lt;<a class="code" href="numerical__recipes_8cpp.html#a3cea5ad1d3a8a229f9483e49cc2c6656">k</a> - 1&gt;(t1) == ::std::tr1::get&lt;k - 1&gt;(t2);</div><div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;  }</div><div class="ttc" id="numerical__recipes_8cpp_html_a3cea5ad1d3a8a229f9483e49cc2c6656"><div class="ttname"><a href="numerical__recipes_8cpp.html#a3cea5ad1d3a8a229f9483e49cc2c6656">k</a></div><div class="ttdeci">ql0001_ &amp; k(htemp+1),(cvec+1),(atemp+1),(bj+1),(bl+1),(bu+1),(x+1),(clamda+1),&amp;iout, infoqp,&amp;zero,(w+1),&amp;lenw,(iw+1),&amp;leniw,&amp;glob_grd.epsmac</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>

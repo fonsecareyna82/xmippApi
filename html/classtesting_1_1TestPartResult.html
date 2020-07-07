@@ -132,7 +132,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a34d31718b5fc6c06f73d03e8dbb1aa9e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1TestPartResult.html#a34d31718b5fc6c06f73d03e8dbb1aa9e">fatally_failed</a> () const </td></tr>
 <tr class="separator:a34d31718b5fc6c06f73d03e8dbb1aa9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l16704">16704</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a65ae656b33fdfdfffaf34858778a52d5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -151,6 +154,11 @@ Public Member Functions</h2></td></tr>
 </td></tr>
 </table>
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l16708">16708</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l16708"></a><span class="lineno">16708</span>&#160;            {</div><div class="line"><a name="l16709"></a><span class="lineno">16709</span>&#160;    <a class="code" href="classtesting_1_1TestPartResult.html#a65ae656b33fdfdfffaf34858778a52d5a8fa3d06b2baad8bf7c1f17dea314983e">kSuccess</a>,          <span class="comment">// Succeeded.</span></div><div class="line"><a name="l16710"></a><span class="lineno">16710</span>&#160;    <a class="code" href="classtesting_1_1TestPartResult.html#a65ae656b33fdfdfffaf34858778a52d5a00a755614f8ec3f78b2e951f8c91cd92">kNonFatalFailure</a>,  <span class="comment">// Failed but the test can continue.</span></div><div class="line"><a name="l16711"></a><span class="lineno">16711</span>&#160;    <a class="code" href="classtesting_1_1TestPartResult.html#a65ae656b33fdfdfffaf34858778a52d5ae1bf0b610b697a43fee97628cdab4ea1">kFatalFailure</a>      <span class="comment">// Failed and the test should be terminated.</span></div><div class="line"><a name="l16712"></a><span class="lineno">16712</span>&#160;  };</div><div class="ttc" id="classtesting_1_1TestPartResult_html_a65ae656b33fdfdfffaf34858778a52d5a00a755614f8ec3f78b2e951f8c91cd92"><div class="ttname"><a href="classtesting_1_1TestPartResult.html#a65ae656b33fdfdfffaf34858778a52d5a00a755614f8ec3f78b2e951f8c91cd92">testing::TestPartResult::kNonFatalFailure</a></div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l16710">gtest.h:16710</a></div></div>
+<div class="ttc" id="classtesting_1_1TestPartResult_html_a65ae656b33fdfdfffaf34858778a52d5a8fa3d06b2baad8bf7c1f17dea314983e"><div class="ttname"><a href="classtesting_1_1TestPartResult.html#a65ae656b33fdfdfffaf34858778a52d5a8fa3d06b2baad8bf7c1f17dea314983e">testing::TestPartResult::kSuccess</a></div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l16709">gtest.h:16709</a></div></div>
+<div class="ttc" id="classtesting_1_1TestPartResult_html_a65ae656b33fdfdfffaf34858778a52d5ae1bf0b610b697a43fee97628cdab4ea1"><div class="ttname"><a href="classtesting_1_1TestPartResult.html#a65ae656b33fdfdfffaf34858778a52d5ae1bf0b610b697a43fee97628cdab4ea1">testing::TestPartResult::kFatalFailure</a></div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l16711">gtest.h:16711</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -198,6 +206,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l16717">16717</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l16721"></a><span class="lineno">16721</span>&#160;      : type_(a_type),</div><div class="line"><a name="l16722"></a><span class="lineno">16722</span>&#160;        file_name_(a_file_name),</div><div class="line"><a name="l16723"></a><span class="lineno">16723</span>&#160;        line_number_(a_line_number),</div><div class="line"><a name="l16724"></a><span class="lineno">16724</span>&#160;        summary_(ExtractSummary(a_message)),</div><div class="line"><a name="l16725"></a><span class="lineno">16725</span>&#160;        message_(a_message) {</div><div class="line"><a name="l16726"></a><span class="lineno">16726</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -222,6 +232,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l16749">16749</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l16749"></a><span class="lineno">16749</span>&#160;{ <span class="keywordflow">return</span> type_ != <a class="code" href="classtesting_1_1TestPartResult.html#a65ae656b33fdfdfffaf34858778a52d5a8fa3d06b2baad8bf7c1f17dea314983e">kSuccess</a>; }</div><div class="ttc" id="classtesting_1_1TestPartResult_html_a65ae656b33fdfdfffaf34858778a52d5a8fa3d06b2baad8bf7c1f17dea314983e"><div class="ttname"><a href="classtesting_1_1TestPartResult.html#a65ae656b33fdfdfffaf34858778a52d5a8fa3d06b2baad8bf7c1f17dea314983e">testing::TestPartResult::kSuccess</a></div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l16709">gtest.h:16709</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a34d31718b5fc6c06f73d03e8dbb1aa9e"></a>
@@ -245,6 +258,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l16755">16755</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l16755"></a><span class="lineno">16755</span>&#160;{ <span class="keywordflow">return</span> type_ == <a class="code" href="classtesting_1_1TestPartResult.html#a65ae656b33fdfdfffaf34858778a52d5ae1bf0b610b697a43fee97628cdab4ea1">kFatalFailure</a>; }</div><div class="ttc" id="classtesting_1_1TestPartResult_html_a65ae656b33fdfdfffaf34858778a52d5ae1bf0b610b697a43fee97628cdab4ea1"><div class="ttname"><a href="classtesting_1_1TestPartResult.html#a65ae656b33fdfdfffaf34858778a52d5ae1bf0b610b697a43fee97628cdab4ea1">testing::TestPartResult::kFatalFailure</a></div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l16711">gtest.h:16711</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a5d8742dc28ddb880cd2391edb9fc2c9b"></a>
@@ -268,6 +284,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l16733">16733</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l16733"></a><span class="lineno">16733</span>&#160;{ <span class="keywordflow">return</span> file_name_.<a class="code" href="classtesting_1_1internal_1_1String.html#a7ef0fa81f923c98aa8e6337b6a907f93">c_str</a>(); }</div><div class="ttc" id="classtesting_1_1internal_1_1String_html_a7ef0fa81f923c98aa8e6337b6a907f93"><div class="ttname"><a href="classtesting_1_1internal_1_1String.html#a7ef0fa81f923c98aa8e6337b6a907f93">testing::internal::String::c_str</a></div><div class="ttdeci">const char * c_str() const </div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l03125">gtest.h:3125</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a174900cf4403d23784af34f50e7b0a46"></a>
@@ -291,6 +310,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l16737">16737</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l16737"></a><span class="lineno">16737</span>&#160;{ <span class="keywordflow">return</span> line_number_; }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aae73962246be4d200e2c1d04246a708a"></a>
@@ -314,6 +335,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l16743">16743</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l16743"></a><span class="lineno">16743</span>&#160;{ <span class="keywordflow">return</span> message_.<a class="code" href="classtesting_1_1internal_1_1String.html#a7ef0fa81f923c98aa8e6337b6a907f93">c_str</a>(); }</div><div class="ttc" id="classtesting_1_1internal_1_1String_html_a7ef0fa81f923c98aa8e6337b6a907f93"><div class="ttname"><a href="classtesting_1_1internal_1_1String.html#a7ef0fa81f923c98aa8e6337b6a907f93">testing::internal::String::c_str</a></div><div class="ttdeci">const char * c_str() const </div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l03125">gtest.h:3125</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a7bb08c87fbc1664f9fcca1504339ed29"></a>
@@ -337,6 +361,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l16752">16752</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l16752"></a><span class="lineno">16752</span>&#160;{ <span class="keywordflow">return</span> type_ == <a class="code" href="classtesting_1_1TestPartResult.html#a65ae656b33fdfdfffaf34858778a52d5a00a755614f8ec3f78b2e951f8c91cd92">kNonFatalFailure</a>; }</div><div class="ttc" id="classtesting_1_1TestPartResult_html_a65ae656b33fdfdfffaf34858778a52d5a00a755614f8ec3f78b2e951f8c91cd92"><div class="ttname"><a href="classtesting_1_1TestPartResult.html#a65ae656b33fdfdfffaf34858778a52d5a00a755614f8ec3f78b2e951f8c91cd92">testing::TestPartResult::kNonFatalFailure</a></div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l16710">gtest.h:16710</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a901bd62d9fbe7f39826a9d02ab2bdaec"></a>
@@ -360,6 +387,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l16746">16746</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l16746"></a><span class="lineno">16746</span>&#160;{ <span class="keywordflow">return</span> type_ == <a class="code" href="classtesting_1_1TestPartResult.html#a65ae656b33fdfdfffaf34858778a52d5a8fa3d06b2baad8bf7c1f17dea314983e">kSuccess</a>; }</div><div class="ttc" id="classtesting_1_1TestPartResult_html_a65ae656b33fdfdfffaf34858778a52d5a8fa3d06b2baad8bf7c1f17dea314983e"><div class="ttname"><a href="classtesting_1_1TestPartResult.html#a65ae656b33fdfdfffaf34858778a52d5a8fa3d06b2baad8bf7c1f17dea314983e">testing::TestPartResult::kSuccess</a></div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l16709">gtest.h:16709</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="af0d4f960b453ce087c581fe13817b2a3"></a>
@@ -383,6 +413,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l16740">16740</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l16740"></a><span class="lineno">16740</span>&#160;{ <span class="keywordflow">return</span> summary_.<a class="code" href="classtesting_1_1internal_1_1String.html#a7ef0fa81f923c98aa8e6337b6a907f93">c_str</a>(); }</div><div class="ttc" id="classtesting_1_1internal_1_1String_html_a7ef0fa81f923c98aa8e6337b6a907f93"><div class="ttname"><a href="classtesting_1_1internal_1_1String.html#a7ef0fa81f923c98aa8e6337b6a907f93">testing::internal::String::c_str</a></div><div class="ttdeci">const char * c_str() const </div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l03125">gtest.h:3125</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ae852bf8693f066078c74c34345531940"></a>
@@ -406,6 +439,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l16729">16729</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l16729"></a><span class="lineno">16729</span>&#160;{ <span class="keywordflow">return</span> type_; }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

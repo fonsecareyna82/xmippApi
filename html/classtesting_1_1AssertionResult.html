@@ -120,7 +120,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a43ae8a260843ce2ff3dc9af262672b8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1AssertionResult.html">AssertionResult</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1AssertionResult.html#a43ae8a260843ce2ff3dc9af262672b8b">operator&lt;&lt;</a> (::std::ostream &amp;(*basic_manipulator)(::std::ostream &amp;stream))</td></tr>
 <tr class="separator:a43ae8a260843ce2ff3dc9af262672b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l17290">17290</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a27788116f03f90aec4daf592fd809ead"></a>
 <div class="memitem">
 <div class="memproto">
@@ -159,6 +162,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l17296">17296</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l17296"></a><span class="lineno">17296</span>&#160;: success_(success) {}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -183,6 +188,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l17313">17313</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l17313"></a><span class="lineno">17313</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classtesting_1_1AssertionResult.html#ab20c91eba13e20f1b4ad89e3d15f69a8">message</a>(); }</div><div class="ttc" id="classtesting_1_1AssertionResult_html_ab20c91eba13e20f1b4ad89e3d15f69a8"><div class="ttname"><a href="classtesting_1_1AssertionResult.html#ab20c91eba13e20f1b4ad89e3d15f69a8">testing::AssertionResult::message</a></div><div class="ttdeci">const char * message() const </div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l17308">gtest.h:17308</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ab20c91eba13e20f1b4ad89e3d15f69a8"></a>
@@ -206,6 +214,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l17308">17308</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l17308"></a><span class="lineno">17308</span>&#160;                              {</div><div class="line"><a name="l17309"></a><span class="lineno">17309</span>&#160;    <span class="keywordflow">return</span> message_.<a class="code" href="classtesting_1_1internal_1_1scoped__ptr.html#adc8f8fcb63ce69f80f011456e6d2f08d">get</a>() != NULL ?  message_-&gt;c_str() : <span class="stringliteral">&quot;&quot;</span>;</div><div class="line"><a name="l17310"></a><span class="lineno">17310</span>&#160;  }</div><div class="ttc" id="classtesting_1_1internal_1_1scoped__ptr_html_adc8f8fcb63ce69f80f011456e6d2f08d"><div class="ttname"><a href="classtesting_1_1internal_1_1scoped__ptr.html#adc8f8fcb63ce69f80f011456e6d2f08d">testing::internal::scoped_ptr::get</a></div><div class="ttdeci">T * get() const </div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l01845">gtest.h:1845</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="af85b7852e6399467cd74df539810abcd"></a>
@@ -229,6 +240,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l17299">17299</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l17299"></a><span class="lineno">17299</span>&#160;{ <span class="keywordflow">return</span> success_; }  <span class="comment">// NOLINT</span></div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a85301ba52aa1efe89b79d1e3b59160cd"></a>
@@ -270,6 +283,8 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l17316">17316</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l17316"></a><span class="lineno">17316</span>&#160;                                                                    {</div><div class="line"><a name="l17317"></a><span class="lineno">17317</span>&#160;    AppendMessage(Message() &lt;&lt; value);</div><div class="line"><a name="l17318"></a><span class="lineno">17318</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l17319"></a><span class="lineno">17319</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a43ae8a260843ce2ff3dc9af262672b8b"></a>
@@ -294,6 +309,8 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l17323">17323</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l17324"></a><span class="lineno">17324</span>&#160;                                                            {</div><div class="line"><a name="l17325"></a><span class="lineno">17325</span>&#160;    AppendMessage(Message() &lt;&lt; basic_manipulator);</div><div class="line"><a name="l17326"></a><span class="lineno">17326</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l17327"></a><span class="lineno">17327</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

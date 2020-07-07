@@ -142,7 +142,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ac7b39305896e51f9e1a08e026e2c4d9c inherit pro_attribs_classKernel"><td class="memItemLeft" align="right" valign="top">double(Kernel::*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel.html#ac7b39305896e51f9e1a08e026e2c4d9c">kernel_function</a> )(int <a class="el" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>, int <a class="el" href="project__crystal_8cpp.html#aae82a1338cf72eb9a1cc7043f569537e">j</a>) const </td></tr>
 <tr class="separator:ac7b39305896e51f9e1a08e026e2c4d9c inherit pro_attribs_classKernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="svm_8cpp_source.html#l01320">1320</a> of file <a class="el" href="svm_8cpp_source.html">svm.cpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a759ec4e3e00887ed848cf3f79ab7065f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -175,6 +178,15 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="svm_8cpp_source.html#l01323">1323</a> of file <a class="el" href="svm_8cpp_source.html">svm.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;    :<a class="code" href="classKernel.html#a25ffaa0c67cc5b8c7fcdb6f97ca1725f">Kernel</a>(prob.<a class="code" href="structsvm__problem.html#a4350eb6820f0d6126bffb6264cec65b3">l</a>, prob.<a class="code" href="structsvm__problem.html#acddda9b49a8e38bbda079f35c2e18984">x</a>, param)</div><div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;    {</div><div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;        cache = <span class="keyword">new</span> <a class="code" href="classCache.html">Cache</a>(prob.<a class="code" href="structsvm__problem.html#a4350eb6820f0d6126bffb6264cec65b3">l</a>,(<span class="keywordtype">long</span> <span class="keywordtype">int</span>)(param.<a class="code" href="structsvm__parameter.html#a00286b7e0767e45d68ac7abceb60c821">cache_size</a>*(1&lt;&lt;20)));</div><div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;        QD = <span class="keyword">new</span> <span class="keywordtype">double</span>[prob.<a class="code" href="structsvm__problem.html#a4350eb6820f0d6126bffb6264cec65b3">l</a>];</div><div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> <a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>=0;<a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>&lt;prob.<a class="code" href="structsvm__problem.html#a4350eb6820f0d6126bffb6264cec65b3">l</a>;<a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>++)</div><div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;            QD[<a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>] = (this-&gt;*<a class="code" href="classKernel.html#ac7b39305896e51f9e1a08e026e2c4d9c">kernel_function</a>)(<a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>,<a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>);</div><div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;    }</div><div class="ttc" id="project__crystal_8cpp_html_acb559820d9ca11295b4500f179ef6392"><div class="ttname"><a href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a></div><div class="ttdeci">#define i</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02510">numerical_recipes.cpp:2510</a></div></div>
+<div class="ttc" id="classCache_html"><div class="ttname"><a href="classCache.html">Cache</a></div><div class="ttdef"><b>Definition:</b> <a href="svm_8cpp_source.html#l00071">svm.cpp:71</a></div></div>
+<div class="ttc" id="structsvm__parameter_html_a00286b7e0767e45d68ac7abceb60c821"><div class="ttname"><a href="structsvm__parameter.html#a00286b7e0767e45d68ac7abceb60c821">svm_parameter::cache_size</a></div><div class="ttdeci">double cache_size</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00041">svm.h:41</a></div></div>
+<div class="ttc" id="classKernel_html_a25ffaa0c67cc5b8c7fcdb6f97ca1725f"><div class="ttname"><a href="classKernel.html#a25ffaa0c67cc5b8c7fcdb6f97ca1725f">Kernel::Kernel</a></div><div class="ttdeci">Kernel(int l, svm_node *const *x, const svm_parameter &amp;param)</div><div class="ttdef"><b>Definition:</b> <a href="svm_8cpp_source.html#l00257">svm.cpp:257</a></div></div>
+<div class="ttc" id="classKernel_html_ac7b39305896e51f9e1a08e026e2c4d9c"><div class="ttname"><a href="classKernel.html#ac7b39305896e51f9e1a08e026e2c4d9c">Kernel::kernel_function</a></div><div class="ttdeci">double(Kernel::* kernel_function)(int i, int j) const </div><div class="ttdef"><b>Definition:</b> <a href="svm_8cpp_source.html#l00222">svm.cpp:222</a></div></div>
+<div class="ttc" id="structsvm__problem_html_acddda9b49a8e38bbda079f35c2e18984"><div class="ttname"><a href="structsvm__problem.html#acddda9b49a8e38bbda079f35c2e18984">svm_problem::x</a></div><div class="ttdeci">struct svm_node ** x</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00026">svm.h:26</a></div></div>
+<div class="ttc" id="structsvm__problem_html_a4350eb6820f0d6126bffb6264cec65b3"><div class="ttname"><a href="structsvm__problem.html#a4350eb6820f0d6126bffb6264cec65b3">svm_problem::l</a></div><div class="ttdeci">int l</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00024">svm.h:24</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a569ea8969478398736d70eacc84edbad"></a>
@@ -198,6 +210,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="svm_8cpp_source.html#l01356">1356</a> of file <a class="el" href="svm_8cpp_source.html">svm.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;    {</div><div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;        <span class="keyword">delete</span> cache;</div><div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;        <span class="keyword">delete</span>[] QD;</div><div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -235,6 +249,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classKernel.html#a30483355cbb8b5ab4e4c7a93bcef7429">Kernel</a>.</p>
 
+<p>Definition at line <a class="el" href="svm_8cpp_source.html#l01332">1332</a> of file <a class="el" href="svm_8cpp_source.html">svm.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;    {</div><div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;        <a class="code" href="svm_8cpp.html#a8755d90a54ecfb8d15051af3e0542592">Qfloat</a> *data;</div><div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;        <span class="keywordtype">int</span> start, <a class="code" href="project__crystal_8cpp.html#aae82a1338cf72eb9a1cc7043f569537e">j</a>;</div><div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;        <span class="keywordflow">if</span>((start = cache-&gt;<a class="code" href="classCache.html#aca49263fb34641e208884cc223b25317">get_data</a>(<a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>,&amp;data,<a class="code" href="test__fftw__main_8cpp.html#ac965d90e3dbc32c27e426a48ddc38186">len</a>)) &lt; <a class="code" href="test__fftw__main_8cpp.html#ac965d90e3dbc32c27e426a48ddc38186">len</a>)</div><div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;        {</div><div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;            <span class="keywordflow">for</span>(j=start;j&lt;<a class="code" href="test__fftw__main_8cpp.html#ac965d90e3dbc32c27e426a48ddc38186">len</a>;j++)</div><div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;                data[j] = (<a class="code" href="svm_8cpp.html#a8755d90a54ecfb8d15051af3e0542592">Qfloat</a>)(this-&gt;*<a class="code" href="classKernel.html#ac7b39305896e51f9e1a08e026e2c4d9c">kernel_function</a>)(<a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>,j);</div><div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;        }</div><div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;        <span class="keywordflow">return</span> data;</div><div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;    }</div><div class="ttc" id="classCache_html_aca49263fb34641e208884cc223b25317"><div class="ttname"><a href="classCache.html#aca49263fb34641e208884cc223b25317">Cache::get_data</a></div><div class="ttdeci">int get_data(const int index, Qfloat **data, int len)</div><div class="ttdef"><b>Definition:</b> <a href="svm_8cpp_source.html#l00130">svm.cpp:130</a></div></div>
+<div class="ttc" id="project__crystal_8cpp_html_acb559820d9ca11295b4500f179ef6392"><div class="ttname"><a href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a></div><div class="ttdeci">#define i</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02510">numerical_recipes.cpp:2510</a></div></div>
+<div class="ttc" id="svm_8cpp_html_a8755d90a54ecfb8d15051af3e0542592"><div class="ttname"><a href="svm_8cpp.html#a8755d90a54ecfb8d15051af3e0542592">Qfloat</a></div><div class="ttdeci">float Qfloat</div><div class="ttdef"><b>Definition:</b> <a href="svm_8cpp_source.html#l00016">svm.cpp:16</a></div></div>
+<div class="ttc" id="classKernel_html_ac7b39305896e51f9e1a08e026e2c4d9c"><div class="ttname"><a href="classKernel.html#ac7b39305896e51f9e1a08e026e2c4d9c">Kernel::kernel_function</a></div><div class="ttdeci">double(Kernel::* kernel_function)(int i, int j) const </div><div class="ttdef"><b>Definition:</b> <a href="svm_8cpp_source.html#l00222">svm.cpp:222</a></div></div>
+<div class="ttc" id="project__crystal_8cpp_html_aae82a1338cf72eb9a1cc7043f569537e"><div class="ttname"><a href="project__crystal_8cpp.html#aae82a1338cf72eb9a1cc7043f569537e">j</a></div><div class="ttdeci">#define j</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02510">numerical_recipes.cpp:2510</a></div></div>
+<div class="ttc" id="test__fftw__main_8cpp_html_ac965d90e3dbc32c27e426a48ddc38186"><div class="ttname"><a href="test__fftw__main_8cpp.html#ac965d90e3dbc32c27e426a48ddc38186">len</a></div><div class="ttdeci">#define len</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a882480d4370d8a89d667a28c3ed68a73"></a>
@@ -260,6 +282,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classKernel.html#a5b7fde9af9d10f7b8f7105eb85bf3d5b">Kernel</a>.</p>
 
+<p>Definition at line <a class="el" href="svm_8cpp_source.html#l01344">1344</a> of file <a class="el" href="svm_8cpp_source.html">svm.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;    {</div><div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;        <span class="keywordflow">return</span> QD;</div><div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ad8bc86ca742c27d82718346388f83fad"></a>
@@ -296,10 +320,16 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classKernel.html#adca807c5584bc42fd098cd9eb1f19621">Kernel</a>.</p>
 
+<p>Definition at line <a class="el" href="svm_8cpp_source.html#l01349">1349</a> of file <a class="el" href="svm_8cpp_source.html">svm.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;    {</div><div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;        cache-&gt;<a class="code" href="classCache.html#aaff2dc955f9492c044c98a5f09cfddcc">swap_index</a>(<a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>,<a class="code" href="project__crystal_8cpp.html#aae82a1338cf72eb9a1cc7043f569537e">j</a>);</div><div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;        <a class="code" href="classKernel.html#adca807c5584bc42fd098cd9eb1f19621">Kernel::swap_index</a>(<a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>,<a class="code" href="project__crystal_8cpp.html#aae82a1338cf72eb9a1cc7043f569537e">j</a>);</div><div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;        swap(QD[<a class="code" href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a>],QD[<a class="code" href="project__crystal_8cpp.html#aae82a1338cf72eb9a1cc7043f569537e">j</a>]);</div><div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;    }</div><div class="ttc" id="project__crystal_8cpp_html_acb559820d9ca11295b4500f179ef6392"><div class="ttname"><a href="project__crystal_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a></div><div class="ttdeci">#define i</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02510">numerical_recipes.cpp:2510</a></div></div>
+<div class="ttc" id="classKernel_html_adca807c5584bc42fd098cd9eb1f19621"><div class="ttname"><a href="classKernel.html#adca807c5584bc42fd098cd9eb1f19621">Kernel::swap_index</a></div><div class="ttdeci">virtual void swap_index(int i, int j) const </div><div class="ttdef"><b>Definition:</b> <a href="svm_8cpp_source.html#l00215">svm.cpp:215</a></div></div>
+<div class="ttc" id="project__crystal_8cpp_html_aae82a1338cf72eb9a1cc7043f569537e"><div class="ttname"><a href="project__crystal_8cpp.html#aae82a1338cf72eb9a1cc7043f569537e">j</a></div><div class="ttdeci">#define j</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02510">numerical_recipes.cpp:2510</a></div></div>
+<div class="ttc" id="classCache_html_aaff2dc955f9492c044c98a5f09cfddcc"><div class="ttname"><a href="classCache.html#aaff2dc955f9492c044c98a5f09cfddcc">Cache::swap_index</a></div><div class="ttdeci">void swap_index(int i, int j)</div><div class="ttdef"><b>Definition:</b> <a href="svm_8cpp_source.html#l00160">svm.cpp:160</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/classification/<a class="el" href="svm_8cpp.html">svm.cpp</a></li>
+<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmipp/libraries/classification/<a class="el" href="svm_8cpp_source.html">svm.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

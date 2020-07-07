@@ -127,6 +127,8 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class will manage SQL database interactions. This class is designed to used inside a <a class="el" href="classMetaData.html">MetaData</a>. </p>
+
+<p>Definition at line <a class="el" href="metadata__sql_8h_source.html#l00073">73</a> of file <a class="el" href="metadata__sql_8h_source.html">metadata_sql.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="af675fdf1872e56c1be30e0308d449764"></a>
 <div class="memitem">
@@ -154,6 +156,10 @@ Friends</h2></td></tr>
 <p>String: replicate, charindex, leftstr, rightstr, ltrim, rtrim, trim, replace, reverse, proper, padl, padr, padc, strfilter.</p>
 <p>Aggregate: stdev, variance, mode, median, lower_quartile, upper_quartile. </p>
 
+<p>Definition at line <a class="el" href="metadata__sql_8cpp_source.html#l00197">197</a> of file <a class="el" href="metadata__sql_8cpp_source.html">metadata_sql.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;{</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* lib = <span class="stringliteral">&quot;libXmippCore.so&quot;</span>;</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    sqlite3_enable_load_extension(db, 1);</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">if</span>( sqlite3_load_extension(db, lib, 0, 0)!= SQLITE_OK)</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <a class="code" href="group__ErrorHandling.html#ga4ab7f9b2fd1ec4b9efcfba0c9b33052c">REPORT_ERROR</a>(<a class="code" href="group__ErrorHandling.html#ggab0df38968e4f03a3f1f6d6df0f31f45aaea880e205bba41b19a588e89eb84c35f">ERR_MD_SQL</a>,<span class="stringliteral">&quot;Cannot activate sqlite extensions&quot;</span>);</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;}</div><div class="ttc" id="group__ErrorHandling_html_ga4ab7f9b2fd1ec4b9efcfba0c9b33052c"><div class="ttname"><a href="group__ErrorHandling.html#ga4ab7f9b2fd1ec4b9efcfba0c9b33052c">REPORT_ERROR</a></div><div class="ttdeci">#define REPORT_ERROR(nerr, ErrormMsg)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__error_8h_source.html#l00238">xmipp_error.h:238</a></div></div>
+<div class="ttc" id="group__ErrorHandling_html_ggab0df38968e4f03a3f1f6d6df0f31f45aaea880e205bba41b19a588e89eb84c35f"><div class="ttname"><a href="group__ErrorHandling.html#ggab0df38968e4f03a3f1f6d6df0f31f45aaea880e205bba41b19a588e89eb84c35f">ERR_MD_SQL</a></div><div class="ttdoc">Error in SQL of MetaData operations. </div><div class="ttdef"><b>Definition:</b> <a href="xmipp__error_8h_source.html#l00164">xmipp_error.h:164</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aba25408a1fef28ed84e2301a2c40b197"></a>
@@ -178,6 +184,11 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="metadata__sql_8cpp_source.html#l00207">207</a> of file <a class="el" href="metadata__sql_8cpp_source.html">metadata_sql.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;{</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordflow">if</span>( sqlite3_create_function(db, <span class="stringliteral">&quot;regexp&quot;</span>, 2, SQLITE_ANY,0, &amp;<a class="code" href="group__MetaData.html#gadcac0ec42be72678403330ffaa4eca04">sqlite_regexp</a>,0,0)!= SQLITE_OK)</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <a class="code" href="group__ErrorHandling.html#ga4ab7f9b2fd1ec4b9efcfba0c9b33052c">REPORT_ERROR</a>(<a class="code" href="group__ErrorHandling.html#ggab0df38968e4f03a3f1f6d6df0f31f45aaea880e205bba41b19a588e89eb84c35f">ERR_MD_SQL</a>,<span class="stringliteral">&quot;Cannot activate sqlite extensions&quot;</span>);</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;}</div><div class="ttc" id="group__ErrorHandling_html_ga4ab7f9b2fd1ec4b9efcfba0c9b33052c"><div class="ttname"><a href="group__ErrorHandling.html#ga4ab7f9b2fd1ec4b9efcfba0c9b33052c">REPORT_ERROR</a></div><div class="ttdeci">#define REPORT_ERROR(nerr, ErrormMsg)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__error_8h_source.html#l00238">xmipp_error.h:238</a></div></div>
+<div class="ttc" id="group__MetaData_html_gadcac0ec42be72678403330ffaa4eca04"><div class="ttname"><a href="group__MetaData.html#gadcac0ec42be72678403330ffaa4eca04">sqlite_regexp</a></div><div class="ttdeci">void sqlite_regexp(sqlite3_context *context, int argc, sqlite3_value **values)</div><div class="ttdef"><b>Definition:</b> <a href="metadata__sql_8cpp_source.html#l00047">metadata_sql.cpp:47</a></div></div>
+<div class="ttc" id="group__ErrorHandling_html_ggab0df38968e4f03a3f1f6d6df0f31f45aaea880e205bba41b19a588e89eb84c35f"><div class="ttname"><a href="group__ErrorHandling.html#ggab0df38968e4f03a3f1f6d6df0f31f45aaea880e205bba41b19a588e89eb84c35f">ERR_MD_SQL</a></div><div class="ttdoc">Error in SQL of MetaData operations. </div><div class="ttdef"><b>Definition:</b> <a href="xmipp__error_8h_source.html#l00164">xmipp_error.h:164</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aff9e041483b6393b5fe3cc1d5e0d76e3"></a>
@@ -195,6 +206,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>activate SAFED serialized mode mode </p>
 
+<p>Definition at line <a class="el" href="metadata__sql_8cpp_source.html#l00220">220</a> of file <a class="el" href="metadata__sql_8cpp_source.html">metadata_sql.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;{</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    beThreadSafe = <span class="keyword">true</span>;</div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordflow">return</span> ( sqlite3_config(SQLITE_CONFIG_SERIALIZED) == SQLITE_OK);</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a980dc45c760860efc66cc07059b5ad36"></a>
@@ -215,6 +228,8 @@ Friends</h2></td></tr>
 <p>Multi-thread. In this mode, SQLite can be safely used by multiple threads provided that no single database connection is used simultaneously in two or more threads.</p>
 <p>Serialized. In serialized mode, SQLite can be safely used by multiple threads with no restriction. </p>
 
+<p>Definition at line <a class="el" href="metadata__sql_8cpp_source.html#l00215">215</a> of file <a class="el" href="metadata__sql_8cpp_source.html">metadata_sql.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;{</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    beThreadSafe = <span class="keyword">false</span>;</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordflow">return</span> ( sqlite3_config(SQLITE_CONFIG_MULTITHREAD) == SQLITE_OK);</div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="af1d89df65f429a8fc083fa714bbeb5cd"></a>
@@ -239,6 +254,10 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="metadata__sql_8cpp_source.html#l01199">1199</a> of file <a class="el" href="metadata__sql_8cpp_source.html">metadata_sql.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;{</div><div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;    sqlite3 *pTo;</div><div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;    sqlite3_backup *pBackup;</div><div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;</div><div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;    sqlCommitTrans();</div><div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;    rc = sqlite3_open(fileName.c_str(), &amp;pTo);</div><div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;    <span class="keywordflow">if</span>( rc==SQLITE_OK )</div><div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;    {</div><div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;        pBackup = sqlite3_backup_init(pTo, <span class="stringliteral">&quot;main&quot;</span>, db, <span class="stringliteral">&quot;main&quot;</span>);</div><div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;        <span class="keywordflow">if</span>( pBackup )</div><div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;        {</div><div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;            sqlite3_backup_step(pBackup, -1);</div><div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;            sqlite3_backup_finish(pBackup);</div><div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;        }</div><div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;        rc = sqlite3_errcode(pTo);</div><div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;    }</div><div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;        <a class="code" href="group__ErrorHandling.html#ga4ab7f9b2fd1ec4b9efcfba0c9b33052c">REPORT_ERROR</a>(<a class="code" href="group__ErrorHandling.html#ggab0df38968e4f03a3f1f6d6df0f31f45aaea880e205bba41b19a588e89eb84c35f">ERR_MD_SQL</a>, <span class="stringliteral">&quot;dumpToFile: error opening db file&quot;</span>);</div><div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;    sqlite3_close(pTo);</div><div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;    sqlBeginTrans();</div><div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;}</div><div class="ttc" id="group__ErrorHandling_html_ga4ab7f9b2fd1ec4b9efcfba0c9b33052c"><div class="ttname"><a href="group__ErrorHandling.html#ga4ab7f9b2fd1ec4b9efcfba0c9b33052c">REPORT_ERROR</a></div><div class="ttdeci">#define REPORT_ERROR(nerr, ErrormMsg)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__error_8h_source.html#l00238">xmipp_error.h:238</a></div></div>
+<div class="ttc" id="group__ErrorHandling_html_ggab0df38968e4f03a3f1f6d6df0f31f45aaea880e205bba41b19a588e89eb84c35f"><div class="ttname"><a href="group__ErrorHandling.html#ggab0df38968e4f03a3f1f6d6df0f31f45aaea880e205bba41b19a588e89eb84c35f">ERR_MD_SQL</a></div><div class="ttdoc">Error in SQL of MetaData operations. </div><div class="ttdef"><b>Definition:</b> <a href="xmipp__error_8h_source.html#l00164">xmipp_error.h:164</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a3c719eaf0fa8f08006f7730bf9916277"></a>
@@ -263,6 +282,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="metadata__sql_8cpp_source.html#l01379">1379</a> of file <a class="el" href="metadata__sql_8cpp_source.html">metadata_sql.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;{</div><div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;    <span class="keywordflow">if</span> (sqlite3_busy_timeout(db, miliseconds) != SQLITE_OK)</div><div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;    {</div><div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;        std::cerr &lt;&lt; <span class="stringliteral">&quot;Couldn&#39;t not set timeOut:  &quot;</span> &lt;&lt; std::endl;</div><div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;        exit(0);</div><div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;</div><div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;    }</div><div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;</div><div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
@@ -284,6 +305,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="metadata__sql_8h_source.html#l00312">312</a> of file <a class="el" href="metadata__sql_8h_source.html">metadata_sql.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a5702c9c6b42c27dda2096d0467094c55"></a>
@@ -303,6 +326,8 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="metadata__sql_8h_source.html#l00310">310</a> of file <a class="el" href="metadata__sql_8h_source.html">metadata_sql.h</a>.</p>
 
 </div>
 </div>
@@ -324,11 +349,13 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="metadata__sql_8h_source.html#l00311">311</a> of file <a class="el" href="metadata__sql_8h_source.html">metadata_sql.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/<a class="el" href="metadata__sql_8h_source.html">metadata_sql.h</a></li>
-<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/<a class="el" href="metadata__sql_8cpp.html">metadata_sql.cpp</a></li>
+<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/<a class="el" href="metadata__sql_8cpp_source.html">metadata_sql.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

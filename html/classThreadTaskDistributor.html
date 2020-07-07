@@ -168,6 +168,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is a concrete implementation of <a class="el" href="classParallelTaskDistributor.html">ParallelTaskDistributor</a> for POSIX threads. It use mutex as the locking mechanism and distributes tasks from 0 to numberOfTasks. </p>
+
+<p>Definition at line <a class="el" href="xmipp__threads_8h_source.html#l00451">451</a> of file <a class="el" href="xmipp__threads_8h_source.html">xmipp_threads.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a647f7ec18360ffceb8de7942fb26eca9"></a>
 <div class="memitem">
@@ -201,6 +203,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="xmipp__threads_8h_source.html#l00454">454</a> of file <a class="el" href="xmipp__threads_8h_source.html">xmipp_threads.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;                                                      :<a class="code" href="classParallelTaskDistributor.html#a55e2190917368e56d93c2ebfbde4fc58">ParallelTaskDistributor</a>(nTasks, bSize)</div><div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    {}</div><div class="ttc" id="classParallelTaskDistributor_html_a55e2190917368e56d93c2ebfbde4fc58"><div class="ttname"><a href="classParallelTaskDistributor.html#a55e2190917368e56d93c2ebfbde4fc58">ParallelTaskDistributor::ParallelTaskDistributor</a></div><div class="ttdeci">ParallelTaskDistributor(size_t nTasks, size_t bSize)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__threads_8cpp_source.html#l00289">xmipp_threads.cpp:289</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a896c59a4a931f282637b45767b8b6802"></a>
@@ -224,6 +229,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="xmipp__threads_8h_source.html#l00456">456</a> of file <a class="el" href="xmipp__threads_8h_source.html">xmipp_threads.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    {}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -263,6 +270,12 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classMpiTaskDistributor.html#a95858f8eb6d0a503bb7140a9dbdae98b">MpiTaskDistributor</a>.</p>
 
+<p>Definition at line <a class="el" href="xmipp__threads_8cpp_source.html#l00346">346</a> of file <a class="el" href="xmipp__threads_8cpp_source.html">xmipp_threads.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;{</div><div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordtype">bool</span> result = <span class="keyword">true</span>;</div><div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <a class="code" href="numerical__recipes_8cpp.html#acaec38248b66cfba849985072bd311f6">first</a> = last = 0;</div><div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classParallelTaskDistributor.html#a50f2d34d971bb7a461e4bf5b91d5f961">assignedTasks</a> &gt;= <a class="code" href="classParallelTaskDistributor.html#a421bc0b36ebb7294d09d1ddcc4a5a8c0">numberOfTasks</a>)</div><div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    {</div><div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        result = <span class="keyword">false</span>;</div><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    }</div><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    {</div><div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <a class="code" href="numerical__recipes_8cpp.html#acaec38248b66cfba849985072bd311f6">first</a> = <a class="code" href="classParallelTaskDistributor.html#a50f2d34d971bb7a461e4bf5b91d5f961">assignedTasks</a>;</div><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <a class="code" href="classParallelTaskDistributor.html#a50f2d34d971bb7a461e4bf5b91d5f961">assignedTasks</a></div><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        = (<a class="code" href="classParallelTaskDistributor.html#a50f2d34d971bb7a461e4bf5b91d5f961">assignedTasks</a> + <a class="code" href="classParallelTaskDistributor.html#a07946da5f99cee0a11e8ede939335896">blockSize</a> &lt; <a class="code" href="classParallelTaskDistributor.html#a421bc0b36ebb7294d09d1ddcc4a5a8c0">numberOfTasks</a>) ? (<a class="code" href="classParallelTaskDistributor.html#a50f2d34d971bb7a461e4bf5b91d5f961">assignedTasks</a></div><div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                + <a class="code" href="classParallelTaskDistributor.html#a07946da5f99cee0a11e8ede939335896">blockSize</a>) : <a class="code" href="classParallelTaskDistributor.html#a421bc0b36ebb7294d09d1ddcc4a5a8c0">numberOfTasks</a>;</div><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        last = <a class="code" href="classParallelTaskDistributor.html#a50f2d34d971bb7a461e4bf5b91d5f961">assignedTasks</a> - 1;</div><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    }</div><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keywordflow">return</span> result;</div><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;}</div><div class="ttc" id="numerical__recipes_8cpp_html_acaec38248b66cfba849985072bd311f6"><div class="ttname"><a href="numerical__recipes_8cpp.html#acaec38248b66cfba849985072bd311f6">first</a></div><div class="ttdeci">glob_log first</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l05218">numerical_recipes.cpp:5218</a></div></div>
+<div class="ttc" id="classParallelTaskDistributor_html_a50f2d34d971bb7a461e4bf5b91d5f961"><div class="ttname"><a href="classParallelTaskDistributor.html#a50f2d34d971bb7a461e4bf5b91d5f961">ParallelTaskDistributor::assignedTasks</a></div><div class="ttdeci">size_t assignedTasks</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__threads_8h_source.html#l00372">xmipp_threads.h:372</a></div></div>
+<div class="ttc" id="classParallelTaskDistributor_html_a07946da5f99cee0a11e8ede939335896"><div class="ttname"><a href="classParallelTaskDistributor.html#a07946da5f99cee0a11e8ede939335896">ParallelTaskDistributor::blockSize</a></div><div class="ttdeci">size_t blockSize</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__threads_8h_source.html#l00370">xmipp_threads.h:370</a></div></div>
+<div class="ttc" id="classParallelTaskDistributor_html_a421bc0b36ebb7294d09d1ddcc4a5a8c0"><div class="ttname"><a href="classParallelTaskDistributor.html#a421bc0b36ebb7294d09d1ddcc4a5a8c0">ParallelTaskDistributor::numberOfTasks</a></div><div class="ttdeci">size_t numberOfTasks</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__threads_8h_source.html#l00376">xmipp_threads.h:376</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a3a26811257ea249c9f4445d0831b24c3"></a>
@@ -288,6 +301,10 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classParallelTaskDistributor.html#a3459a83f03d3a0e3b6080c767d7c5f41">ParallelTaskDistributor</a>.</p>
 
+<p>Definition at line <a class="el" href="xmipp__threads_8cpp_source.html#l00336">336</a> of file <a class="el" href="xmipp__threads_8cpp_source.html">xmipp_threads.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;{</div><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <a class="code" href="classThreadTaskDistributor.html#a8cbc0ac52a24cf3004aad77f8cf4cd30">mutex</a>.<a class="code" href="classMutex.html#ad91be808bf0a60a16f10b897ec246d3a">lock</a>();</div><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;}</div><div class="ttc" id="classThreadTaskDistributor_html_a8cbc0ac52a24cf3004aad77f8cf4cd30"><div class="ttname"><a href="classThreadTaskDistributor.html#a8cbc0ac52a24cf3004aad77f8cf4cd30">ThreadTaskDistributor::mutex</a></div><div class="ttdeci">Mutex mutex</div><div class="ttdoc">Mutex to synchronize access to critical region. </div><div class="ttdef"><b>Definition:</b> <a href="xmipp__threads_8h_source.html#l00458">xmipp_threads.h:458</a></div></div>
+<div class="ttc" id="classMutex_html_ad91be808bf0a60a16f10b897ec246d3a"><div class="ttname"><a href="classMutex.html#ad91be808bf0a60a16f10b897ec246d3a">Mutex::lock</a></div><div class="ttdeci">virtual void lock()</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__threads_8cpp_source.html#l00046">xmipp_threads.cpp:46</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a37cb784db60b1239f2d533799a8a538d"></a>
@@ -311,6 +328,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="xmipp__threads_8h_source.html#l00465">465</a> of file <a class="el" href="xmipp__threads_8h_source.html">xmipp_threads.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;{ <a class="code" href="classParallelTaskDistributor.html#a62feecaf828ca1a57c44540f40e29561">setAssignedTasks</a>(0); };</div><div class="ttc" id="classParallelTaskDistributor_html_a62feecaf828ca1a57c44540f40e29561"><div class="ttname"><a href="classParallelTaskDistributor.html#a62feecaf828ca1a57c44540f40e29561">ParallelTaskDistributor::setAssignedTasks</a></div><div class="ttdeci">bool setAssignedTasks(size_t tasks)</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__threads_8cpp_source.html#l00326">xmipp_threads.cpp:326</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a89b600d5a022b66654785538bbbeb106"></a>
@@ -336,6 +356,10 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classParallelTaskDistributor.html#af00cf040dc6a041e423ed2cdf2388e17">ParallelTaskDistributor</a>.</p>
 
+<p>Definition at line <a class="el" href="xmipp__threads_8cpp_source.html#l00341">341</a> of file <a class="el" href="xmipp__threads_8cpp_source.html">xmipp_threads.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;{</div><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <a class="code" href="classThreadTaskDistributor.html#a8cbc0ac52a24cf3004aad77f8cf4cd30">mutex</a>.<a class="code" href="classMutex.html#a546a5b797ba29959357586aa2b3740a8">unlock</a>();</div><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;}</div><div class="ttc" id="classThreadTaskDistributor_html_a8cbc0ac52a24cf3004aad77f8cf4cd30"><div class="ttname"><a href="classThreadTaskDistributor.html#a8cbc0ac52a24cf3004aad77f8cf4cd30">ThreadTaskDistributor::mutex</a></div><div class="ttdeci">Mutex mutex</div><div class="ttdoc">Mutex to synchronize access to critical region. </div><div class="ttdef"><b>Definition:</b> <a href="xmipp__threads_8h_source.html#l00458">xmipp_threads.h:458</a></div></div>
+<div class="ttc" id="classMutex_html_a546a5b797ba29959357586aa2b3740a8"><div class="ttname"><a href="classMutex.html#a546a5b797ba29959357586aa2b3740a8">Mutex::unlock</a></div><div class="ttdeci">virtual void unlock()</div><div class="ttdef"><b>Definition:</b> <a href="xmipp__threads_8cpp_source.html#l00051">xmipp_threads.cpp:51</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -359,11 +383,13 @@ Additional Inherited Members</h2></td></tr>
 
 <p><a class="el" href="classMutex.html">Mutex</a> to synchronize access to critical region. </p>
 
+<p>Definition at line <a class="el" href="xmipp__threads_8h_source.html#l00458">458</a> of file <a class="el" href="xmipp__threads_8h_source.html">xmipp_threads.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/<a class="el" href="xmipp__threads_8h_source.html">xmipp_threads.h</a></li>
-<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/<a class="el" href="xmipp__threads_8cpp.html">xmipp_threads.cpp</a></li>
+<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/<a class="el" href="xmipp__threads_8cpp_source.html">xmipp_threads.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

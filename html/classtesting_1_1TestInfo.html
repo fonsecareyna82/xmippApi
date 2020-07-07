@@ -129,7 +129,10 @@ Friends</h2></td></tr>
 <tr class="memitem:a3e27fa5e97044d379b1e3b2a753f56f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtesting_1_1TestInfo.html">TestInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1TestInfo.html#a3e27fa5e97044d379b1e3b2a753f56f8">internal::MakeAndRegisterTestInfo</a> (const char *<a class="el" href="classtesting_1_1TestInfo.html#a26d22556d04b94c9cd15e28d74fef91c">test_case_name</a>, const char *<a class="el" href="classtesting_1_1TestInfo.html#ab3d24cad310f0cde29a80b9a83949ff5">name</a>, const char *<a class="el" href="classtesting_1_1TestInfo.html#af15d5c533a7237ffc183bc4c924dfcf4">type_param</a>, const char *<a class="el" href="classtesting_1_1TestInfo.html#a9671fbc0effcb32e98803888dc166a66">value_param</a>, <a class="el" href="namespacetesting_1_1internal.html#ab1114197d3c657d8b7f8e0c5caa12d00">internal::TypeId</a> fixture_class_id, <a class="el" href="classtesting_1_1Test.html#a5f2a051d1d99c9b784c666c586186cf9">Test::SetUpTestCaseFunc</a> set_up_tc, <a class="el" href="classtesting_1_1Test.html#aa0f532e93b9f3500144c53f31466976c">Test::TearDownTestCaseFunc</a> tear_down_tc, <a class="el" href="classtesting_1_1internal_1_1TestFactoryBase.html">internal::TestFactoryBase</a> *factory)</td></tr>
 <tr class="separator:a3e27fa5e97044d379b1e3b2a753f56f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l17650">17650</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a8d382c1b1b511f0d9112c14684809852"></a>
 <div class="memitem">
 <div class="memproto">
@@ -167,6 +170,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l17660">17660</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l17660"></a><span class="lineno">17660</span>&#160;{ <span class="keywordflow">return</span> name_.c_str(); }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="addea8766df3b8abe4cc4103218a49a65"></a>
@@ -190,6 +195,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l17697">17697</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l17697"></a><span class="lineno">17697</span>&#160;{ <span class="keywordflow">return</span> &amp;result_; }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a240c9fb051d7b0586ed380c6b4e729e4"></a>
@@ -213,6 +220,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l17694">17694</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l17694"></a><span class="lineno">17694</span>&#160;{ <span class="keywordflow">return</span> should_run_; }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a26d22556d04b94c9cd15e28d74fef91c"></a>
@@ -236,6 +245,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l17657">17657</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l17657"></a><span class="lineno">17657</span>&#160;{ <span class="keywordflow">return</span> test_case_name_.c_str(); }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="af15d5c533a7237ffc183bc4c924dfcf4"></a>
@@ -259,6 +270,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l17664">17664</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l17664"></a><span class="lineno">17664</span>&#160;                                 {</div><div class="line"><a name="l17665"></a><span class="lineno">17665</span>&#160;    <span class="keywordflow">if</span> (type_param_.<a class="code" href="classtesting_1_1internal_1_1scoped__ptr.html#adc8f8fcb63ce69f80f011456e6d2f08d">get</a>() != NULL)</div><div class="line"><a name="l17666"></a><span class="lineno">17666</span>&#160;      <span class="keywordflow">return</span> type_param_-&gt;c_str();</div><div class="line"><a name="l17667"></a><span class="lineno">17667</span>&#160;    <span class="keywordflow">return</span> NULL;</div><div class="line"><a name="l17668"></a><span class="lineno">17668</span>&#160;  }</div><div class="ttc" id="classtesting_1_1internal_1_1scoped__ptr_html_adc8f8fcb63ce69f80f011456e6d2f08d"><div class="ttname"><a href="classtesting_1_1internal_1_1scoped__ptr.html#adc8f8fcb63ce69f80f011456e6d2f08d">testing::internal::scoped_ptr::get</a></div><div class="ttdeci">T * get() const </div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l01845">gtest.h:1845</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a9671fbc0effcb32e98803888dc166a66"></a>
@@ -282,6 +296,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l17672">17672</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l17672"></a><span class="lineno">17672</span>&#160;                                  {</div><div class="line"><a name="l17673"></a><span class="lineno">17673</span>&#160;    <span class="keywordflow">if</span> (value_param_.<a class="code" href="classtesting_1_1internal_1_1scoped__ptr.html#adc8f8fcb63ce69f80f011456e6d2f08d">get</a>() != NULL)</div><div class="line"><a name="l17674"></a><span class="lineno">17674</span>&#160;      <span class="keywordflow">return</span> value_param_-&gt;c_str();</div><div class="line"><a name="l17675"></a><span class="lineno">17675</span>&#160;    <span class="keywordflow">return</span> NULL;</div><div class="line"><a name="l17676"></a><span class="lineno">17676</span>&#160;  }</div><div class="ttc" id="classtesting_1_1internal_1_1scoped__ptr_html_adc8f8fcb63ce69f80f011456e6d2f08d"><div class="ttname"><a href="classtesting_1_1internal_1_1scoped__ptr.html#adc8f8fcb63ce69f80f011456e6d2f08d">testing::internal::scoped_ptr::get</a></div><div class="ttdeci">T * get() const </div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l01845">gtest.h:1845</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
@@ -373,6 +390,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l17706">17706</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a5b78b1c2e1fa07ffed92da365593eaa4"></a>
@@ -393,6 +412,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l17704">17704</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aff779e55b06adfa7c0088bd10253f0f0"></a>
@@ -412,6 +433,8 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l17705">17705</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
 
 </div>
 </div>

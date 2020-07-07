@@ -132,7 +132,13 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a307881b2164e59a8e6b6d845b75b8e8f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAFT.html#a307881b2164e59a8e6b6d845b75b8e8f">setDefault</a> ()=0</td></tr>
 <tr class="separator:a307881b2164e59a8e6b6d845b75b8e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+class AFT&lt; T &gt;</h3>
+
+
+<p>Definition at line <a class="el" href="aft_8h_source.html#l00035">35</a> of file <a class="el" href="aft_8h_source.html">aft.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2eb99d78deb5929fd6796cb8e249cfb9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -156,6 +162,8 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="aft_8h_source.html#l00037">37</a> of file <a class="el" href="aft_8h_source.html">aft.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{}; <span class="comment">// do nothing</span></div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -211,6 +219,12 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="aft_8h_source.html#l00043">43</a> of file <a class="el" href="aft_8h_source.html">aft.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                                                         {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">size_t</span> planBytes = <a class="code" href="classAFT.html#ab2ac166b02b52bc74a21ee4ca1cc3011">estimatePlanBytes</a>(settings);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">size_t</span> dataBytes = settings.<a class="code" href="classFFTSettingsNew.html#ad45168f295865d3ab2d994d4cf2be8ef">sBytesBatch</a>()</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                + (settings.<a class="code" href="classFFTSettingsNew.html#a2e1dda9f279c056a0b7b1f47ea5a4522">isInPlace</a>() ? 0 : settings.<a class="code" href="classFFTSettingsNew.html#a6ff4d3092db33c015377f447a40d8e5b">fBytesBatch</a>());</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">return</span> planBytes + dataBytes;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div><div class="ttc" id="classFFTSettingsNew_html_a6ff4d3092db33c015377f447a40d8e5b"><div class="ttname"><a href="classFFTSettingsNew.html#a6ff4d3092db33c015377f447a40d8e5b">FFTSettingsNew::fBytesBatch</a></div><div class="ttdeci">constexpr size_t fBytesBatch() const </div><div class="ttdef"><b>Definition:</b> <a href="fft__settings__new_8h_source.html#l00090">fft_settings_new.h:90</a></div></div>
+<div class="ttc" id="classFFTSettingsNew_html_a2e1dda9f279c056a0b7b1f47ea5a4522"><div class="ttname"><a href="classFFTSettingsNew.html#a2e1dda9f279c056a0b7b1f47ea5a4522">FFTSettingsNew::isInPlace</a></div><div class="ttdeci">constexpr bool isInPlace() const </div><div class="ttdef"><b>Definition:</b> <a href="fft__settings__new_8h_source.html#l00118">fft_settings_new.h:118</a></div></div>
+<div class="ttc" id="classFFTSettingsNew_html_ad45168f295865d3ab2d994d4cf2be8ef"><div class="ttname"><a href="classFFTSettingsNew.html#ad45168f295865d3ab2d994d4cf2be8ef">FFTSettingsNew::sBytesBatch</a></div><div class="ttdeci">constexpr size_t sBytesBatch() const </div><div class="ttdef"><b>Definition:</b> <a href="fft__settings__new_8h_source.html#l00106">fft_settings_new.h:106</a></div></div>
+<div class="ttc" id="classAFT_html_ab2ac166b02b52bc74a21ee4ca1cc3011"><div class="ttname"><a href="classAFT.html#ab2ac166b02b52bc74a21ee4ca1cc3011">AFT::estimatePlanBytes</a></div><div class="ttdeci">virtual size_t estimatePlanBytes(const FFTSettingsNew&lt; T &gt; &amp;settings)=0</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a69b17b84da6eaf9f870bc97ce1b19a4b"></a>

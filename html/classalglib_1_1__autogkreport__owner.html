@@ -137,7 +137,10 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a06ea90ecef43209d1b46ad7978bb5f9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structalglib__impl_1_1autogkreport.html">alglib_impl::autogkreport</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalglib_1_1__autogkreport__owner.html#a06ea90ecef43209d1b46ad7978bb5f9a">p_struct</a></td></tr>
 <tr class="separator:a06ea90ecef43209d1b46ad7978bb5f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="ore_2core_2alglib_2integration_8h_source.html#l00108">108</a> of file <a class="el" href="ore_2core_2alglib_2integration_8h_source.html">integration.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac27650954cf78df0b63bb6e8b2469535"></a>
 <div class="memitem">
 <div class="memproto">
@@ -151,6 +154,13 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="ore_2core_2alglib_2integration_8cpp_source.html#l00616">616</a> of file <a class="el" href="ore_2core_2alglib_2integration_8cpp_source.html">integration.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;{</div><div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    <a class="code" href="classalglib_1_1__autogkreport__owner.html#a06ea90ecef43209d1b46ad7978bb5f9a">p_struct</a> = (<a class="code" href="structalglib__impl_1_1autogkreport.html">alglib_impl::autogkreport</a>*)<a class="code" href="namespacealglib__impl.html#ae9734678725f1961bd032954a6bba1d8">alglib_impl::ae_malloc</a>(<span class="keyword">sizeof</span>(<a class="code" href="structalglib__impl_1_1autogkreport.html">alglib_impl::autogkreport</a>), NULL);</div><div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;    <span class="keywordflow">if</span>( <a class="code" href="classalglib_1_1__autogkreport__owner.html#a06ea90ecef43209d1b46ad7978bb5f9a">p_struct</a>==NULL )</div><div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    <span class="keywordflow">if</span>( !<a class="code" href="namespacealglib__impl.html#a3f5005586e583d8bd6f41bff30262ad7">alglib_impl::_autogkreport_init</a>(<a class="code" href="classalglib_1_1__autogkreport__owner.html#a06ea90ecef43209d1b46ad7978bb5f9a">p_struct</a>, NULL, <a class="code" href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a>) )</div><div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;}</div><div class="ttc" id="ap_8h_html_a0656913c5b7bc535cf5347662e769bef"><div class="ttname"><a href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a></div><div class="ttdeci">#define ae_false</div><div class="ttdef"><b>Definition:</b> <a href="ap_8h_source.html#l00196">ap.h:196</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_ae9734678725f1961bd032954a6bba1d8"><div class="ttname"><a href="namespacealglib__impl.html#ae9734678725f1961bd032954a6bba1d8">alglib_impl::ae_malloc</a></div><div class="ttdeci">void * ae_malloc(size_t size, ae_state *state)</div><div class="ttdef"><b>Definition:</b> <a href="ap_8cpp_source.html#l00222">ap.cpp:222</a></div></div>
+<div class="ttc" id="structalglib__impl_1_1autogkreport_html"><div class="ttname"><a href="structalglib__impl_1_1autogkreport.html">alglib_impl::autogkreport</a></div><div class="ttdef"><b>Definition:</b> <a href="ore_2core_2alglib_2integration_8h_source.html#l00033">integration.h:33</a></div></div>
+<div class="ttc" id="classalglib_1_1__autogkreport__owner_html_a06ea90ecef43209d1b46ad7978bb5f9a"><div class="ttname"><a href="classalglib_1_1__autogkreport__owner.html#a06ea90ecef43209d1b46ad7978bb5f9a">alglib::_autogkreport_owner::p_struct</a></div><div class="ttdeci">alglib_impl::autogkreport * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="ore_2core_2alglib_2integration_8h_source.html#l00118">integration.h:118</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_a3f5005586e583d8bd6f41bff30262ad7"><div class="ttname"><a href="namespacealglib__impl.html#a3f5005586e583d8bd6f41bff30262ad7">alglib_impl::_autogkreport_init</a></div><div class="ttdeci">ae_bool _autogkreport_init(void *_p, ae_state *_state, ae_bool make_automatic)</div><div class="ttdef"><b>Definition:</b> <a href="ore_2core_2alglib_2integration_8cpp_source.html#l03789">integration.cpp:3789</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a90f3edab3d23a1995438c1ac54543284"></a>
@@ -167,6 +177,13 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="ore_2core_2alglib_2integration_8cpp_source.html#l00625">625</a> of file <a class="el" href="ore_2core_2alglib_2integration_8cpp_source.html">integration.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;{</div><div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    <a class="code" href="classalglib_1_1__autogkreport__owner.html#a06ea90ecef43209d1b46ad7978bb5f9a">p_struct</a> = (<a class="code" href="structalglib__impl_1_1autogkreport.html">alglib_impl::autogkreport</a>*)<a class="code" href="namespacealglib__impl.html#ae9734678725f1961bd032954a6bba1d8">alglib_impl::ae_malloc</a>(<span class="keyword">sizeof</span>(<a class="code" href="structalglib__impl_1_1autogkreport.html">alglib_impl::autogkreport</a>), NULL);</div><div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    <span class="keywordflow">if</span>( <a class="code" href="classalglib_1_1__autogkreport__owner.html#a06ea90ecef43209d1b46ad7978bb5f9a">p_struct</a>==NULL )</div><div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    <span class="keywordflow">if</span>( !<a class="code" href="namespacealglib__impl.html#a334ae97f72f1955f906a273d7f9a6b38">alglib_impl::_autogkreport_init_copy</a>(<a class="code" href="classalglib_1_1__autogkreport__owner.html#a06ea90ecef43209d1b46ad7978bb5f9a">p_struct</a>, const_cast&lt;alglib_impl::autogkreport*&gt;(rhs.p_struct), NULL, <a class="code" href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a>) )</div><div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;}</div><div class="ttc" id="namespacealglib__impl_html_a334ae97f72f1955f906a273d7f9a6b38"><div class="ttname"><a href="namespacealglib__impl.html#a334ae97f72f1955f906a273d7f9a6b38">alglib_impl::_autogkreport_init_copy</a></div><div class="ttdeci">ae_bool _autogkreport_init_copy(void *_dst, void *_src, ae_state *_state, ae_bool make_automatic)</div><div class="ttdef"><b>Definition:</b> <a href="ore_2core_2alglib_2integration_8cpp_source.html#l03797">integration.cpp:3797</a></div></div>
+<div class="ttc" id="ap_8h_html_a0656913c5b7bc535cf5347662e769bef"><div class="ttname"><a href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a></div><div class="ttdeci">#define ae_false</div><div class="ttdef"><b>Definition:</b> <a href="ap_8h_source.html#l00196">ap.h:196</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_ae9734678725f1961bd032954a6bba1d8"><div class="ttname"><a href="namespacealglib__impl.html#ae9734678725f1961bd032954a6bba1d8">alglib_impl::ae_malloc</a></div><div class="ttdeci">void * ae_malloc(size_t size, ae_state *state)</div><div class="ttdef"><b>Definition:</b> <a href="ap_8cpp_source.html#l00222">ap.cpp:222</a></div></div>
+<div class="ttc" id="structalglib__impl_1_1autogkreport_html"><div class="ttname"><a href="structalglib__impl_1_1autogkreport.html">alglib_impl::autogkreport</a></div><div class="ttdef"><b>Definition:</b> <a href="ore_2core_2alglib_2integration_8h_source.html#l00033">integration.h:33</a></div></div>
+<div class="ttc" id="classalglib_1_1__autogkreport__owner_html_a06ea90ecef43209d1b46ad7978bb5f9a"><div class="ttname"><a href="classalglib_1_1__autogkreport__owner.html#a06ea90ecef43209d1b46ad7978bb5f9a">alglib::_autogkreport_owner::p_struct</a></div><div class="ttdeci">alglib_impl::autogkreport * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="ore_2core_2alglib_2integration_8h_source.html#l00118">integration.h:118</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a8b4428403013005318fd30c1e4038ece"></a>
@@ -190,6 +207,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="ore_2core_2alglib_2integration_8cpp_source.html#l00644">644</a> of file <a class="el" href="ore_2core_2alglib_2integration_8cpp_source.html">integration.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;{</div><div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;    <a class="code" href="namespacealglib__impl.html#a90e8ee7dff2d5d470f0413ea60924e7e">alglib_impl::_autogkreport_clear</a>(<a class="code" href="classalglib_1_1__autogkreport__owner.html#a06ea90ecef43209d1b46ad7978bb5f9a">p_struct</a>);</div><div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;    <a class="code" href="namespacealglib__impl.html#a204f9cd46dfc1cc765720c2b5d473128">ae_free</a>(<a class="code" href="classalglib_1_1__autogkreport__owner.html#a06ea90ecef43209d1b46ad7978bb5f9a">p_struct</a>);</div><div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;}</div><div class="ttc" id="namespacealglib__impl_html_a90e8ee7dff2d5d470f0413ea60924e7e"><div class="ttname"><a href="namespacealglib__impl.html#a90e8ee7dff2d5d470f0413ea60924e7e">alglib_impl::_autogkreport_clear</a></div><div class="ttdeci">void _autogkreport_clear(void *_p)</div><div class="ttdef"><b>Definition:</b> <a href="ore_2core_2alglib_2integration_8cpp_source.html#l03808">integration.cpp:3808</a></div></div>
+<div class="ttc" id="classalglib_1_1__autogkreport__owner_html_a06ea90ecef43209d1b46ad7978bb5f9a"><div class="ttname"><a href="classalglib_1_1__autogkreport__owner.html#a06ea90ecef43209d1b46ad7978bb5f9a">alglib::_autogkreport_owner::p_struct</a></div><div class="ttdeci">alglib_impl::autogkreport * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="ore_2core_2alglib_2integration_8h_source.html#l00118">integration.h:118</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_a204f9cd46dfc1cc765720c2b5d473128"><div class="ttname"><a href="namespacealglib__impl.html#a204f9cd46dfc1cc765720c2b5d473128">alglib_impl::ae_free</a></div><div class="ttdeci">void ae_free(void *p)</div><div class="ttdef"><b>Definition:</b> <a href="ap_8cpp_source.html#l00237">ap.cpp:237</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -206,6 +228,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="ore_2core_2alglib_2integration_8cpp_source.html#l00650">650</a> of file <a class="el" href="ore_2core_2alglib_2integration_8cpp_source.html">integration.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;{</div><div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classalglib_1_1__autogkreport__owner.html#a06ea90ecef43209d1b46ad7978bb5f9a">p_struct</a>;</div><div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;}</div><div class="ttc" id="classalglib_1_1__autogkreport__owner_html_a06ea90ecef43209d1b46ad7978bb5f9a"><div class="ttname"><a href="classalglib_1_1__autogkreport__owner.html#a06ea90ecef43209d1b46ad7978bb5f9a">alglib::_autogkreport_owner::p_struct</a></div><div class="ttdeci">alglib_impl::autogkreport * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="ore_2core_2alglib_2integration_8h_source.html#l00118">integration.h:118</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ab94de442f012d182a0cccf5180f0e828"></a>
@@ -221,6 +246,10 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="ore_2core_2alglib_2integration_8cpp_source.html#l00655">655</a> of file <a class="el" href="ore_2core_2alglib_2integration_8cpp_source.html">integration.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;{</div><div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">const_cast&lt;</span><a class="code" href="structalglib__impl_1_1autogkreport.html">alglib_impl::autogkreport</a>*<span class="keyword">&gt;</span>(<a class="code" href="classalglib_1_1__autogkreport__owner.html#a06ea90ecef43209d1b46ad7978bb5f9a">p_struct</a>);</div><div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;}</div><div class="ttc" id="structalglib__impl_1_1autogkreport_html"><div class="ttname"><a href="structalglib__impl_1_1autogkreport.html">alglib_impl::autogkreport</a></div><div class="ttdef"><b>Definition:</b> <a href="ore_2core_2alglib_2integration_8h_source.html#l00033">integration.h:33</a></div></div>
+<div class="ttc" id="classalglib_1_1__autogkreport__owner_html_a06ea90ecef43209d1b46ad7978bb5f9a"><div class="ttname"><a href="classalglib_1_1__autogkreport__owner.html#a06ea90ecef43209d1b46ad7978bb5f9a">alglib::_autogkreport_owner::p_struct</a></div><div class="ttdeci">alglib_impl::autogkreport * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="ore_2core_2alglib_2integration_8h_source.html#l00118">integration.h:118</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a36eacae627552cc6afb1f00b9f0c4ec8"></a>
@@ -237,6 +266,12 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="ore_2core_2alglib_2integration_8cpp_source.html#l00634">634</a> of file <a class="el" href="ore_2core_2alglib_2integration_8cpp_source.html">integration.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;{</div><div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    <span class="keywordflow">if</span>( <span class="keyword">this</span>==&amp;rhs )</div><div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    <a class="code" href="namespacealglib__impl.html#a90e8ee7dff2d5d470f0413ea60924e7e">alglib_impl::_autogkreport_clear</a>(<a class="code" href="classalglib_1_1__autogkreport__owner.html#a06ea90ecef43209d1b46ad7978bb5f9a">p_struct</a>);</div><div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    <span class="keywordflow">if</span>( !<a class="code" href="namespacealglib__impl.html#a334ae97f72f1955f906a273d7f9a6b38">alglib_impl::_autogkreport_init_copy</a>(<a class="code" href="classalglib_1_1__autogkreport__owner.html#a06ea90ecef43209d1b46ad7978bb5f9a">p_struct</a>, const_cast&lt;alglib_impl::autogkreport*&gt;(rhs.p_struct), NULL, <a class="code" href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a>) )</div><div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;}</div><div class="ttc" id="namespacealglib__impl_html_a334ae97f72f1955f906a273d7f9a6b38"><div class="ttname"><a href="namespacealglib__impl.html#a334ae97f72f1955f906a273d7f9a6b38">alglib_impl::_autogkreport_init_copy</a></div><div class="ttdeci">ae_bool _autogkreport_init_copy(void *_dst, void *_src, ae_state *_state, ae_bool make_automatic)</div><div class="ttdef"><b>Definition:</b> <a href="ore_2core_2alglib_2integration_8cpp_source.html#l03797">integration.cpp:3797</a></div></div>
+<div class="ttc" id="ap_8h_html_a0656913c5b7bc535cf5347662e769bef"><div class="ttname"><a href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a></div><div class="ttdeci">#define ae_false</div><div class="ttdef"><b>Definition:</b> <a href="ap_8h_source.html#l00196">ap.h:196</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_a90e8ee7dff2d5d470f0413ea60924e7e"><div class="ttname"><a href="namespacealglib__impl.html#a90e8ee7dff2d5d470f0413ea60924e7e">alglib_impl::_autogkreport_clear</a></div><div class="ttdeci">void _autogkreport_clear(void *_p)</div><div class="ttdef"><b>Definition:</b> <a href="ore_2core_2alglib_2integration_8cpp_source.html#l03808">integration.cpp:3808</a></div></div>
+<div class="ttc" id="classalglib_1_1__autogkreport__owner_html_a06ea90ecef43209d1b46ad7978bb5f9a"><div class="ttname"><a href="classalglib_1_1__autogkreport__owner.html#a06ea90ecef43209d1b46ad7978bb5f9a">alglib::_autogkreport_owner::p_struct</a></div><div class="ttdeci">alglib_impl::autogkreport * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="ore_2core_2alglib_2integration_8h_source.html#l00118">integration.h:118</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -258,11 +293,13 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="ore_2core_2alglib_2integration_8h_source.html#l00118">118</a> of file <a class="el" href="ore_2core_2alglib_2integration_8h_source.html">integration.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/alglib/<a class="el" href="ore_2core_2alglib_2integration_8h_source.html">integration.h</a></li>
-<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/alglib/<a class="el" href="ore_2core_2alglib_2integration_8cpp.html">integration.cpp</a></li>
+<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/alglib/<a class="el" href="ore_2core_2alglib_2integration_8cpp_source.html">integration.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

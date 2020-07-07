@@ -140,7 +140,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac2767cb9ad2e292e291c4903323c6eff inherit pub_methods_classtesting_1_1internal_1_1ParamGeneratorInterface"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1ParamGeneratorInterface.html#ac2767cb9ad2e292e291c4903323c6eff">~ParamGeneratorInterface</a> ()</td></tr>
 <tr class="separator:ac2767cb9ad2e292e291c4903323c6eff inherit pub_methods_classtesting_1_1internal_1_1ParamGeneratorInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename T1, typename T2&gt;<br />
+class testing::internal::CartesianProductGenerator2&lt; T1, T2 &gt;</h3>
+
+
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l13389">13389</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a036b6f14a61a69fac5d21dd7ff5b8913"></a>
 <div class="memitem">
 <div class="memproto">
@@ -152,6 +158,8 @@ template&lt;typename T1 , typename T2 &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l13392">13392</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
 
 </div>
 </div>
@@ -190,6 +198,8 @@ template&lt;typename T1 , typename T2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l13394">13394</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l13396"></a><span class="lineno">13396</span>&#160;      : g1_(g1), g2_(g2) {}</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a0c7875565b4942e3c3f5aed303722c75"></a>
@@ -215,6 +225,8 @@ template&lt;typename T1 , typename T2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l13397">13397</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l13397"></a><span class="lineno">13397</span>&#160;{}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -243,6 +255,9 @@ template&lt;typename T1 , typename T2 &gt; </div>
 
 <p>Implements <a class="el" href="classtesting_1_1internal_1_1ParamGeneratorInterface.html#ae1de83b16fe9a53c67778a026c6a9569">testing::internal::ParamGeneratorInterface&lt; ::std::tr1::tuple&lt; T1, T2 &gt; &gt;</a>.</p>
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l13399">13399</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l13399"></a><span class="lineno">13399</span>&#160;                                                           {</div><div class="line"><a name="l13400"></a><span class="lineno">13400</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Iterator(<span class="keyword">this</span>, g1_, g1_.<a class="code" href="classtesting_1_1internal_1_1ParamGenerator.html#a8ea5d2ca3d2e5f3f00f3c956ae944d99">begin</a>(), g2_, g2_.<a class="code" href="classtesting_1_1internal_1_1ParamGenerator.html#a8ea5d2ca3d2e5f3f00f3c956ae944d99">begin</a>());</div><div class="line"><a name="l13401"></a><span class="lineno">13401</span>&#160;  }</div><div class="ttc" id="classtesting_1_1internal_1_1ParamGenerator_html_a8ea5d2ca3d2e5f3f00f3c956ae944d99"><div class="ttname"><a href="classtesting_1_1internal_1_1ParamGenerator.html#a8ea5d2ca3d2e5f3f00f3c956ae944d99">testing::internal::ParamGenerator::begin</a></div><div class="ttdeci">iterator begin() const </div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l10105">gtest.h:10105</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a3b02163a9c9d5f0e930b0740de7e876a"></a>
@@ -270,6 +285,9 @@ template&lt;typename T1 , typename T2 &gt; </div>
 
 <p>Implements <a class="el" href="classtesting_1_1internal_1_1ParamGeneratorInterface.html#afa7211b74990e11d3fc7ad4e7113da4f">testing::internal::ParamGeneratorInterface&lt; ::std::tr1::tuple&lt; T1, T2 &gt; &gt;</a>.</p>
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l13402">13402</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l13402"></a><span class="lineno">13402</span>&#160;                                                         {</div><div class="line"><a name="l13403"></a><span class="lineno">13403</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Iterator(<span class="keyword">this</span>, g1_, g1_.<a class="code" href="classtesting_1_1internal_1_1ParamGenerator.html#a93a05816e268a93d0b2813060efc2e64">end</a>(), g2_, g2_.<a class="code" href="classtesting_1_1internal_1_1ParamGenerator.html#a93a05816e268a93d0b2813060efc2e64">end</a>());</div><div class="line"><a name="l13404"></a><span class="lineno">13404</span>&#160;  }</div><div class="ttc" id="classtesting_1_1internal_1_1ParamGenerator_html_a93a05816e268a93d0b2813060efc2e64"><div class="ttname"><a href="classtesting_1_1internal_1_1ParamGenerator.html#a93a05816e268a93d0b2813060efc2e64">testing::internal::ParamGenerator::end</a></div><div class="ttdeci">iterator end() const </div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l10106">gtest.h:10106</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

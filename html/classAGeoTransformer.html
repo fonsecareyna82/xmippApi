@@ -131,7 +131,13 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a8b5095ec2531be8f3b79cce744446e85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAGeoTransformer.html#a8b5095ec2531be8f3b79cce744446e85">setIsSrcSet</a> (bool status)</td></tr>
 <tr class="separator:a8b5095ec2531be8f3b79cce744446e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename SettingsType, typename T&gt;<br />
+class AGeoTransformer&lt; SettingsType, T &gt;</h3>
+
+
+<p>Definition at line <a class="el" href="ageo__transformer_8h_source.html#l00063">63</a> of file <a class="el" href="ageo__transformer_8h_source.html">ageo_transformer.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="add1e98798a336700db445437c2c18a93"></a>
 <div class="memitem">
 <div class="memproto">
@@ -155,6 +161,8 @@ template&lt;typename SettingsType, typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="ageo__transformer_8h_source.html#l00067">67</a> of file <a class="el" href="ageo__transformer_8h_source.html">ageo_transformer.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                      :</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        m_isInit(<span class="keyword">false</span>),</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        m_isSrcSet(<span class="keyword">false</span>) {};</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a31ea58150ce423383cd5f74a5bf3a225"></a>
@@ -315,6 +323,8 @@ template&lt;typename SettingsType, typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="ageo__transformer_8h_source.html#l00087">87</a> of file <a class="el" href="ageo__transformer_8h_source.html">ageo_transformer.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                   {</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span> m_settings;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aa064a2a385b91fb363d0c59e6fbee747"></a>
@@ -378,6 +388,12 @@ template&lt;typename SettingsType, typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="ageo__transformer_8h_source.html#l00072">72</a> of file <a class="el" href="ageo__transformer_8h_source.html">ageo_transformer.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                                 {</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        s.check();</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordtype">bool</span> skipAllocation = reuse &amp;&amp; this-&gt;<a class="code" href="classAGeoTransformer.html#ad5519cc27cf1f270d9861e1f7a5be82d">isInitialized</a>() &amp;&amp; <a class="code" href="classAGeoTransformer.html#ac8208b1ca27f54640ca1943ddc8a1503">canBeReused</a>(s);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        m_settings = s;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        this-&gt;<a class="code" href="classAGeoTransformer.html#a518dc9e7002d4b0d71a9d4c8a86bac16">initialize</a>( ! skipAllocation);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        this-&gt;<a class="code" href="classAGeoTransformer.html#af0de0fac53e52282c58a4e23eb99633f">check</a>();</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        m_isInit = <span class="keyword">true</span>;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div><div class="ttc" id="classAGeoTransformer_html_ad5519cc27cf1f270d9861e1f7a5be82d"><div class="ttname"><a href="classAGeoTransformer.html#ad5519cc27cf1f270d9861e1f7a5be82d">AGeoTransformer::isInitialized</a></div><div class="ttdeci">constexpr bool isInitialized() const </div><div class="ttdef"><b>Definition:</b> <a href="ageo__transformer_8h_source.html#l00096">ageo_transformer.h:96</a></div></div>
+<div class="ttc" id="classAGeoTransformer_html_ac8208b1ca27f54640ca1943ddc8a1503"><div class="ttname"><a href="classAGeoTransformer.html#ac8208b1ca27f54640ca1943ddc8a1503">AGeoTransformer::canBeReused</a></div><div class="ttdeci">virtual bool canBeReused(const SettingsType &amp;s) const =0</div></div>
+<div class="ttc" id="classAGeoTransformer_html_a518dc9e7002d4b0d71a9d4c8a86bac16"><div class="ttname"><a href="classAGeoTransformer.html#a518dc9e7002d4b0d71a9d4c8a86bac16">AGeoTransformer::initialize</a></div><div class="ttdeci">virtual void initialize(bool allocate)=0</div></div>
+<div class="ttc" id="classAGeoTransformer_html_af0de0fac53e52282c58a4e23eb99633f"><div class="ttname"><a href="classAGeoTransformer.html#af0de0fac53e52282c58a4e23eb99633f">AGeoTransformer::check</a></div><div class="ttdeci">virtual void check()=0</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a518dc9e7002d4b0d71a9d4c8a86bac16"></a>
@@ -431,6 +447,8 @@ template&lt;typename SettingsType, typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="ageo__transformer_8h_source.html#l00096">96</a> of file <a class="el" href="ageo__transformer_8h_source.html">ageo_transformer.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                                {</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">return</span> m_isInit;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="afac60c8a527e70cb551d9d59dea298e7"></a>
@@ -456,6 +474,8 @@ template&lt;typename SettingsType, typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="ageo__transformer_8h_source.html#l00100">100</a> of file <a class="el" href="ageo__transformer_8h_source.html">ageo_transformer.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                           {</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">return</span> m_isSrcSet;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a8b5095ec2531be8f3b79cce744446e85"></a>
@@ -482,6 +502,8 @@ template&lt;typename SettingsType, typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="ageo__transformer_8h_source.html#l00104">104</a> of file <a class="el" href="ageo__transformer_8h_source.html">ageo_transformer.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                  {</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        m_isSrcSet = status;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a26d349a05e5d3b76d60ed714efb17ae5"></a>

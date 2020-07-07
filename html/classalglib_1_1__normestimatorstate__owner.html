@@ -142,7 +142,10 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a5db3462c0b7ce7287f5927eb5b3b2365"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structalglib__impl_1_1normestimatorstate.html">alglib_impl::normestimatorstate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalglib_1_1__normestimatorstate__owner.html#a5db3462c0b7ce7287f5927eb5b3b2365">p_struct</a></td></tr>
 <tr class="separator:a5db3462c0b7ce7287f5927eb5b3b2365"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="linalg_8h_source.html#l00179">179</a> of file <a class="el" href="linalg_8h_source.html">linalg.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2fda4d15de22d8e5d19bae3b3cf3a3fd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -156,6 +159,13 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="linalg_8cpp_source.html#l06058">6058</a> of file <a class="el" href="linalg_8cpp_source.html">linalg.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l06059"></a><span class="lineno"> 6059</span>&#160;{</div><div class="line"><a name="l06060"></a><span class="lineno"> 6060</span>&#160;    <a class="code" href="classalglib_1_1__normestimatorstate__owner.html#a5db3462c0b7ce7287f5927eb5b3b2365">p_struct</a> = (<a class="code" href="structalglib__impl_1_1normestimatorstate.html">alglib_impl::normestimatorstate</a>*)<a class="code" href="namespacealglib__impl.html#ae9734678725f1961bd032954a6bba1d8">alglib_impl::ae_malloc</a>(<span class="keyword">sizeof</span>(<a class="code" href="structalglib__impl_1_1normestimatorstate.html">alglib_impl::normestimatorstate</a>), NULL);</div><div class="line"><a name="l06061"></a><span class="lineno"> 6061</span>&#160;    <span class="keywordflow">if</span>( <a class="code" href="classalglib_1_1__normestimatorstate__owner.html#a5db3462c0b7ce7287f5927eb5b3b2365">p_struct</a>==NULL )</div><div class="line"><a name="l06062"></a><span class="lineno"> 6062</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l06063"></a><span class="lineno"> 6063</span>&#160;    <span class="keywordflow">if</span>( !<a class="code" href="namespacealglib__impl.html#a2ddc8ba7c75a661588e4a1480ebbc4c3">alglib_impl::_normestimatorstate_init</a>(<a class="code" href="classalglib_1_1__normestimatorstate__owner.html#a5db3462c0b7ce7287f5927eb5b3b2365">p_struct</a>, NULL, <a class="code" href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a>) )</div><div class="line"><a name="l06064"></a><span class="lineno"> 6064</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l06065"></a><span class="lineno"> 6065</span>&#160;}</div><div class="ttc" id="ap_8h_html_a0656913c5b7bc535cf5347662e769bef"><div class="ttname"><a href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a></div><div class="ttdeci">#define ae_false</div><div class="ttdef"><b>Definition:</b> <a href="ap_8h_source.html#l00196">ap.h:196</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_ae9734678725f1961bd032954a6bba1d8"><div class="ttname"><a href="namespacealglib__impl.html#ae9734678725f1961bd032954a6bba1d8">alglib_impl::ae_malloc</a></div><div class="ttdeci">void * ae_malloc(size_t size, ae_state *state)</div><div class="ttdef"><b>Definition:</b> <a href="ap_8cpp_source.html#l00222">ap.cpp:222</a></div></div>
+<div class="ttc" id="structalglib__impl_1_1normestimatorstate_html"><div class="ttname"><a href="structalglib__impl_1_1normestimatorstate.html">alglib_impl::normestimatorstate</a></div><div class="ttdef"><b>Definition:</b> <a href="linalg_8h_source.html#l00068">linalg.h:68</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_a2ddc8ba7c75a661588e4a1480ebbc4c3"><div class="ttname"><a href="namespacealglib__impl.html#a2ddc8ba7c75a661588e4a1480ebbc4c3">alglib_impl::_normestimatorstate_init</a></div><div class="ttdeci">ae_bool _normestimatorstate_init(void *_p, ae_state *_state, ae_bool make_automatic)</div><div class="ttdef"><b>Definition:</b> <a href="linalg_8cpp_source.html#l32541">linalg.cpp:32541</a></div></div>
+<div class="ttc" id="classalglib_1_1__normestimatorstate__owner_html_a5db3462c0b7ce7287f5927eb5b3b2365"><div class="ttname"><a href="classalglib_1_1__normestimatorstate__owner.html#a5db3462c0b7ce7287f5927eb5b3b2365">alglib::_normestimatorstate_owner::p_struct</a></div><div class="ttdeci">alglib_impl::normestimatorstate * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="linalg_8h_source.html#l00189">linalg.h:189</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a0c3456028b5723cd8e11c78a1a39342b"></a>
@@ -172,6 +182,13 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="linalg_8cpp_source.html#l06067">6067</a> of file <a class="el" href="linalg_8cpp_source.html">linalg.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l06068"></a><span class="lineno"> 6068</span>&#160;{</div><div class="line"><a name="l06069"></a><span class="lineno"> 6069</span>&#160;    <a class="code" href="classalglib_1_1__normestimatorstate__owner.html#a5db3462c0b7ce7287f5927eb5b3b2365">p_struct</a> = (<a class="code" href="structalglib__impl_1_1normestimatorstate.html">alglib_impl::normestimatorstate</a>*)<a class="code" href="namespacealglib__impl.html#ae9734678725f1961bd032954a6bba1d8">alglib_impl::ae_malloc</a>(<span class="keyword">sizeof</span>(<a class="code" href="structalglib__impl_1_1normestimatorstate.html">alglib_impl::normestimatorstate</a>), NULL);</div><div class="line"><a name="l06070"></a><span class="lineno"> 6070</span>&#160;    <span class="keywordflow">if</span>( <a class="code" href="classalglib_1_1__normestimatorstate__owner.html#a5db3462c0b7ce7287f5927eb5b3b2365">p_struct</a>==NULL )</div><div class="line"><a name="l06071"></a><span class="lineno"> 6071</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l06072"></a><span class="lineno"> 6072</span>&#160;    <span class="keywordflow">if</span>( !<a class="code" href="namespacealglib__impl.html#a8f145eeb84ac5fa25a77504d7a1a7f91">alglib_impl::_normestimatorstate_init_copy</a>(<a class="code" href="classalglib_1_1__normestimatorstate__owner.html#a5db3462c0b7ce7287f5927eb5b3b2365">p_struct</a>, const_cast&lt;alglib_impl::normestimatorstate*&gt;(rhs.p_struct), NULL, <a class="code" href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a>) )</div><div class="line"><a name="l06073"></a><span class="lineno"> 6073</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l06074"></a><span class="lineno"> 6074</span>&#160;}</div><div class="ttc" id="ap_8h_html_a0656913c5b7bc535cf5347662e769bef"><div class="ttname"><a href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a></div><div class="ttdeci">#define ae_false</div><div class="ttdef"><b>Definition:</b> <a href="ap_8h_source.html#l00196">ap.h:196</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_ae9734678725f1961bd032954a6bba1d8"><div class="ttname"><a href="namespacealglib__impl.html#ae9734678725f1961bd032954a6bba1d8">alglib_impl::ae_malloc</a></div><div class="ttdeci">void * ae_malloc(size_t size, ae_state *state)</div><div class="ttdef"><b>Definition:</b> <a href="ap_8cpp_source.html#l00222">ap.cpp:222</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_a8f145eeb84ac5fa25a77504d7a1a7f91"><div class="ttname"><a href="namespacealglib__impl.html#a8f145eeb84ac5fa25a77504d7a1a7f91">alglib_impl::_normestimatorstate_init_copy</a></div><div class="ttdeci">ae_bool _normestimatorstate_init_copy(void *_dst, void *_src, ae_state *_state, ae_bool make_automatic)</div><div class="ttdef"><b>Definition:</b> <a href="linalg_8cpp_source.html#l32567">linalg.cpp:32567</a></div></div>
+<div class="ttc" id="structalglib__impl_1_1normestimatorstate_html"><div class="ttname"><a href="structalglib__impl_1_1normestimatorstate.html">alglib_impl::normestimatorstate</a></div><div class="ttdef"><b>Definition:</b> <a href="linalg_8h_source.html#l00068">linalg.h:68</a></div></div>
+<div class="ttc" id="classalglib_1_1__normestimatorstate__owner_html_a5db3462c0b7ce7287f5927eb5b3b2365"><div class="ttname"><a href="classalglib_1_1__normestimatorstate__owner.html#a5db3462c0b7ce7287f5927eb5b3b2365">alglib::_normestimatorstate_owner::p_struct</a></div><div class="ttdeci">alglib_impl::normestimatorstate * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="linalg_8h_source.html#l00189">linalg.h:189</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a6da8a6380d376560978e65ca9431ef97"></a>
@@ -195,6 +212,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="linalg_8cpp_source.html#l06086">6086</a> of file <a class="el" href="linalg_8cpp_source.html">linalg.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l06087"></a><span class="lineno"> 6087</span>&#160;{</div><div class="line"><a name="l06088"></a><span class="lineno"> 6088</span>&#160;    <a class="code" href="namespacealglib__impl.html#a42f5abc603bfc055c3fd656296218c3a">alglib_impl::_normestimatorstate_clear</a>(<a class="code" href="classalglib_1_1__normestimatorstate__owner.html#a5db3462c0b7ce7287f5927eb5b3b2365">p_struct</a>);</div><div class="line"><a name="l06089"></a><span class="lineno"> 6089</span>&#160;    <a class="code" href="namespacealglib__impl.html#a204f9cd46dfc1cc765720c2b5d473128">ae_free</a>(<a class="code" href="classalglib_1_1__normestimatorstate__owner.html#a5db3462c0b7ce7287f5927eb5b3b2365">p_struct</a>);</div><div class="line"><a name="l06090"></a><span class="lineno"> 6090</span>&#160;}</div><div class="ttc" id="namespacealglib__impl_html_a42f5abc603bfc055c3fd656296218c3a"><div class="ttname"><a href="namespacealglib__impl.html#a42f5abc603bfc055c3fd656296218c3a">alglib_impl::_normestimatorstate_clear</a></div><div class="ttdeci">void _normestimatorstate_clear(void *_p)</div><div class="ttdef"><b>Definition:</b> <a href="linalg_8cpp_source.html#l32601">linalg.cpp:32601</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_a204f9cd46dfc1cc765720c2b5d473128"><div class="ttname"><a href="namespacealglib__impl.html#a204f9cd46dfc1cc765720c2b5d473128">alglib_impl::ae_free</a></div><div class="ttdeci">void ae_free(void *p)</div><div class="ttdef"><b>Definition:</b> <a href="ap_8cpp_source.html#l00237">ap.cpp:237</a></div></div>
+<div class="ttc" id="classalglib_1_1__normestimatorstate__owner_html_a5db3462c0b7ce7287f5927eb5b3b2365"><div class="ttname"><a href="classalglib_1_1__normestimatorstate__owner.html#a5db3462c0b7ce7287f5927eb5b3b2365">alglib::_normestimatorstate_owner::p_struct</a></div><div class="ttdeci">alglib_impl::normestimatorstate * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="linalg_8h_source.html#l00189">linalg.h:189</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -211,6 +233,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="linalg_8cpp_source.html#l06092">6092</a> of file <a class="el" href="linalg_8cpp_source.html">linalg.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l06093"></a><span class="lineno"> 6093</span>&#160;{</div><div class="line"><a name="l06094"></a><span class="lineno"> 6094</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classalglib_1_1__normestimatorstate__owner.html#a5db3462c0b7ce7287f5927eb5b3b2365">p_struct</a>;</div><div class="line"><a name="l06095"></a><span class="lineno"> 6095</span>&#160;}</div><div class="ttc" id="classalglib_1_1__normestimatorstate__owner_html_a5db3462c0b7ce7287f5927eb5b3b2365"><div class="ttname"><a href="classalglib_1_1__normestimatorstate__owner.html#a5db3462c0b7ce7287f5927eb5b3b2365">alglib::_normestimatorstate_owner::p_struct</a></div><div class="ttdeci">alglib_impl::normestimatorstate * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="linalg_8h_source.html#l00189">linalg.h:189</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="afc7cd8f9924e7b948437834bf4238f98"></a>
@@ -226,6 +251,10 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="linalg_8cpp_source.html#l06097">6097</a> of file <a class="el" href="linalg_8cpp_source.html">linalg.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l06098"></a><span class="lineno"> 6098</span>&#160;{</div><div class="line"><a name="l06099"></a><span class="lineno"> 6099</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">const_cast&lt;</span><a class="code" href="structalglib__impl_1_1normestimatorstate.html">alglib_impl::normestimatorstate</a>*<span class="keyword">&gt;</span>(<a class="code" href="classalglib_1_1__normestimatorstate__owner.html#a5db3462c0b7ce7287f5927eb5b3b2365">p_struct</a>);</div><div class="line"><a name="l06100"></a><span class="lineno"> 6100</span>&#160;}</div><div class="ttc" id="structalglib__impl_1_1normestimatorstate_html"><div class="ttname"><a href="structalglib__impl_1_1normestimatorstate.html">alglib_impl::normestimatorstate</a></div><div class="ttdef"><b>Definition:</b> <a href="linalg_8h_source.html#l00068">linalg.h:68</a></div></div>
+<div class="ttc" id="classalglib_1_1__normestimatorstate__owner_html_a5db3462c0b7ce7287f5927eb5b3b2365"><div class="ttname"><a href="classalglib_1_1__normestimatorstate__owner.html#a5db3462c0b7ce7287f5927eb5b3b2365">alglib::_normestimatorstate_owner::p_struct</a></div><div class="ttdeci">alglib_impl::normestimatorstate * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="linalg_8h_source.html#l00189">linalg.h:189</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ae9c20d57835f55ef7fc3b1455e78b845"></a>
@@ -242,6 +271,12 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="linalg_8cpp_source.html#l06076">6076</a> of file <a class="el" href="linalg_8cpp_source.html">linalg.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l06077"></a><span class="lineno"> 6077</span>&#160;{</div><div class="line"><a name="l06078"></a><span class="lineno"> 6078</span>&#160;    <span class="keywordflow">if</span>( <span class="keyword">this</span>==&amp;rhs )</div><div class="line"><a name="l06079"></a><span class="lineno"> 6079</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l06080"></a><span class="lineno"> 6080</span>&#160;    <a class="code" href="namespacealglib__impl.html#a42f5abc603bfc055c3fd656296218c3a">alglib_impl::_normestimatorstate_clear</a>(<a class="code" href="classalglib_1_1__normestimatorstate__owner.html#a5db3462c0b7ce7287f5927eb5b3b2365">p_struct</a>);</div><div class="line"><a name="l06081"></a><span class="lineno"> 6081</span>&#160;    <span class="keywordflow">if</span>( !<a class="code" href="namespacealglib__impl.html#a8f145eeb84ac5fa25a77504d7a1a7f91">alglib_impl::_normestimatorstate_init_copy</a>(<a class="code" href="classalglib_1_1__normestimatorstate__owner.html#a5db3462c0b7ce7287f5927eb5b3b2365">p_struct</a>, const_cast&lt;alglib_impl::normestimatorstate*&gt;(rhs.p_struct), NULL, <a class="code" href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a>) )</div><div class="line"><a name="l06082"></a><span class="lineno"> 6082</span>&#160;        <span class="keywordflow">throw</span> ap_error(<span class="stringliteral">&quot;ALGLIB: malloc error&quot;</span>);</div><div class="line"><a name="l06083"></a><span class="lineno"> 6083</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l06084"></a><span class="lineno"> 6084</span>&#160;}</div><div class="ttc" id="ap_8h_html_a0656913c5b7bc535cf5347662e769bef"><div class="ttname"><a href="ap_8h.html#a0656913c5b7bc535cf5347662e769bef">ae_false</a></div><div class="ttdeci">#define ae_false</div><div class="ttdef"><b>Definition:</b> <a href="ap_8h_source.html#l00196">ap.h:196</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_a42f5abc603bfc055c3fd656296218c3a"><div class="ttname"><a href="namespacealglib__impl.html#a42f5abc603bfc055c3fd656296218c3a">alglib_impl::_normestimatorstate_clear</a></div><div class="ttdeci">void _normestimatorstate_clear(void *_p)</div><div class="ttdef"><b>Definition:</b> <a href="linalg_8cpp_source.html#l32601">linalg.cpp:32601</a></div></div>
+<div class="ttc" id="namespacealglib__impl_html_a8f145eeb84ac5fa25a77504d7a1a7f91"><div class="ttname"><a href="namespacealglib__impl.html#a8f145eeb84ac5fa25a77504d7a1a7f91">alglib_impl::_normestimatorstate_init_copy</a></div><div class="ttdeci">ae_bool _normestimatorstate_init_copy(void *_dst, void *_src, ae_state *_state, ae_bool make_automatic)</div><div class="ttdef"><b>Definition:</b> <a href="linalg_8cpp_source.html#l32567">linalg.cpp:32567</a></div></div>
+<div class="ttc" id="classalglib_1_1__normestimatorstate__owner_html_a5db3462c0b7ce7287f5927eb5b3b2365"><div class="ttname"><a href="classalglib_1_1__normestimatorstate__owner.html#a5db3462c0b7ce7287f5927eb5b3b2365">alglib::_normestimatorstate_owner::p_struct</a></div><div class="ttdeci">alglib_impl::normestimatorstate * p_struct</div><div class="ttdef"><b>Definition:</b> <a href="linalg_8h_source.html#l00189">linalg.h:189</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -263,11 +298,13 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="linalg_8h_source.html#l00189">189</a> of file <a class="el" href="linalg_8h_source.html">linalg.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/alglib/<a class="el" href="linalg_8h_source.html">linalg.h</a></li>
-<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/alglib/<a class="el" href="linalg_8cpp.html">linalg.cpp</a></li>
+<li>/home/yunior/Yunior/Projects/Scipion/COSS/xmipp-bundle/src/xmippCore/core/alglib/<a class="el" href="linalg_8cpp_source.html">linalg.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

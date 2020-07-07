@@ -150,7 +150,13 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:aac498b3714d93f8e88cdc30e4c5935f6"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1FloatingPoint.html#aac498b3714d93f8e88cdc30e4c5935f6">kMaxUlps</a> = 4</td></tr>
 <tr class="separator:aac498b3714d93f8e88cdc30e4c5935f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename RawType&gt;<br />
+class testing::internal::FloatingPoint&lt; RawType &gt;</h3>
+
+
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l06997">6997</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="abf228bf6cd48f12c8b44c85b4971a731"></a>
 <div class="memitem">
 <div class="memproto">
@@ -162,6 +168,8 @@ template&lt;typename RawType&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l07001">7001</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
 
 </div>
 </div>
@@ -190,6 +198,9 @@ template&lt;typename RawType&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l07045">7045</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l07045"></a><span class="lineno"> 7045</span>&#160;{ u_.value_ = <a class="code" href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a>; }</div><div class="ttc" id="numerical__recipes_8cpp_html_ab81d9253b246f09be9999505d515d517"><div class="ttname"><a href="numerical__recipes_8cpp.html#ab81d9253b246f09be9999505d515d517">x</a></div><div class="ttdeci">doublereal * x</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l02247">numerical_recipes.cpp:2247</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -217,6 +228,10 @@ template&lt;typename RawType&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l07090">7090</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l07090"></a><span class="lineno"> 7090</span>&#160;                                                    {</div><div class="line"><a name="l07091"></a><span class="lineno"> 7091</span>&#160;    <span class="comment">// The IEEE standard says that any comparison operation involving</span></div><div class="line"><a name="l07092"></a><span class="lineno"> 7092</span>&#160;    <span class="comment">// a NAN must return false.</span></div><div class="line"><a name="l07093"></a><span class="lineno"> 7093</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classtesting_1_1internal_1_1FloatingPoint.html#aaef2fd2cd8cdf791206a5e9fed8ef90d">is_nan</a>() || rhs.is_nan()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l07094"></a><span class="lineno"> 7094</span>&#160;</div><div class="line"><a name="l07095"></a><span class="lineno"> 7095</span>&#160;    <span class="keywordflow">return</span> DistanceBetweenSignAndMagnitudeNumbers(u_.bits_, rhs.u_.bits_)</div><div class="line"><a name="l07096"></a><span class="lineno"> 7096</span>&#160;        &lt;= <a class="code" href="classtesting_1_1internal_1_1FloatingPoint.html#aac498b3714d93f8e88cdc30e4c5935f6">kMaxUlps</a>;</div><div class="line"><a name="l07097"></a><span class="lineno"> 7097</span>&#160;  }</div><div class="ttc" id="classtesting_1_1internal_1_1FloatingPoint_html_aac498b3714d93f8e88cdc30e4c5935f6"><div class="ttname"><a href="classtesting_1_1internal_1_1FloatingPoint.html#aac498b3714d93f8e88cdc30e4c5935f6">testing::internal::FloatingPoint::kMaxUlps</a></div><div class="ttdeci">static const size_t kMaxUlps</div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l07037">gtest.h:7037</a></div></div>
+<div class="ttc" id="classtesting_1_1internal_1_1FloatingPoint_html_aaef2fd2cd8cdf791206a5e9fed8ef90d"><div class="ttname"><a href="classtesting_1_1internal_1_1FloatingPoint.html#aaef2fd2cd8cdf791206a5e9fed8ef90d">testing::internal::FloatingPoint::is_nan</a></div><div class="ttdeci">bool is_nan() const </div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l07078">gtest.h:7078</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="abead51f16ec6ea84360a976da1cd1387"></a>
@@ -242,6 +257,8 @@ template&lt;typename RawType&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l07066">7066</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l07066"></a><span class="lineno"> 7066</span>&#160;{ <span class="keywordflow">return</span> u_.bits_; }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="af53c50b85408c582540d6244c026ce2b"></a>
@@ -267,6 +284,9 @@ template&lt;typename RawType&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l07069">7069</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l07069"></a><span class="lineno"> 7069</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classtesting_1_1internal_1_1FloatingPoint.html#a66065dfc4d5f41100f686159637af23b">kExponentBitMask</a> &amp; u_.bits_; }</div><div class="ttc" id="classtesting_1_1internal_1_1FloatingPoint_html_a66065dfc4d5f41100f686159637af23b"><div class="ttname"><a href="classtesting_1_1internal_1_1FloatingPoint.html#a66065dfc4d5f41100f686159637af23b">testing::internal::FloatingPoint::kExponentBitMask</a></div><div class="ttdeci">static const Bits kExponentBitMask</div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l07023">gtest.h:7023</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aa0167b7b10a934b743ba3c1f47421e63"></a>
@@ -292,6 +312,9 @@ template&lt;typename RawType&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l07072">7072</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l07072"></a><span class="lineno"> 7072</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classtesting_1_1internal_1_1FloatingPoint.html#a0ac75d4ffd24f14bca452abe8a718da1">kFractionBitMask</a> &amp; u_.bits_; }</div><div class="ttc" id="classtesting_1_1internal_1_1FloatingPoint_html_a0ac75d4ffd24f14bca452abe8a718da1"><div class="ttname"><a href="classtesting_1_1internal_1_1FloatingPoint.html#a0ac75d4ffd24f14bca452abe8a718da1">testing::internal::FloatingPoint::kFractionBitMask</a></div><div class="ttdeci">static const Bits kFractionBitMask</div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l07019">gtest.h:7019</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a460027cc19cf01ae8e09cc3796b2b575"></a>
@@ -317,6 +340,10 @@ template&lt;typename RawType&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l07059">7059</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l07059"></a><span class="lineno"> 7059</span>&#160;                            {</div><div class="line"><a name="l07060"></a><span class="lineno"> 7060</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classtesting_1_1internal_1_1FloatingPoint.html#ac551f793522e54fbd8a25acb79eac5b1">ReinterpretBits</a>(<a class="code" href="classtesting_1_1internal_1_1FloatingPoint.html#a66065dfc4d5f41100f686159637af23b">kExponentBitMask</a>);</div><div class="line"><a name="l07061"></a><span class="lineno"> 7061</span>&#160;  }</div><div class="ttc" id="classtesting_1_1internal_1_1FloatingPoint_html_ac551f793522e54fbd8a25acb79eac5b1"><div class="ttname"><a href="classtesting_1_1internal_1_1FloatingPoint.html#ac551f793522e54fbd8a25acb79eac5b1">testing::internal::FloatingPoint::ReinterpretBits</a></div><div class="ttdeci">static RawType ReinterpretBits(const Bits bits)</div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l07052">gtest.h:7052</a></div></div>
+<div class="ttc" id="classtesting_1_1internal_1_1FloatingPoint_html_a66065dfc4d5f41100f686159637af23b"><div class="ttname"><a href="classtesting_1_1internal_1_1FloatingPoint.html#a66065dfc4d5f41100f686159637af23b">testing::internal::FloatingPoint::kExponentBitMask</a></div><div class="ttdeci">static const Bits kExponentBitMask</div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l07023">gtest.h:7023</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aaef2fd2cd8cdf791206a5e9fed8ef90d"></a>
@@ -342,6 +369,11 @@ template&lt;typename RawType&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l07078">7078</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l07078"></a><span class="lineno"> 7078</span>&#160;                      {</div><div class="line"><a name="l07079"></a><span class="lineno"> 7079</span>&#160;    <span class="comment">// It&#39;s a NAN if the exponent bits are all ones and the fraction</span></div><div class="line"><a name="l07080"></a><span class="lineno"> 7080</span>&#160;    <span class="comment">// bits are not entirely zeros.</span></div><div class="line"><a name="l07081"></a><span class="lineno"> 7081</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="classtesting_1_1internal_1_1FloatingPoint.html#af53c50b85408c582540d6244c026ce2b">exponent_bits</a>() == <a class="code" href="classtesting_1_1internal_1_1FloatingPoint.html#a66065dfc4d5f41100f686159637af23b">kExponentBitMask</a>) &amp;&amp; (<a class="code" href="classtesting_1_1internal_1_1FloatingPoint.html#aa0167b7b10a934b743ba3c1f47421e63">fraction_bits</a>() != 0);</div><div class="line"><a name="l07082"></a><span class="lineno"> 7082</span>&#160;  }</div><div class="ttc" id="classtesting_1_1internal_1_1FloatingPoint_html_af53c50b85408c582540d6244c026ce2b"><div class="ttname"><a href="classtesting_1_1internal_1_1FloatingPoint.html#af53c50b85408c582540d6244c026ce2b">testing::internal::FloatingPoint::exponent_bits</a></div><div class="ttdeci">Bits exponent_bits() const </div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l07069">gtest.h:7069</a></div></div>
+<div class="ttc" id="classtesting_1_1internal_1_1FloatingPoint_html_aa0167b7b10a934b743ba3c1f47421e63"><div class="ttname"><a href="classtesting_1_1internal_1_1FloatingPoint.html#aa0167b7b10a934b743ba3c1f47421e63">testing::internal::FloatingPoint::fraction_bits</a></div><div class="ttdeci">Bits fraction_bits() const </div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l07072">gtest.h:7072</a></div></div>
+<div class="ttc" id="classtesting_1_1internal_1_1FloatingPoint_html_a66065dfc4d5f41100f686159637af23b"><div class="ttname"><a href="classtesting_1_1internal_1_1FloatingPoint.html#a66065dfc4d5f41100f686159637af23b">testing::internal::FloatingPoint::kExponentBitMask</a></div><div class="ttdeci">static const Bits kExponentBitMask</div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l07023">gtest.h:7023</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ac551f793522e54fbd8a25acb79eac5b1"></a>
@@ -368,6 +400,10 @@ template&lt;typename RawType&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l07052">7052</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l07052"></a><span class="lineno"> 7052</span>&#160;                                                  {</div><div class="line"><a name="l07053"></a><span class="lineno"> 7053</span>&#160;    <a class="code" href="classtesting_1_1internal_1_1FloatingPoint.html#a0dabf840863e0df84046f171c891fe71">FloatingPoint</a> fp(0);</div><div class="line"><a name="l07054"></a><span class="lineno"> 7054</span>&#160;    fp.u_.bits_ = <a class="code" href="classtesting_1_1internal_1_1FloatingPoint.html#abead51f16ec6ea84360a976da1cd1387">bits</a>;</div><div class="line"><a name="l07055"></a><span class="lineno"> 7055</span>&#160;    <span class="keywordflow">return</span> fp.u_.value_;</div><div class="line"><a name="l07056"></a><span class="lineno"> 7056</span>&#160;  }</div><div class="ttc" id="classtesting_1_1internal_1_1FloatingPoint_html_a0dabf840863e0df84046f171c891fe71"><div class="ttname"><a href="classtesting_1_1internal_1_1FloatingPoint.html#a0dabf840863e0df84046f171c891fe71">testing::internal::FloatingPoint::FloatingPoint</a></div><div class="ttdeci">FloatingPoint(const RawType &amp;x)</div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l07045">gtest.h:7045</a></div></div>
+<div class="ttc" id="classtesting_1_1internal_1_1FloatingPoint_html_abead51f16ec6ea84360a976da1cd1387"><div class="ttname"><a href="classtesting_1_1internal_1_1FloatingPoint.html#abead51f16ec6ea84360a976da1cd1387">testing::internal::FloatingPoint::bits</a></div><div class="ttdeci">const Bits &amp; bits() const </div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l07066">gtest.h:7066</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a6176cc4d443724477f2799bcbd9f020a"></a>
@@ -393,6 +429,9 @@ template&lt;typename RawType&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l07075">7075</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l07075"></a><span class="lineno"> 7075</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classtesting_1_1internal_1_1FloatingPoint.html#aca98b5ea6f2222a66a82e52421682efa">kSignBitMask</a> &amp; u_.bits_; }</div><div class="ttc" id="classtesting_1_1internal_1_1FloatingPoint_html_aca98b5ea6f2222a66a82e52421682efa"><div class="ttname"><a href="classtesting_1_1internal_1_1FloatingPoint.html#aca98b5ea6f2222a66a82e52421682efa">testing::internal::FloatingPoint::kSignBitMask</a></div><div class="ttdeci">static const Bits kSignBitMask</div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l07016">gtest.h:7016</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -416,6 +455,8 @@ template&lt;typename RawType&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l07006">7006</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a1973d843c00781053d3073daa8a40119"></a>
@@ -437,6 +478,8 @@ template&lt;typename RawType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l07013">7013</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
 
 </div>
 </div>
@@ -460,6 +503,8 @@ template&lt;typename RawType&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l07023">7023</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a0b756a6d2a4f5f5b41ca79651c06c043"></a>
@@ -482,6 +527,8 @@ template&lt;typename RawType&gt; </div>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">    std::numeric_limits&lt;RawType&gt;::digits - 1</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l07009">7009</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a0ac75d4ffd24f14bca452abe8a718da1"></a>
@@ -504,6 +551,8 @@ template&lt;typename RawType&gt; </div>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">    ~static_cast&lt;<a class="code" href="classtesting_1_1internal_1_1FloatingPoint.html#abf228bf6cd48f12c8b44c85b4971a731">Bits</a>&gt;(0) &gt;&gt; (<a class="code" href="classtesting_1_1internal_1_1FloatingPoint.html#a1973d843c00781053d3073daa8a40119">kExponentBitCount</a> + 1)</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l07019">7019</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aac498b3714d93f8e88cdc30e4c5935f6"></a>
@@ -526,6 +575,8 @@ template&lt;typename RawType&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l07037">7037</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aca98b5ea6f2222a66a82e52421682efa"></a>
@@ -547,6 +598,8 @@ template&lt;typename RawType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l07016">7016</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
 
 </div>
 </div>

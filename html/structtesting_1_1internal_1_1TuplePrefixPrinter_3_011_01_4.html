@@ -109,7 +109,13 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:acc513062684bbdd514a294f79a7980cc"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structtesting_1_1internal_1_1TuplePrefixPrinter_3_011_01_4.html#acc513062684bbdd514a294f79a7980cc">TersePrintPrefixToStrings</a> (const Tuple &amp;t, <a class="el" href="namespacetesting_1_1internal.html#a7706b17f05f4b49e351b052ae4e05073">Strings</a> *strings)</td></tr>
 <tr class="separator:acc513062684bbdd514a294f79a7980cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;&gt;<br />
+struct testing::internal::TuplePrefixPrinter&lt; 1 &gt;</h3>
+
+
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l09933">9933</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a90fef286a721920e7269291efbf9e23e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -144,6 +150,9 @@ template&lt;typename Tuple &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l09935">9935</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l09935"></a><span class="lineno"> 9935</span>&#160;                                                            {</div><div class="line"><a name="l09936"></a><span class="lineno"> 9936</span>&#160;    <a class="code" href="numerical__recipes_8cpp.html#ac2ea709cb05f339117cfca92335af42a">UniversalPrinter&lt;typename ::std::tr1::tuple_element&lt;0, Tuple&gt;::type</a>&gt;::</div><div class="line"><a name="l09937"></a><span class="lineno"> 9937</span>&#160;        Print(::std::tr1::get&lt;0&gt;(t), os);</div><div class="line"><a name="l09938"></a><span class="lineno"> 9938</span>&#160;  }</div><div class="ttc" id="numerical__recipes_8cpp_html_ac2ea709cb05f339117cfca92335af42a"><div class="ttname"><a href="numerical__recipes_8cpp.html#ac2ea709cb05f339117cfca92335af42a">type</a></div><div class="ttdeci">viol type</div><div class="ttdef"><b>Definition:</b> <a href="numerical__recipes_8cpp_source.html#l05215">numerical_recipes.cpp:5215</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="acc513062684bbdd514a294f79a7980cc"></a>
@@ -180,6 +189,9 @@ template&lt;typename Tuple &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l09941">9941</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l09941"></a><span class="lineno"> 9941</span>&#160;                                                                          {</div><div class="line"><a name="l09942"></a><span class="lineno"> 9942</span>&#160;    ::std::stringstream ss;</div><div class="line"><a name="l09943"></a><span class="lineno"> 9943</span>&#160;    <a class="code" href="namespacetesting_1_1internal.html#ab3d834fb6c31d29e36400cc19905294b">UniversalTersePrint</a>(::std::tr1::get&lt;0&gt;(t), &amp;ss);</div><div class="line"><a name="l09944"></a><span class="lineno"> 9944</span>&#160;    strings-&gt;push_back(ss.str());</div><div class="line"><a name="l09945"></a><span class="lineno"> 9945</span>&#160;  }</div><div class="ttc" id="namespacetesting_1_1internal_html_ab3d834fb6c31d29e36400cc19905294b"><div class="ttname"><a href="namespacetesting_1_1internal.html#ab3d834fb6c31d29e36400cc19905294b">testing::internal::UniversalTersePrint</a></div><div class="ttdeci">void UniversalTersePrint(const T &amp;value,::std::ostream *os)</div><div class="ttdef"><b>Definition:</b> <a href="gtest_8h_source.html#l09862">gtest.h:9862</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>

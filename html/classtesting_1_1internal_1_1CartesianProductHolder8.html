@@ -108,7 +108,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0cebd8cc28ade7d82c4d6b5f7ce9ee86"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1CartesianProductHolder8.html#a0cebd8cc28ade7d82c4d6b5f7ce9ee86">operator ParamGenerator&lt; ::std::tr1::tuple&lt; T1, T2, T3, T4, T5, T6, T7, T8 &gt; &gt;</a> () const </td></tr>
 <tr class="separator:a0cebd8cc28ade7d82c4d6b5f7ce9ee86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class Generator1, class Generator2, class Generator3, class Generator4, class Generator5, class Generator6, class Generator7, class Generator8&gt;<br />
+class testing::internal::CartesianProductHolder8&lt; Generator1, Generator2, Generator3, Generator4, Generator5, Generator6, Generator7, Generator8 &gt;</h3>
+
+
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l15238">15238</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="adacdd7a2e15963d1b2f559d65f6b2aac"></a>
 <div class="memitem">
 <div class="memproto">
@@ -179,6 +185,8 @@ template&lt;class Generator1 , class Generator2 , class Generator3 , class Gener
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l15240">15240</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l15243"></a><span class="lineno">15243</span>&#160;      : g1_(g1), g2_(g2), g3_(g3), g4_(g4), g5_(g5), g6_(g6), g7_(g7),</div><div class="line"><a name="l15244"></a><span class="lineno">15244</span>&#160;          g8_(g8) {}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -207,6 +215,8 @@ template&lt;typename T1 , typename T2 , typename T3 , typename T4 , typename T5 
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="gtest_8h_source.html#l15248">15248</a> of file <a class="el" href="gtest_8h_source.html">gtest.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l15248"></a><span class="lineno">15248</span>&#160;                    {</div><div class="line"><a name="l15249"></a><span class="lineno">15249</span>&#160;    <span class="keywordflow">return</span> ParamGenerator&lt; ::std::tr1::tuple&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt; &gt;(</div><div class="line"><a name="l15250"></a><span class="lineno">15250</span>&#160;        <span class="keyword">new</span> CartesianProductGenerator8&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;(</div><div class="line"><a name="l15251"></a><span class="lineno">15251</span>&#160;        <span class="keyword">static_cast&lt;</span>ParamGenerator&lt;T1&gt; <span class="keyword">&gt;</span>(g1_),</div><div class="line"><a name="l15252"></a><span class="lineno">15252</span>&#160;        <span class="keyword">static_cast&lt;</span>ParamGenerator&lt;T2&gt; <span class="keyword">&gt;</span>(g2_),</div><div class="line"><a name="l15253"></a><span class="lineno">15253</span>&#160;        <span class="keyword">static_cast&lt;</span>ParamGenerator&lt;T3&gt; <span class="keyword">&gt;</span>(g3_),</div><div class="line"><a name="l15254"></a><span class="lineno">15254</span>&#160;        <span class="keyword">static_cast&lt;</span>ParamGenerator&lt;T4&gt; <span class="keyword">&gt;</span>(g4_),</div><div class="line"><a name="l15255"></a><span class="lineno">15255</span>&#160;        <span class="keyword">static_cast&lt;</span>ParamGenerator&lt;T5&gt; <span class="keyword">&gt;</span>(g5_),</div><div class="line"><a name="l15256"></a><span class="lineno">15256</span>&#160;        <span class="keyword">static_cast&lt;</span>ParamGenerator&lt;T6&gt; <span class="keyword">&gt;</span>(g6_),</div><div class="line"><a name="l15257"></a><span class="lineno">15257</span>&#160;        <span class="keyword">static_cast&lt;</span>ParamGenerator&lt;T7&gt; <span class="keyword">&gt;</span>(g7_),</div><div class="line"><a name="l15258"></a><span class="lineno">15258</span>&#160;        <span class="keyword">static_cast&lt;</span>ParamGenerator&lt;T8&gt; <span class="keyword">&gt;</span>(g8_)));</div><div class="line"><a name="l15259"></a><span class="lineno">15259</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
